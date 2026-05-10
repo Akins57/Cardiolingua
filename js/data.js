@@ -1356,6 +1356,281 @@ export const DATA = [
           }
 
         ]
+      },
+
+      // ── PERIPHERAL ARTERIAL DISEASE & LOWER LIMB ────────────────────────────
+      {
+        slug: 'peripheral-arterial-disease',
+        title_en: 'Peripheral Arterial Disease & Lower Limb',
+        title_ru: 'Периферический атеросклероз и заболевания нижних конечностей',
+        topics: [
+
+          // ── Topic: Acute Limb Ischaemia ──────────────────────────────────────
+          {
+            slug: 'acute-limb-ischaemia',
+            title_en: 'Acute Limb Ischaemia',
+            title_ru: 'Острая ишемия конечности',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Acute limb ischaemia (ALI) is a sudden reduction in limb perfusion that threatens viability, defined by onset within 14 days. It is a vascular emergency. Aetiology: thrombosis in situ (~60%), embolism (~30%), trauma, iatrogenic injury, or dissection. Without prompt revascularisation, the risk of major amputation and death is high.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'The 6 Ps — Clinical Presentation',
+                    body: 'Pain (sudden, severe), Pallor, Pulselessness, Paraesthesia (pins and needles → numbness), Paralysis (inability to move foot), Poikilothermia (cold limb).\n\nParaesthesia and paralysis indicate ischaemia of nerve and muscle — the limb is threatened or irreversibly damaged. Paralysis is the most sinister sign and mandates emergency intervention.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Rutherford Classification',
+                    body: [
+                      'Class I — Viable: no sensory or motor loss; Doppler signals audible (arterial and venous); no immediate threat',
+                      'Class IIa — Marginally threatened: minimal sensory loss (toes only); no motor deficit; arterial Doppler often absent',
+                      'Class IIb — Immediately threatened: sensory loss beyond toes + mild motor deficit; urgent revascularisation required',
+                      'Class III — Irreversible: profound paralysis and anaesthesia; major tissue loss inevitable; primary amputation'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Embolism vs Thrombosis',
+                    body: 'Embolism: sudden dramatic onset; contralateral pulses present (no background PAD); cardiac source — most commonly atrial fibrillation (AF) or recent myocardial infarction (MI); treatment = Fogarty balloon embolectomy.\n\nThrombosis: gradual or stuttering onset; absent or reduced contralateral pulses (background PAD); atherosclerotic plaque rupture or hypercoagulable state; treatment = catheter-directed thrombolysis (CDT) or surgical bypass. Always obtain a 12-lead ECG to exclude AF.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Management',
+                    body: [
+                      'All classes immediately: IV heparin 5,000 IU bolus → infusion; analgesia; IV access; 12-lead ECG; urgent CT angiography (CTA)',
+                      'Rutherford IIa/IIb: CDT (alteplase or urokinase via intra-arterial catheter) OR surgical embolectomy/bypass',
+                      'Rutherford IIb urgent or failed thrombolysis: surgical revascularisation — Fogarty embolectomy or bypass',
+                      'Fogarty embolectomy: balloon catheter via common femoral artery incision under local anaesthesia',
+                      'Class III: primary amputation — revascularisation risks fatal reperfusion injury'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Reperfusion Injury & Fasciotomy',
+                    body: 'Reperfusion after prolonged ischaemia releases myoglobin and potassium into the circulation, causing hyperkalaemia, myoglobinuria, acute kidney injury (AKI), and cardiac arrhythmia. Monitor K⁺, creatinine, and urine output post-revascularisation.\n\nFasciotomy is indicated when compartment syndrome develops: compartment pressure >30 mmHg (or within 30 mmHg of diastolic BP), or after revascularisation following >6 hours of ischaemia. Perform a 4-compartment fasciotomy of the lower leg (anterior, lateral, superficial posterior, deep posterior).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Surgical Correlates',
+                    body: [
+                      'Give heparin immediately on clinical diagnosis — do not delay for imaging if limb is threatened',
+                      'Fogarty catheter sizing: 4F for femoral artery; 3F for popliteal and tibial vessels',
+                      'CDT contraindications: recent stroke (<3 months), active haemorrhage, recent major surgery (<10 days)',
+                      'After embolic ALI: lifelong anticoagulation (warfarin or DOAC) and treatment of the source (e.g. AF cardioversion / rate control)',
+                      '4-compartment lower leg fasciotomy: anterior, lateral, superficial posterior, deep posterior compartments',
+                      'Severity mnemonic: paralysis > paraesthesia > pain — escalating urgency of ischaemic nerve involvement'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Острая ишемия конечности (ОИК) — внезапное уменьшение перфузии конечности, угрожающее её жизнеспособности, с развитием в течение 14 дней. Это сосудистая катастрофа. Этиология: тромбоз in situ (~60%), эмболия (~30%), травма, ятрогенное повреждение, расслоение. Без своевременной реваскуляризации риск ампутации и летального исхода высок.',
+                    type: 'text'
+                  },
+                  {
+                    title: '6 П — Клиническая картина',
+                    body: 'Боль (Pain — внезапная, интенсивная), Бледность (Pallor), Отсутствие пульса (Pulselessness), Парестезия (Paraesthesia — покалывание → онемение), Паралич (Paralysis — невозможность шевелить стопой), Пойкилотермия (Poikilothermia — холодная конечность).\n\nПарестезия и паралич свидетельствуют об ишемии нерва и мышц — конечность под угрозой или необратимо повреждена. Паралич — наиболее грозный признак, требующий экстренного вмешательства.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Классификация по Резерфорду',
+                    body: [
+                      'Класс I — Жизнеспособная: нет сенсорных и двигательных нарушений; допплеровские сигналы слышимы (артериальные и венозные); непосредственной угрозы нет',
+                      'Класс IIa — Умеренная угроза: минимальная потеря чувствительности (только пальцы); двигательных нарушений нет; артериальный сигнал по допплеру часто отсутствует',
+                      'Класс IIb — Непосредственная угроза: нарушение чувствительности выше пальцев + лёгкий двигательный дефицит; требуется срочная реваскуляризация',
+                      'Класс III — Необратимая: глубокий паралич и анестезия; обширная потеря тканей неизбежна; первичная ампутация'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Эмболия vs тромбоз',
+                    body: 'Эмболия: внезапное начало; контралатеральный пульс сохранён (нет фонового облитерирующего атеросклероза, ОА); сердечный источник — чаще всего фибрилляция предсердий (ФП) или перенесённый инфаркт миокарда (ИМ); лечение = эмболэктомия баллонным катетером Фогарти.\n\nТромбоз: постепенное или ступенчатое начало; контралатеральный пульс ослаблен или отсутствует (фоновый ОА); разрыв атеросклеротической бляшки или гиперкоагуляция; лечение = катетер-направленный тромболизис или шунтирование. Обязательно снять ЭКГ в 12 отведениях для исключения ФП.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Лечение',
+                    body: [
+                      'Немедленно (все классы): гепарин в/в 5000 МЕ болюсно → инфузия; обезболивание; в/в доступ; ЭКГ в 12 отведениях; экстренная КТ-ангиография (КТА)',
+                      'Резерфорд IIa/IIb: катетер-направленный тромболизис (алтеплаза или урокиназа через внутриартериальный катетер) ИЛИ хирургическая эмболэктомия/шунтирование',
+                      'Резерфорд IIb срочно или неэффективный тромболизис: хирургическая реваскуляризация — эмболэктомия по Фогарти или шунтирование',
+                      'Эмболэктомия по Фогарти: баллонный катетер через разрез бедренной артерии под местной анестезией',
+                      'Класс III: первичная ампутация — реваскуляризация несёт риск фатального реперфузионного синдрома'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Реперфузионное повреждение и фасциотомия',
+                    body: 'Реперфузия после длительной ишемии высвобождает миоглобин и калий в кровоток, вызывая гиперкалиемию, миоглобинурию, острое повреждение почек (ОПП) и сердечные аритмии. После реваскуляризации контролировать К⁺, креатинин и диурез.\n\nФасциотомия показана при развитии компартмент-синдрома: давление в футляре >30 мм рт. ст. (или в пределах 30 мм рт. ст. от диастолического АД), либо после реваскуляризации при ишемии более 6 часов. Выполняется 4-компартментная фасциотомия голени (переднее, латеральное, поверхностное заднее, глубокое заднее ложа).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Хирургические корреляты',
+                    body: [
+                      'Гепарин вводить сразу после клинического диагноза — не ждать визуализации при угрозе конечности',
+                      'Размеры катетера Фогарти: 4F для бедренной артерии; 3F для подколенной и большеберцовых артерий',
+                      'Противопоказания к тромболизису: перенесённый инсульт (<3 месяцев), активное кровотечение, недавняя большая операция (<10 дней)',
+                      'После эмболической ОИК: пожизненная антикоагуляция (варфарин или пероральные антикоагулянты, ПОАК) и лечение источника (например, контроль ФП)',
+                      '4-компартментная фасциотомия голени: переднее, латеральное, поверхностное заднее, глубокое заднее ложа',
+                      'Мнемоника тяжести: паралич > парестезия > боль — нарастающая срочность ишемического поражения нерва'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'acute-limb-ischaemia-001',
+                question_en: 'ALI defined by onset within?',
+                question_ru: 'ОИК определяется появлением в течение?',
+                answer_en: '14 days',
+                answer_ru: '14 дней'
+              },
+              {
+                id: 'acute-limb-ischaemia-002',
+                question_en: 'Most common cause of ALI?',
+                question_ru: 'Наиболее частая причина ОИК?',
+                answer_en: 'Thrombosis in situ',
+                answer_ru: 'Тромбоз in situ'
+              },
+              {
+                id: 'acute-limb-ischaemia-003',
+                question_en: 'Most common embolic source in ALI?',
+                question_ru: 'Наиболее частый источник эмболии при ОИК?',
+                answer_en: 'Atrial fibrillation',
+                answer_ru: 'Фибрилляция предсердий'
+              },
+              {
+                id: 'acute-limb-ischaemia-004',
+                question_en: 'Most sinister Ps in ALI?',
+                question_ru: 'Наиболее грозные симптомы «П» при ОИК?',
+                answer_en: 'Paralysis, paraesthesia',
+                answer_ru: 'Паралич, парестезия'
+              },
+              {
+                id: 'acute-limb-ischaemia-005',
+                question_en: 'Rutherford class III treatment?',
+                question_ru: 'Лечение при Резерфорде III?',
+                answer_en: 'Primary amputation',
+                answer_ru: 'Первичная ампутация'
+              },
+              {
+                id: 'acute-limb-ischaemia-006',
+                question_en: 'Rutherford IIb treatment?',
+                question_ru: 'Лечение при Резерфорде IIb?',
+                answer_en: 'Urgent revascularisation',
+                answer_ru: 'Срочная реваскуляризация'
+              },
+              {
+                id: 'acute-limb-ischaemia-007',
+                question_en: 'First drug given in ALI?',
+                question_ru: 'Первый препарат при ОИК?',
+                answer_en: 'IV heparin',
+                answer_ru: 'Гепарин в/в'
+              },
+              {
+                id: 'acute-limb-ischaemia-008',
+                question_en: 'Heparin bolus dose in ALI?',
+                question_ru: 'Болюсная доза гепарина при ОИК?',
+                answer_en: '5,000 IU',
+                answer_ru: '5000 МЕ'
+              },
+              {
+                id: 'acute-limb-ischaemia-009',
+                question_en: 'Contralateral pulses in embolism?',
+                question_ru: 'Контралатеральный пульс при эмболии?',
+                answer_en: 'Present',
+                answer_ru: 'Сохранён'
+              },
+              {
+                id: 'acute-limb-ischaemia-010',
+                question_en: 'Device used for embolectomy?',
+                question_ru: 'Устройство для эмболэктомии?',
+                answer_en: 'Fogarty catheter',
+                answer_ru: 'Катетер Фогарти'
+              },
+              {
+                id: 'acute-limb-ischaemia-011',
+                question_en: 'CDT thrombolytic agent?',
+                question_ru: 'Тромболитик при катетер-направленном тромболизисе?',
+                answer_en: 'Alteplase',
+                answer_ru: 'Алтеплаза'
+              },
+              {
+                id: 'acute-limb-ischaemia-012',
+                question_en: 'Dangerous electrolyte in reperfusion?',
+                question_ru: 'Опасный электролит при реперфузии?',
+                answer_en: 'Hyperkalaemia',
+                answer_ru: 'Гиперкалиемия'
+              },
+              {
+                id: 'acute-limb-ischaemia-013',
+                question_en: 'Myoglobinuria organ target?',
+                question_ru: 'Орган-мишень миоглобинурии?',
+                answer_en: 'Acute kidney injury',
+                answer_ru: 'Острое повреждение почек'
+              },
+              {
+                id: 'acute-limb-ischaemia-014',
+                question_en: 'Fasciotomy threshold pressure?',
+                question_ru: 'Пороговое давление для фасциотомии?',
+                answer_en: '>30 mmHg',
+                answer_ru: '>30 мм рт. ст.'
+              },
+              {
+                id: 'acute-limb-ischaemia-015',
+                question_en: 'Lower leg fasciotomy compartments?',
+                question_ru: 'Компартментов при фасциотомии голени?',
+                answer_en: '4',
+                answer_ru: '4'
+              },
+              {
+                id: 'acute-limb-ischaemia-016',
+                question_en: 'CDT stroke contraindication window?',
+                question_ru: 'Инсульт — противопоказание к тромболизису при сроке?',
+                answer_en: '<3 months',
+                answer_ru: '<3 месяцев'
+              },
+              {
+                id: 'acute-limb-ischaemia-017',
+                question_en: 'Rutherford I: Doppler signals?',
+                question_ru: 'Резерфорд I: допплеровские сигналы?',
+                answer_en: 'Audible',
+                answer_ru: 'Слышимые'
+              },
+              {
+                id: 'acute-limb-ischaemia-018',
+                question_en: 'ALI imaging modality of choice?',
+                question_ru: 'Метод визуализации выбора при ОИК?',
+                answer_en: 'CT angiography',
+                answer_ru: 'КТ-ангиография'
+              },
+              {
+                id: 'acute-limb-ischaemia-019',
+                question_en: 'Long-term Rx after embolic ALI?',
+                question_ru: 'Длительное лечение после эмболической ОИК?',
+                answer_en: 'Anticoagulation',
+                answer_ru: 'Антикоагуляция'
+              },
+              {
+                id: 'acute-limb-ischaemia-020',
+                question_en: 'Fogarty embolectomy incision site?',
+                question_ru: 'Место разреза при эмболэктомии по Фогарти?',
+                answer_en: 'Common femoral artery',
+                answer_ru: 'Общая бедренная артерия'
+              }
+            ]
+          }
+
+        ]
       }
     ]
   }
