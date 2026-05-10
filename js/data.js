@@ -1628,6 +1628,275 @@ export const DATA = [
                 answer_ru: 'Общая бедренная артерия'
               }
             ]
+          },
+
+          // ── Topic: Intermittent Claudication ─────────────────────────────────
+          {
+            slug: 'intermittent-claudication',
+            title_en: 'Intermittent Claudication',
+            title_ru: 'Перемежающаяся хромота',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Intermittent claudication (IC) is reproducible ischaemic muscle pain brought on by exercise and relieved by rest, caused by inadequate perfusion of exercising muscle in the setting of peripheral arterial disease (PAD). It is the classic symptomatic presentation of stable PAD. Both the Fontaine and Rutherford classifications define IC within the wider spectrum of PAD severity.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology & Localisation',
+                    body: 'Atherosclerotic stenosis or occlusion reduces resting blood flow. Flow is adequate at rest but insufficient during exercise, causing lactate accumulation and ischaemic muscle cramp.\n\nSite of claudication predicts the level of disease: calf → SFA or popliteal artery; thigh → iliac or common femoral artery; buttock + erectile dysfunction → aorto-iliac occlusion (Leriche syndrome).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Clinical Assessment — ABPI',
+                    body: 'The ankle-brachial pressure index (ABPI) is the ratio of ankle to brachial systolic pressure: normal ≥0.9; IC: 0.5–0.9; critical limb ischaemia (CLI): <0.5; non-compressible (calcified) vessels: >1.3 → use toe-brachial index (TBI) instead.\n\nClaude distance: >200 m = Fontaine IIa (mild); ≤200 m = Fontaine IIb (disabling). History should also document rest pain (Fontaine III) and tissue loss (Fontaine IV).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Fontaine Classification',
+                    body: [
+                      'Stage I — Asymptomatic: PAD on investigation only',
+                      'Stage IIa — Mild claudication: walking distance >200 m',
+                      'Stage IIb — Disabling claudication: walking distance ≤200 m',
+                      'Stage III — Rest pain: ischaemic pain at rest, worse at night, relieved by dependency',
+                      'Stage IV — Tissue loss: ischaemic ulceration or gangrene'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Medical Management (Best Medical Therapy)',
+                    body: [
+                      'Smoking cessation — single most effective intervention; reduces progression and cardiovascular mortality',
+                      'Antiplatelet: aspirin 75–100 mg/day OR clopidogrel 75 mg/day (CAPRIE trial — clopidogrel marginally superior in PAD; AHA/ACC 2016)',
+                      'Statin: high-intensity — atorvastatin 40–80 mg/day regardless of baseline LDL; AHA/ACC 2013',
+                      'Supervised exercise training (SET): ≥30–45 min, 3×/week for ≥12 weeks; improves maximum walking distance by 100–150%; first-line non-invasive treatment (NICE TA223)',
+                      'Cilostazol 100 mg BD (phosphodiesterase-3 inhibitor) — improves walking distance; contraindicated in heart failure (NICE TA223)',
+                      'ACE inhibitor if hypertensive; tight glycaemic control (HbA1c <53 mmol/mol) in diabetes'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Indications for Intervention',
+                    body: 'Disabling claudication unresponsive to ≥3 months of best medical therapy plus SET. Imaging first: duplex ultrasound (first-line); CT angiography (CTA) for complex anatomy planning.\n\nTASC II A/B lesions (short segment, single): endovascular — percutaneous transluminal angioplasty (PTA) ± stent. TASC II C/D lesions (long, complex, multi-level): surgical bypass preferred. Aorto-iliac TASC D: aortobifemoral bypass (gold standard).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Surgical Correlates',
+                    body: [
+                      'IC carries low annual limb loss risk (~1–2%/year) but ~30% 5-year mortality — generalised atherosclerosis driving MI and stroke',
+                      'Smoking cessation outperforms any drug or operation — cessation doubles walking distance independent of intervention',
+                      'ABPI >1.3: non-compressible calcified vessels — measure TBI (normal >0.7) instead',
+                      'Duplex USS is the first imaging step before any intervention; CTA reserved for surgical planning',
+                      'TASC II A/B → endovascular; TASC II C/D → surgical bypass',
+                      'After aortobifemoral bypass: lifelong antiplatelet therapy; monitor graft with annual duplex surveillance'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Перемежающаяся хромота (ПХ) — воспроизводимая ишемическая боль в мышцах, возникающая при физической нагрузке и проходящая в покое вследствие недостаточного кровоснабжения работающих мышц при облитерирующем атеросклерозе артерий нижних конечностей (ОА АНК). Это классическое симптоматическое проявление стабильного ОА АНК. Классификации Фонтена и Резерфорда определяют место ПХ в спектре тяжести заболевания.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология и локализация',
+                    body: 'Атеросклеротический стеноз или окклюзия снижают кровоток. Перфузия достаточна в покое, но недостаточна при нагрузке — это приводит к накоплению лактата и ишемическому мышечному спазму.\n\nЛокализация ПХ предсказывает уровень поражения: икра → поверхностная бедренная артерия (ПБА) или подколенная артерия; бедро → подвздошная или общая бедренная артерия; ягодица + эректильная дисфункция → аорто-подвздошная окклюзия (синдром Лериша).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Клиническая оценка — ЛПИ',
+                    body: 'Лодыжечно-плечевой индекс (ЛПИ) — отношение систолического давления на лодыжке к плечевому: норма ≥0,9; ПХ: 0,5–0,9; критическая ишемия конечности (КИК): <0,5; несжимаемые (кальцинированные) сосуды: >1,3 → использовать пальцево-плечевой индекс (ППИ, норма >0,7).\n\nДистанция ходьбы: >200 м = Фонтен IIa (умеренная); ≤200 м = Фонтен IIb (инвалидизирующая). При сборе анамнеза уточнить наличие боли покоя (Фонтен III) и потери тканей (Фонтен IV).',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Классификация по Фонтену',
+                    body: [
+                      'Стадия I — Бессимптомная: ОА АНК только по данным обследования',
+                      'Стадия IIa — Умеренная ПХ: дистанция ходьбы >200 м',
+                      'Стадия IIb — Инвалидизирующая ПХ: дистанция ходьбы ≤200 м',
+                      'Стадия III — Боль покоя: ишемическая боль в покое, усиливается ночью, уменьшается при опускании конечности',
+                      'Стадия IV — Потеря тканей: ишемическое изъязвление или гангрена'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Медикаментозное лечение',
+                    body: [
+                      'Отказ от курения — наиболее эффективное вмешательство; снижает прогрессирование и сердечно-сосудистую смертность',
+                      'Антиагреганты: аспирин 75–100 мг/сут ИЛИ клопидогрел 75 мг/сут (исследование CAPRIE — клопидогрел незначительно превосходит аспирин при ОА АНК; AHA/ACC 2016)',
+                      'Статины высокой интенсивности: аторвастатин 40–80 мг/сут независимо от исходного уровня ЛПНП; AHA/ACC 2013',
+                      'Супервизированные физические тренировки (СФТ): ≥30–45 мин 3 раза в неделю в течение ≥12 недель; увеличивают максимальную дистанцию ходьбы на 100–150%; метод первой линии (NICE TA223)',
+                      'Цилостазол 100 мг 2 раза в сут (ингибитор фосфодиэстеразы-3, ФДЭ-3) — улучшает дистанцию ходьбы; противопоказан при сердечной недостаточности (NICE TA223)',
+                      'Ингибитор АПФ при артериальной гипертензии; строгий гликемический контроль (HbA1c <53 ммоль/моль) при сахарном диабете'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Показания к вмешательству',
+                    body: 'Инвалидизирующая ПХ, не поддающаяся ≥3 месяцам оптимального консервативного лечения и СФТ. Визуализация: дуплексное ультразвуковое сканирование (ДУЗС) — первый этап; КТ-ангиография (КТА) — при сложной анатомии.\n\nПоражения TASC II A/B (короткие, одиночные): эндоваскулярное лечение — чрескожная транслюминальная ангиопластика (ЧТА) ± стентирование. Поражения TASC II C/D (протяжённые, многоуровневые): предпочтительно хирургическое шунтирование. Аорто-подвздошное поражение класса D: аорто-бифеморальное шунтирование (АБФШ) — золотой стандарт.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Хирургические корреляты',
+                    body: [
+                      'ПХ: низкий риск потери конечности (~1–2%/год), но ~30% 5-летняя летальность — генерализованный атеросклероз с инфарктом миокарда и инсультом',
+                      'Отказ от курения превосходит любой препарат или операцию — удвоение дистанции ходьбы независимо от вмешательства',
+                      'ЛПИ >1,3: несжимаемые кальцинированные сосуды — использовать ППИ (норма >0,7)',
+                      'ДУЗС — первый метод визуализации перед вмешательством; КТА — для планирования операции',
+                      'TASC II A/B → эндоваскулярное лечение; TASC II C/D → хирургическое шунтирование',
+                      'После АБФШ: пожизненная антиагрегантная терапия; ежегодный дуплексный мониторинг шунта'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'intermittent-claudication-001',
+                question_en: 'IC: pain relieved by?',
+                question_ru: 'ПХ: боль проходит при?',
+                answer_en: 'Rest',
+                answer_ru: 'Покое'
+              },
+              {
+                id: 'intermittent-claudication-002',
+                question_en: 'Calf claudication: vessel level?',
+                question_ru: 'Икроножная ПХ: уровень поражения?',
+                answer_en: 'SFA or popliteal',
+                answer_ru: 'ПБА или подколенная'
+              },
+              {
+                id: 'intermittent-claudication-003',
+                question_en: 'Buttock claudication + impotence: syndrome?',
+                question_ru: 'ПХ ягодиц + импотенция: синдром?',
+                answer_en: 'Leriche syndrome',
+                answer_ru: 'Синдром Лериша'
+              },
+              {
+                id: 'intermittent-claudication-004',
+                question_en: 'ABPI range for claudication?',
+                question_ru: 'Диапазон ЛПИ при ПХ?',
+                answer_en: '0.5–0.9',
+                answer_ru: '0,5–0,9'
+              },
+              {
+                id: 'intermittent-claudication-005',
+                question_en: 'ABPI >1.3 indicates?',
+                question_ru: 'ЛПИ >1,3 указывает на?',
+                answer_en: 'Non-compressible vessels',
+                answer_ru: 'Несжимаемые сосуды'
+              },
+              {
+                id: 'intermittent-claudication-006',
+                question_en: 'Fontaine IIb walking distance?',
+                question_ru: 'Дистанция ходьбы при Фонтене IIb?',
+                answer_en: '≤200 metres',
+                answer_ru: '≤200 метров'
+              },
+              {
+                id: 'intermittent-claudication-007',
+                question_en: 'First-line non-invasive treatment for IC?',
+                question_ru: 'Метод первой линии при ПХ (неинвазивный)?',
+                answer_en: 'Supervised exercise training',
+                answer_ru: 'Супервизированные тренировки'
+              },
+              {
+                id: 'intermittent-claudication-008',
+                question_en: 'SET minimum duration?',
+                question_ru: 'Минимальная продолжительность СФТ?',
+                answer_en: '12 weeks',
+                answer_ru: '12 недель'
+              },
+              {
+                id: 'intermittent-claudication-009',
+                question_en: 'Preferred antiplatelet in PAD (CAPRIE)?',
+                question_ru: 'Предпочтительный антиагрегант при ОА АНК (CAPRIE)?',
+                answer_en: 'Clopidogrel',
+                answer_ru: 'Клопидогрел'
+              },
+              {
+                id: 'intermittent-claudication-010',
+                question_en: 'Clopidogrel dose in PAD?',
+                question_ru: 'Доза клопидогрела при ОА АНК?',
+                answer_en: '75 mg/day',
+                answer_ru: '75 мг/сут'
+              },
+              {
+                id: 'intermittent-claudication-011',
+                question_en: 'PAD statin of choice and dose?',
+                question_ru: 'Статин выбора и доза при ОА АНК?',
+                answer_en: 'Atorvastatin 40–80 mg',
+                answer_ru: 'Аторвастатин 40–80 мг'
+              },
+              {
+                id: 'intermittent-claudication-012',
+                question_en: 'Cilostazol mechanism?',
+                question_ru: 'Механизм действия цилостазола?',
+                answer_en: 'PDE-3 inhibitor',
+                answer_ru: 'Ингибитор ФДЭ-3'
+              },
+              {
+                id: 'intermittent-claudication-013',
+                question_en: 'Cilostazol contraindication?',
+                question_ru: 'Противопоказание к цилостазолу?',
+                answer_en: 'Heart failure',
+                answer_ru: 'Сердечная недостаточность'
+              },
+              {
+                id: 'intermittent-claudication-014',
+                question_en: 'TASC A/B: preferred treatment?',
+                question_ru: 'TASC A/B: предпочтительное лечение?',
+                answer_en: 'Endovascular (PTA/stent)',
+                answer_ru: 'Эндоваскулярное (ЧТА/стент)'
+              },
+              {
+                id: 'intermittent-claudication-015',
+                question_en: 'Aorto-iliac TASC D gold standard?',
+                question_ru: 'Золотой стандарт при TASC D аорто-подвздошном?',
+                answer_en: 'Aortobifemoral bypass',
+                answer_ru: 'Аорто-бифеморальное шунтирование'
+              },
+              {
+                id: 'intermittent-claudication-016',
+                question_en: 'IC 5-year mortality?',
+                question_ru: '5-летняя летальность при ПХ?',
+                answer_en: '~30%',
+                answer_ru: '~30%'
+              },
+              {
+                id: 'intermittent-claudication-017',
+                question_en: 'IC annual limb loss risk?',
+                question_ru: 'Годовой риск потери конечности при ПХ?',
+                answer_en: '1–2% per year',
+                answer_ru: '1–2% в год'
+              },
+              {
+                id: 'intermittent-claudication-018',
+                question_en: 'Single most effective IC treatment?',
+                question_ru: 'Наиболее эффективное лечение ПХ?',
+                answer_en: 'Smoking cessation',
+                answer_ru: 'Отказ от курения'
+              },
+              {
+                id: 'intermittent-claudication-019',
+                question_en: 'Fontaine III symptom?',
+                question_ru: 'Симптом Фонтена III?',
+                answer_en: 'Rest pain',
+                answer_ru: 'Боль покоя'
+              },
+              {
+                id: 'intermittent-claudication-020',
+                question_en: 'First imaging before IC intervention?',
+                question_ru: 'Первичная визуализация перед вмешательством при ПХ?',
+                answer_en: 'Duplex ultrasound',
+                answer_ru: 'Дуплексное УЗИ'
+              }
+            ]
           }
 
         ]
