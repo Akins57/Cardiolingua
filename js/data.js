@@ -1897,6 +1897,287 @@ export const DATA = [
                 answer_ru: 'Дуплексное УЗИ'
               }
             ]
+          },
+
+          // ── Topic: Chronic Limb-Threatening Ischaemia ────────────────────────
+          {
+            slug: 'chronic-limb-threatening-ischaemia',
+            title_en: 'Chronic Limb-Threatening Ischaemia',
+            title_ru: 'Хроническая ишемия, угрожающая конечности',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Chronic limb-threatening ischaemia (CLTI) is the end-stage of peripheral arterial disease (PAD), encompassing ischaemic rest pain persisting >2 weeks and ischaemic tissue loss (ulceration or gangrene). The term replaced "critical limb ischaemia" (CLI) in the 2019 Global Vascular Guidelines (GVG). Without revascularisation: 1-year major amputation rate ~30%; 1-year mortality ~20%. CLTI demands urgent multidisciplinary assessment.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Fontaine-Pokrovsky Classification',
+                    body: 'In Russian and post-Soviet medical practice the Fontaine classification is used as the Fontaine-Pokrovsky (Фонтена–Покровского) classification, with identical stages but Stage I explicitly defined by a >1000 m claudication threshold:',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Fontaine-Pokrovsky Stages',
+                    body: [
+                      'Stage I (Pokrovsky I) — Asymptomatic: no symptoms at rest or walking; claudication threshold >1000 m',
+                      'Stage IIa (Pokrovsky IIa) — Mild claudication: walking distance >200 m before pain',
+                      'Stage IIb (Pokrovsky IIb) — Disabling claudication: walking distance ≤200 m',
+                      'Stage III (Pokrovsky III) — Rest pain: ischaemic night/rest pain requiring analgesia; limb dependency for relief',
+                      'Stage IV (Pokrovsky IV) — Trophic disorders: ischaemic ulceration, necrosis, or gangrene',
+                      'CLTI = Stages III + IV'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Haemodynamic Criteria for CLTI (GVG 2019)',
+                    body: [
+                      'Rest pain: ABPI ≤0.4 OR ankle pressure <50 mmHg OR toe pressure <30 mmHg OR TcPO₂ <30 mmHg',
+                      'Tissue loss: ABPI ≤0.6 OR ankle pressure <70 mmHg OR toe pressure <50 mmHg OR TcPO₂ <30 mmHg',
+                      'ABPI >1.3 (non-compressible): use toe pressure or TcPO₂ instead'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'WIfI Classification (SVS 2014 / GVG 2019)',
+                    body: 'WIfI scores Wound (W 0–3), Ischaemia (I 0–3), and foot Infection (fI 0–3). Each scored 0 (none/mild) to 3 (severe). The composite WIfI score predicts 1-year amputation risk and magnitude of benefit from revascularisation — high scores identify patients who gain most from urgent intervention.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Management',
+                    body: [
+                      'Best medical therapy (BMT) in all patients: antiplatelet, high-intensity statin, ACE inhibitor, wound care, infection control',
+                      'Revascularisation: endovascular first (EVT) — percutaneous transluminal angioplasty (PTA) ± drug-coated balloon (DCB) ± stent for suitable lesions',
+                      'Infrapopliteal (below-knee) vessels: balloon angioplasty is first-line endovascular approach',
+                      'Surgical bypass: autologous great saphenous vein (GSV) is the conduit of choice — superior long-term patency over prosthetic (PTFE)',
+                      'Femoro-distal / femoro-pedal bypass: GSV is essential; PTFE is not suitable for tibial/pedal targets',
+                      'No-option CLTI (not fit for/failed revascularisation): iloprost IV 0.5–2 ng/kg/min × 6 h/day for 14–28 days',
+                      'Major amputation (BKA or AKA) when irreversible tissue loss or sepsis; prefer below-knee amputation (BKA) for superior rehabilitation'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surgical Correlates',
+                    body: [
+                      'BKA healing requires popliteal artery pressure >50 mmHg and stump length ≥8 cm; if popliteal inflow inadequate, AKA is safer',
+                      'GSV bypass: always map vein pre-operatively with duplex — minimum diameter 3 mm; do not use varicosed segments',
+                      'Iloprost: prostacyclin analogue — vasodilates, inhibits platelet aggregation; contraindicated in severe cardiac failure and recent MI',
+                      'Post-revascularisation duplex graft surveillance: 6 weeks, 3 months, 6 months, then annually — detects restenosis before occlusion',
+                      'WIfI guides triage: low wound + low ischaemia + no infection may heal with wound care alone; high all three = urgent revascularisation',
+                      'CLTI in diabetics: neuropathy masks pain — tissue loss may be the first presentation; always screen foot pulses in diabetic patients'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Хроническая ишемия, угрожающая конечности (ХИУК), — конечная стадия облитерирующего атеросклероза артерий нижних конечностей (ОА АНК), включающая ишемическую боль покоя длительностью >2 недель и ишемическую потерю тканей (изъязвление или гангрену). Термин пришёл на смену «критической ишемии конечности» (КИК) в Глобальных сосудистых рекомендациях (ГСР) 2019 года. Без реваскуляризации: годовой риск ампутации ~30%; годовая летальность ~20%. ХИУК требует срочной мультидисциплинарной оценки.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Классификация Фонтена–Покровского',
+                    body: 'В российской и постсоветской медицинской практике классификация Фонтена применяется как классификация Фонтена–Покровского с идентичными стадиями, однако стадия I чётко определена порогом дистанции ходьбы >1000 м:',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Стадии по Фонтену–Покровскому',
+                    body: [
+                      'Стадия I (Покровский I) — Бессимптомная: нет симптомов в покое и при ходьбе; порог перемежающейся хромоты (ПХ) >1000 м',
+                      'Стадия IIa (Покровский IIa) — Умеренная ПХ: дистанция ходьбы до боли >200 м',
+                      'Стадия IIb (Покровский IIb) — Инвалидизирующая ПХ: дистанция ходьбы ≤200 м',
+                      'Стадия III (Покровский III) — Боль покоя: ишемическая ночная/болевая ишемия покоя, требующая анальгетиков; облегчение при опускании конечности',
+                      'Стадия IV (Покровский IV) — Трофические расстройства: ишемическое изъязвление, некроз или гангрена',
+                      'ХИУК = стадии III + IV'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Гемодинамические критерии ХИУК (ГСР 2019)',
+                    body: [
+                      'Боль покоя: лодыжечно-плечевой индекс (ЛПИ) ≤0,4 ИЛИ давление на лодыжке <50 мм рт. ст. ИЛИ пальцевое давление <30 мм рт. ст. ИЛИ транскутанное напряжение кислорода (ТсРО₂) <30 мм рт. ст.',
+                      'Потеря тканей: ЛПИ ≤0,6 ИЛИ давление на лодыжке <70 мм рт. ст. ИЛИ пальцевое давление <50 мм рт. ст. ИЛИ ТсРО₂ <30 мм рт. ст.',
+                      'ЛПИ >1,3 (несжимаемые сосуды): использовать пальцевое давление или ТсРО₂'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Классификация WIfI (SVS 2014 / ГСР 2019)',
+                    body: 'WIfI оценивает Рану (W 0–3), Ишемию (I 0–3) и инфекцию стопы (fI 0–3). Каждый компонент оценивается от 0 (нет/минимально) до 3 (тяжело). Суммарный балл WIfI прогнозирует годовой риск ампутации и степень пользы от реваскуляризации — высокие баллы выявляют пациентов, получающих наибольшую выгоду от срочного вмешательства.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Лечение',
+                    body: [
+                      'Оптимальная консервативная терапия (ОКТ) у всех пациентов: антиагреганты, статины высокой интенсивности, ингибиторы АПФ, уход за раной, контроль инфекции',
+                      'Реваскуляризация: приоритет эндоваскулярному лечению — чрескожная транслюминальная ангиопластика (ЧТА) ± баллон с лекарственным покрытием (БЛП) ± стент при подходящих поражениях',
+                      'Инфрапоплитеальные артерии (ниже колена): баллонная ангиопластика — метод первой линии',
+                      'Хирургическое шунтирование: аутологичная большая подкожная вена (БПВ) — кондуит выбора с превосходящей долгосрочной проходимостью по сравнению с протезом (политетрафторэтилен, ПТФЭ)',
+                      'Бедренно-дистальное / бедренно-педальное шунтирование: БПВ обязательна; ПТФЭ непригоден для большеберцовых/педальных целевых артерий',
+                      'ХИУК без вариантов реваскуляризации: илопрост в/в 0,5–2 нг/кг/мин × 6 ч/сут в течение 14–28 дней',
+                      'Ампутация (ниже колена, АНК, или выше колена, АВК) при необратимой потере тканей или сепсисе; предпочтительна АНК для лучшей реабилитации'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические корреляты',
+                    body: [
+                      'АНК: для заживления раны необходимо давление в подколенной артерии >50 мм рт. ст. и длина культи ≥8 см; при недостаточном притоке — АВК',
+                      'Шунтирование из БПВ: предоперационное дуплексное картирование вены обязательно — минимальный диаметр 3 мм; варикозные сегменты не использовать',
+                      'Илопрост — аналог простациклина: вазодилататор, ингибитор агрегации тромбоцитов; противопоказан при тяжёлой сердечной недостаточности и недавнем ИМ',
+                      'Дуплексный мониторинг шунта после реваскуляризации: через 6 недель, 3 месяца, 6 месяцев, затем ежегодно — выявляет рестеноз до окклюзии',
+                      'WIfI определяет тактику: низкие W + I + fI — возможно заживление без вмешательства; высокие по всем трём — срочная реваскуляризация',
+                      'ХИУК у диабетиков: нейропатия маскирует боль — потеря тканей может быть первым проявлением; всегда исследовать пульс на стопе у диабетических больных'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'clti-001',
+                question_en: 'CLTI former name?',
+                question_ru: 'Прежнее название ХИУК?',
+                answer_en: 'Critical limb ischaemia',
+                answer_ru: 'Критическая ишемия конечности'
+              },
+              {
+                id: 'clti-002',
+                question_en: 'CLTI = Fontaine-Pokrovsky stages?',
+                question_ru: 'ХИУК = стадии Фонтена–Покровского?',
+                answer_en: 'III and IV',
+                answer_ru: 'III и IV'
+              },
+              {
+                id: 'clti-003',
+                question_en: 'Fontaine-Pokrovsky I: claudication threshold?',
+                question_ru: 'Фонтен–Покровский I: порог дистанции ходьбы?',
+                answer_en: '>1000 metres',
+                answer_ru: '>1000 метров'
+              },
+              {
+                id: 'clti-004',
+                question_en: 'Fontaine-Pokrovsky IV: findings?',
+                question_ru: 'Фонтен–Покровский IV: проявления?',
+                answer_en: 'Ulceration or gangrene',
+                answer_ru: 'Изъязвление или гангрена'
+              },
+              {
+                id: 'clti-005',
+                question_en: 'ABPI threshold for CLTI rest pain?',
+                question_ru: 'ЛПИ при ХИУК с болью покоя?',
+                answer_en: '≤0.4',
+                answer_ru: '≤0,4'
+              },
+              {
+                id: 'clti-006',
+                question_en: 'Ankle pressure for CLTI rest pain?',
+                question_ru: 'Давление на лодыжке при ХИУК (боль покоя)?',
+                answer_en: '<50 mmHg',
+                answer_ru: '<50 мм рт. ст.'
+              },
+              {
+                id: 'clti-007',
+                question_en: 'Toe pressure threshold for tissue loss?',
+                question_ru: 'Пальцевое давление при потере тканей?',
+                answer_en: '<50 mmHg',
+                answer_ru: '<50 мм рт. ст.'
+              },
+              {
+                id: 'clti-008',
+                question_en: 'WIfI: W stands for?',
+                question_ru: 'WIfI: W расшифровывается как?',
+                answer_en: 'Wound',
+                answer_ru: 'Рана'
+              },
+              {
+                id: 'clti-009',
+                question_en: 'WIfI: fI stands for?',
+                question_ru: 'WIfI: fI расшифровывается как?',
+                answer_en: 'Foot infection',
+                answer_ru: 'Инфекция стопы'
+              },
+              {
+                id: 'clti-010',
+                question_en: 'WIfI predicts?',
+                question_ru: 'WIfI прогнозирует?',
+                answer_en: 'Amputation risk',
+                answer_ru: 'Риск ампутации'
+              },
+              {
+                id: 'clti-011',
+                question_en: 'Bypass conduit of choice in CLTI?',
+                question_ru: 'Кондуит выбора при шунтировании при ХИУК?',
+                answer_en: 'Great saphenous vein',
+                answer_ru: 'Большая подкожная вена'
+              },
+              {
+                id: 'clti-012',
+                question_en: 'No-option CLTI: drug of choice?',
+                question_ru: 'ХИУК без вариантов реваскуляризации: препарат?',
+                answer_en: 'Iloprost',
+                answer_ru: 'Илопрост'
+              },
+              {
+                id: 'clti-013',
+                question_en: 'Iloprost drug class?',
+                question_ru: 'Класс препарата илопрост?',
+                answer_en: 'Prostacyclin analogue',
+                answer_ru: 'Аналог простациклина'
+              },
+              {
+                id: 'clti-014',
+                question_en: 'Iloprost course duration?',
+                question_ru: 'Продолжительность курса илопроста?',
+                answer_en: '14–28 days',
+                answer_ru: '14–28 дней'
+              },
+              {
+                id: 'clti-015',
+                question_en: 'Preferred amputation level in CLTI?',
+                question_ru: 'Предпочтительный уровень ампутации при ХИУК?',
+                answer_en: 'Below-knee (BKA)',
+                answer_ru: 'Ниже колена (АНК)'
+              },
+              {
+                id: 'clti-016',
+                question_en: 'BKA: popliteal pressure required?',
+                question_ru: 'АНК: необходимое давление в подколенной?',
+                answer_en: '>50 mmHg',
+                answer_ru: '>50 мм рт. ст.'
+              },
+              {
+                id: 'clti-017',
+                question_en: 'CLTI 1-year amputation rate without intervention?',
+                question_ru: 'Годовой риск ампутации ХИУК без лечения?',
+                answer_en: '~30%',
+                answer_ru: '~30%'
+              },
+              {
+                id: 'clti-018',
+                question_en: 'CLTI 1-year mortality?',
+                question_ru: 'Годовая летальность ХИУК?',
+                answer_en: '~20%',
+                answer_ru: '~20%'
+              },
+              {
+                id: 'clti-019',
+                question_en: 'Infrapopliteal endovascular first approach?',
+                question_ru: 'Первичный эндоваскулярный метод для инфрапоплитеальных артерий?',
+                answer_en: 'Balloon angioplasty',
+                answer_ru: 'Баллонная ангиопластика'
+              },
+              {
+                id: 'clti-020',
+                question_en: 'First post-bypass duplex surveillance?',
+                question_ru: 'Первый дуплексный контроль после шунтирования?',
+                answer_en: '6 weeks',
+                answer_ru: '6 недель'
+              }
+            ]
           }
 
         ]
