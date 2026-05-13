@@ -136,14 +136,23 @@ function switchTab(lang) {
 // ── Translation tooltip (from EN note) ────────────────────────────────────────
 
 function initTranslationTooltip() {
-  document.addEventListener('mouseup',  handleSelection)
-  document.addEventListener('touchend', handleSelection)
+  // selectionchange fires after selection is committed on both desktop and mobile.
+  // touchend fires too early on iOS — selection isn't ready yet.
+  let debounceTimer = null
+  document.addEventListener('selectionchange', () => {
+    clearTimeout(debounceTimer)
+    debounceTimer = setTimeout(handleSelection, 200)
+  })
 
-  // Dismiss on click outside
+  // Dismiss on click or tap outside the tooltip
   document.addEventListener('mousedown', e => {
     const tip = document.getElementById('translate-tip')
     if (tip && !tip.contains(e.target)) hideTooltip()
   })
+  document.addEventListener('touchstart', e => {
+    const tip = document.getElementById('translate-tip')
+    if (tip && !tip.contains(e.target)) hideTooltip()
+  }, { passive: true })
 }
 
 function handleSelection() {
@@ -242,7 +251,8 @@ function showTooltip(rect, text, sectionTitle) {
   close.addEventListener('click', hideTooltip)
   tip.appendChild(close)
 
-  tip.addEventListener('mousedown', e => e.stopPropagation())
+  tip.addEventListener('mousedown',  e => e.stopPropagation())
+  tip.addEventListener('touchstart', e => e.stopPropagation(), { passive: true })
   document.body.appendChild(tip)
 
   // Position relative to selection (fixed coords)
