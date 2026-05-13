@@ -1122,43 +1122,77 @@ export const DATA = [
                 sections: [
                   {
                     title: 'Overview',
-                    body: 'The lower limb receives arterial supply from the distal aorta via the iliac and femoral systems. Detailed knowledge of this anatomy is essential for peripheral arterial disease (PAD) intervention, infrainguinal bypass surgery, and limb salvage procedures.',
+                    body: 'The lower limb receives arterial supply from the distal aorta via the iliac and femoral systems. Venous drainage is via paired deep veins accompanying the arteries and two major superficial trunks — the great saphenous vein (GSV) and small saphenous vein (SSV) — linked to the deep system through named perforating veins. This anatomy underpins infrainguinal bypass, varicose vein and endovenous ablation surgery, fasciotomy, and limb salvage procedures.',
                     type: 'text'
                   },
                   {
-                    title: 'Aorto-Iliac Segment',
-                    body: 'The aorta bifurcates at L4 into the right and left common iliac arteries (CIA). Each CIA divides at the sacroiliac joint into the external iliac artery (EIA) and internal iliac artery (IIA). The EIA becomes the common femoral artery (CFA) as it passes beneath the inguinal ligament at the midpoint between the anterior superior iliac spine (ASIS) and pubic symphysis.',
+                    title: 'Aorto-Iliac & Femoral Segments',
+                    body: 'The aorta bifurcates at L4 into the right and left common iliac arteries (CIA). Each CIA divides at the sacroiliac joint into the external iliac artery (EIA) and internal iliac artery (IIA). The EIA becomes the common femoral artery (CFA) at the mid-inguinal point — midway between the anterior superior iliac spine (ASIS) and the pubic symphysis (not the midpoint of the inguinal ligament itself). The CFA bifurcates 3–4 cm below the inguinal ligament.',
                     type: 'text'
                   },
                   {
                     title: 'Femoral Triangle',
-                    body: 'Boundaries: superior — inguinal ligament; lateral — sartorius; medial — adductor longus. Floor: iliopsoas and pectineus. Contents lateral to medial: femoral nerve (outside the femoral sheath), femoral artery, femoral vein, femoral canal (containing Cloquet\'s lymph node).\n\nThe CFA bifurcates approximately 4 cm below the inguinal ligament into the superficial femoral artery (SFA) and profunda femoris artery (PFA).',
+                    body: 'Boundaries: superior — inguinal ligament; lateral — sartorius; medial — adductor longus. Floor: iliopsoas (lateral), pectineus (medial). Roof: cribriform fascia / fascia lata. Contents (lateral → medial): femoral nerve (outside the femoral sheath), femoral artery, femoral vein, femoral canal. The femoral sheath encloses three compartments; the medial (femoral canal) contains Cloquet\'s node — the sentinel lymph node for the lower limb and genitalia — and is the path for femoral hernias.\n\nThe CFA bifurcates at 3–4 cm into the superficial femoral artery (SFA) and profunda femoris artery (PFA).',
                     type: 'text'
                   },
                   {
                     title: 'Profunda Femoris Artery',
-                    body: 'Principal blood supply to the thigh muscles; first major branch of the CFA. Branches: lateral circumflex femoral artery (LCFA) — anterior thigh and descending genicular anastomoses; medial circumflex femoral artery (MCFA) — femoral head (MCFA injury → avascular necrosis, AVN); perforating arteries (3–4) — pierce adductor magnus to supply the posterior thigh.',
+                    body: 'Arises posterolaterally from the CFA 3–4 cm below the inguinal ligament. Principal blood supply to the thigh muscles. Branches:\n\nLateral circumflex femoral artery (LCFA): ascending branch (anastomoses with superior gluteal artery); transverse branch (trochanteric anastomosis); descending branch (anastomoses with genicular branches — key collateral in SFA occlusion).\n\nMedial circumflex femoral artery (MCFA): deep branch enters the hip capsule posteriorly via retinacular vessels — principal supply to the femoral head. MCFA disruption (intracapsular fracture, dislocation) → avascular necrosis (AVN). Transverse and ascending branches also present.\n\nPerforating arteries (3–4): pierce adductor magnus to supply the hamstrings; first perforator supplies adductor brevis. The profunda femoris is the dominant collateral route in SFA occlusion via the descending LCFA and perforators reconstituting the popliteal.',
                     type: 'text'
                   },
                   {
-                    title: 'SFA, Adductor Canal, and Popliteal Artery',
-                    body: 'The SFA descends the anteromedial thigh within the adductor (Hunter\'s) canal, bounded by vastus medialis, adductor longus/magnus, and sartorius. Contents: SFA, femoral vein, and saphenous nerve (branch of femoral nerve). The SFA becomes the popliteal artery after passing through the adductor hiatus.\n\nThe popliteal artery is the deepest structure in the popliteal fossa. It trifurcates below the knee into the anterior tibial artery (ATA), posterior tibial artery (PTA), and peroneal (fibular) artery. The ATA crosses the interosseous membrane and continues as the dorsalis pedis artery at the ankle. The PTA descends to the medial malleolus and divides into medial and lateral plantar arteries; the lateral plantar artery forms the plantar arch.',
+                    title: 'SFA, Adductor Canal & Popliteal Artery',
+                    body: 'The SFA enters the adductor (Hunter\'s) canal at the femoral triangle apex. Canal boundaries: anterolateral — vastus medialis; posteromedial — adductor longus then adductor magnus; roof — vasto-adductor membrane (sartorius overlies). Contents: SFA, femoral vein, saphenous nerve (sensory branch of femoral nerve — no motor fibres; injury during below-knee GSV harvest → medial leg and foot numbness).\n\nThe SFA exits via the adductor hiatus → becomes the popliteal artery, which is the deepest structure in the popliteal fossa (semimembranosus/semitendinosus medially, biceps femoris laterally, gastrocnemius heads inferiorly).',
                     type: 'text'
                   },
                   {
-                    title: 'Venous Drainage',
-                    body: 'Deep veins accompany the arteries. The popliteal vein continues as the femoral vein through the adductor canal, then becomes the common femoral vein (CFV) in the femoral triangle, draining into the external iliac vein at the inguinal ligament.\n\nGreat saphenous vein (GSV): ascends medially from the dorsal venous arch, passing anterior to the medial malleolus, and joins the CFV at the saphenofemoral junction (SFJ) 3–4 cm below the inguinal ligament. The GSV is the conduit of choice for coronary artery bypass grafting (CABG) and infrainguinal bypass.\n\nSmall saphenous vein (SSV): originates posterior to the lateral malleolus and drains into the popliteal vein at the saphenopopliteal junction (SPJ).',
+                    title: 'Popliteal Branches & Trifurcation',
+                    body: 'Branches before trifurcation: superior medial and lateral genicular arteries; middle genicular artery (pierces the oblique popliteal ligament → cruciate ligaments and joint capsule); inferior medial and lateral genicular arteries; sural arteries (medial and lateral — supply gastrocnemius and soleus). Together these form the genicular anastomosis — critical collateral network during knee surgery or popliteal occlusion.\n\nTrifurcation occurs at the lower border of popliteus into: anterior tibial artery (ATA), posterior tibial artery (PTA), and peroneal (fibular) artery.',
                     type: 'text'
+                  },
+                  {
+                    title: 'Tibial & Pedal Arteries',
+                    body: 'ATA: passes anteriorly through the interosseous membrane → runs with the deep peroneal nerve in the anterior compartment → becomes the dorsalis pedis artery at the ankle, palpable between the extensor hallucis longus (EHL) and extensor digitorum longus (EDL) tendons. Continues as the arcuate artery → dorsal metatarsal arteries.\n\nPTA: larger trunk; descends with the tibial nerve → passes posterior to the medial malleolus (between flexor digitorum longus and flexor hallucis longus tendons) → divides into medial and lateral plantar arteries. The lateral plantar artery forms the plantar arch (completes with the first dorsal metatarsal branch of the dorsalis pedis).\n\nPeroneal artery: arises from the proximal PTA → descends along the fibula in the deep posterior compartment → terminates as perforating branch (pierces interosseous membrane distally, communicates with ATA) and calcaneal branches.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Deep Venous System',
+                    body: 'Paired veins (venae comitantes) accompany all named arteries. Plantar veins → posterior tibial veins; joined by anterior tibial and peroneal veins → popliteal vein at the trifurcation level. The popliteal vein also receives the sural veins and the SSV at the saphenopopliteal junction (SPJ). It continues as the femoral vein through the adductor canal, then receives the deep femoral (profunda femoris) vein just below the inguinal ligament → common femoral vein (CFV) → external iliac vein.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'GSV — Course & SFJ Tributaries',
+                    body: 'The GSV is the longest vein in the body. Origin: medial dorsal venous arch → passes anterior to the medial malleolus (1 cm anterior, 1 cm superior — key surgical landmark) → ascends medially with the saphenous nerve → anterior to the medial femoral condyle → joins the CFV at the saphenofemoral junction (SFJ), 3–4 cm inferolateral to the pubic tubercle.\n\nFive constant tributaries at the SFJ ("crow\'s foot"): (1) superficial epigastric vein, (2) superficial circumflex iliac vein, (3) superficial external pudendal vein, (4) deep external pudendal vein, (5) anterior/posterior accessory saphenous vein. All five must be individually ligated at high saphenous ligation to prevent recurrence.\n\nPosterior arch vein (Leonardo\'s vein): runs posteromedially and joins the GSV at knee level; drains the Cockett perforators into the GSV.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'SSV & Giacomini Vein',
+                    body: 'The SSV originates from the lateral dorsal venous arch, posterior to the lateral malleolus → ascends with the sural nerve in the posterior compartment → drains into the popliteal vein at the SPJ (typically 3–8 cm above the popliteal crease; highly variable — always mark with duplex before surgery). Variants: SSV may drain into the GSV, profunda femoris vein, or extend proximally as the Giacomini vein.\n\nGiacomini vein: thigh extension of the SSV that communicates with the GSV in the posterior thigh — SSV reflux can propagate to the GSV via this route, creating a source of varicose vein recurrence if not addressed.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Named Perforating Veins',
+                    body: [
+                      'Cockett I — 7 cm above the medial malleolus: drains posterior arch vein (Leonardo\'s vein) into posterior tibial veins',
+                      'Cockett II — 13.5 cm above the medial malleolus: same drainage pathway',
+                      'Cockett III — 18.5 cm above the medial malleolus: same drainage pathway',
+                      'Boyd\'s perforator — medial knee (~10 cm below joint line): connects GSV to popliteal/posterior tibial vein',
+                      'Dodd\'s and Hunterian perforators — mid and distal thigh: connect GSV to femoral vein',
+                      'Incompetent perforators → venous hypertension → CEAP C4–C6 disease (hyperpigmentation, lipodermatosclerosis, venous ulcers)'
+                    ],
+                    type: 'list'
                   },
                   {
                     title: 'Surgical Correlates',
                     body: [
-                      'Aortic bifurcation at L4: landmark for aorto-iliac occlusive disease (Leriche syndrome — bilateral claudication, impotence, absent femoral pulses)',
-                      'ABI (ankle-brachial index): >1.0 normal; <0.9 PAD; <0.5 critical limb ischaemia (CLI) — AHA/ACC 2016',
-                      'Posterior knee dislocation carries 7–20% risk of popliteal artery injury — mandatory vascular assessment',
-                      'GSV: do not harvest in a vascular patient without clear indication — it is the primary infrainguinal bypass conduit',
-                      'Femoral canal is the medial compartment of the femoral sheath; femoral hernias pass through here',
-                      'Profunda femoris is the main collateral pathway when the SFA is occluded'
+                      'Mid-inguinal point (CFA pulse site) ≠ midpoint of inguinal ligament (deep inguinal ring) — do not confuse when accessing the CFA',
+                      'GSV stripping: strip groin to knee only — stripping below the knee risks saphenous nerve injury → chronic medial leg numbness',
+                      'EVLA/RFA: heat applied 2 cm distal to SFJ; tumescent anaesthesia compresses vein and protects overlying skin from thermal injury',
+                      'SFJ ligation: individually ligate all five tributaries flush with CFV — any stump or missed tributary enables re-canalisation and recurrence',
+                      'Dorsalis pedis pulse: palpated between EHL and EDL tendons at dorsum of foot — absent in advanced PAD or ATA occlusion',
+                      'Popliteal aneurysm: most common peripheral artery aneurysm; 50% bilateral; thrombosis → acute limb ischaemia; repair via medial approach',
+                      'Profunda femoris is the principal collateral in SFA occlusion; preserve it during CFA endarterectomy',
+                      'Posterior knee dislocation carries 7–20% risk of popliteal artery injury — mandatory ABI and vascular assessment'
                     ],
                     type: 'list'
                   }
@@ -1168,43 +1202,77 @@ export const DATA = [
                 sections: [
                   {
                     title: 'Обзор',
-                    body: 'Нижняя конечность получает артериальное кровоснабжение от дистальной аорты через подвздошные и бедренные сосуды. Детальное знание этой анатомии необходимо для лечения облитерирующего атеросклероза артерий нижних конечностей (ОА АНК), дистального шунтирования и операций по спасению конечности.',
+                    body: 'Нижняя конечность получает артериальное кровоснабжение от дистальной аорты через подвздошные и бедренные сосуды. Венозный отток осуществляется парными глубокими венами, сопровождающими артерии, и двумя крупными поверхностными стволами — большой подкожной веной (БПВ) и малой подкожной веной (МПВ) — связанными с глубокой системой через именные перфорантные вены. Знание этой анатомии необходимо для дистального шунтирования, флебохирургии и эндовенозных операций, фасциотомии и спасения конечности.',
                     type: 'text'
                   },
                   {
-                    title: 'Аорто-подвздошный сегмент',
-                    body: 'Аорта бифуркирует на уровне L4 на правую и левую общие подвздошные артерии (ОПА). Каждая ОПА делится на уровне крестцово-подвздошного сочленения на наружную подвздошную артерию (НПА) и внутреннюю подвздошную артерию (ВПА). НПА становится общей бедренной артерией (ОБА) при прохождении под паховой связкой в точке, соответствующей середине расстояния между передней верхней подвздошной остью (ПВПО) и лонным симфизом.',
+                    title: 'Аорто-подвздошный и бедренный сегменты',
+                    body: 'Аорта бифуркирует на уровне L4 на правую и левую общие подвздошные артерии (ОПА). Каждая ОПА делится на уровне крестцово-подвздошного сочленения на наружную подвздошную артерию (НПА) и внутреннюю подвздошную артерию (ВПА). НПА становится общей бедренной артерией (ОБА) на уровне средней паховой точки — середина расстояния между передней верхней подвздошной остью (ПВПО) и лонным симфизом (не середина паховой связки). ОБА бифуркирует в 3–4 см ниже паховой связки.',
                     type: 'text'
                   },
                   {
                     title: 'Бедренный треугольник',
-                    body: 'Границы: сверху — паховая связка; латерально — портняжная мышца; медиально — длинная приводящая мышца. Дно: подвздошно-поясничная и гребенчатая мышцы. Содержимое (снаружи внутрь): бедренный нерв (вне бедренного фасциального влагалища), бедренная артерия, бедренная вена, бедренный канал (содержит лимфатический узел Клоке).\n\nОБА бифуркирует приблизительно в 4 см дистальнее паховой связки на поверхностную бедренную артерию (ПБА) и глубокую артерию бедра (ГАБ).',
+                    body: 'Границы: сверху — паховая связка; латерально — портняжная мышца; медиально — длинная приводящая мышца. Дно: подвздошно-поясничная (латерально), гребенчатая (медиально). Крыша: решётчатая фасция / широкая фасция. Содержимое (снаружи внутрь): бедренный нерв (вне бедренного влагалища), бедренная артерия, бедренная вена, бедренный канал. Бедренное влагалище включает три отдела; медиальный (бедренный канал) содержит лимфатический узел Клоке — сторожевой узел нижней конечности и гениталий — и является путём для бедренных грыж.\n\nОБА бифуркирует в 3–4 см на поверхностную бедренную артерию (ПБА) и глубокую артерию бедра (ГАБ).',
                     type: 'text'
                   },
                   {
                     title: 'Глубокая артерия бедра',
-                    body: 'Основной источник кровоснабжения мышц бедра; первая крупная ветвь ОБА. Ветви: латеральная огибающая бедренную кость артерия (ЛОБКА) — переднее бедро и нисходящие анастомозы вокруг коленного сустава; медиальная огибающая бедренную кость артерия (МОБКА) — головка бедренной кости (повреждение МОБКА → асептический некроз, АН); прободающие артерии (3–4) — проходят через большую приводящую мышцу, кровоснабжая заднее бедро.',
+                    body: 'Отходит заднелатерально от ОБА в 3–4 см ниже паховой связки. Основной источник кровоснабжения мышц бедра. Ветви:\n\nЛатеральная огибающая бедренную кость артерия (ЛОБКА): восходящая ветвь (анастомоз с верхней ягодичной артерией); поперечная ветвь (вертельный анастомоз); нисходящая ветвь (анастомоз с коленными ветвями — ключевой коллатеральный путь при окклюзии ПБА).\n\nМедиальная огибающая бедренную кость артерия (МОБКА): глубокая ветвь входит в капсулу тазобедренного сустава через ретинакулярные сосуды — основное кровоснабжение головки бедренной кости. Повреждение МОБКА (внутрикапсульный перелом, вывих) → асептический некроз (АН). Также присутствуют поперечная и восходящая ветви.\n\nПрободающие артерии (3–4): проходят через большую приводящую мышцу к задней группе мышц бедра; первая прободающая кровоснабжает короткую приводящую мышцу. ГАБ — основной коллатеральный путь при окклюзии ПБА через нисходящую ЛОБКА и прободающие артерии, восстанавливающие кровоток в подколенной артерии.',
                     type: 'text'
                   },
                   {
                     title: 'ПБА, Гунтеров канал и подколенная артерия',
-                    body: 'ПБА проходит по переднемедиальной поверхности бедра в Гунтеровом (бедренно-подколенном) канале, ограниченном медиальной широкой мышцей, длинной/большой приводящими мышцами и портняжной мышцей. Содержимое: ПБА, бедренная вена и подкожный нерв (ветвь бедренного нерва). ПБА становится подколенной артерией после прохождения через hiatus adductorius.\n\nПодколенная артерия — наиболее глубокая структура подколенной ямки. Ниже коленного сустава она трифуркирует на переднюю большеберцовую артерию (ПББА), заднюю большеберцовую артерию (ЗББА) и малоберцовую артерию. ПББА проходит через межкостную мембрану и продолжается как тыльная артерия стопы на уровне голеностопного сустава. ЗББА спускается к медиальной лодыжке и делится на медиальную и латеральную подошвенные артерии; латеральная подошвенная артерия формирует подошвенную артериальную дугу.',
+                    body: 'ПБА входит в Гунтеров (бедренно-подколенный) канал на вершине бедренного треугольника. Границы канала: переднелатерально — медиальная широкая мышца; задне-медиально — длинная и большая приводящие мышцы; крыша — вастоаддукторная мембрана (сверху — портняжная мышца). Содержимое: ПБА, бедренная вена, подкожный нерв (чувствительная ветвь бедренного нерва — двигательных волокон нет; повреждение при заборе БПВ ниже колена → онемение медиальной поверхности голени и стопы).\n\nПБА выходит через hiatus adductorius → становится подколенной артерией — наиболее глубокой структурой подколенной ямки (медиально — полуперепончатая и полусухожильная мышцы, латерально — двуглавая мышца бедра, снизу — головки икроножной мышцы).',
                     type: 'text'
                   },
                   {
-                    title: 'Венозный отток',
-                    body: 'Глубокие вены сопровождают артерии. Подколенная вена продолжается как бедренная вена через Гунтеров канал, затем становится общей бедренной веной (ОБВ) в бедренном треугольнике и впадает в наружную подвздошную вену на уровне паховой связки.\n\nБольшая подкожная вена (БПВ): поднимается медиально от тыльной венозной дуги стопы, проходя кпереди от медиальной лодыжки, и впадает в ОБВ в сафено-феморальном соустье (СФС) на 3–4 см дистальнее паховой связки. БПВ — кондуит выбора для аортокоронарного шунтирования (АКШ) и дистального шунтирования.\n\nМалая подкожная вена (МПВ): начинается кзади от латеральной лодыжки и впадает в подколенную вену в сафено-поплитеальном соустье (СПС).',
+                    title: 'Ветви подколенной артерии и трифуркация',
+                    body: 'Ветви до трифуркации: верхние медиальная и латеральная коленные артерии; средняя коленная артерия (пронизывает косую подколенную связку → крестообразные связки и капсулу сустава); нижние медиальная и латеральная коленные артерии; икроножные артерии (медиальная и латеральная — кровоснабжают икроножную и камбаловидную мышцы). Вместе образуют коленную артериальную сеть — критически важную коллатеральную сеть при операциях на колене или окклюзии подколенной артерии.\n\nТрифуркация происходит у нижнего края подколенной мышцы: передняя большеберцовая артерия (ПББА), задняя большеберцовая артерия (ЗББА) и малоберцовая артерия.',
                     type: 'text'
+                  },
+                  {
+                    title: 'Большеберцовые и педальные артерии',
+                    body: 'ПББА: проходит кпереди через межкостную мембрану → следует с глубоким малоберцовым нервом в переднем ложе → становится тыльной артерией стопы на уровне голеностопного сустава, пальпируемой между сухожилиями длинного разгибателя большого пальца (ДРБП) и длинного разгибателя пальцев (ДРП). Продолжается как дугообразная артерия → тыльные плюсневые артерии.\n\nЗББА: более крупный ствол; следует с большеберцовым нервом → кзади от медиальной лодыжки (между сухожилиями длинного сгибателя пальцев и длинного сгибателя большого пальца) → делится на медиальную и латеральную подошвенные артерии. Латеральная подошвенная артерия формирует подошвенную дугу (завершается первой тыльной плюсневой ветвью тыльной артерии стопы).\n\nМалоберцовая артерия: отходит от проксимального отдела ЗББА → следует вдоль малоберцовой кости в глубоком заднем ложе → заканчивается прободающей ветвью (через межкостную мембрану дистально, анастомоз с ПББА) и пяточными ветвями.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Глубокая венозная система',
+                    body: 'Парные вены (venae comitantes) сопровождают все именные артерии. Подошвенные вены → задние большеберцовые вены; к ним присоединяются передние большеберцовые и малоберцовые вены → подколенная вена на уровне трифуркации. Подколенная вена также принимает икроножные вены и МПВ в сафено-поплитеальном соустье (СПС). Продолжается как бедренная вена через Гунтеров канал, затем принимает глубокую бедренную (ГАБ) вену непосредственно ниже паховой связки → общая бедренная вена (ОБВ) → наружная подвздошная вена.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'БПВ — ход и притоки в СФС',
+                    body: 'БПВ — самая длинная вена тела. Начало: медиальная тыльная венозная дуга стопы → кпереди от медиальной лодыжки (на 1 см кпереди и 1 см кверху — хирургический ориентир) → поднимается медиально с подкожным нервом → кпереди от медиального надмыщелка бедра → впадает в ОБВ в сафено-феморальном соустье (СФС) на 3–4 см нижнелатеральнее лонного бугорка.\n\nПять постоянных притоков в СФС («гусиная лапка»): (1) поверхностная надчревная вена, (2) поверхностная огибающая подвздошную кость вена, (3) поверхностная наружная половая вена, (4) глубокая наружная половая вена, (5) передняя/задняя добавочная подкожная вена. Все пять необходимо индивидуально перевязать при высоком лигировании БПВ для профилактики рецидива.\n\nЗадняя дуговая вена (вена Леонардо): проходит по задне-медиальной поверхности и впадает в БПВ на уровне коленного сустава; дренирует перфоранты Кокета в БПВ.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'МПВ и вена Джакомини',
+                    body: 'МПВ: начало — латеральная тыльная венозная дуга стопы, кзади от латеральной лодыжки → поднимается с икроножным нервом в заднем ложе → впадает в подколенную вену в СПС (обычно 3–8 см выше подколенной складки; очень вариабельно — всегда маркировать дуплексом перед операцией). Варианты: МПВ может впадать в БПВ, глубокую вену бедра или продолжаться проксимально как вена Джакомини.\n\nВена Джакомини: бедренное продолжение МПВ, соединяющееся с БПВ на задней поверхности бедра — рефлюкс из МПВ может распространяться на БПВ через этот путь, становясь источником рецидива варикозной болезни при отсутствии коррекции.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Именные перфорантные вены',
+                    body: [
+                      'Кокет I — 7 см выше медиальной лодыжки: дренирует заднюю дуговую вену (вену Леонардо) в задние большеберцовые вены',
+                      'Кокет II — 13,5 см выше медиальной лодыжки: тот же путь дренирования',
+                      'Кокет III — 18,5 см выше медиальной лодыжки: тот же путь дренирования',
+                      'Перфорант Бойда — медиальное колено (~10 см ниже суставной щели): соединяет БПВ с подколенной/задней большеберцовой веной',
+                      'Перфоранты Додда и Гунтера — средняя и дистальная треть бедра: соединяют БПВ с бедренной веной',
+                      'Несостоятельные перфоранты → венозная гипертензия → заболевание класса C4–C6 по классификации CEAP (пигментация, липодерматосклероз, венозные язвы)'
+                    ],
+                    type: 'list'
                   },
                   {
                     title: 'Хирургические корреляты',
                     body: [
-                      'Бифуркация аорты на уровне L4: ориентир при аорто-подвздошной окклюзионной болезни (синдром Лериша — перемежающаяся хромота, импотенция, отсутствие бедренных пульсов)',
-                      'Лодыжечно-плечевой индекс (ЛПИ): >1,0 — норма; <0,9 — ОА АНК; <0,5 — критическая ишемия конечности (КИК) — AHA/ACC 2016',
-                      'Задний вывих голени: риск повреждения подколенной артерии 7–20% — обязательная сосудистая оценка',
-                      'БПВ: не иссекать у сосудистого больного без чёткого показания — основной кондуит для дистального шунтирования',
-                      'Бедренный канал — медиальный отдел бедренного фасциального влагалища, через него проходят бедренные грыжи',
-                      'ГАБ — основной коллатеральный путь при окклюзии ПБА'
+                      'Средняя паховая точка (пульс ОБА) ≠ середина паховой связки (глубокое паховое кольцо) — не путать при доступе к ОБА',
+                      'Стриппинг БПВ: только от паха до колена — стриппинг ниже колена угрожает повреждением подкожного нерва → хроническое онемение медиальной поверхности голени',
+                      'ЭВЛТ/РЧА: энергия подаётся в 2 см дистальнее СФС; тумесцентная анестезия сдавливает вену и защищает кожу от термической травмы',
+                      'Лигирование СФС: индивидуальная перевязка всех пяти притоков заподлицо с ОБВ — любая культя или пропущенный приток обеспечивает реканализацию и рецидив',
+                      'Пульс тыльной артерии стопы: пальпируется между сухожилиями ДРБП и ДРП на тыле стопы — отсутствует при выраженном ОА АНК или окклюзии ПББА',
+                      'Аневризма подколенной артерии: наиболее частая аневризма периферических артерий; в 50% двусторонняя; тромбоз → острая ишемия конечности; коррекция медиальным доступом',
+                      'ГАБ — основной коллатеральный путь при окклюзии ПБА; сохранять при эндартерэктомии из ОБА',
+                      'Задний вывих голени: риск повреждения подколенной артерии 7–20% — обязательный контроль лодыжечно-плечевого индекса (ЛПИ) и сосудистая оценка'
                     ],
                     type: 'list'
                   }
@@ -1228,17 +1296,17 @@ export const DATA = [
               },
               {
                 id: 'lower-limb-vascular-003',
-                question_en: 'CFA bifurcates into?',
-                question_ru: 'ОБА делится на?',
-                answer_en: 'SFA and profunda',
-                answer_ru: 'ПБА и ГАБ'
+                question_en: 'CFA bifurcation distance below inguinal ligament?',
+                question_ru: 'Расстояние бифуркации ОБА от паховой связки?',
+                answer_en: '3–4 cm',
+                answer_ru: '3–4 см'
               },
               {
                 id: 'lower-limb-vascular-004',
-                question_en: 'Superior border of femoral triangle?',
-                question_ru: 'Верхняя граница бедренного треугольника?',
-                answer_en: 'Inguinal ligament',
-                answer_ru: 'Паховая связка'
+                question_en: 'Femoral triangle medial border?',
+                question_ru: 'Медиальная граница бедренного треугольника?',
+                answer_en: 'Adductor longus',
+                answer_ru: 'Длинная приводящая мышца'
               },
               {
                 id: 'lower-limb-vascular-005',
@@ -1249,10 +1317,10 @@ export const DATA = [
               },
               {
                 id: 'lower-limb-vascular-006',
-                question_en: 'Profunda femoris arises from?',
-                question_ru: 'ГАБ отходит от?',
-                answer_en: 'Common femoral artery',
-                answer_ru: 'Общей бедренной артерии'
+                question_en: 'Profunda femoris origin from CFA?',
+                question_ru: 'ГАБ отходит от ОБА на уровне?',
+                answer_en: '3–4 cm below',
+                answer_ru: '3–4 см ниже'
               },
               {
                 id: 'lower-limb-vascular-007',
@@ -1277,8 +1345,8 @@ export const DATA = [
               },
               {
                 id: 'lower-limb-vascular-010',
-                question_en: 'Popliteal artery trifurcation?',
-                question_ru: 'Трифуркация подколенной артерии?',
+                question_en: 'Popliteal trifurcation vessels?',
+                question_ru: 'Сосуды трифуркации подколенной артерии?',
                 answer_en: 'ATA, PTA, peroneal',
                 answer_ru: 'ПББА, ЗББА, малоберцовая'
               },
@@ -1305,10 +1373,10 @@ export const DATA = [
               },
               {
                 id: 'lower-limb-vascular-014',
-                question_en: 'GSV–CFV junction name?',
-                question_ru: 'Название соустья БПВ–ОБВ?',
-                answer_en: 'Saphenofemoral junction',
-                answer_ru: 'Сафено-феморальное соустье'
+                question_en: 'SFJ location relative to pubic tubercle?',
+                question_ru: 'Положение СФС относительно лонного бугорка?',
+                answer_en: '3–4 cm inferolateral',
+                answer_ru: '3–4 см нижнелатеральнее'
               },
               {
                 id: 'lower-limb-vascular-015',
@@ -1319,17 +1387,17 @@ export const DATA = [
               },
               {
                 id: 'lower-limb-vascular-016',
-                question_en: 'ABI threshold for PAD?',
-                question_ru: 'Порог ЛПИ при ОА АНК?',
-                answer_en: '<0.9',
-                answer_ru: '<0,9'
+                question_en: 'LCFA descending branch role in SFA occlusion?',
+                question_ru: 'Роль нисходящей ветви ЛОБКА при окклюзии ПБА?',
+                answer_en: 'Key collateral route',
+                answer_ru: 'Ключевой коллатеральный путь'
               },
               {
                 id: 'lower-limb-vascular-017',
-                question_en: 'ABI indicating critical limb ischaemia?',
-                question_ru: 'ЛПИ при критической ишемии конечности?',
-                answer_en: '<0.5',
-                answer_ru: '<0,5'
+                question_en: 'Middle genicular artery supplies?',
+                question_ru: 'Средняя коленная артерия кровоснабжает?',
+                answer_en: 'Cruciate ligaments',
+                answer_ru: 'Крестообразные связки'
               },
               {
                 id: 'lower-limb-vascular-018',
@@ -1351,6 +1419,76 @@ export const DATA = [
                 question_ru: 'Бедренные грыжи проходят через?',
                 answer_en: 'Femoral canal',
                 answer_ru: 'Бедренный канал'
+              },
+              {
+                id: 'lower-limb-vascular-021',
+                question_en: 'SFJ tributary count ("crow\'s foot")?',
+                question_ru: 'Число притоков в СФС («гусиная лапка»)?',
+                answer_en: 'Five',
+                answer_ru: 'Пять'
+              },
+              {
+                id: 'lower-limb-vascular-022',
+                question_en: 'Posterior arch vein eponym?',
+                question_ru: 'Эпоним задней дуговой вены?',
+                answer_en: 'Leonardo\'s vein',
+                answer_ru: 'Вена Леонардо'
+              },
+              {
+                id: 'lower-limb-vascular-023',
+                question_en: 'Giacomini vein connects?',
+                question_ru: 'Вена Джакомини соединяет?',
+                answer_en: 'SSV to GSV',
+                answer_ru: 'МПВ с БПВ'
+              },
+              {
+                id: 'lower-limb-vascular-024',
+                question_en: 'Cockett I height above medial malleolus?',
+                question_ru: 'Высота перфоранта Кокет I над медиальной лодыжкой?',
+                answer_en: '7 cm',
+                answer_ru: '7 см'
+              },
+              {
+                id: 'lower-limb-vascular-025',
+                question_en: 'Cockett III height above medial malleolus?',
+                question_ru: 'Высота перфоранта Кокет III над медиальной лодыжкой?',
+                answer_en: '18.5 cm',
+                answer_ru: '18,5 см'
+              },
+              {
+                id: 'lower-limb-vascular-026',
+                question_en: 'Safe GSV stripping lower limit?',
+                question_ru: 'Безопасная нижняя граница стриппинга БПВ?',
+                answer_en: 'Knee only',
+                answer_ru: 'До колена'
+              },
+              {
+                id: 'lower-limb-vascular-027',
+                question_en: 'Saphenous nerve travels with GSV where?',
+                question_ru: 'Подкожный нерв сопровождает БПВ где?',
+                answer_en: 'Below knee',
+                answer_ru: 'Ниже колена'
+              },
+              {
+                id: 'lower-limb-vascular-028',
+                question_en: 'Popliteal fossa: deepest structure?',
+                question_ru: 'Самая глубокая структура подколенной ямки?',
+                answer_en: 'Popliteal artery',
+                answer_ru: 'Подколенная артерия'
+              },
+              {
+                id: 'lower-limb-vascular-029',
+                question_en: 'Dorsalis pedis: palpated between?',
+                question_ru: 'Тыльная артерия стопы пальпируется между?',
+                answer_en: 'EHL and EDL tendons',
+                answer_ru: 'Сухожилиями ДРБП и ДРП'
+              },
+              {
+                id: 'lower-limb-vascular-030',
+                question_en: 'SSV accompanies which nerve?',
+                question_ru: 'МПВ сопровождает какой нерв?',
+                answer_en: 'Sural nerve',
+                answer_ru: 'Икроножный нерв'
               }
             ]
           }
