@@ -56,27 +56,47 @@ async function init() {
 
   ;[enNew, enReview, ruNew, ruReview].forEach(shuffleArray)
 
-  // Fill each language up to LANG_BATCH (new cards first, then review)
-  const enBatch = [...enNew, ...enReview].slice(0, LANG_BATCH)
-  const ruBatch = [...ruNew, ...ruReview].slice(0, LANG_BATCH)
+  // ── Build mode-aware batches (each type gets its own LANG_BATCH cap) ────────
+  // Previously new cards could crowd out review cards in a shared batch,
+  // causing mode=review sessions to be empty when many new cards are due.
+  let enNewBatch, enReviewBatch, ruNewBatch, ruReviewBatch
 
-  // Re-split the batches to preserve new/review distinction
-  const enNewBatch    = enBatch.filter(c => c.srs.repetitions === 0)
-  const enReviewBatch = enBatch.filter(c => c.srs.repetitions > 0)
-  const ruNewBatch    = ruBatch.filter(c => c.srs.repetitions === 0)
-  const ruReviewBatch = ruBatch.filter(c => c.srs.repetitions > 0)
+  if (mode === 'review') {
+    enNewBatch    = []
+    enReviewBatch = enReview.slice(0, LANG_BATCH)
+    ruNewBatch    = []
+    ruReviewBatch = ruReview.slice(0, LANG_BATCH)
+  } else if (mode === 'new') {
+    enNewBatch    = enNew.slice(0, LANG_BATCH)
+    enReviewBatch = []
+    ruNewBatch    = ruNew.slice(0, LANG_BATCH)
+    ruReviewBatch = []
+  } else {
+    // 'all': fill LANG_BATCH per language (new first, then review)
+    const enBatch = [...enNew, ...enReview].slice(0, LANG_BATCH)
+    const ruBatch = [...ruNew, ...ruReview].slice(0, LANG_BATCH)
+    enNewBatch    = enBatch.filter(c => c.srs.repetitions === 0)
+    enReviewBatch = enBatch.filter(c => c.srs.repetitions > 0)
+    ruNewBatch    = ruBatch.filter(c => c.srs.repetitions === 0)
+    ruReviewBatch = ruBatch.filter(c => c.srs.repetitions > 0)
+  }
 
-  // ── Build phase list (skip empty phases, respect mode filter) ─────────────
-  const showNew    = mode !== 'review'
-  const showReview = mode !== 'new'
+  // ── Build phase list (skip empty phases) ──────────────────────────────────
   phases = []
-  if (showNew    && enNewBatch.length)    phases.push({ type: 'new',    lang: 'en', cards: [...enNewBatch] })
-  if (showReview && enReviewBatch.length) phases.push({ type: 'review', lang: 'en', cards: [...enReviewBatch] })
-  if (showNew    && ruNewBatch.length)    phases.push({ type: 'new',    lang: 'ru', cards: [...ruNewBatch] })
-  if (showReview && ruReviewBatch.length) phases.push({ type: 'review', lang: 'ru', cards: [...ruReviewBatch] })
+  if (enNewBatch.length)    phases.push({ type: 'new',    lang: 'en', cards: [...enNewBatch] })
+  if (enReviewBatch.length) phases.push({ type: 'review', lang: 'en', cards: [...enReviewBatch] })
+  if (ruNewBatch.length)    phases.push({ type: 'new',    lang: 'ru', cards: [...ruNewBatch] })
+  if (ruReviewBatch.length) phases.push({ type: 'review', lang: 'ru', cards: [...ruReviewBatch] })
 
+  // If mode filtering left nothing, show the appropriate "caught up" screen
+  if (!phases.length) { showAllCaughtUp(); return }
+
+  const batchCount    = enNewBatch.length + enReviewBatch.length + ruNewBatch.length + ruReviewBatch.length
+  const eligibleCount = mode === 'review' ? (enReview.length + ruReview.length)
+                      : mode === 'new'    ? (enNew.length    + ruNew.length)
+                      : allDue.length
   totalCards          = phases.reduce((sum, p) => sum + p.cards.length, 0)
-  remainingAfterBatch = allDue.length - (enBatch.length + ruBatch.length)
+  remainingAfterBatch = eligibleCount - batchCount
 
   renderSession()
   showCard()
