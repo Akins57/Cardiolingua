@@ -12,9 +12,11 @@ async function init() {
   const dueCards   = await getDueCards()
   const todayCount = await getTodayReviewCount()
 
-  // Split due cards: new = never reviewed, review = seen before
-  const newCards    = dueCards.filter(c => c.srs.repetitions === 0)
-  const reviewCards = dueCards.filter(c => c.srs.repetitions > 0)
+  // Split due cards: new = never seen (lastReview null), review = seen before.
+  // Using lastReview — not repetitions — so "Again" resets don't send a
+  // previously-seen card back to the New pile.
+  const newCards    = dueCards.filter(c => c.srs.lastReview === null)
+  const reviewCards = dueCards.filter(c => c.srs.lastReview !== null)
 
   // Total data cards (virtual cards = 2× this)
   let totalCards = 0

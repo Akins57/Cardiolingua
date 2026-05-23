@@ -48,11 +48,13 @@ async function init() {
   const enAll = allDue.filter(c => c.cardLang === 'en')
   const ruAll = allDue.filter(c => c.cardLang === 'ru')
 
-  // Split each language into new (never reviewed) vs review (seen before)
-  const enNew    = enAll.filter(c => c.srs.repetitions === 0)
-  const enReview = enAll.filter(c => c.srs.repetitions > 0)
-  const ruNew    = ruAll.filter(c => c.srs.repetitions === 0)
-  const ruReview = ruAll.filter(c => c.srs.repetitions > 0)
+  // Split each language into new (never seen) vs review (seen before)
+  // Use lastReview — not repetitions — so "Again" resets don't re-classify
+  // a card back to New once it has been seen at least once.
+  const enNew    = enAll.filter(c => c.srs.lastReview === null)
+  const enReview = enAll.filter(c => c.srs.lastReview !== null)
+  const ruNew    = ruAll.filter(c => c.srs.lastReview === null)
+  const ruReview = ruAll.filter(c => c.srs.lastReview !== null)
 
   ;[enNew, enReview, ruNew, ruReview].forEach(shuffleArray)
 
@@ -75,10 +77,10 @@ async function init() {
     // 'all': fill LANG_BATCH per language (new first, then review)
     const enBatch = [...enNew, ...enReview].slice(0, LANG_BATCH)
     const ruBatch = [...ruNew, ...ruReview].slice(0, LANG_BATCH)
-    enNewBatch    = enBatch.filter(c => c.srs.repetitions === 0)
-    enReviewBatch = enBatch.filter(c => c.srs.repetitions > 0)
-    ruNewBatch    = ruBatch.filter(c => c.srs.repetitions === 0)
-    ruReviewBatch = ruBatch.filter(c => c.srs.repetitions > 0)
+    enNewBatch    = enBatch.filter(c => c.srs.lastReview === null)
+    enReviewBatch = enBatch.filter(c => c.srs.lastReview !== null)
+    ruNewBatch    = ruBatch.filter(c => c.srs.lastReview === null)
+    ruReviewBatch = ruBatch.filter(c => c.srs.lastReview !== null)
   }
 
   // ── Build phase list (skip empty phases) ──────────────────────────────────
@@ -273,8 +275,13 @@ async function revealAnswer(card) {
 
 async function rateCard(card, rating) {
   if (rating === 0) {
-    // Again: full SRS reset, re-queue within the SAME phase (no cross-phase mixing)
-    await putSRS(newState(card.id))
+    // Again: full SRS reset, re-queue within the SAME phase (no cross-phase mixing).
+    // Preserve lastReview so the card never moves back to the New pool — once
+    // seen, always treated as a Review card in future sessions.
+    const currentState = await getSRS(card.id)
+    const resetState   = newState(card.id)
+    resetState.lastReview = currentState?.lastReview || new Date().toISOString()
+    await putSRS(resetState)
     await addReview(card.id, 0, card.cardLang)
     phases[phaseIndex].cards.push(card)
     cardIndex++
