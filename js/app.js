@@ -5,6 +5,7 @@
 import { DATA } from './data.js'
 import { getAllSRS, putSRS, getSRS } from './db.js'
 import { newState } from './sm2.js'
+import { initAuth } from './auth.js'
 
 // ── Language ──────────────────────────────────────────────────────────────────
 
@@ -182,4 +183,5 @@ export async function bootstrap() {
   initLangToggle()
   markActiveNav()
   await initSRS()
+  initAuth()  // non-blocking: registers auth listener + sync hook
 }

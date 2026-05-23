@@ -5,7 +5,11 @@
 const DB_NAME = 'cardio-study'
 const DB_VERSION = 1
 
-let _db = null
+let _db       = null
+let _syncHook = null  // optional Firestore write registered by auth.js
+
+/** Register a function to call after every successful putSRS (for cloud sync). */
+export function setSRSSyncHook(fn) { _syncHook = fn }
 
 function openDB() {
   return new Promise((resolve, reject) => {
@@ -55,13 +59,15 @@ export async function getSRS(cardId) {
 
 export async function putSRS(state) {
   const db = await getDB()
-  return new Promise((resolve, reject) => {
+  await new Promise((resolve, reject) => {
     const req = db.transaction('srs', 'readwrite')
       .objectStore('srs')
       .put(state)
     req.onsuccess = () => resolve()
     req.onerror = () => reject(req.error)
   })
+  // Fire-and-forget cloud sync if a hook has been registered by auth.js
+  if (_syncHook) _syncHook(state).catch(() => {})
 }
 
 export async function getAllSRS() {

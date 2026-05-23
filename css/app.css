@@ -115,6 +115,45 @@ ul { list-style: none; }
 .lang-toggle [data-lang].active { color: var(--text); }
 .lang-toggle .sep { color: var(--border); }
 
+/* Auth button (sign-in / avatar) */
+.auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 0;
+  margin-left: 4px;
+  flex-shrink: 0;
+  transition: border-color 0.15s, background 0.15s;
+  color: var(--text-muted);
+}
+.auth-btn:hover { border-color: var(--accent); background: var(--surface); }
+
+.auth-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.auth-avatar-placeholder {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ── Layout ──────────────────────────────────────────────────────────────── */
 .main {
   max-width: var(--max-w);
