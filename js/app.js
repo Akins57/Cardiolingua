@@ -130,18 +130,18 @@ export async function initSRS() {
 }
 
 /**
- * Get cards that are due for review.
- * @param {string|null} topicSlug - filter to a specific topic, or null for all
+ * Get cards that are scheduled for SRS review (previously seen + past due date).
+ * New cards (lastReview === null) are NEVER returned here — they live in their
+ * topics and are accessed via the topic's "Study Flashcards" session.
  * @returns {Array} array of card objects enriched with .srs state
  */
-export async function getDueCards(topicSlug = null) {
+export async function getDueCards() {
   const all = getAllCards()
-  const filtered = topicSlug ? all.filter(c => c.topicSlug === topicSlug) : all
   const now = new Date().toISOString()
   const due = []
-  for (const card of filtered) {
+  for (const card of all) {
     const state = await getSRS(card.id)
-    if (state && state.dueDate <= now) {
+    if (state && state.lastReview !== null && state.dueDate <= now) {
       due.push({ ...card, srs: state })
     }
   }

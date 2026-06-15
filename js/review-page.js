@@ -1,13 +1,19 @@
 // js/review-page.js  — review.html
-// SRS review session with 4 ordered phases (empty phases are skipped):
-//   1. New · English    (repetitions === 0)
-//   2. Review · English (repetitions  >  0)
+// Two session types:
+//   Topic session  (?topic=slug)    — shows ALL cards for the topic (new + review).
+//                                     New cards appear as "New" phase; previously
+//                                     seen cards appear as "Review" phase.
+//   Global session (no topic param) — shows ONLY SRS-due review cards (lastReview
+//                                     !== null). New cards are never in this queue;
+//                                     they live in their topics.
+//
+// Phases (skipped if empty):
+//   1. New · English    (lastReview === null)
+//   2. Review · English (lastReview !== null)
 //   3. New · Russian
 //   4. Review · Russian
 //
-// "Again" re-queues the card within the SAME phase — EN cards never appear
-// in the RU phase and vice versa.
-// Flashcard HTML fully re-rendered on each card — no stale CSS state.
+// "Again" re-queues within the SAME phase. EN cards never cross into RU phase.
 
 import { bootstrap, getLang, getParams, getDueCards, getCardsWithSRS, getTopicBySlug } from './app.js'
 import { getSRS, putSRS, addReview } from './db.js'
@@ -342,23 +348,24 @@ function showComplete() {
 }
 
 function showAllCaughtUp() {
-  const modeMsg = mode === 'new'
-    ? 'No new cards to study right now.'
-    : mode === 'review'
-    ? 'No cards due for review right now.'
-    : `No cards are due right now${topicSlug ? ' for this topic' : ''}.`
+  // For global sessions (no topic), guide user to Notes to find new topics.
+  // For topic sessions, this only appears if the topic has no cards at all.
+  const modeMsg = topicSlug
+    ? 'No cards found for this topic.'
+    : 'No cards due for review right now.'
+
+  const noteBtn = topicSlug
+    ? `<a href="note.html?slug=${topicSlug}" class="btn btn-secondary">View Note</a>`
+    : `<a href="notes.html" class="btn btn-primary">Study New Topics</a>`
 
   document.getElementById('main').innerHTML = `
     <div class="session-complete">
       <div class="session-complete-icon">🎉</div>
       <h2>All Caught Up!</h2>
-      <p>${modeMsg}<br>Come back later for your next session.</p>
+      <p>${modeMsg}<br>${topicSlug ? '' : 'Go to Notes to start studying new topics.'}</p>
       <div class="action-row">
         <a href="index.html" class="btn btn-secondary">Dashboard</a>
-        ${topicSlug
-          ? `<a href="note.html?slug=${topicSlug}" class="btn btn-secondary">View Note</a>`
-          : ''}
-        <a href="cards.html" class="btn btn-secondary">Browse Cards</a>
+        ${noteBtn}
       </div>
     </div>
   `
