@@ -2,7 +2,7 @@
 // Caches the app shell for offline use.
 // data.js is intentionally NOT cached so new topics load immediately.
 
-const CACHE = 'cardiolingua-v23'
+const CACHE = 'cardiolingua-v24'
 
 const APP_SHELL = [
   './index.html',
@@ -42,19 +42,21 @@ self.addEventListener('activate', e => {
   self.clients.claim()
 })
 
-// Fetch: cache-first for app shell, network-first for data.js
+// Fetch: network-first for JS files, cache-first for static assets
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url)
 
-  // Always fetch data.js fresh (topics change when Claude Code edits it)
-  if (url.pathname.endsWith('/js/data.js')) {
+  // Always fetch JS fresh — code changes frequently and stale cache
+  // causes old behaviour to persist after updates.
+  // Falls back to cache when offline.
+  if (url.pathname.endsWith('.js')) {
     e.respondWith(
       fetch(e.request).catch(() => caches.match(e.request))
     )
     return
   }
 
-  // Cache-first for everything else
+  // Cache-first for HTML, CSS, icons, manifest
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   )
