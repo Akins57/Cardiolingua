@@ -14,7 +14,8 @@ import {
   setDoc,
   getDocs
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js'
-import { getAllSRS, getSRS, putSRS, setSRSSyncHook } from './db.js'
+import { getAllSRS, getSRS, putSRS, setSRSSyncHook,
+         getAllTopicReads, putTopicRead, setTopicReadsSyncHook } from './db.js'
 
 // ── State ─────────────────────────────────────────────────────────────────────
 
@@ -70,6 +71,33 @@ async function pushLocalToCloud(uid) {
   )
 }
 
+// ── Topic reads sync ──────────────────────────────────────────────────────────
+
+export async function syncTopicReadToCloud(state) {
+  if (!_currentUser) return
+  await setDoc(
+    doc(firestoreDB, 'users', _currentUser.uid, 'topicReads', state.slug),
+    state
+  )
+}
+
+async function syncTopicReadsFromCloud(uid) {
+  const snapshot = await getDocs(collection(firestoreDB, 'users', uid, 'topicReads'))
+  for (const snap of snapshot.docs) {
+    await putTopicRead(snap.data())
+  }
+}
+
+async function pushTopicReadsToCloud(uid) {
+  const local = await getAllTopicReads()
+  await Promise.all(
+    local.map(state =>
+      setDoc(doc(firestoreDB, 'users', uid, 'topicReads', state.slug), state)
+        .catch(() => {})
+    )
+  )
+}
+
 // ── Nav UI ────────────────────────────────────────────────────────────────────
 
 function getAuthBtn() { return document.getElementById('authBtn') }
@@ -111,8 +139,9 @@ function updateNavUI(user) {
 // ── Init ─────────────────────────────────────────────────────────────────────
 
 export function initAuth() {
-  // Register the sync hook so every putSRS() also writes to Firestore
+  // Register sync hooks so every putSRS/putTopicRead also writes to Firestore
   setSRSSyncHook(syncSRSToCloud)
+  setTopicReadsSyncHook(syncTopicReadToCloud)
 
   onAuthStateChanged(auth, async user => {
     _currentUser = user
@@ -123,6 +152,8 @@ export function initAuth() {
         // Pull cloud → merge into local, then push local → cloud
         await syncFromCloud(user.uid)
         await pushLocalToCloud(user.uid)
+        await syncTopicReadsFromCloud(user.uid)
+        await pushTopicReadsToCloud(user.uid)
       } catch (err) {
         console.warn('Sync error:', err)
       }

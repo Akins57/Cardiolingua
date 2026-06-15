@@ -9,7 +9,7 @@
 // in the RU phase and vice versa.
 // Flashcard HTML fully re-rendered on each card — no stale CSS state.
 
-import { bootstrap, getLang, getParams, getDueCards, getTopicBySlug } from './app.js'
+import { bootstrap, getLang, getParams, getDueCards, getCardsWithSRS, getTopicBySlug } from './app.js'
 import { getSRS, putSRS, addReview } from './db.js'
 import { sm2, previewIntervals, newState } from './sm2.js'
 
@@ -41,7 +41,12 @@ async function init() {
 
   document.getElementById('main').innerHTML = '<div class="loading">Loading cards…</div>'
 
-  const allDue = await getDueCards(topicSlug)
+  // When studying a specific topic from the note page, show ALL cards for that
+  // topic regardless of SRS due date — previously-done cards show as Review,
+  // never-seen cards show as New.  Global sessions still use SRS due dates.
+  const allDue = topicSlug
+    ? await getCardsWithSRS(topicSlug)
+    : await getDueCards()
   if (!allDue.length) { showAllCaughtUp(); return }
 
   // ── Split by language ──────────────────────────────────────────────────────

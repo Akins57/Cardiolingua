@@ -4,8 +4,10 @@
 // English sentence/bullet from the same topic's English note.
 
 import { bootstrap, getLang, setLang, getParams, getTopicBySlug } from './app.js'
+import { getTopicRead, putTopicRead, removeTopicRead } from './db.js'
 
 let _currentTopic = null
+let _topicSlug    = null
 
 async function init() {
   await bootstrap()
@@ -18,6 +20,7 @@ async function init() {
 
   const { discipline, subdiscipline, topic } = found
   _currentTopic = topic
+  _topicSlug    = slug
   render(discipline, subdiscipline, topic)
 
   document.getElementById('tabEn').addEventListener('click', () => switchTab('en'))
@@ -25,6 +28,7 @@ async function init() {
   switchTab(getLang())
 
   initTranslationTooltip()
+  await initMarkRead(slug)
 }
 
 function render(discipline, subdiscipline, topic) {
@@ -72,6 +76,7 @@ function render(discipline, subdiscipline, topic) {
         <button class="tab-btn" id="tabRu">Русский</button>
       </div>
       <div style="flex:1"></div>
+      <button class="btn mark-read-btn" id="markReadBtn" aria-label="Mark topic as done"></button>
       ${cardCount > 0
         ? `<a href="review.html?topic=${topic.slug}" class="btn btn-primary">
              Study Flashcards (${cardCount})
@@ -275,6 +280,36 @@ function showTooltip(rect, text, sectionTitle) {
 function hideTooltip() {
   const tip = document.getElementById('translate-tip')
   if (tip) tip.remove()
+}
+
+// ── Mark as Done ────────────────────────────────────────────────────────────
+
+async function initMarkRead(slug) {
+  const state = await getTopicRead(slug)
+  updateMarkReadBtn(!!state)
+
+  document.getElementById('markReadBtn')?.addEventListener('click', async () => {
+    const current = await getTopicRead(slug)
+    if (current) {
+      await removeTopicRead(slug)
+      updateMarkReadBtn(false)
+    } else {
+      await putTopicRead({ slug, readAt: new Date().toISOString() })
+      updateMarkReadBtn(true)
+    }
+  })
+}
+
+function updateMarkReadBtn(isRead) {
+  const btn = document.getElementById('markReadBtn')
+  if (!btn) return
+  if (isRead) {
+    btn.textContent = '✓ Done'
+    btn.classList.add('mark-read-btn--done')
+  } else {
+    btn.textContent = 'Mark as Done'
+    btn.classList.remove('mark-read-btn--done')
+  }
 }
 
 function showError(msg) {

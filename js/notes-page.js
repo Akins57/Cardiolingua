@@ -3,6 +3,7 @@
 
 import { DATA, } from './data.js'
 import { bootstrap, getLang, getParams } from './app.js'
+import { getAllTopicReads } from './db.js'
 
 async function init() {
   await bootstrap()
@@ -108,7 +109,7 @@ function renderSubdisciplines(dSlug) {
 
 // ── Level 2: Topics ───────────────────────────────────────────────────────
 
-function renderTopics(dSlug, sSlug) {
+async function renderTopics(dSlug, sSlug) {
   const lang = getLang()
   const discipline = DATA.find(d => d.slug === dSlug)
   if (!discipline) { notFound(); return }
@@ -147,14 +148,19 @@ function renderTopics(dSlug, sSlug) {
     return
   }
 
+  const reads = await getAllTopicReads()
+  const readSlugs = new Set(reads.map(r => r.slug))
+
   const grid = document.getElementById('grid')
   for (const topic of sub.topics) {
     const title = lang === 'en' ? topic.title_en : topic.title_ru
     const cardCount = topic.cards.length
+    const isRead = readSlugs.has(topic.slug)
     const a = document.createElement('a')
-    a.className = 'card'
+    a.className = 'card' + (isRead ? ' card--read' : '')
     a.href = `note.html?slug=${topic.slug}`
     a.innerHTML = `
+      ${isRead ? '<div class="topic-read-badge">Done</div>' : ''}
       <div class="card-icon">📄</div>
       <div class="card-title">${title}</div>
       <div class="card-meta">

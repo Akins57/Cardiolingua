@@ -3,13 +3,17 @@
 // Content (notes + cards) lives in data.js, not here.
 
 const DB_NAME = 'cardio-study'
-const DB_VERSION = 1
+const DB_VERSION = 2
 
 let _db       = null
-let _syncHook = null  // optional Firestore write registered by auth.js
+let _syncHook = null       // optional Firestore write registered by auth.js
+let _topicReadsSyncHook = null
 
 /** Register a function to call after every successful putSRS (for cloud sync). */
 export function setSRSSyncHook(fn) { _syncHook = fn }
+
+/** Register a function to call after every successful putTopicRead (for cloud sync). */
+export function setTopicReadsSyncHook(fn) { _topicReadsSyncHook = fn }
 
 function openDB() {
   return new Promise((resolve, reject) => {
@@ -34,6 +38,11 @@ function openDB() {
         })
         store.createIndex('by_card', 'cardId')
         store.createIndex('by_date', 'reviewedAt')
+      }
+
+      // Topic read status — one record per topic slug
+      if (!db.objectStoreNames.contains('topicReads')) {
+        db.createObjectStore('topicReads', { keyPath: 'slug' })
       }
     }
   })
@@ -118,4 +127,51 @@ export async function getTodayReviewCount() {
   todayStart.setHours(0, 0, 0, 0)
   const reviews = await getRecentReviews(1)
   return reviews.filter(r => r.reviewedAt >= todayStart.toISOString()).length
+}
+
+// ── Topic reads store ─────────────────────────────────────────────────────
+
+export async function getTopicRead(slug) {
+  const db = await getDB()
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('topicReads', 'readonly')
+      .objectStore('topicReads')
+      .get(slug)
+    req.onsuccess = () => resolve(req.result || null)
+    req.onerror = () => reject(req.error)
+  })
+}
+
+export async function putTopicRead(state) {
+  const db = await getDB()
+  await new Promise((resolve, reject) => {
+    const req = db.transaction('topicReads', 'readwrite')
+      .objectStore('topicReads')
+      .put(state)
+    req.onsuccess = () => resolve()
+    req.onerror = () => reject(req.error)
+  })
+  if (_topicReadsSyncHook) _topicReadsSyncHook(state).catch(() => {})
+}
+
+export async function removeTopicRead(slug) {
+  const db = await getDB()
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('topicReads', 'readwrite')
+      .objectStore('topicReads')
+      .delete(slug)
+    req.onsuccess = () => resolve()
+    req.onerror = () => reject(req.error)
+  })
+}
+
+export async function getAllTopicReads() {
+  const db = await getDB()
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('topicReads', 'readonly')
+      .objectStore('topicReads')
+      .getAll()
+    req.onsuccess = () => resolve(req.result)
+    req.onerror = () => reject(req.error)
+  })
 }
