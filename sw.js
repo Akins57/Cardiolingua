@@ -2,7 +2,7 @@
 // Caches the app shell for offline use.
 // data.js is intentionally NOT cached so new topics load immediately.
 
-const CACHE = 'cardiolingua-v21'
+const CACHE = 'cardiolingua-v23'
 
 const APP_SHELL = [
   './index.html',

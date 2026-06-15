@@ -47,13 +47,23 @@ async function init() {
 
   document.getElementById('main').innerHTML = '<div class="loading">Loading cards…</div>'
 
-  // When studying a specific topic from the note page, show ALL cards for that
-  // topic regardless of SRS due date — previously-done cards show as Review,
-  // never-seen cards show as New.  Global sessions still use SRS due dates.
-  const allDue = topicSlug
-    ? await getCardsWithSRS(topicSlug)
-    : await getDueCards()
-  if (!allDue.length) { showAllCaughtUp(); return }
+  // Topic session (from note page): show ONLY new (never-seen) cards.
+  // Previously-done cards belong to the global SRS review queue, not here.
+  // If all cards have been done before, show the "already done" confirmation.
+  //
+  // Global session (no topic): show only SRS-due review cards as before.
+  let allDue
+  if (topicSlug) {
+    const allCards = await getCardsWithSRS(topicSlug)
+    allDue = allCards.filter(c => c.srs.lastReview === null)
+    if (!allDue.length) {
+      showTopicAlreadyDone(allCards.length)
+      return
+    }
+  } else {
+    allDue = await getDueCards()
+    if (!allDue.length) { showAllCaughtUp(); return }
+  }
 
   // ── Split by language ──────────────────────────────────────────────────────
   const enAll = allDue.filter(c => c.cardLang === 'en')
@@ -342,6 +352,27 @@ function showComplete() {
           ? `<a href="note.html?slug=${topicSlug}" class="btn btn-secondary">Back to Note</a>`
           : ''}
         ${continueBtn}
+      </div>
+    </div>
+  `
+}
+
+function showTopicAlreadyDone(totalCount) {
+  // All cards for this topic have been reviewed at least once.
+  // Show a prompt asking whether the user wants to do a review session.
+  const cardWord = totalCount !== 1 ? 'cards' : 'card'
+  const topicTitle = topicLabel || 'this topic'
+  document.getElementById('main').innerHTML = `
+    <div class="session-complete">
+      <div class="session-complete-icon">✅</div>
+      <h2>All Done!</h2>
+      <p>You've already studied all ${totalCount / 2} ${cardWord} in <strong>${topicTitle}</strong>.</p>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-top:-8px">
+        Do you want to review them again?
+      </p>
+      <div class="action-row">
+        <a href="note.html?slug=${topicSlug}" class="btn btn-secondary">Back to Note</a>
+        <a href="review.html?topic=${topicSlug}&mode=review" class="btn btn-primary">Start Review</a>
       </div>
     </div>
   `
