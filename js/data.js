@@ -2316,6 +2316,421 @@ export const DATA = [
                 answer_ru: '6 недель'
               }
             ]
+          },
+
+          // ── Topic: Open Surgical Procedures for PAD ──────────────────────────
+          {
+            slug: 'open-surgical-pad',
+            title_en: 'Open Surgical Procedures for PAD',
+            title_ru: 'Открытые хирургические вмешательства при ЗПА',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Open surgical revascularisation for peripheral arterial disease (PAD) is indicated when endovascular therapy is unsuitable, has failed, or anatomy favours a surgical approach. TASC II C/D lesions of the aortoiliac and femoropopliteal segments are the primary domain of open surgery. Core procedures: aorto-bifemoral bypass (ABF), femoro-popliteal bypass (FPB), femoro-distal bypass, and common femoral endarterectomy (CFE) ± profundaplasty. Optimal medical therapy (OMT) must be established before elective surgery: aspirin 75–100 mg daily, atorvastatin 40–80 mg daily, ACE inhibitor, and smoking cessation. The ESVS 2019 guideline recommends revascularisation for all CLTI patients with suitable anatomy.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Preoperative Assessment',
+                    body: [
+                      'ABI < 0.9 confirms PAD; ABI < 0.4 suggests CLTI; ABI > 1.3 (non-compressible vessels) → measure toe-brachial index (TBI); TBI < 0.7 is abnormal',
+                      'Duplex ultrasound: first-line imaging; maps anatomy and identifies conduit veins',
+                      'CT angiography (CTA): whole aorta-to-foot run-off; gold standard for operative planning',
+                      'DSA (digital subtraction angiography): reserved for equivocal CTA or hybrid intervention planning',
+                      'Cardiac risk: PAD patients have ~30% prevalence of significant CAD; assess with CPET or dobutamine stress echocardiography (AHA/ACC guideline)',
+                      'Renal function: pre-hydrate if eGFR < 60 mL/min/1.73 m² before contrast administration'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Conduit Selection',
+                    body: [
+                      'Great saphenous vein (GSV): gold standard for all below-knee targets; 5-year primary patency ~65% (GSV) vs ~35% (prosthetic) below knee',
+                      'Arm vein (cephalic or basilic): second-line autologous conduit if GSV unavailable or inadequate',
+                      'PTFE: preferred prosthetic for above-knee femoro-popliteal bypass; 5-year patency comparable to vein above knee (~55%)',
+                      'Dacron: preferred for ABF (16–18 mm bifurcated graft)',
+                      'Vein cuff (Miller cuff / Taylor patch): mandatory adjunct when prosthetic graft anastomosed below the knee; improves distal patency'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Aorto-Bifemoral Bypass',
+                    body: [
+                      'Indication: Leriche syndrome (bilateral claudication, impotence, absent femoral pulses) from TASC II C/D aortoiliac disease unsuitable for endovascular repair',
+                      'GA; arterial line + central venous access; urinary catheter',
+                      'Lower midline laparotomy (or retroperitoneal left-flank approach in high-risk patients)',
+                      'Expose infrarenal aorta: divide posterior peritoneum; identify left renal vein crossing anteriorly — ligate adrenal/gonadal tributaries to mobilise if needed',
+                      'Both groins: longitudinal incisions; expose CFA, SFA, and profunda femoris artery',
+                      'Systemic heparin 100 IU/kg IV; target ACT > 250 s',
+                      'Aortic anastomosis: end-to-end preferred (reduces distal embolisation); end-to-side if aorta is patent and IMA/pelvic flow must be preserved',
+                      '16–18 mm bifurcated Dacron graft tunnelled retroperitoneally then under the inguinal ligament to each groin',
+                      'Femoral anastomosis: end-to-side to CFA with bevelled hood extending to profunda orifice (profundaplasty effect); 5-0 or 6-0 Prolene',
+                      'Close peritoneum over graft to prevent aorto-enteric fistula',
+                      'Outcomes (ESVS 2019): operative mortality 2–5%; 5-year primary patency 80–90%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Femoro-Popliteal Bypass',
+                    body: [
+                      'Indication: SFA/popliteal disease causing CLTI or incapacitating claudication failing OMT; TASC II C/D femoropopliteal lesions',
+                      'GA or spinal/epidural anaesthesia',
+                      'Harvest reversed GSV via medial thigh incision; ligate tributaries; flush with heparinised saline; check for strictures',
+                      'Above-knee (AK) popliteal: medial thigh incision in groove between vastus medialis and sartorius',
+                      'Below-knee (BK) popliteal: medial incision in popliteal fossa between tibia and gastrocnemius heads',
+                      'Heparin 100 IU/kg IV; proximal anastomosis end-to-side to CFA at SFA origin; 5-0 Prolene',
+                      'Tunnel subcutaneously medially (deep to sartorius for AK; between gastrocnemius heads for BK)',
+                      'Distal anastomosis end-to-side to popliteal; 6-0 Prolene; confirm no vein twist before flow restoration',
+                      'Outcomes: AK-GSV ~70%; BK-GSV ~65%; AK-prosthetic ~55%; BK-prosthetic ~35% at 5 years'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Femoro-Distal Bypass & Common Femoral Endarterectomy',
+                    body: [
+                      'Femoro-distal bypass: targets posterior tibial, anterior tibial, or peroneal artery for CLTI when popliteal artery is unsuitable; GSV mandatory; 6-0 or 7-0 Prolene; 5-year primary patency ~50–60%; limb salvage ~70–80%',
+                      'CFE ± profundaplasty: endarterectomy of CFA and profunda origin for focal femoral disease; patch angioplasty (vein or bovine pericardium) prevents restenosis; profundaplasty improves profunda inflow and distal perfusion',
+                      'Hybrid procedure: CFE + ipsilateral iliac stenting in the same setting; avoids laparotomy while addressing multi-level disease'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications',
+                    body: [
+                      'Early — Wound infection / lymphocele: most common groin complication; prevented by meticulous haemostasis and wound care',
+                      'Early — Graft thrombosis: usually technical (kinking, intimal flap, conduit mismatch); re-explore urgently',
+                      'Early — Haemorrhage: anastomotic leak or diffuse coagulopathy',
+                      'Early — Systemic: MI (1–3%), AKI, DVT/PE, pneumonia',
+                      'Late — Anastomotic pseudoaneurysm: commonest at femoral anastomosis; repair electively when > 2 cm',
+                      'Late — Graft infection (1–3% lifetime): PTFE most susceptible; requires graft excision ± extra-anatomic bypass (obturator bypass for aortoiliac grafts)',
+                      'Late — Aorto-enteric fistula: rare but fatal; classic presentation — herald GI bleed then massive haemorrhage; emergency graft excision + bowel repair + extra-anatomic bypass',
+                      'Late — Graft stenosis: PSV ratio > 2.5 on duplex = haemodynamically significant → angioplasty or jump graft before occlusion'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surveillance & Alternatives',
+                    body: [
+                      'Surveillance (SVS guideline): duplex at 6 weeks, 3 months, 6 months, then annually; ABI at each visit; PSV ratio > 2.5 = significant stenosis requiring re-intervention',
+                      'Endovascular first for TASC II A/B: balloon angioplasty ± stenting; drug-coated balloon (DCB) improves durability vs plain balloon for femoropopliteal disease (AHA/ACC 2016)',
+                      'Hybrid: CFE + iliac stenting avoids laparotomy while treating multi-level disease',
+                      'Amputation (BKA or AKA): for unsalvageable limb, failed revascularisation, or prohibitive surgical risk; BKA preferred over AKA for rehabilitation potential'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Открытая хирургическая реваскуляризация при заболеваниях периферических артерий (ЗПА) показана, если эндоваскулярное лечение неприменимо, потерпело неудачу или анатомия благоприятствует хирургическому подходу. Поражения TASC II C/D аорто-подвздошного и бедренно-подколенного сегментов — основная область открытой хирургии. Основные операции: аорто-бифеморальное шунтирование (АБФШ), бедренно-подколенное шунтирование (БПШ), бедренно-дистальное шунтирование и эндартерэктомия из общей бедренной артерии (ОБА) ± профундопластика. До плановой операции необходима оптимальная медикаментозная терапия (ОМТ): аспирин 75–100 мг/сут, аторвастатин 40–80 мг/сут, ингибитор АПФ и отказ от курения. Руководство ESVS 2019 рекомендует реваскуляризацию всем пациентам с хронической ишемией, угрожающей конечности (ХИУК), при подходящей анатомии.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Предоперационная оценка',
+                    body: [
+                      'Лодыжечно-плечевой индекс (ЛПИ) < 0,9 подтверждает ЗПА; ЛПИ < 0,4 указывает на ХИУК; ЛПИ > 1,3 (некомпрессируемые сосуды) → измерить пальцево-плечевой индекс (ППИ); ППИ < 0,7 — патологическое значение',
+                      'Дуплексное сканирование: метод первой линии; картирует анатомию и определяет пригодные кондуиты',
+                      'КТ-ангиография (КТА): от аорты до стоп; золотой стандарт предоперационного планирования',
+                      'Дигитальная субтракционная ангиография (ДСА): при неопределённых данных КТА или при планировании гибридного вмешательства',
+                      'Кардиальный риск: у пациентов с ЗПА ~30% имеют значимую ишемическую болезнь сердца (ИБС); оценка с помощью кардиопульмонального нагрузочного теста (КПНТ) или добутаминовой стресс-эхокардиографии (рекомендации AHA/ACC)',
+                      'Функция почек: предгидратация при скорости клубочковой фильтрации (СКФ) < 60 мл/мин/1,73 м² перед введением контраста'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Выбор кондуита',
+                    body: [
+                      'Большая подкожная вена (БПВ): золотой стандарт для всех целей ниже колена; 5-летняя первичная проходимость ~65% (БПВ) против ~35% (протез) ниже колена',
+                      'Вена руки (головная или основная): аутологичный кондуит второй линии при непригодности БПВ',
+                      'ПТФЭ (политетрафторэтилен): предпочтительный синтетический кондуит для надколенного бедренно-подколенного шунтирования; 5-летняя проходимость сопоставима с веной (~55%)',
+                      'Дакрон: предпочтителен для бифуркационного протеза при АБФШ (16–18 мм)',
+                      'Венозная манжетка (манжетка Миллера / заплата Тейлора): обязательное дополнение при протезном анастомозе ниже колена; улучшает дистальную проходимость'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Аорто-бифеморальное шунтирование',
+                    body: [
+                      'Показание: синдром Лериша (двусторонняя перемежающаяся хромота, импотенция, отсутствие пульса на бедренных артериях) при поражениях TASC II C/D аорто-подвздошного сегмента, не пригодных для эндоваскулярной реконструкции',
+                      'Общая анестезия (ОА); инвазивный мониторинг АД + центральный венозный катетер; катетер мочевого пузыря',
+                      'Нижняя срединная лапаротомия (или забрюшинный левобоковой доступ у пациентов высокого риска)',
+                      'Выделение инфраренальной аорты: разрез заднего листка брюшины; левая почечная вена пересекает аорту спереди — при необходимости мобилизовать путём лигирования надпочечниковых/гонадных притоков',
+                      'Оба паха: продольные разрезы; выделить общую бедренную артерию (ОБА), поверхностную бедренную артерию (ПБА) и глубокую артерию бедра (ГАБ)',
+                      'Системный гепарин 100 МЕ/кг в/в; целевое активированное время свёртывания (АВС) > 250 с',
+                      'Аортальный анастомоз: «конец в конец» предпочтительно (снижает риск дистальной эмболизации); «конец в бок» — если аорта проходима и необходимо сохранить кровоток по нижней брыжеечной артерии / в малый таз',
+                      'Бифуркационный дакроновый протез 16–18 мм проводят забрюшинно, затем под паховой связкой к каждому паху',
+                      'Бедренный анастомоз: «конец в бок» к ОБА с косым язычком до устья ГАБ (эффект профундопластики); пролен 5-0 или 6-0',
+                      'Брюшину ушивают над протезом для профилактики аорто-кишечного свища',
+                      'Результаты (ESVS 2019): операционная летальность 2–5%; 5-летняя первичная проходимость 80–90%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Бедренно-подколенное шунтирование',
+                    body: [
+                      'Показание: поражение поверхностной бедренной / подколенной артерии (ПБА/ПоА) с ХИУК или изнурительной перемежающейся хромотой, не поддающейся ОМТ; поражения TASC II C/D бедренно-подколенного сегмента',
+                      'Общая или спинальная/эпидуральная анестезия',
+                      'Забор БПВ в обращённом виде через медиальный разрез на бедре; лигировать притоки; промыть гепаринизированным физраствором; проверить на стриктуры',
+                      'Надколенный (НК) доступ к подколенной артерии (ПоА): борозда между широкой медиальной мышцей и портняжной мышцей',
+                      'Подколенный (ПК) доступ: медиальная подколенная ямка между большеберцовой костью и головками икроножной мышцы',
+                      'Гепарин 100 МЕ/кг в/в; проксимальный анастомоз «конец в бок» к ОБА у начала ПБА; пролен 5-0',
+                      'Тоннель подкожно медиально (под портняжной мышцей — НК; между головками икроножной — ПК)',
+                      'Дистальный анастомоз «конец в бок» к ПоА; пролен 6-0; убедиться в отсутствии перекрута вены до пуска кровотока',
+                      'Результаты: НК-БПВ ~70%; ПК-БПВ ~65%; НК-протез ~55%; ПК-протез ~35% через 5 лет'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Бедренно-дистальное шунтирование и эндартерэктомия из ОБА',
+                    body: [
+                      'Бедренно-дистальное шунтирование: цель — задняя большеберцовая, передняя большеберцовая или малоберцовая артерия при ХИУК, когда ПоА непригодна; БПВ обязательна; пролен 6-0 или 7-0; 5-летняя первичная проходимость ~50–60%; сохранение конечности ~70–80%',
+                      'Эндартерэктомия из ОБА ± профундопластика: удаление бляшки из ОБА и устья ГАБ при локальном бедренном поражении; пластика заплатой (венозной или из бычьего перикарда) предотвращает рестеноз; профундопластика улучшает приток по ГАБ и дистальное перфузионное давление',
+                      'Гибридная операция: эндартерэктомия из ОБА + ипсилатеральное стентирование подвздошной артерии за одну сессию; исключает лапаротомию при многоуровневом поражении'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения',
+                    body: [
+                      'Ранние — Раневая инфекция / лимфоцеле: наиболее частое паховое осложнение; профилактика — тщательный гемостаз и уход за раной',
+                      'Ранние — Тромбоз шунта: как правило, технический (перегиб, интимальный лоскут, несоответствие диаметров); показана экстренная ревизия',
+                      'Ранние — Кровотечение: из анастомоза или диффузная коагулопатия',
+                      'Ранние — Системные: инфаркт миокарда (ИМ) (1–3%), острое повреждение почек (ОПП), тромбоз глубоких вен (ТГВ)/тромбоэмболия лёгочной артерии (ТЭЛА), пневмония',
+                      'Поздние — Ложная аневризма анастомоза: наиболее часто в зоне бедренного анастомоза; плановое вмешательство при диаметре > 2 см',
+                      'Поздние — Инфекция протеза (1–3% за жизнь): ПТФЭ наиболее подвержен; требует удаления протеза ± внеанатомического шунтирования (обтураторный обход при аорто-подвздошных протезах)',
+                      'Поздние — Аорто-кишечный свищ: редко, но фатально; классика — предвестниковое желудочно-кишечное (ЖК) кровотечение, затем массивное; экстренное удаление протеза + ушивание кишки + внеанатомическое шунтирование',
+                      'Поздние — Стеноз шунта: соотношение пиковых систолических скоростей (СПСС) > 2,5 при дуплексном сканировании = гемодинамически значимый стеноз → ангиопластика или прыжковый шунт до окклюзии'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Наблюдение и альтернативы',
+                    body: [
+                      'Наблюдение (рекомендации SVS): дуплексное сканирование через 6 недель, 3 месяца, 6 месяцев, затем ежегодно; ЛПИ при каждом визите; СПСС > 2,5 = значимый стеноз, требующий вмешательства',
+                      'Эндоваскулярный метод — первый выбор при поражениях TASC II A/B: баллонная ангиопластика ± стентирование; баллон с лекарственным покрытием (БЛП) улучшает долгосрочную проходимость по сравнению с простым баллоном в бедренно-подколенном сегменте (AHA/ACC 2016)',
+                      'Гибридная операция: эндартерэктомия из ОБА + стентирование подвздошной артерии исключает лапаротомию при многоуровневом поражении',
+                      'Ампутация (голени или бедра): при некурабельной ишемии конечности, неудаче реваскуляризации или запредельном хирургическом риске; ампутация голени предпочтительна ввиду лучшего реабилитационного потенциала'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'open-surgical-pad-001',
+                question_en: 'TASC II C/D lesions: preferred treatment?',
+                question_ru: 'Поражения TASC II C/D: предпочтительное лечение?',
+                answer_en: 'Open surgery',
+                answer_ru: 'Открытая операция'
+              },
+              {
+                id: 'open-surgical-pad-002',
+                question_en: 'ABI indicating CLTI?',
+                question_ru: 'ЛПИ, указывающий на ХИУК?',
+                answer_en: '<0.4',
+                answer_ru: '<0,4'
+              },
+              {
+                id: 'open-surgical-pad-003',
+                question_en: 'Non-compressible vessels: ABI alternative?',
+                question_ru: 'Некомпрессируемые сосуды: альтернатива ЛПИ?',
+                answer_en: 'Toe-brachial index',
+                answer_ru: 'Пальцево-плечевой индекс'
+              },
+              {
+                id: 'open-surgical-pad-004',
+                question_en: 'Abnormal TBI threshold?',
+                question_ru: 'Патологический порог ППИ?',
+                answer_en: '<0.7',
+                answer_ru: '<0,7'
+              },
+              {
+                id: 'open-surgical-pad-005',
+                question_en: 'Gold standard imaging for PAD operative planning?',
+                question_ru: 'Золотой стандарт визуализации при планировании операции при ЗПА?',
+                answer_en: 'CT angiography',
+                answer_ru: 'КТ-ангиография'
+              },
+              {
+                id: 'open-surgical-pad-006',
+                question_en: 'Intraoperative heparin dose for bypass?',
+                question_ru: 'Интраоперационная доза гепарина при шунтировании?',
+                answer_en: '100 IU/kg IV',
+                answer_ru: '100 МЕ/кг в/в'
+              },
+              {
+                id: 'open-surgical-pad-007',
+                question_en: 'Target ACT during vascular bypass?',
+                question_ru: 'Целевое АВС при сосудистом шунтировании?',
+                answer_en: '>250 seconds',
+                answer_ru: '>250 секунд'
+              },
+              {
+                id: 'open-surgical-pad-008',
+                question_en: 'Leriche syndrome cause?',
+                question_ru: 'Причина синдрома Лериша?',
+                answer_en: 'Aortoiliac occlusion',
+                answer_ru: 'Аорто-подвздошная окклюзия'
+              },
+              {
+                id: 'open-surgical-pad-009',
+                question_en: 'ABF graft material?',
+                question_ru: 'Материал протеза при АБФШ?',
+                answer_en: 'Bifurcated Dacron',
+                answer_ru: 'Бифуркационный дакрон'
+              },
+              {
+                id: 'open-surgical-pad-010',
+                question_en: 'ABF: aortic anastomosis preference?',
+                question_ru: 'АБФШ: предпочтительный тип аортального анастомоза?',
+                answer_en: 'End-to-end',
+                answer_ru: 'Конец в конец'
+              },
+              {
+                id: 'open-surgical-pad-011',
+                question_en: 'Structure crossing infrarenal aorta anteriorly?',
+                question_ru: 'Структура, пересекающая инфраренальную аорту спереди?',
+                answer_en: 'Left renal vein',
+                answer_ru: 'Левая почечная вена'
+              },
+              {
+                id: 'open-surgical-pad-012',
+                question_en: 'ABF femoral anastomosis type?',
+                question_ru: 'Тип бедренного анастомоза при АБФШ?',
+                answer_en: 'End-to-side CFA',
+                answer_ru: 'Конец в бок ОБА'
+              },
+              {
+                id: 'open-surgical-pad-013',
+                question_en: 'ABF femoral hood extends to?',
+                question_ru: 'Язычок бедренного анастомоза АБФШ доходит до?',
+                answer_en: 'Profunda orifice',
+                answer_ru: 'Устья ГАБ'
+              },
+              {
+                id: 'open-surgical-pad-014',
+                question_en: 'Reason to close peritoneum over ABF graft?',
+                question_ru: 'Цель ушивания брюшины над протезом АБФШ?',
+                answer_en: 'Prevent aortoenteric fistula',
+                answer_ru: 'Профилактика аорто-кишечного свища'
+              },
+              {
+                id: 'open-surgical-pad-015',
+                question_en: 'ABF operative mortality?',
+                question_ru: 'Операционная летальность АБФШ?',
+                answer_en: '2–5%',
+                answer_ru: '2–5%'
+              },
+              {
+                id: 'open-surgical-pad-016',
+                question_en: 'ABF 5-year primary patency?',
+                question_ru: '5-летняя первичная проходимость АБФШ?',
+                answer_en: '80–90%',
+                answer_ru: '80–90%'
+              },
+              {
+                id: 'open-surgical-pad-017',
+                question_en: 'Preferred conduit for below-knee bypass?',
+                question_ru: 'Предпочтительный кондуит для шунтирования ниже колена?',
+                answer_en: 'Great saphenous vein',
+                answer_ru: 'Большая подкожная вена'
+              },
+              {
+                id: 'open-surgical-pad-018',
+                question_en: 'GSV below-knee bypass 5-year patency?',
+                question_ru: '5-летняя проходимость шунта из БПВ ниже колена?',
+                answer_en: '~65%',
+                answer_ru: '~65%'
+              },
+              {
+                id: 'open-surgical-pad-019',
+                question_en: 'Prosthetic below-knee bypass 5-year patency?',
+                question_ru: '5-летняя проходимость протезного шунта ниже колена?',
+                answer_en: '~35%',
+                answer_ru: '~35%'
+              },
+              {
+                id: 'open-surgical-pad-020',
+                question_en: 'Prosthetic distal anastomosis adjunct?',
+                question_ru: 'Дополнение при протезном дистальном анастомозе?',
+                answer_en: 'Vein cuff',
+                answer_ru: 'Венозная манжетка'
+              },
+              {
+                id: 'open-surgical-pad-021',
+                question_en: 'Above-knee popliteal access: muscle groove?',
+                question_ru: 'Надколенный доступ к ПоА: между какими мышцами?',
+                answer_en: 'Vastus / sartorius',
+                answer_ru: 'Vastus / sartorius'
+              },
+              {
+                id: 'open-surgical-pad-022',
+                question_en: 'Femoro-distal bypass: mandatory conduit?',
+                question_ru: 'Бедренно-дистальное шунтирование: обязательный кондуит?',
+                answer_en: 'Autologous vein',
+                answer_ru: 'Аутовенозный кондуит'
+              },
+              {
+                id: 'open-surgical-pad-023',
+                question_en: 'Profundaplasty indication?',
+                question_ru: 'Показание к профундопластике?',
+                answer_en: 'Profunda origin stenosis',
+                answer_ru: 'Стеноз устья ГАБ'
+              },
+              {
+                id: 'open-surgical-pad-024',
+                question_en: 'CFE: reason for patch angioplasty?',
+                question_ru: 'Эндартерэктомия из ОБА: цель пластики заплатой?',
+                answer_en: 'Prevent restenosis',
+                answer_ru: 'Профилактика рестеноза'
+              },
+              {
+                id: 'open-surgical-pad-025',
+                question_en: 'Most common early groin bypass complication?',
+                question_ru: 'Наиболее частое раннее осложнение при паховом шунтировании?',
+                answer_en: 'Wound infection',
+                answer_ru: 'Раневая инфекция'
+              },
+              {
+                id: 'open-surgical-pad-026',
+                question_en: 'PSV ratio indicating graft stenosis?',
+                question_ru: 'СПСС, указывающее на стеноз шунта?',
+                answer_en: '>2.5',
+                answer_ru: '>2,5'
+              },
+              {
+                id: 'open-surgical-pad-027',
+                question_en: 'First post-bypass duplex timing?',
+                question_ru: 'Срок первого дуплексного контроля после шунтирования?',
+                answer_en: '6 weeks',
+                answer_ru: '6 недель'
+              },
+              {
+                id: 'open-surgical-pad-028',
+                question_en: 'Anastomotic pseudoaneurysm: repair threshold?',
+                question_ru: 'Ложная аневризма анастомоза: порог для вмешательства?',
+                answer_en: '>2 cm',
+                answer_ru: '>2 см'
+              },
+              {
+                id: 'open-surgical-pad-029',
+                question_en: 'Graft infection: surgical treatment?',
+                question_ru: 'Инфекция протеза: хирургическое лечение?',
+                answer_en: 'Graft excision',
+                answer_ru: 'Удаление протеза'
+              },
+              {
+                id: 'open-surgical-pad-030',
+                question_en: 'Aortoenteric fistula hallmark symptom?',
+                question_ru: 'Патогномоничный симптом аорто-кишечного свища?',
+                answer_en: 'Herald GI bleed',
+                answer_ru: 'Предвестниковое ЖК-кровотечение'
+              }
+            ]
           }
 
         ]
