@@ -100,62 +100,75 @@ export const DATA = [
         title_ru: 'Анатомия',
         topics: [
 
-          // ── Topic: Arterial Supply & Venous Drainage of the Head and Neck ──
+
+          // ── Topic: Arterial Supply of the Head & Neck ───────────────────────────
           {
             slug: 'arterial-supply-venous-drainage-head-neck',
-            title_en: 'Arterial Supply & Venous Drainage of the Head and Neck',
-            title_ru: 'Артериальное кровоснабжение и венозный отток головы и шеи',
+            title_en: 'Arterial Supply of the Head & Neck',
+            title_ru: 'Артериальное кровоснабжение головы и шеи',
             note: {
               en: {
                 sections: [
                   {
                     title: 'Overview',
-                    body: 'The head and neck receive arterial supply primarily from the common carotid arteries (CCA) and vertebral arteries. Venous drainage is principally via the internal jugular veins (IJV). This anatomy is fundamental to carotid endarterectomy (CEA), central venous access, and vascular tumours of the neck.',
+                    body: 'The head and neck receive arterial supply from the common carotid arteries (CCA) and the vertebral arteries. The CCA bifurcates into the external carotid artery (ECA) and internal carotid artery (ICA). The vertebral arteries unite to form the basilar artery, which links to the Circle of Willis.',
                     type: 'text'
                   },
                   {
-                    title: 'Common Carotid Arteries',
-                    body: 'The right CCA arises from the brachiocephalic trunk behind the right sternoclavicular joint; the left CCA arises directly from the aortic arch (longer mediastinal course). Both travel within the carotid sheath with the IJV (lateral) and vagus nerve (posterior).\n\nBifurcate at C3–C4 (upper border of thyroid cartilage) into the external and internal carotid arteries. At the bifurcation: the carotid sinus (baroreceptors, innervated by CN IX — glossopharyngeal nerve) monitors blood pressure; the carotid body (chemoreceptors) detects changes in O₂, CO₂, and pH.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'External Carotid Artery — 8 Branches (SALFOPMS)',
+                    title: 'Common Carotid Artery',
                     body: [
-                      'Superior thyroid artery — thyroid gland, larynx',
-                      'Ascending pharyngeal artery — pharynx, meninges',
-                      'Lingual artery — tongue, floor of mouth',
-                      'Facial artery — face; crosses mandible at anterior border of masseter',
-                      'Occipital artery — posterior scalp',
-                      'Posterior auricular artery — pinna, posterior scalp',
-                      'Maxillary artery — deep face; its branch, the middle meningeal artery, supplies the dura mater',
-                      'Superficial temporal artery — temporal scalp; palpable anterior to the tragus (terminal branch)',
-                      'The ECA lies medial to the ICA at the bifurcation'
+                      'Right CCA arises from the brachiocephalic trunk',
+                      'Left CCA arises directly from the aortic arch',
+                      'Both travel in the carotid sheath with the internal jugular vein (IJV) laterally and vagus nerve (CN X) posteriorly',
+                      'Bifurcate at C3–C4 (upper border of thyroid cartilage) into ECA and ICA',
+                      'Carotid sinus at bifurcation: baroreceptor, innervated by CN IX',
+                      'Carotid body at bifurcation: chemoreceptor — detects changes in O₂, CO₂, pH'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Internal Carotid Artery',
-                    body: 'No branches in the neck. Segments: Cervical → Petrous → Lacerum → Cavernous → Clinoid → Ophthalmic → Communicating.\n\nFirst intracranial branch: ophthalmic artery (enters orbit via optic canal; supplies the eye). Terminates as the anterior cerebral artery (ACA) and middle cerebral artery (MCA). Supplies the ipsilateral cerebral hemisphere and eye. Lies lateral and posterior to the ECA at the bifurcation.',
+                    title: 'External Carotid Artery (ECA) — Branches by Region',
+                    body: [
+                      'ECA lies medial to the ICA at the bifurcation',
+                      'Terminal branches: superficial temporal artery + maxillary artery',
+                      'Anterior branches: superior thyroid artery, lingual artery, facial artery',
+                      'Medial (deep) branch: ascending pharyngeal artery',
+                      'Posterior branches: occipital artery, posterior auricular artery',
+                      'Mnemonic — SALFOPMS (Superior thyroid, Ascending pharyngeal, Lingual, Facial, Occipital, Posterior auricular, Maxillary, Superficial temporal)',
+                      'Left gastric gives gastric + esophageal branches',
+                      'Middle meningeal artery: branch of maxillary artery; supplies dura mater via foramen spinosum'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Internal Carotid Artery (ICA)',
+                    body: 'No branches in the cervical part. Segments: Cervical → Petrous → Lacerum → Cavernous → Clinoid → Ophthalmic → Communicating.\n\nKey intracranial branches: ophthalmic artery (first intracranial branch; supplies the eye via optic canal), posterior communicating artery (connects to posterior circulation), anterior choroidal artery (supplies choroid plexus, optic tract, internal capsule).\n\nTerminal branches: Middle Cerebral Artery (MCA) and Anterior Cerebral Artery (ACA). The MCA supplies the lateral cerebral cortex; the ACA supplies the medial frontal lobe.',
                     type: 'text'
                   },
                   {
-                    title: 'Vertebral Arteries',
-                    body: 'First branch of the subclavian artery bilaterally. Enter the transverse foramina at C6 (occasionally C7). Ascend through C6–C1, then enter the skull via the foramen magnum.\n\nThe two vertebral arteries unite at the lower border of the pons to form the basilar artery, which continues to the Circle of Willis via the posterior cerebral arteries (PCA). Key branches: PICA (posterior inferior cerebellar artery — from the vertebral artery); AICA (anterior inferior cerebellar artery — from the basilar artery).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Venous Drainage',
-                    body: 'Internal Jugular Vein (IJV): Continuation of the sigmoid sinus at the jugular foramen. Principal drainage of brain, face, and neck. Lies lateral to the CCA within the carotid sheath. Tributaries: facial, lingual, pharyngeal, superior and middle thyroid veins. Joins the subclavian vein behind the sternoclavicular joint to form the brachiocephalic vein. Right IJV is preferred for central venous access — straight path to the SVC.\n\nExternal Jugular Vein (EJV): Formed by the junction of the posterior division of the retromandibular vein and the posterior auricular vein. Crosses SCM superficially and drains into the subclavian vein. Used clinically to assess jugular venous pressure (JVP).\n\nAnterior Jugular Vein: Drains the anterior neck; communicates across the midline via the jugular venous arch.\n\nVertebral Veins: Accompany the vertebral arteries in the transverse foramina; drain into the brachiocephalic vein.',
-                    type: 'text'
+                    title: 'Vertebral Arteries & Basilar Artery',
+                    body: [
+                      'Vertebral arteries: first branch of the subclavian artery bilaterally',
+                      'Enter transverse foramina at C6 (occasionally C7); ascend through C6–C1',
+                      'Enter skull via foramen magnum',
+                      'Vertebral artery branch: anterior spinal artery (supplies anterior 2/3 of spinal cord)',
+                      'The two vertebral arteries unite at the lower border of the pons to form the basilar artery',
+                      'Basilar artery is the main blood supply to the brain stem',
+                      'Basilar artery branches: anterior inferior cerebellar artery (AICA), superior cerebellar artery (SCA), posterior cerebral arteries (PCA)',
+                      'Basilar also gives median pontine branches to the pons',
+                      'PCAs connect to the Circle of Willis via posterior communicating arteries',
+                      'Basilar + carotid systems anastomose at Circle of Willis'
+                    ],
+                    type: 'list'
                   },
                   {
                     title: 'Surgical Correlates',
                     body: [
-                      'Carotid stenosis: atherosclerosis at bifurcation → TIA/stroke. CEA indicated for symptomatic stenosis ≥50% or asymptomatic stenosis ≥60–70% (AHA/ASA guidelines)',
-                      'During CEA: protect hypoglossal nerve (CN XII) crossing the ICA/ECA, vagus nerve (CN X) in the sheath, superior laryngeal nerve, and ansa cervicalis',
-                      'Carotid body tumour (paraganglioma): arises at bifurcation, splays ICA from ECA — "lyre sign" on angiography',
-                      'Subclavian steal syndrome: proximal subclavian artery stenosis → retrograde flow in ipsilateral vertebral artery',
-                      'IJV cannulation landmark: medial border of SCM at the level of the thyroid cartilage; right side preferred (direct path to SVC)'
+                      'Carotid endarterectomy (CEA): indicated for symptomatic stenosis ≥50% or asymptomatic ≥60–70% (AHA/ASA)',
+                      'During CEA: protect CN XII (hypoglossal), CN X (vagus in sheath), superior laryngeal nerve, ansa cervicalis',
+                      'Carotid body tumour: arises at bifurcation, splays ECA from ICA — "lyre sign" on angiography',
+                      'Subclavian steal syndrome: proximal subclavian stenosis → retrograde vertebral flow → posterior fossa ischaemia',
+                      'IJV cannulation: medial border of SCM at thyroid cartilage level; right side preferred (direct path to SVC)'
                     ],
                     type: 'list'
                   }
@@ -165,52 +178,63 @@ export const DATA = [
                 sections: [
                   {
                     title: 'Обзор',
-                    body: 'Голова и шея получают артериальное кровоснабжение преимущественно от общих сонных артерий (ОСА) и позвоночных артерий. Венозный отток осуществляется главным образом через внутренние яремные вены (ВЯВ). Данная анатомия является основой каротидной эндартерэктомии (КЭА), центрального венозного доступа и хирургии сосудистых опухолей шеи.',
+                    body: 'Голова и шея получают артериальное кровоснабжение от общих сонных артерий (ОСА) и позвоночных артерий. ОСА делится на наружную сонную артерию (НСА) и внутреннюю сонную артерию (ВСА). Позвоночные артерии сливаются, образуя базилярную артерию, которая входит в Виллизиев круг.',
                     type: 'text'
                   },
                   {
-                    title: 'Общие сонные артерии',
-                    body: 'Правая ОСА отходит от плечеголовного ствола позади правого грудино-ключичного сустава; левая ОСА отходит непосредственно от дуги аорты (более длинный медиастинальный отрезок). Обе проходят в сонном влагалище совместно с ВЯВ (латерально) и блуждающим нервом (кзади).\n\nБифурцируют на уровне С3–С4 (верхний край щитовидного хряща) на наружную и внутреннюю сонные артерии. В области бифуркации: каротидный синус (барорецепторы, иннервируется ЧН IX — языкоглоточным нервом) контролирует артериальное давление; каротидное тело (хеморецепторы) реагирует на изменения O₂, CO₂ и pH.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Наружная сонная артерия — 8 ветвей (SALFOPMS)',
+                    title: 'Общая сонная артерия',
                     body: [
-                      'Верхняя щитовидная артерия — щитовидная железа, гортань',
-                      'Восходящая глоточная артерия — глотка, мозговые оболочки',
-                      'Язычная артерия — язык, дно полости рта',
-                      'Лицевая артерия — лицо; пересекает нижнюю челюсть у переднего края жевательной мышцы',
-                      'Затылочная артерия — задняя волосистая часть головы',
-                      'Задняя ушная артерия — ушная раковина, задняя часть скальпа',
-                      'Верхнечелюстная артерия — глубокие структуры лица; её ветвь — средняя менингеальная артерия — кровоснабжает твёрдую мозговую оболочку',
-                      'Поверхностная височная артерия — висок, скальп; пальпируется кпереди от козелка (конечная ветвь)',
-                      'НСА располагается медиальнее ВСА в области бифуркации'
+                      'Правая ОСА отходит от плечеголовного ствола',
+                      'Левая ОСА отходит непосредственно от дуги аорты',
+                      'Обе проходят в сонном влагалище: внутренняя яремная вена (ВЯВ) — латерально, блуждающий нерв (ЧН X) — кзади',
+                      'Бифуркация на уровне С3–С4 (верхний край щитовидного хряща) на НСА и ВСА',
+                      'Каротидный синус в области бифуркации: барорецептор, иннервируется ЧН IX',
+                      'Каротидное тело: хеморецептор — реагирует на изменения O₂, CO₂, pH'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Внутренняя сонная артерия',
-                    body: 'Ветви в шее отсутствуют. Сегменты: шейный → каменистый → рваного отверстия → пещеристый → клиновидный → глазничный → коммуникантный.\n\nПервая внутричерепная ветвь: глазная артерия (входит в глазницу через зрительный канал; кровоснабжает глаз). Делится на переднюю мозговую артерию (ПМА) и среднюю мозговую артерию (СМА). Кровоснабжает ипсилатеральное полушарие головного мозга и глаз. В области бифуркации располагается латеральнее и кзади от НСА.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Позвоночные артерии',
-                    body: 'Первая ветвь подключичной артерии с обеих сторон. Входят в поперечные отверстия на уровне С6 (реже С7). Поднимаются через уровни С6–С1, затем входят в полость черепа через большое затылочное отверстие.\n\nОбе позвоночные артерии сливаются у нижнего края моста, образуя базилярную артерию, которая через задние мозговые артерии (ЗМА) продолжается к виллизиевому кругу. Основные ветви: ЗНМА (задняя нижняя мозжечковая артерия — от позвоночной артерии); ПНМА (передняя нижняя мозжечковая артерия — от базилярной артерии).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Венозный отток',
-                    body: 'Внутренняя яремная вена (ВЯВ): продолжение сигмовидного синуса от яремного отверстия. Основной коллектор венозного оттока от головного мозга, лица и шеи. Располагается латеральнее ОСА в сонном влагалище. Притоки: лицевая, язычная, глоточные, верхняя и средняя щитовидные вены. Сливается с подключичной веной позади грудино-ключичного сустава, образуя плечеголовную вену. Правая ВЯВ предпочтительна для центрального венозного доступа — прямой путь к ВПВ.\n\nНаружная яремная вена (НЯВ): образована слиянием задней ветви занижнечелюстной вены и задней ушной вены. Пересекает ГКСМ поверхностно и впадает в подключичную вену. Используется клинически для оценки яремного венозного давления (ЯВД).\n\nПередняя яремная вена: дренирует переднюю поверхность шеи; соединяется с противоположной стороной через яремную венозную дугу.\n\nПозвоночные вены: сопровождают позвоночные артерии в поперечных отверстиях; впадают в плечеголовную вену.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Хирургические корреляты',
+                    title: 'Наружная сонная артерия (НСА) — ветви по регионам',
                     body: [
-                      'Стеноз сонной артерии: атеросклероз в области бифуркации → ТИА/инсульт. КЭА показана при симптоматическом стенозе ≥50% или бессимптомном стенозе ≥60–70% (рекомендации AHA/ASA)',
-                      'При КЭА: защитить подъязычный нерв (ЧН XII), пересекающий ВСА/НСА, блуждающий нерв (ЧН X) в сонном влагалище, верхний гортанный нерв и шейную петлю',
-                      'Параганглиома сонной артерии: расположена в области бифуркации, раздвигает ВСА и НСА — симптом «лиры» на ангиографии',
-                      'Синдром подключичного обкрадывания: проксимальный стеноз подключичной артерии → ретроградный кровоток в ипсилатеральной позвоночной артерии',
-                      'Катетеризация ВЯВ: ориентир — медиальный край ГКСМ на уровне щитовидного хряща; предпочтительна правая сторона (прямой путь к ВПВ)'
+                      'НСА располагается медиальнее ВСА в области бифуркации',
+                      'Конечные ветви: поверхностная височная артерия + верхнечелюстная артерия',
+                      'Передние ветви: верхняя щитовидная, язычная, лицевая артерии',
+                      'Медиальная (глубокая) ветвь: восходящая глоточная артерия',
+                      'Задние ветви: затылочная артерия, задняя ушная артерия',
+                      'Мнемоника — SALFOPMS (Superior thyroid, Ascending pharyngeal, Lingual, Facial, Occipital, Posterior auricular, Maxillary, Superficial temporal)',
+                      'Средняя менингеальная артерия: ветвь верхнечелюстной артерии; кровоснабжает твёрдую мозговую оболочку через остистое отверстие'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Внутренняя сонная артерия (ВСА)',
+                    body: 'В шейной части ветвей не имеет. Сегменты: шейный → каменистый → рваный → кавернозный → клиновидный → глазной → коммуникантный.\n\nОсновные внутричерепные ветви: глазная артерия (первая внутричерепная ветвь; кровоснабжает глаз через зрительный канал), задняя соединительная артерия (связь с задним кровообращением), передняя ворсинчатая артерия (кровоснабжает сосудистое сплетение, зрительный тракт, внутреннюю капсулу).\n\nКонечные ветви: средняя мозговая артерия (СМА) и передняя мозговая артерия (ПМА). СМА кровоснабжает латеральную кору; ПМА — медиальную лобную долю.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Позвоночные артерии и базилярная артерия',
+                    body: [
+                      'Позвоночные артерии: первая ветвь подключичной артерии с обеих сторон',
+                      'Входят в поперечные отверстия на уровне С6 (иногда С7); поднимаются через С6–С1',
+                      'Входят в череп через большое затылочное отверстие',
+                      'Ветвь позвоночной артерии: передняя спинномозговая артерия (кровоснабжает передние 2/3 спинного мозга)',
+                      'Две позвоночные артерии сливаются у нижнего края моста в базилярную артерию',
+                      'Базилярная артерия — основное кровоснабжение ствола мозга',
+                      'Ветви базилярной артерии: передняя нижняя мозжечковая артерия (ПНМА), верхняя мозжечковая артерия (ВМА), задние мозговые артерии (ЗМА)',
+                      'Базилярная артерия также даёт медианные ветви к мосту',
+                      'ЗМА соединяются с Виллизиевым кругом через задние соединительные артерии',
+                      'Каротидная и базилярная системы анастомозируют в Виллизиевом круге'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические ориентиры',
+                    body: [
+                      'Каротидная эндартерэктомия (КЭА): показана при симптоматическом стенозе ≥50% или асимптомном ≥60–70% (AHA/ASA)',
+                      'При КЭА: защищать ЧН XII (подъязычный), ЧН X (блуждающий во влагалище), верхний гортанный нерв, петлю шейного нерва',
+                      'Опухоль каротидного тела: возникает в области бифуркации, раздвигает ВСА и НСА — признак «лиры» на ангиографии',
+                      'Синдром подключичного обкрадывания: проксимальный стеноз подключичной → ретроградный кровоток в позвоночной → ишемия задней ямки',
+                      'Катетеризация ВЯВ: у медиального края ГКСМ на уровне щитовидного хряща; предпочтительна правая сторона (прямой путь к ВПВ)'
                     ],
                     type: 'list'
                   }
@@ -219,198 +243,285 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'arterial-head-neck-001',
+                id: 'head-neck-anat-001',
                 question_en: 'Right CCA origin?',
                 question_ru: 'Откуда отходит правая ОСА?',
                 answer_en: 'Brachiocephalic trunk',
                 answer_ru: 'Плечеголовной ствол'
               },
               {
-                id: 'arterial-head-neck-002',
+                id: 'head-neck-anat-002',
                 question_en: 'Left CCA origin?',
                 question_ru: 'Откуда отходит левая ОСА?',
                 answer_en: 'Aortic arch',
                 answer_ru: 'Дуга аорты'
               },
               {
-                id: 'arterial-head-neck-003',
-                question_en: 'CCA bifurcation level?',
+                id: 'head-neck-anat-003',
+                question_en: 'CCA bifurcation vertebral level?',
                 question_ru: 'Уровень бифуркации ОСА?',
                 answer_en: 'C3–C4',
                 answer_ru: 'С3–С4'
               },
               {
-                id: 'arterial-head-neck-004',
+                id: 'head-neck-anat-004',
+                question_en: 'ECA terminal branches?',
+                question_ru: 'Конечные ветви НСА?',
+                answer_en: 'Temporal, maxillary',
+                answer_ru: 'Височная, верхнечелюстная'
+              },
+              {
+                id: 'head-neck-anat-005',
+                question_en: 'ECA anterior branches (3)?',
+                question_ru: 'Передние ветви НСА (3)?',
+                answer_en: 'Thyroid, lingual, facial',
+                answer_ru: 'Щитовидная, язычная, лицевая'
+              },
+              {
+                id: 'head-neck-anat-006',
+                question_en: 'ECA medial (deep) branch?',
+                question_ru: 'Медиальная ветвь НСА?',
+                answer_en: 'Ascending pharyngeal',
+                answer_ru: 'Восходящая глоточная'
+              },
+              {
+                id: 'head-neck-anat-007',
+                question_en: 'ECA posterior branches (2)?',
+                question_ru: 'Задние ветви НСА (2)?',
+                answer_en: 'Occipital, posterior auricular',
+                answer_ru: 'Затылочная, задняя ушная'
+              },
+              {
+                id: 'head-neck-anat-008',
+                question_en: 'Middle meningeal artery origin?',
+                question_ru: 'Откуда отходит средняя менингеальная артерия?',
+                answer_en: 'Maxillary artery',
+                answer_ru: 'Верхнечелюстная артерия'
+              },
+              {
+                id: 'head-neck-anat-009',
+                question_en: 'ICA cervical branches?',
+                question_ru: 'Шейные ветви ВСА?',
+                answer_en: 'None',
+                answer_ru: 'Отсутствуют'
+              },
+              {
+                id: 'head-neck-anat-010',
+                question_en: 'ICA terminal branches?',
+                question_ru: 'Конечные ветви ВСА?',
+                answer_en: 'MCA, ACA',
+                answer_ru: 'СМА, ПМА'
+              },
+              {
+                id: 'head-neck-anat-011',
+                question_en: 'First intracranial branch of ICA?',
+                question_ru: 'Первая внутричерепная ветвь ВСА?',
+                answer_en: 'Ophthalmic artery',
+                answer_ru: 'Глазная артерия'
+              },
+              {
+                id: 'head-neck-anat-012',
+                question_en: 'ICA branch connecting to posterior circle?',
+                question_ru: 'Ветвь ВСА к заднему кровообращению?',
+                answer_en: 'Posterior communicating',
+                answer_ru: 'Задняя соединительная'
+              },
+              {
+                id: 'head-neck-anat-013',
+                question_en: 'ICA branch to choroid plexus?',
+                question_ru: 'Ветвь ВСА к сосудистому сплетению?',
+                answer_en: 'Anterior choroidal',
+                answer_ru: 'Передняя ворсинчатая'
+              },
+              {
+                id: 'head-neck-anat-014',
+                question_en: 'Vertebral arteries unite where?',
+                question_ru: 'Где сливаются позвоночные артерии?',
+                answer_en: 'Lower border of pons',
+                answer_ru: 'Нижний край моста'
+              },
+              {
+                id: 'head-neck-anat-015',
+                question_en: 'Structure formed when vertebrals unite?',
+                question_ru: 'Что образуется при слиянии позвоночных артерий?',
+                answer_en: 'Basilar artery',
+                answer_ru: 'Базилярная артерия'
+              },
+              {
+                id: 'head-neck-anat-016',
+                question_en: 'Vertebral artery branch to spinal cord?',
+                question_ru: 'Ветвь позвоночной артерии к спинному мозгу?',
+                answer_en: 'Anterior spinal',
+                answer_ru: 'Передняя спинномозговая'
+              },
+              {
+                id: 'head-neck-anat-017',
+                question_en: 'First branch of subclavian artery?',
+                question_ru: 'Первая ветвь подключичной артерии?',
+                answer_en: 'Vertebral artery',
+                answer_ru: 'Позвоночная артерия'
+              },
+              {
+                id: 'head-neck-anat-018',
+                question_en: 'Basilar artery lower cerebellar branch?',
+                question_ru: 'Нижняя мозжечковая ветвь базилярной артерии?',
+                answer_en: 'AICA',
+                answer_ru: 'ПНМА'
+              },
+              {
+                id: 'head-neck-anat-019',
+                question_en: 'Basilar artery upper cerebellar branch?',
+                question_ru: 'Верхняя мозжечковая ветвь базилярной артерии?',
+                answer_en: 'Superior cerebellar',
+                answer_ru: 'Верхняя мозжечковая'
+              },
+              {
+                id: 'head-neck-anat-020',
+                question_en: 'Basilar artery terminal branches?',
+                question_ru: 'Конечные ветви базилярной артерии?',
+                answer_en: 'Posterior cerebral arteries',
+                answer_ru: 'Задние мозговые артерии'
+              },
+              {
+                id: 'head-neck-anat-021',
+                question_en: 'PICA arises from which artery?',
+                question_ru: 'Откуда отходит ЗНМА?',
+                answer_en: 'Vertebral artery',
+                answer_ru: 'Позвоночная артерия'
+              },
+              {
+                id: 'head-neck-anat-022',
                 question_en: 'Carotid sinus function?',
                 question_ru: 'Функция каротидного синуса?',
                 answer_en: 'Baroreceptor',
                 answer_ru: 'Барорецептор'
               },
               {
-                id: 'arterial-head-neck-005',
-                question_en: 'Nerve innervating the carotid sinus?',
-                question_ru: 'Нерв каротидного синуса?',
-                answer_en: 'Glossopharyngeal nerve',
-                answer_ru: 'Языкоглоточный нерв'
-              },
-              {
-                id: 'arterial-head-neck-006',
+                id: 'head-neck-anat-023',
                 question_en: 'Carotid body function?',
                 question_ru: 'Функция каротидного тела?',
                 answer_en: 'Chemoreceptor',
                 answer_ru: 'Хеморецептор'
               },
               {
-                id: 'arterial-head-neck-007',
-                question_en: 'Number of ECA branches?',
-                question_ru: 'Количество ветвей НСА?',
-                answer_en: 'Eight',
-                answer_ru: 'Восемь'
-              },
-              {
-                id: 'arterial-head-neck-008',
+                id: 'head-neck-anat-024',
                 question_en: 'ECA position relative to ICA at bifurcation?',
-                question_ru: 'Положение НСА относительно ВСА в области бифуркации?',
+                question_ru: 'Положение НСА относительно ВСА у бифуркации?',
                 answer_en: 'Medial to ICA',
                 answer_ru: 'Медиальнее ВСА'
               },
               {
-                id: 'arterial-head-neck-011',
-                question_en: 'ECA branch supplying the dura mater?',
-                question_ru: 'Ветвь НСА, кровоснабжающая твёрдую мозговую оболочку?',
-                answer_en: 'Middle meningeal artery',
-                answer_ru: 'Средняя менингеальная артерия'
-              },
-              {
-                id: 'arterial-head-neck-014',
-                question_en: 'ICA branches in the neck?',
-                question_ru: 'Ветви ВСА в шее?',
-                answer_en: 'None',
-                answer_ru: 'Отсутствуют'
-              },
-              {
-                id: 'arterial-head-neck-015',
-                question_en: 'First intracranial branch of the ICA?',
-                question_ru: 'Первая внутричерепная ветвь ВСА?',
-                answer_en: 'Ophthalmic artery',
-                answer_ru: 'Глазная артерия'
-              },
-              {
-                id: 'arterial-head-neck-016',
-                question_en: 'ICA terminal branches?',
-                question_ru: 'Конечные ветви ВСА?',
-                answer_en: 'ACA and MCA',
-                answer_ru: 'ПМА и СМА'
-              },
-              {
-                id: 'arterial-head-neck-017',
-                question_en: 'Vertebral artery origin?',
-                question_ru: 'Откуда отходит позвоночная артерия?',
-                answer_en: 'Subclavian artery',
-                answer_ru: 'Подключичная артерия'
-              },
-              {
-                id: 'arterial-head-neck-018',
-                question_en: 'Vertebral artery enters transverse foramen at?',
-                question_ru: 'Позвоночная артерия входит в поперечное отверстие на уровне?',
+                id: 'head-neck-anat-025',
+                question_en: 'Vertebral artery enters transverse foramina at?',
+                question_ru: 'На каком уровне позвоночная артерия входит в поперечные отверстия?',
                 answer_en: 'C6',
                 answer_ru: 'С6'
               },
               {
-                id: 'arterial-head-neck-019',
-                question_en: 'Both vertebral arteries unite to form?',
-                question_ru: 'Слияние обеих позвоночных артерий образует?',
-                answer_en: 'Basilar artery',
-                answer_ru: 'Базилярная артерия'
+                id: 'head-neck-anat-026',
+                question_en: 'ECA mnemonic (8 branches)?',
+                question_ru: 'Мнемоника для 8 ветвей НСА?',
+                answer_en: 'SALFOPMS',
+                answer_ru: 'SALFOPMS'
               },
               {
-                id: 'arterial-head-neck-024',
-                question_en: 'IJV position within the carotid sheath?',
-                question_ru: 'Положение ВЯВ в сонном влагалище?',
-                answer_en: 'Lateral to CCA',
-                answer_ru: 'Латеральнее ОСА'
+                id: 'head-neck-anat-027',
+                question_en: 'Carotid sinus innervation?',
+                question_ru: 'Иннервация каротидного синуса?',
+                answer_en: 'CN IX (glossopharyngeal)',
+                answer_ru: 'ЧН IX (языкоглоточный)'
               },
               {
-                id: 'arterial-head-neck-026',
-                question_en: 'Preferred side for IJV cannulation?',
-                question_ru: 'Предпочтительная сторона для катетеризации ВЯВ?',
-                answer_en: 'Right side',
-                answer_ru: 'Правая сторона'
+                id: 'head-neck-anat-028',
+                question_en: 'Carotid sheath contents?',
+                question_ru: 'Содержимое сонного влагалища?',
+                answer_en: 'CCA, IJV, vagus',
+                answer_ru: 'ОСА, ВЯВ, блуждающий'
               },
               {
-                id: 'arterial-head-neck-029',
-                question_en: 'CEA threshold for symptomatic stenosis?',
-                question_ru: 'Порог КЭА при симптоматическом стенозе?',
-                answer_en: '≥50%',
-                answer_ru: '≥50%'
+                id: 'head-neck-anat-029',
+                question_en: 'Basilar artery pontine branches?',
+                question_ru: 'Ветви базилярной артерии к мосту?',
+                answer_en: 'Median pontine branches',
+                answer_ru: 'Медианные ветви моста'
               },
               {
-                id: 'arterial-head-neck-030',
-                question_en: 'CEA threshold for asymptomatic stenosis?',
-                question_ru: 'Порог КЭА при бессимптомном стенозе?',
-                answer_en: '≥60–70%',
-                answer_ru: '≥60–70%'
-              },
-              {
-                id: 'arterial-head-neck-031',
-                question_en: 'Cranial nerve crossing ICA/ECA during CEA?',
-                question_ru: 'Черепной нерв, пересекающий ВСА/НСА при КЭА?',
-                answer_en: 'Hypoglossal (CN XII)',
-                answer_ru: 'Подъязычный (ЧН XII)'
+                id: 'head-neck-anat-030',
+                question_en: 'MCA supplies which cortex region?',
+                question_ru: 'Какой регион коры кровоснабжает СМА?',
+                answer_en: 'Lateral cerebral cortex',
+                answer_ru: 'Латеральная кора'
               }
             ]
           },
 
-          // ── Topic: Vascular Anatomy of the Thorax ──
+          // ── Topic: Aorta & Coronary Arteries ────────────────────────────────────
           {
             slug: 'vascular-anatomy-thorax',
-            title_en: 'Vascular Anatomy of the Thorax',
-            title_ru: 'Сосудистая анатомия грудной клетки',
+            title_en: 'Aorta & Coronary Arteries',
+            title_ru: 'Аорта и коронарные артерии',
             note: {
               en: {
                 sections: [
                   {
-                    title: 'Overview',
-                    body: 'The thoracic vasculature consists of the thoracic aorta and its branches, the superior and inferior venae cavae, the azygos venous system, and the thoracic duct. This anatomy underpins surgery for thoracic aortic aneurysm (TAA), aortic dissection, coarctation repair, traumatic aortic injury (TAI), and mediastinal tumour resection.',
+                    title: 'Overview — Aortic Segments',
+                    body: 'The aorta arises from the left ventricle as the aortic root, then becomes the ascending aorta, continues as the aortic arch, and then the descending thoracic aorta. The descending thoracic aorta begins at T4 and exits the thorax through the aortic hiatus in the diaphragm at T12, continuing as the abdominal aorta.',
                     type: 'text'
                   },
                   {
-                    title: 'Thoracic Aorta',
-                    body: 'Ascending aorta: from the aortic valve annulus to the origin of the brachiocephalic trunk (~5 cm); normal diameter ≤3.5 cm.\n\nAortic arch: three branches — brachiocephalic (innominate) trunk, left common carotid artery, and left subclavian artery. The aortic isthmus is the segment immediately distal to the left subclavian artery, just proximal to the ligamentum arteriosum. It is the most common site of traumatic aortic injury (deceleration mechanism) and the typical site of aortic coarctation.\n\nDescending thoracic aorta: begins at T4 (sternal angle / angle of Louis) and passes through the aortic hiatus at T12 with the thoracic duct and azygos vein. Along its course it gives off posterior intercostal arteries, bronchial arteries, and oesophageal branches. The artery of Adamkiewicz (arteria radicularis magna) — the dominant anterior radicular artery, usually arising T8–L2, most commonly T9–T11 on the left — supplies the anterior 2/3 of the spinal cord via the anterior spinal artery; it is the critical vessel at risk during thoracoabdominal aortic surgery.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Aortic Arch Branches',
+                    title: 'Aortic Arch — Three Branches',
                     body: [
-                      'Brachiocephalic (innominate) trunk: first and largest branch; divides behind the right sternoclavicular joint into the right common carotid artery and right subclavian artery',
-                      'Left common carotid artery: second branch; arises directly from the arch; longer mediastinal course than the right',
-                      'Left subclavian artery: third branch; gives rise to the left vertebral artery',
-                      'Left recurrent laryngeal nerve (RLN) loops around the ligamentum arteriosum (remnant of the ductus arteriosus) at the level of the aortic arch; at risk in mediastinal surgery and Type B dissection repair'
+                      'Brachiocephalic trunk (innominate): first and largest branch → divides into right common carotid artery (CCA) and right subclavian artery',
+                      'Left common carotid artery: second branch, arises directly from arch',
+                      'Left subclavian artery: third branch',
+                      'A useful note: the right-sided vessels (CCA + subclavian) share the brachiocephalic trunk; left-sided vessels arise directly from the arch'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Superior Vena Cava & Tributaries',
-                    body: 'The SVC is formed by the junction of the left and right brachiocephalic veins behind the right first costal cartilage. The left brachiocephalic vein (~6 cm) is longer than the right (~2–3 cm) and crosses the midline anterior to the aortic arch. The SVC enters the right atrium at T3.\n\nKey tributaries: azygos vein (arches over the right main bronchus at T4 and enters the SVC posteriorly), internal thoracic veins, and pericardiophrenic veins.',
-                    type: 'text'
+                    title: 'Descending Thoracic Aorta — Branches',
+                    body: [
+                      'Starts at T4; exits at T12 via aortic hiatus',
+                      '9 pairs of posterior intercostal arteries: 3rd through 11th intercostal spaces',
+                      '1 pair of subcostal arteries: below the 12th rib',
+                      '1 pair of superior phrenic arteries: to the diaphragm',
+                      'Note: 1st and 2nd intercostal spaces are supplied by the superior intercostal artery (a branch of the costocervical trunk from the subclavian artery — not directly from the thoracic aorta)',
+                      'Other branches: oesophageal arteries, mediastinal arteries, bronchial arteries',
+                      'Bronchial arteries: typically 2 left + 1 right (or 1 each side) — variable'
+                    ],
+                    type: 'list'
                   },
                   {
-                    title: 'Azygos System & Thoracic Duct',
+                    title: 'Right Coronary Artery (RCA)',
                     body: [
-                      'Azygos vein: right-sided; formed from the right ascending lumbar and right subcostal veins; ascends along the right side of the vertebral column, arches over the right main bronchus at T4, drains into the SVC',
-                      'Hemiazygos vein: left-sided, drains T9–T12 intercostal spaces; crosses midline at T9 to drain into the azygos',
-                      'Accessory hemiazygos vein: left-sided, drains T5–T8 spaces; drains into the azygos or hemiazygos',
-                      'Thoracic duct: originates from the cisterna chyli at L2; enters the thorax via the aortic hiatus at T12; ascends in the posterior mediastinum; crosses to the left at ~T5; drains into the left venous angle (junction of left IJV and left subclavian vein)'
+                      'Arises from the right aortic sinus (right coronary sinus)',
+                      'Courses along the right atrioventricular (AV) groove',
+                      'Acute marginal branches: supply the right ventricular free wall',
+                      'Posterior descending artery (PDA): supplies the inferior interventricular septum and inferior LV wall — arises from RCA in right-dominant circulation (85%)',
+                      'Posterolateral ventricular branches: supply the posterior left ventricle in right dominance',
+                      'Right dominant circulation: RCA gives PDA (85% of people)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Left Coronary Artery (LCA)',
+                    body: [
+                      'Left main coronary artery (LMCA) arises from the left aortic sinus',
+                      'Bifurcates into: Left Anterior Descending (LAD) artery + Left Circumflex (LCx) artery',
+                      'LAD: runs in the anterior interventricular groove; gives septal branches (perforators to interventricular septum) and diagonal branches (to anterolateral LV wall)',
+                      'LAD supplies: anterior LV wall, anterior 2/3 of interventricular septum, apex',
+                      'LCx: runs in the left AV groove; gives obtuse marginal (OM) branches to the lateral LV wall',
+                      'Left dominant circulation (15%): LCx gives the PDA instead of the RCA'
                     ],
                     type: 'list'
                   },
                   {
                     title: 'Surgical Correlates',
                     body: [
-                      'Coarctation of the aorta: juxtaductal (at or near the aortic isthmus, adjacent to the ligamentum arteriosum); repair by resection and end-to-end anastomosis, subclavian flap, or stent (ESC guidelines)',
-                      'Traumatic aortic injury (TAI): most common site is the isthmus (deceleration/shear injury); TEVAR is first-line for most cases (AAST/SVS guidelines)',
-                      'Thoracoabdominal aortic surgery: Adamkiewicz artery at risk → anterior spinal syndrome (paraplegia); protective measures: distal aortic perfusion, CSF drainage, hypothermia',
-                      'Thoracic duct injury (left neck dissection, mediastinal surgery) → chylothorax; management: low-fat diet ± octreotide; surgical ligation if refractory'
+                      'Coarctation of aorta: typically at aortic isthmus (just distal to origin of left subclavian)',
+                      'Aortic dissection: Type A (involves ascending ± arch) — surgical emergency; Type B (descending only) — medical or endovascular',
+                      'CABG targets: LAD (most commonly LIMA), RCA, LCx OM branches',
+                      'PDA from RCA → right dominance (most common); PDA from LCx → left dominance'
                     ],
                     type: 'list'
                   }
@@ -419,47 +530,64 @@ export const DATA = [
               ru: {
                 sections: [
                   {
-                    title: 'Обзор',
-                    body: 'Сосудистая система грудной клетки включает грудную аорту с ветвями, верхнюю и нижнюю полые вены, непарно-полунепарную венозную систему и грудной проток. Эта анатомия лежит в основе хирургии аневризм грудной аорты (АГА), расслоения аорты, коррекции коарктации, травматических повреждений аорты (ТПА) и резекции опухолей средостения.',
+                    title: 'Обзор — Сегменты аорты',
+                    body: 'Аорта берёт начало из левого желудочка как аортальный корень, затем переходит в восходящую аорту, дугу аорты и нисходящую грудную аорту. Нисходящая грудная аорта начинается на уровне T4 и выходит из грудной клетки через аортальное отверстие диафрагмы на уровне T12, продолжаясь как брюшная аорта.',
                     type: 'text'
                   },
                   {
-                    title: 'Грудная аорта',
-                    body: 'Восходящая аорта: от фиброзного кольца аортального клапана до начала плечеголовного ствола (~5 см); нормальный диаметр ≤3,5 см.\n\nДуга аорты: три ветви — плечеголовной (безымянный) ствол, левая общая сонная артерия и левая подключичная артерия. Аортальный перешеек — участок дуги аорты сразу дистальнее левой подключичной артерии, проксимальнее артериальной связки. Это наиболее частое место травматического повреждения аорты (механизм резкого замедления) и типичная локализация коарктации.\n\nНисходящая грудная аорта: начинается на уровне T4 (угол Людовика) и проходит через аортальное отверстие диафрагмы на уровне T12 вместе с грудным протоком и непарной веной. На своём протяжении она отдаёт задние межрёберные артерии, бронхиальные и пищеводные ветви. Артерия Адамкевича (arteria radicularis magna) — доминирующая передняя корешковая артерия, обычно отходящая от уровней T8–L2, чаще всего T9–T11 слева — кровоснабжает передние 2/3 спинного мозга через переднюю спинальную артерию; это критически важный сосуд, уязвимый при торакоабдоминальной хирургии аорты.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Ветви дуги аорты',
+                    title: 'Дуга аорты — три ветви',
                     body: [
-                      'Плечеголовной (безымянный) ствол: первая и наиболее крупная ветвь; делится позади правого грудино-ключичного сустава на правую общую сонную артерию и правую подключичную артерию',
-                      'Левая общая сонная артерия: вторая ветвь; отходит непосредственно от дуги; медиастинальный отрезок длиннее, чем у правой',
-                      'Левая подключичная артерия: третья ветвь; является источником левой позвоночной артерии',
-                      'Левый возвратный гортанный нерв (ВГН) огибает артериальную связку (остаток артериального протока) на уровне дуги аорты; подвергается риску при операциях на средостении и при коррекции расслоения типа В'
+                      'Плечеголовной ствол (безымянная артерия): первая и наиболее крупная ветвь → делится на правую общую сонную артерию (ОСА) и правую подключичную артерию',
+                      'Левая общая сонная артерия: вторая ветвь, отходит непосредственно от дуги',
+                      'Левая подключичная артерия: третья ветвь',
+                      'Примечание: правые сосуды (ОСА + подключичная) разделяют плечеголовной ствол; левые отходят непосредственно от дуги'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Верхняя полая вена и её притоки',
-                    body: 'ВПВ образуется при слиянии левой и правой плечеголовных вен позади хряща первого правого ребра. Левая плечеголовная вена (~6 см) длиннее правой (~2–3 см) и пересекает среднюю линию кпереди от дуги аорты. ВПВ впадает в правое предсердие на уровне T3.\n\nОсновные притоки: непарная вена (огибает правый главный бронх на уровне T4 и впадает в ВПВ сзади), внутренние грудные вены и перикардодиафрагмальные вены.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Непарно-полунепарная система и грудной проток',
+                    title: 'Нисходящая грудная аорта — ветви',
                     body: [
-                      'Непарная вена: правосторонняя; образуется из правой восходящей поясничной и правой подрёберной вен; поднимается вдоль правой стороны позвоночного столба, огибает правый главный бронх на уровне T4, впадает в ВПВ',
-                      'Полунепарная вена: левосторонняя, дренирует межрёберные промежутки T9–T12; пересекает среднюю линию на уровне T9 и впадает в непарную вену',
-                      'Добавочная полунепарная вена: левосторонняя, дренирует промежутки T5–T8; впадает в непарную или полунепарную вену',
-                      'Грудной проток: начинается от цистерны грудного протока на уровне L2; входит в грудную клетку через аортальное отверстие на уровне T12; поднимается в заднем средостении; переходит влево приблизительно на уровне T5; впадает в левый венозный угол (место слияния левой ВЯВ и левой подключичной вены)'
+                      'Начинается на уровне T4; выходит через аортальное отверстие на уровне T12',
+                      '9 пар задних межрёберных артерий: 3–11 межрёберные промежутки',
+                      '1 пара подрёберных артерий: ниже XII ребра',
+                      '1 пара верхних диафрагмальных артерий: к диафрагме',
+                      'Примечание: 1-е и 2-е межрёберные промежутки кровоснабжаются верхней межрёберной артерией (ветвь реберно-шейного ствола от подключичной артерии)',
+                      'Другие ветви: пищеводные артерии, медиастинальные артерии, бронхиальные артерии',
+                      'Бронхиальные артерии: как правило, 2 левые + 1 правая (вариабельно)'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Хирургические корреляты',
+                    title: 'Правая коронарная артерия (ПКА)',
                     body: [
-                      'Коарктация аорты: юкстадуктальная локализация (на уровне аортального перешейка, рядом с артериальной связкой); коррекция: резекция с анастомозом конец-в-конец, лоскут из подключичной артерии или стентирование (рекомендации ESC)',
-                      'Травматическое повреждение аорты (ТПА): наиболее частое место — перешеек (механизм сдвига при резком замедлении); TEVAR — метод выбора в большинстве случаев (рекомендации AAST/SVS)',
-                      'Торакоабдоминальная хирургия аорты: риск повреждения артерии Адамкевича → передний спинальный синдром (параплегия); защитные меры: дистальная перфузия аорты, дренирование ЦСЖ, гипотермия',
-                      'Повреждение грудного протока (диссекция на шее слева, операции на средостении) → хилоторакс; лечение: жиронеограниченная диета ± октреотид; хирургическое лигирование при неэффективности'
+                      'Отходит от правого аортального синуса (правый коронарный синус)',
+                      'Проходит по правой предсердно-желудочковой борозде',
+                      'Острые краевые ветви: кровоснабжают свободную стенку правого желудочка',
+                      'Задняя межжелудочковая артерия (ЗМЖА): кровоснабжает нижнюю часть МЖП и нижнюю стенку ЛЖ — отходит от ПКА при правом типе кровоснабжения (85%)',
+                      'Заднебоковые ветви: кровоснабжают заднюю стенку ЛЖ при правом типе',
+                      'Правый тип кровоснабжения: ПКА даёт ЗМЖА (85% людей)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Левая коронарная артерия (ЛКА)',
+                    body: [
+                      'Ствол левой коронарной артерии (СЛКА) отходит от левого аортального синуса',
+                      'Делится на: переднюю межжелудочковую артерию (ПМЖА / LAD) + огибающую артерию (ОА / LCx)',
+                      'LAD: проходит в передней межжелудочковой борозде; даёт септальные ветви (перфораторы к МЖП) и диагональные ветви (к переднебоковой стенке ЛЖ)',
+                      'LAD кровоснабжает: переднюю стенку ЛЖ, передние 2/3 МЖП, верхушку',
+                      'LCx: проходит в левой предсердно-желудочковой борозде; даёт тупые краевые (ТК) ветви к боковой стенке ЛЖ',
+                      'Левый тип кровоснабжения (15%): LCx даёт ЗМЖА вместо ПКА'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические ориентиры',
+                    body: [
+                      'Коарктация аорты: как правило, в области аортального перешейка (дистальнее левой подключичной артерии)',
+                      'Расслоение аорты: тип А (восходящая ± дуга) — хирургическая экстренность; тип Б (только нисходящая) — консервативно или эндоваскулярно',
+                      'Мишени АКШ: LAD (чаще всего ЛВГА), ПКА, ветви ОА ТК',
+                      'ЗМЖА от ПКА → правый тип (наиболее частый); ЗМЖА от LCx → левый тип'
                     ],
                     type: 'list'
                   }
@@ -468,149 +596,219 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'thoracic-vascular-001',
-                question_en: 'Branches of the aortic arch?',
-                question_ru: 'Сколько ветвей у дуги аорты?',
+                id: 'thorax-anat-001',
+                question_en: 'Aorta arises from?',
+                question_ru: 'Откуда берёт начало аорта?',
+                answer_en: 'Left ventricle',
+                answer_ru: 'Левый желудочек'
+              },
+              {
+                id: 'thorax-anat-002',
+                question_en: 'Aortic segments in order?',
+                question_ru: 'Сегменты аорты по порядку?',
+                answer_en: 'Root, ascending, arch, descending',
+                answer_ru: 'Корень, восходящая, дуга, нисходящая'
+              },
+              {
+                id: 'thorax-anat-003',
+                question_en: 'Number of aortic arch branches?',
+                question_ru: 'Количество ветвей дуги аорты?',
                 answer_en: 'Three',
                 answer_ru: 'Три'
               },
               {
-                id: 'thoracic-vascular-002',
+                id: 'thorax-anat-004',
                 question_en: 'First aortic arch branch?',
                 question_ru: 'Первая ветвь дуги аорты?',
                 answer_en: 'Brachiocephalic trunk',
                 answer_ru: 'Плечеголовной ствол'
               },
               {
-                id: 'thoracic-vascular-003',
+                id: 'thorax-anat-005',
                 question_en: 'Brachiocephalic trunk divides into?',
                 question_ru: 'На что делится плечеголовной ствол?',
-                answer_en: 'R. CCA, subclavian',
-                answer_ru: 'Пр. ОСА, подключичная'
+                answer_en: 'R CCA, R subclavian',
+                answer_ru: 'Правая ОСА, правая подключичная'
               },
               {
-                id: 'thoracic-vascular-004',
-                question_en: 'Third aortic arch branch?',
-                question_ru: 'Третья ветвь дуги аорты?',
-                answer_en: 'Left subclavian artery',
-                answer_ru: 'Левая подключичная артерия'
-              },
-              {
-                id: 'thoracic-vascular-005',
-                question_en: 'Aortic isthmus location?',
-                question_ru: 'Расположение аортального перешейка?',
-                answer_en: 'Distal to left subclavian',
-                answer_ru: 'Дистальнее левой подключичной'
-              },
-              {
-                id: 'thoracic-vascular-006',
-                question_en: 'Most common site of traumatic aortic injury?',
-                question_ru: 'Наиболее частое место травматического разрыва аорты?',
-                answer_en: 'Aortic isthmus',
-                answer_ru: 'Аортальный перешеек'
-              },
-              {
-                id: 'thoracic-vascular-007',
-                question_en: 'Descending aorta begins at vertebral level?',
-                question_ru: 'Уровень начала нисходящей аорты?',
+                id: 'thorax-anat-006',
+                question_en: 'Descending thoracic aorta starts at?',
+                question_ru: 'На каком уровне начинается нисходящая грудная аорта?',
                 answer_en: 'T4',
                 answer_ru: 'T4'
               },
               {
-                id: 'thoracic-vascular-008',
-                question_en: 'Aortic hiatus vertebral level?',
+                id: 'thorax-anat-007',
+                question_en: 'Aortic hiatus level?',
                 question_ru: 'Уровень аортального отверстия диафрагмы?',
                 answer_en: 'T12',
                 answer_ru: 'T12'
               },
               {
-                id: 'thoracic-vascular-009',
-                question_en: 'Adamkiewicz artery typical vertebral level?',
-                question_ru: 'Типичный уровень артерии Адамкевича?',
-                answer_en: 'T8–L2',
-                answer_ru: 'T8–L2'
+                id: 'thorax-anat-008',
+                question_en: 'Pairs of posterior intercostal arteries from thoracic aorta?',
+                question_ru: 'Пар задних межрёберных артерий от грудной аорты?',
+                answer_en: '9 pairs (3rd–11th)',
+                answer_ru: '9 пар (3–11)'
               },
               {
-                id: 'thoracic-vascular-010',
-                question_en: 'Adamkiewicz artery supplies?',
-                question_ru: 'Что кровоснабжает артерия Адамкевича?',
-                answer_en: 'Anterior spinal cord',
-                answer_ru: 'Передний спинной мозг'
+                id: 'thorax-anat-009',
+                question_en: '1st and 2nd intercostals arise from?',
+                question_ru: 'От чего отходят 1-е и 2-е межрёберные артерии?',
+                answer_en: 'Superior intercostal artery',
+                answer_ru: 'Верхняя межрёберная артерия'
               },
               {
-                id: 'thoracic-vascular-011',
-                question_en: 'Adamkiewicz artery injury causes?',
-                question_ru: 'Повреждение артерии Адамкевича вызывает?',
-                answer_en: 'Paraplegia',
-                answer_ru: 'Параплегию'
+                id: 'thorax-anat-010',
+                question_en: 'Superior intercostal artery is a branch of?',
+                question_ru: 'Ветвью какого ствола является верхняя межрёберная артерия?',
+                answer_en: 'Costocervical trunk',
+                answer_ru: 'Рёберно-шейный ствол'
               },
               {
-                id: 'thoracic-vascular-012',
-                question_en: 'SVC formed by?',
-                question_ru: 'Из чего образована ВПВ?',
-                answer_en: 'Bilateral brachiocephalic veins',
-                answer_ru: 'Плечеголовные вены'
+                id: 'thorax-anat-011',
+                question_en: 'Bronchial artery arrangement?',
+                question_ru: 'Количество бронхиальных артерий?',
+                answer_en: 'Two (left + right)',
+                answer_ru: 'Две (левая + правая)'
               },
               {
-                id: 'thoracic-vascular-013',
-                question_en: 'Longer brachiocephalic vein?',
-                question_ru: 'Какая плечеголовная вена длиннее?',
-                answer_en: 'Left',
-                answer_ru: 'Левая'
+                id: 'thorax-anat-012',
+                question_en: 'RCA courses along which groove?',
+                question_ru: 'По какой борозде проходит ПКА?',
+                answer_en: 'AV groove',
+                answer_ru: 'Предсердно-желудочковая борозда'
               },
               {
-                id: 'thoracic-vascular-014',
-                question_en: 'Azygos vein drains into?',
-                question_ru: 'Куда впадает непарная вена?',
-                answer_en: 'SVC',
-                answer_ru: 'ВПВ'
+                id: 'thorax-anat-013',
+                question_en: 'RCA branches (name 3)?',
+                question_ru: 'Ветви ПКА (назвать 3)?',
+                answer_en: 'PDA, acute marginal, posterolateral',
+                answer_ru: 'ЗМЖА, острые краевые, заднебоковые'
               },
               {
-                id: 'thoracic-vascular-015',
-                question_en: 'Azygos vein arches over right main bronchus at?',
-                question_ru: 'Непарная вена огибает правый главный бронх на уровне?',
-                answer_en: 'T4',
-                answer_ru: 'T4'
+                id: 'thorax-anat-014',
+                question_en: 'Left main bifurcates into?',
+                question_ru: 'На что делится ствол ЛКА?',
+                answer_en: 'LAD, circumflex',
+                answer_ru: 'LAD, огибающая'
               },
               {
-                id: 'thoracic-vascular-016',
-                question_en: 'Thoracic duct drains into?',
-                question_ru: 'Куда впадает грудной проток?',
-                answer_en: 'Left venous angle',
-                answer_ru: 'Левый венозный угол'
+                id: 'thorax-anat-015',
+                question_en: 'LAD branches?',
+                question_ru: 'Ветви LAD?',
+                answer_en: 'Septal, diagonal',
+                answer_ru: 'Септальные, диагональные'
               },
               {
-                id: 'thoracic-vascular-017',
-                question_en: 'Thoracic duct enters thorax via?',
-                question_ru: 'Грудной проток входит в грудную клетку через?',
-                answer_en: 'Aortic hiatus',
-                answer_ru: 'Аортальное отверстие'
+                id: 'thorax-anat-016',
+                question_en: 'Circumflex artery branches?',
+                question_ru: 'Ветви огибающей артерии?',
+                answer_en: 'Obtuse marginal',
+                answer_ru: 'Тупые краевые'
               },
               {
-                id: 'thoracic-vascular-018',
-                question_en: 'Left RLN loops around?',
-                question_ru: 'Вокруг чего огибает левый возвратный гортанный нерв?',
-                answer_en: 'Ligamentum arteriosum',
-                answer_ru: 'Артериальная связка'
+                id: 'thorax-anat-017',
+                question_en: 'PDA arises from RCA in which dominance?',
+                question_ru: 'При каком типе кровоснабжения ЗМЖА отходит от ПКА?',
+                answer_en: 'Right dominance (85%)',
+                answer_ru: 'Правый тип (85%)'
               },
               {
-                id: 'thoracic-vascular-019',
-                question_en: 'Ligamentum arteriosum is remnant of?',
-                question_ru: 'Артериальная связка — остаток чего?',
-                answer_en: 'Ductus arteriosus',
-                answer_ru: 'Артериального протока'
+                id: 'thorax-anat-018',
+                question_en: 'LAD territory?',
+                question_ru: 'Зона кровоснабжения LAD?',
+                answer_en: 'Anterior LV, septum',
+                answer_ru: 'Передняя стенка ЛЖ, МЖП'
               },
               {
-                id: 'thoracic-vascular-020',
-                question_en: 'Typical site of aortic coarctation?',
+                id: 'thorax-anat-019',
+                question_en: 'Circumflex territory?',
+                question_ru: 'Зона кровоснабжения огибающей?',
+                answer_en: 'Lateral LV wall',
+                answer_ru: 'Боковая стенка ЛЖ'
+              },
+              {
+                id: 'thorax-anat-020',
+                question_en: 'RCA territory in right dominance?',
+                question_ru: 'Зона ПКА при правом типе?',
+                answer_en: 'Inferior LV, posterior septum',
+                answer_ru: 'Нижняя стенка ЛЖ, задняя МЖП'
+              },
+              {
+                id: 'thorax-anat-021',
+                question_en: 'Left dominant circulation — PDA from?',
+                question_ru: 'При левом типе ЗМЖА отходит от?',
+                answer_en: 'Left circumflex',
+                answer_ru: 'Огибающая артерия'
+              },
+              {
+                id: 'thorax-anat-022',
+                question_en: 'Coarctation typically at?',
                 question_ru: 'Типичное место коарктации аорты?',
                 answer_en: 'Aortic isthmus',
                 answer_ru: 'Аортальный перешеек'
+              },
+              {
+                id: 'thorax-anat-023',
+                question_en: 'Type A aortic dissection involves?',
+                question_ru: 'Какие отделы затрагивает расслоение типа А?',
+                answer_en: 'Ascending aorta',
+                answer_ru: 'Восходящая аорта'
+              },
+              {
+                id: 'thorax-anat-024',
+                question_en: 'Second aortic arch branch?',
+                question_ru: 'Вторая ветвь дуги аорты?',
+                answer_en: 'Left CCA',
+                answer_ru: 'Левая ОСА'
+              },
+              {
+                id: 'thorax-anat-025',
+                question_en: 'Third aortic arch branch?',
+                question_ru: 'Третья ветвь дуги аорты?',
+                answer_en: 'Left subclavian',
+                answer_ru: 'Левая подключичная'
+              },
+              {
+                id: 'thorax-anat-026',
+                question_en: 'Subcostal arteries arise from?',
+                question_ru: 'Откуда отходят подрёберные артерии?',
+                answer_en: 'Descending thoracic aorta',
+                answer_ru: 'Нисходящая грудная аорта'
+              },
+              {
+                id: 'thorax-anat-027',
+                question_en: 'LAD runs in which groove?',
+                question_ru: 'По какой борозде проходит LAD?',
+                answer_en: 'Anterior interventricular',
+                answer_ru: 'Передняя межжелудочковая'
+              },
+              {
+                id: 'thorax-anat-028',
+                question_en: 'Diagonal branches arise from?',
+                question_ru: 'От чего отходят диагональные ветви?',
+                answer_en: 'LAD',
+                answer_ru: 'LAD'
+              },
+              {
+                id: 'thorax-anat-029',
+                question_en: 'Obtuse marginal branches arise from?',
+                question_ru: 'От чего отходят тупые краевые ветви?',
+                answer_en: 'Left circumflex',
+                answer_ru: 'Огибающая артерия'
+              },
+              {
+                id: 'thorax-anat-030',
+                question_en: 'Acute marginal branches arise from?',
+                question_ru: 'От чего отходят острые краевые ветви?',
+                answer_en: 'RCA',
+                answer_ru: 'ПКА'
               }
             ]
           },
 
-          // ── Topic: Vascular Anatomy of the Upper Limb ──
+          // ── Topic: Vascular Anatomy of the Upper Limb ───────────────────────────
           {
             slug: 'vascular-anatomy-upper-limb',
             title_en: 'Vascular Anatomy of the Upper Limb',
@@ -619,48 +817,73 @@ export const DATA = [
               en: {
                 sections: [
                   {
-                    title: 'Overview',
-                    body: 'The upper limb receives arterial supply from the subclavian artery, which continues as the axillary artery, then the brachial artery. The brachial bifurcates into the radial and ulnar arteries at the cubital fossa. Venous drainage is via deep veins (paired venae comitantes) and superficial veins (cephalic, basilic). Surgical relevance: upper limb arterial trauma, thoracic outlet syndrome (TOS), dialysis access (AVF), and radial artery harvest as a CABG conduit.',
-                    type: 'text'
+                    title: 'Subclavian Artery — 3 Parts (divided by Scalenus Anterior)',
+                    body: [
+                      'Part 1 (medial to scalenus anterior) — 3 branches:',
+                      '  1. Vertebral artery: enters transverse foramina at C6',
+                      '  2. Internal thoracic (mammary) artery: descends behind costal cartilages; used for CABG',
+                      '  3. Thyrocervical trunk → 3 branches: suprascapular artery, inferior thyroid artery, transverse cervical artery',
+                      'Part 2 (behind scalenus anterior) — 1 branch:',
+                      '  Costocervical trunk → superior intercostal artery (supplies 1st + 2nd intercostal spaces) + deep cervical artery',
+                      'Part 3 (lateral to scalenus anterior) — 1 branch:',
+                      '  Dorsal scapular artery'
+                    ],
+                    type: 'list'
                   },
                   {
-                    title: 'Subclavian & Axillary Artery',
-                    body: 'The right subclavian artery arises from the brachiocephalic trunk; the left arises directly from the aortic arch. The scalenus anterior muscle divides it into three parts.\n\nPart 1 (medial to scalenus anterior) — three branches: vertebral artery, internal thoracic artery, thyrocervical trunk. Part 2 (posterior) — costocervical trunk. Part 3 (lateral) — dorsal scapular artery. The subclavian becomes the axillary artery at the lateral border of the first rib.\n\nThe axillary artery is divided into three parts by pectoralis minor. Part 1: superior thoracic artery. Part 2: thoracoacromial trunk, lateral thoracic artery. Part 3: subscapular artery, anterior and posterior circumflex humeral arteries. It becomes the brachial artery at the inferior border of teres major.',
-                    type: 'text'
+                    title: 'Axillary Artery — 3 Parts (divided by Pectoralis Minor)',
+                    body: [
+                      'Begins at outer border of the 1st rib; ends at lower border of teres major',
+                      'Part 1 (medial to pectoralis minor) — 1 branch:',
+                      '  Superior thoracic artery',
+                      'Part 2 (behind pectoralis minor) — 2 branches:',
+                      '  Thoracoacromial artery → 4 branches: pectoral, acromial, clavicular, deltoid',
+                      '  Lateral thoracic artery',
+                      'Part 3 (lateral to pectoralis minor) — 3 branches:',
+                      '  Subscapular artery',
+                      '  Anterior humeral circumflex artery (AHCA)',
+                      '  Posterior humeral circumflex artery (PHCA)'
+                    ],
+                    type: 'list'
                   },
                   {
                     title: 'Brachial Artery',
-                    body: 'Continuation of the axillary artery from the inferior border of teres major. It lies medial to the biceps tendon in the antecubital fossa — the standard site for blood pressure measurement and arterial cannulation.\n\nFirst major branch: deep brachial artery (profunda brachii), which accompanies the radial nerve in the spiral groove of the humerus and supplies the posterior compartment.\n\nThe brachial artery bifurcates at the level of the radial neck (cubital fossa) into the radial artery (lateral) and ulnar artery (medial).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Forearm & Hand Arteries',
                     body: [
-                      'Radial artery: lateral forearm; enters the hand via the anatomical snuff-box; forms the deep palmar arch (predominantly radial); terminal branch is the princeps pollicis artery',
-                      'Ulnar artery: medial forearm; gives off the common interosseous artery; passes through Guyon\'s canal at the wrist; forms the superficial palmar arch (predominantly ulnar)',
-                      'Superficial palmar arch: predominantly ulnar; gives off the common palmar digital arteries supplying fingers 2–5',
-                      'Deep palmar arch: predominantly radial; lies on the metacarpal bases; gives off palmar metacarpal arteries'
+                      'Begins at lower border of teres major; terminates at the radial neck as it bifurcates',
+                      'Branches: profunda brachii (deep brachial) artery — accompanies radial nerve in spiral groove',
+                      'Superior ulnar collateral artery',
+                      'Inferior ulnar collateral artery',
+                      'Terminates by dividing into: radial artery + ulnar artery'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Venous Drainage',
+                    title: 'Radial Artery',
                     body: [
-                      'Deep veins: paired venae comitantes accompany the arteries and drain into the axillary vein → subclavian vein',
-                      'Cephalic vein: arises from the dorsal venous arch; runs along the lateral forearm and arm; pierces the clavipectoral fascia at the deltopectoral groove to empty into the axillary vein',
-                      'Basilic vein: medial forearm and arm; pierces the deep fascia at mid-arm; joins the brachial venae comitantes to form the axillary vein',
-                      'Median cubital vein: connects the cephalic and basilic veins across the antecubital fossa; preferred site for venepuncture and peripheral IV cannulation'
+                      'Branches: radial recurrent artery (anastomoses at elbow), superficial palmar branch',
+                      'Continues at the wrist as the deep palmar arch (passes through anatomical snuffbox between 1st and 2nd metacarpal bases)',
+                      'Deep palmar arch branches: princeps pollicis artery (to thumb), radialis indicis artery (to index finger lateral side)',
+                      'Deep palmar arch anastomoses with the deep branch of the ulnar artery'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Surgical Correlates',
+                    title: 'Ulnar Artery',
                     body: [
-                      'Thoracic outlet syndrome (TOS): compression of the subclavian artery/vein or brachial plexus between the clavicle and first rib, or by a cervical rib; vascular TOS may cause subclavian artery aneurysm or thromboembolic upper limb ischaemia',
-                      'Radial artery CABG conduit: second-line arterial graft after the left internal thoracic artery; Allen\'s test mandatory pre-harvest to confirm adequate ulnar collateral circulation',
-                      'Dialysis access — preferred sites (KDOQI): (1) radiocephalic AVF at the wrist (Brescia-Cimino), (2) brachiocephalic AVF at the elbow, (3) brachiobasilic AVF with transposition',
-                      'Brachial artery injury: supracondylar humerus fracture is the most common cause in children; risk of Volkmann\'s ischaemic contracture if forearm compartment syndrome is missed',
-                      'Radial arterial line: placed at the wrist; modified Allen\'s test confirms ulnar collateral patency before insertion'
+                      'Branches: anterior ulnar recurrent artery, posterior ulnar recurrent artery',
+                      'Common interosseous artery → 3 branches: anterior interosseous artery, posterior interosseous artery, recurrent interosseous artery',
+                      'At the wrist, the ulnar artery divides into superficial and deep branches',
+                      'Superficial branch → superficial palmar arch → 4 common palmar digital arteries → proper palmar digital arteries',
+                      'Deep branch → anastomoses with radial artery to complete deep palmar arch'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Palmar Arches — Summary',
+                    body: [
+                      'Superficial palmar arch: mainly from ulnar artery (superficial branch); completed by superficial palmar branch of radial artery → gives 4 common palmar digital arteries → proper palmar digital arteries',
+                      'Deep palmar arch: mainly from radial artery (terminal); completed by deep branch of ulnar → gives princeps pollicis + radialis indicis + palmar metacarpal arteries',
+                      'Deep arch lies approximately 1 cm proximal to superficial arch'
                     ],
                     type: 'list'
                   }
@@ -669,48 +892,73 @@ export const DATA = [
               ru: {
                 sections: [
                   {
-                    title: 'Обзор',
-                    body: 'Верхняя конечность получает артериальное кровоснабжение от подключичной артерии, которая продолжается как подмышечная, а затем как плечевая артерия. Плечевая артерия делится на лучевую и локтевую в локтевой ямке. Венозный отток осуществляется через глубокие вены (парные вены-спутницы) и поверхностные вены (головная, основная). Хирургическое значение: травмы артерий верхней конечности, синдром грудного выхода (СГВ), формирование артериовенозной фистулы (АВФ) для гемодиализа и забор лучевой артерии как кондуита при АКШ.',
-                    type: 'text'
+                    title: 'Подключичная артерия — 3 части (разделяет передняя лестничная мышца)',
+                    body: [
+                      'Часть 1 (медиальнее передней лестничной мышцы) — 3 ветви:',
+                      '  1. Позвоночная артерия: входит в поперечные отверстия на уровне С6',
+                      '  2. Внутренняя грудная (молочная) артерия: нисходит позади рёберных хрящей; используется для АКШ',
+                      '  3. Щито-шейный ствол → 3 ветви: надлопаточная артерия, нижняя щитовидная артерия, поперечная артерия шеи',
+                      'Часть 2 (позади передней лестничной мышцы) — 1 ветвь:',
+                      '  Рёберно-шейный ствол → верхняя межрёберная артерия (1-й и 2-й межрёберные промежутки) + глубокая шейная артерия',
+                      'Часть 3 (латеральнее передней лестничной мышцы) — 1 ветвь:',
+                      '  Дорсальная артерия лопатки'
+                    ],
+                    type: 'list'
                   },
                   {
-                    title: 'Подключичная и подмышечная артерии',
-                    body: 'Правая подключичная артерия отходит от плечеголовного ствола; левая — непосредственно от дуги аорты. Передняя лестничная мышца делит её на три части.\n\nЧасть 1 (медиальнее передней лестничной мышцы) — три ветви: позвоночная артерия, внутренняя грудная артерия, щито-шейный ствол. Часть 2 (позади) — рёберно-шейный ствол. Часть 3 (латеральнее) — дорсальная артерия лопатки. На уровне наружного края первого ребра подключичная артерия переходит в подмышечную.\n\nМалая грудная мышца делит подмышечную артерию на три части. Часть 1: верхняя грудная артерия. Часть 2: грудо-акромиальный ствол, латеральная грудная артерия. Часть 3: подлопаточная артерия, передняя и задняя артерии, огибающие плечевую кость. На нижнем крае большой круглой мышцы подмышечная артерия переходит в плечевую.',
-                    type: 'text'
+                    title: 'Подмышечная артерия — 3 части (разделяет малая грудная мышца)',
+                    body: [
+                      'Начинается у наружного края I ребра; заканчивается у нижнего края большой круглой мышцы',
+                      'Часть 1 (медиальнее малой грудной мышцы) — 1 ветвь:',
+                      '  Верхняя грудная артерия',
+                      'Часть 2 (позади малой грудной мышцы) — 2 ветви:',
+                      '  Грудоакромиальный ствол → 4 ветви: грудная, акромиальная, ключичная, дельтовидная',
+                      '  Латеральная грудная артерия',
+                      'Часть 3 (латеральнее малой грудной мышцы) — 3 ветви:',
+                      '  Подлопаточная артерия',
+                      '  Передняя артерия огибающая плечо (ПАОП)',
+                      '  Задняя артерия огибающая плечо (ЗАОП)'
+                    ],
+                    type: 'list'
                   },
                   {
                     title: 'Плечевая артерия',
-                    body: 'Продолжение подмышечной артерии от нижнего края большой круглой мышцы. Располагается медиальнее сухожилия двуглавой мышцы в локтевой ямке — стандартное место измерения артериального давления и катетеризации артерии.\n\nПервая крупная ветвь: глубокая артерия плеча (a. profunda brachii), которая сопровождает лучевой нерв в спиральном канале плечевой кости и кровоснабжает заднее фасциальное ложе.\n\nПлечевая артерия делится на уровне шейки лучевой кости (локтевая ямка) на лучевую артерию (латерально) и локтевую артерию (медиально).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Артерии предплечья и кисти',
                     body: [
-                      'Лучевая артерия: латеральная поверхность предплечья; входит в кисть через анатомическую табакерку; формирует глубокую ладонную дугу (преимущественно лучевую); конечная ветвь — собственная артерия большого пальца',
-                      'Локтевая артерия: медиальная поверхность предплечья; отдаёт общую межкостную артерию; проходит через канал Гийона у запястья; формирует поверхностную ладонную дугу (преимущественно локтевую)',
-                      'Поверхностная ладонная дуга: преимущественно локтевая; отдаёт общие ладонные пальцевые артерии, кровоснабжающие II–V пальцы',
-                      'Глубокая ладонная дуга: преимущественно лучевая; располагается на основаниях пястных костей; отдаёт ладонные пястные артерии'
+                      'Начинается у нижнего края большой круглой мышцы; заканчивается бифуркацией',
+                      'Ветви: глубокая артерия плеча — сопровождает лучевой нерв в спиральном канале',
+                      'Верхняя локтевая коллатеральная артерия',
+                      'Нижняя локтевая коллатеральная артерия',
+                      'Делится на: лучевую артерию + локтевую артерию'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Венозный отток',
+                    title: 'Лучевая артерия',
                     body: [
-                      'Глубокие вены: парные вены-спутницы сопровождают артерии и впадают в подмышечную вену → подключичную вену',
-                      'Головная вена (v. cephalica): начинается от тыльной венозной дуги кисти; проходит по латеральной поверхности предплечья и плеча; прободает ключично-грудную фасцию в дельтопекторальной борозде и впадает в подмышечную вену',
-                      'Основная вена (v. basilica): медиальная поверхность предплечья и плеча; прободает глубокую фасцию в средней трети плеча; сливается с плечевыми венами-спутницами, образуя подмышечную вену',
-                      'Срединная вена локтя (v. mediana cubiti): соединяет головную и основную вены в области локтевой ямки; предпочтительное место для венепункции и постановки периферического венозного катетера'
+                      'Ветви: возвратная лучевая артерия (анастомоз в области локтя), поверхностная ладонная ветвь',
+                      'На запястье продолжается как глубокая ладонная дуга (проходит через анатомическую табакерку)',
+                      'Ветви глубокой ладонной дуги: артерия большого пальца кисти, лучевая артерия указательного пальца',
+                      'Глубокая ладонная дуга анастомозирует с глубокой ветвью локтевой артерии'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Хирургические корреляты',
+                    title: 'Локтевая артерия',
                     body: [
-                      'Синдром грудного выхода (СГВ): компрессия подключичной артерии/вены или плечевого сплетения между ключицей и первым ребром либо шейным ребром; сосудистый СГВ может вызвать аневризму подключичной артерии или тромбоэмболическую ишемию верхней конечности',
-                      'Лучевая артерия как кондуит для АКШ: второй по предпочтению артериальный кондуит после левой внутренней грудной артерии; проба Аллена обязательна перед забором для подтверждения коллатерального кровоснабжения от локтевой артерии',
-                      'Доступ для гемодиализа — предпочтительные места (KDOQI): (1) лучево-головная АВФ на запястье (Brescia–Cimino), (2) плечо-головная АВФ на локте, (3) плечо-основная АВФ с транспозицией',
-                      'Повреждение плечевой артерии: надмыщелковый перелом плечевой кости — наиболее частая причина у детей; риск ишемической контрактуры Фолькмана при пропущенном компартмент-синдроме предплечья',
-                      'Артериальный катетер лучевой артерии: устанавливается на запястье; модифицированная проба Аллена подтверждает проходимость коллатерального кровоснабжения от локтевой артерии перед катетеризацией'
+                      'Ветви: передняя возвратная локтевая артерия, задняя возвратная локтевая артерия',
+                      'Общая межкостная артерия → 3 ветви: передняя межкостная, задняя межкостная, возвратная межкостная артерии',
+                      'На запястье делится на поверхностную и глубокую ветви',
+                      'Поверхностная ветвь → поверхностная ладонная дуга → 4 общие ладонные пальцевые артерии → собственные ладонные пальцевые артерии',
+                      'Глубокая ветвь → анастомозирует с лучевой артерией для завершения глубокой ладонной дуги'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ладонные дуги — резюме',
+                    body: [
+                      'Поверхностная ладонная дуга: преимущественно из локтевой артерии (поверхностная ветвь); дополняется поверхностной ладонной ветвью лучевой → 4 общие ладонные пальцевые → собственные пальцевые артерии',
+                      'Глубокая ладонная дуга: преимущественно из лучевой артерии (конечная); дополняется глубокой ветвью локтевой → артерия большого пальца + лучевая артерия указательного пальца + пястные артерии',
+                      'Глубокая дуга располагается примерно на 1 см проксимальнее поверхностной'
                     ],
                     type: 'list'
                   }
@@ -719,199 +967,293 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'upper-limb-vascular-001',
-                question_en: 'Right subclavian artery origin?',
-                question_ru: 'Откуда отходит правая подключичная артерия?',
-                answer_en: 'Brachiocephalic trunk',
-                answer_ru: 'Плечеголовной ствол'
-              },
-              {
-                id: 'upper-limb-vascular-002',
-                question_en: 'Left subclavian artery origin?',
-                question_ru: 'Откуда отходит левая подключичная артерия?',
-                answer_en: 'Aortic arch',
-                answer_ru: 'Дуга аорты'
-              },
-              {
-                id: 'upper-limb-vascular-003',
-                question_en: 'Muscle dividing subclavian artery into 3 parts?',
-                question_ru: 'Мышца, делящая подключичную артерию на 3 части?',
+                id: 'upper-limb-anat-001',
+                question_en: 'Structure dividing subclavian into 3 parts?',
+                question_ru: 'Структура, делящая подключичную на 3 части?',
                 answer_en: 'Scalenus anterior',
-                answer_ru: 'Передняя лестничная'
+                answer_ru: 'Передняя лестничная мышца'
               },
               {
-                id: 'upper-limb-vascular-004',
-                question_en: 'Subclavian becomes axillary artery at?',
-                question_ru: 'Подключичная переходит в подмышечную артерию у?',
-                answer_en: 'Lateral border, 1st rib',
-                answer_ru: 'Наружного края I ребра'
+                id: 'upper-limb-anat-002',
+                question_en: 'Subclavian part 1 — how many branches?',
+                question_ru: 'Сколько ветвей у 1-й части подключичной?',
+                answer_en: 'Three',
+                answer_ru: 'Три'
               },
               {
-                id: 'upper-limb-vascular-005',
-                question_en: 'Muscle dividing axillary artery into 3 parts?',
-                question_ru: 'Мышца, делящая подмышечную артерию на 3 части?',
+                id: 'upper-limb-anat-003',
+                question_en: 'Subclavian part 1, branch 1?',
+                question_ru: '1-я ветвь 1-й части подключичной?',
+                answer_en: 'Vertebral artery',
+                answer_ru: 'Позвоночная артерия'
+              },
+              {
+                id: 'upper-limb-anat-004',
+                question_en: 'Subclavian part 1, branch 2?',
+                question_ru: '2-я ветвь 1-й части подключичной?',
+                answer_en: 'Internal thoracic artery',
+                answer_ru: 'Внутренняя грудная артерия'
+              },
+              {
+                id: 'upper-limb-anat-005',
+                question_en: 'Subclavian part 1, branch 3?',
+                question_ru: '3-я ветвь 1-й части подключичной?',
+                answer_en: 'Thyrocervical trunk',
+                answer_ru: 'Щито-шейный ствол'
+              },
+              {
+                id: 'upper-limb-anat-006',
+                question_en: 'Thyrocervical trunk branches (3)?',
+                question_ru: 'Ветви щито-шейного ствола (3)?',
+                answer_en: 'Suprascapular, inf thyroid, transverse cervical',
+                answer_ru: 'Надлопаточная, нижняя щитовидная, поперечная шеи'
+              },
+              {
+                id: 'upper-limb-anat-007',
+                question_en: 'Subclavian part 2 branch?',
+                question_ru: 'Ветвь 2-й части подключичной?',
+                answer_en: 'Costocervical trunk',
+                answer_ru: 'Рёберно-шейный ствол'
+              },
+              {
+                id: 'upper-limb-anat-008',
+                question_en: 'Costocervical trunk branches?',
+                question_ru: 'Ветви рёберно-шейного ствола?',
+                answer_en: 'Superior intercostal, deep cervical',
+                answer_ru: 'Верхняя межрёберная, глубокая шейная'
+              },
+              {
+                id: 'upper-limb-anat-009',
+                question_en: 'Subclavian part 3 branch?',
+                question_ru: 'Ветвь 3-й части подключичной?',
+                answer_en: 'Dorsal scapular',
+                answer_ru: 'Дорсальная артерия лопатки'
+              },
+              {
+                id: 'upper-limb-anat-010',
+                question_en: 'Structure dividing axillary into 3 parts?',
+                question_ru: 'Структура, делящая подмышечную на 3 части?',
                 answer_en: 'Pectoralis minor',
                 answer_ru: 'Малая грудная мышца'
               },
               {
-                id: 'upper-limb-vascular-006',
-                question_en: 'Axillary becomes brachial artery at?',
-                question_ru: 'Подмышечная переходит в плечевую артерию у?',
-                answer_en: 'Inferior border, teres major',
-                answer_ru: 'Нижнего края большой круглой'
+                id: 'upper-limb-anat-011',
+                question_en: 'Axillary artery begins at?',
+                question_ru: 'Откуда начинается подмышечная артерия?',
+                answer_en: 'Outer border 1st rib',
+                answer_ru: 'Наружный край I ребра'
               },
               {
-                id: 'upper-limb-vascular-007',
-                question_en: 'First major branch of brachial artery?',
-                question_ru: 'Первая крупная ветвь плечевой артерии?',
-                answer_en: 'Profunda brachii',
-                answer_ru: 'Глубокая артерия плеча'
+                id: 'upper-limb-anat-012',
+                question_en: 'Axillary artery ends at?',
+                question_ru: 'Где заканчивается подмышечная артерия?',
+                answer_en: 'Lower border teres major',
+                answer_ru: 'Нижний край большой круглой мышцы'
               },
               {
-                id: 'upper-limb-vascular-008',
-                question_en: 'Nerve accompanying profunda brachii in spiral groove?',
-                question_ru: 'Нерв, сопровождающий глубокую артерию плеча в спиральном канале?',
+                id: 'upper-limb-anat-013',
+                question_en: 'Axillary part 1 branch?',
+                question_ru: 'Ветвь 1-й части подмышечной?',
+                answer_en: 'Superior thoracic',
+                answer_ru: 'Верхняя грудная'
+              },
+              {
+                id: 'upper-limb-anat-014',
+                question_en: 'Thoracoacromial trunk branches (4)?',
+                question_ru: 'Ветви грудоакромиального ствола (4)?',
+                answer_en: 'Pectoral, acromial, clavicular, deltoid',
+                answer_ru: 'Грудная, акромиальная, ключичная, дельтовидная'
+              },
+              {
+                id: 'upper-limb-anat-015',
+                question_en: 'Axillary part 3 branches (3)?',
+                question_ru: 'Ветви 3-й части подмышечной (3)?',
+                answer_en: 'Subscapular, AHCA, PHCA',
+                answer_ru: 'Подлопаточная, ПАОП, ЗАОП'
+              },
+              {
+                id: 'upper-limb-anat-016',
+                question_en: 'Brachial artery begins at?',
+                question_ru: 'Откуда начинается плечевая артерия?',
+                answer_en: 'Lower border teres major',
+                answer_ru: 'Нижний край большой круглой мышцы'
+              },
+              {
+                id: 'upper-limb-anat-017',
+                question_en: 'Profunda brachii accompanies which nerve?',
+                question_ru: 'С каким нервом проходит глубокая артерия плеча?',
                 answer_en: 'Radial nerve',
                 answer_ru: 'Лучевой нерв'
               },
               {
-                id: 'upper-limb-vascular-009',
-                question_en: 'Brachial artery bifurcates at?',
-                question_ru: 'Уровень бифуркации плечевой артерии?',
-                answer_en: 'Cubital fossa',
-                answer_ru: 'Локтевая ямка'
+                id: 'upper-limb-anat-018',
+                question_en: 'Brachial artery terminates into?',
+                question_ru: 'На что делится плечевая артерия?',
+                answer_en: 'Radial + ulnar arteries',
+                answer_ru: 'Лучевая + локтевая артерии'
               },
               {
-                id: 'upper-limb-vascular-010',
-                question_en: 'Radial artery enters hand via?',
-                question_ru: 'Лучевая артерия входит в кисть через?',
-                answer_en: 'Anatomical snuff-box',
-                answer_ru: 'Анатомическую табакерку'
+                id: 'upper-limb-anat-019',
+                question_en: 'Common interosseous artery branches (3)?',
+                question_ru: 'Ветви общей межкостной артерии (3)?',
+                answer_en: 'Anterior, posterior, recurrent interosseous',
+                answer_ru: 'Передняя, задняя, возвратная межкостная'
               },
               {
-                id: 'upper-limb-vascular-011',
-                question_en: 'Ulnar artery passes through at wrist?',
-                question_ru: 'Локтевая артерия проходит у запястья через?',
-                answer_en: "Guyon's canal",
-                answer_ru: 'Канал Гийона'
+                id: 'upper-limb-anat-020',
+                question_en: 'Superficial palmar arch mainly from?',
+                question_ru: 'Из чего преимущественно образована поверхностная ладонная дуга?',
+                answer_en: 'Ulnar artery',
+                answer_ru: 'Локтевая артерия'
               },
               {
-                id: 'upper-limb-vascular-012',
-                question_en: 'Predominantly radial palmar arch?',
-                question_ru: 'Преимущественно лучевая ладонная дуга?',
+                id: 'upper-limb-anat-021',
+                question_en: 'Deep palmar arch mainly from?',
+                question_ru: 'Из чего преимущественно образована глубокая ладонная дуга?',
+                answer_en: 'Radial artery',
+                answer_ru: 'Лучевая артерия'
+              },
+              {
+                id: 'upper-limb-anat-022',
+                question_en: 'Superficial palmar arch gives rise to?',
+                question_ru: 'Что даёт поверхностная ладонная дуга?',
+                answer_en: '4 common palmar digital arteries',
+                answer_ru: '4 общие ладонные пальцевые'
+              },
+              {
+                id: 'upper-limb-anat-023',
+                question_en: 'Common palmar digital arteries give rise to?',
+                question_ru: 'Что дают общие ладонные пальцевые артерии?',
+                answer_en: 'Proper palmar digital arteries',
+                answer_ru: 'Собственные пальцевые артерии'
+              },
+              {
+                id: 'upper-limb-anat-024',
+                question_en: 'Deep palmar arch gives (named arteries)?',
+                question_ru: 'Именные ветви глубокой ладонной дуги?',
+                answer_en: 'Princeps pollicis, radialis indicis',
+                answer_ru: 'Артерия большого пальца, лучевая указательного'
+              },
+              {
+                id: 'upper-limb-anat-025',
+                question_en: 'Radial artery continues at wrist as?',
+                question_ru: 'В что продолжается лучевая артерия на запястье?',
                 answer_en: 'Deep palmar arch',
                 answer_ru: 'Глубокая ладонная дуга'
               },
               {
-                id: 'upper-limb-vascular-013',
-                question_en: 'Predominantly ulnar palmar arch?',
-                question_ru: 'Преимущественно локтевая ладонная дуга?',
-                answer_en: 'Superficial palmar arch',
-                answer_ru: 'Поверхностная ладонная дуга'
+                id: 'upper-limb-anat-026',
+                question_en: 'Ulnar artery branch at elbow level?',
+                question_ru: 'Ветвь локтевой артерии на уровне локтя?',
+                answer_en: 'Common interosseous',
+                answer_ru: 'Общая межкостная'
               },
               {
-                id: 'upper-limb-vascular-014',
-                question_en: 'Cephalic vein drains into?',
-                question_ru: 'Куда впадает головная вена?',
-                answer_en: 'Axillary vein',
-                answer_ru: 'Подмышечная вена'
+                id: 'upper-limb-anat-027',
+                question_en: 'Axillary part 2 branches (2)?',
+                question_ru: 'Ветви 2-й части подмышечной (2)?',
+                answer_en: 'Thoracoacromial, lateral thoracic',
+                answer_ru: 'Грудоакромиальный ствол, латеральная грудная'
               },
               {
-                id: 'upper-limb-vascular-015',
-                question_en: 'Basilic vein joins to form?',
-                question_ru: 'Основная вена сливается, образуя?',
-                answer_en: 'Axillary vein',
-                answer_ru: 'Подмышечную вену'
+                id: 'upper-limb-anat-028',
+                question_en: 'Brachial artery collateral branches (2)?',
+                question_ru: 'Коллатеральные ветви плечевой артерии (2)?',
+                answer_en: 'Superior + inferior ulnar collateral',
+                answer_ru: 'Верхняя + нижняя локтевая коллатеральная'
               },
               {
-                id: 'upper-limb-vascular-016',
-                question_en: 'Best vein for antecubital venepuncture?',
-                question_ru: 'Предпочтительная вена для венепункции в локтевой ямке?',
-                answer_en: 'Median cubital vein',
-                answer_ru: 'Срединная вена локтя'
+                id: 'upper-limb-anat-029',
+                question_en: 'Ulnar recurrent artery branches?',
+                question_ru: 'Ветви возвратной локтевой артерии?',
+                answer_en: 'Anterior + posterior',
+                answer_ru: 'Передняя + задняя'
               },
               {
-                id: 'upper-limb-vascular-017',
-                question_en: 'Pre-radial artery harvest test?',
-                question_ru: 'Проба перед забором лучевой артерии?',
-                answer_en: "Allen's test",
-                answer_ru: 'Проба Аллена'
-              },
-              {
-                id: 'upper-limb-vascular-018',
-                question_en: 'First-choice AVF site (KDOQI)?',
-                question_ru: 'Приоритетное место АВФ по KDOQI?',
-                answer_en: 'Radiocephalic, wrist',
-                answer_ru: 'Лучево-головная, запястье'
-              },
-              {
-                id: 'upper-limb-vascular-019',
-                question_en: 'Most common cause of brachial artery injury in children?',
-                question_ru: 'Наиболее частая причина повреждения плечевой артерии у детей?',
-                answer_en: 'Supracondylar fracture',
-                answer_ru: 'Надмыщелковый перелом'
-              },
-              {
-                id: 'upper-limb-vascular-020',
-                question_en: 'Missed brachial artery injury risks?',
-                question_ru: 'Риск при пропущенном повреждении плечевой артерии?',
-                answer_en: "Volkmann's contracture",
-                answer_ru: 'Контрактура Фолькмана'
+                id: 'upper-limb-anat-030',
+                question_en: 'Internal thoracic artery CABG use?',
+                question_ru: 'Применение внутренней грудной артерии в АКШ?',
+                answer_en: 'LIMA graft to LAD',
+                answer_ru: 'Кондуит ЛВГА к LAD'
               }
             ]
           },
 
-          // ── Topic: Vascular Anatomy of the Abdomen and Pelvis ──
+          // ── Topic: Abdominal Aorta & Iliac Arteries ─────────────────────────────
           {
             slug: 'vascular-anatomy-abdomen-pelvis',
-            title_en: 'Vascular Anatomy of the Abdomen and Pelvis',
-            title_ru: 'Сосудистая анатомия живота и таза',
+            title_en: 'Abdominal Aorta & Iliac Arteries',
+            title_ru: 'Брюшная аорта и подвздошные артерии',
             note: {
               en: {
                 sections: [
                   {
-                    title: 'Overview',
-                    body: 'The abdominal aorta enters the abdomen at T12 via the aortic hiatus and bifurcates at L4 into the common iliac arteries. It supplies the abdominal viscera via unpaired anterior branches (coeliac trunk, SMA, IMA) and paired lateral branches (renal, gonadal, lumbar). The IVC forms at L5, lies to the right of the aorta, and drains through the caval hiatus at T8. The portal venous system drains the GI tract to the liver. Key surgical relevance: AAA repair, renal artery stenosis, mesenteric ischaemia, and pelvic vascular surgery.',
+                    title: 'Abdominal Aorta — Overview & Branches',
+                    body: 'The abdominal aorta begins at the aortic hiatus in the diaphragm (T12) and extends to its bifurcation into the common iliac arteries at L4. Branches are grouped as: (1) paired lateral abdominal wall, (2) paired lateral visceral, (3) three single anterior visceral, and (4) one single posterior terminal branch.',
                     type: 'text'
                   },
                   {
-                    title: 'Abdominal Aorta & Branches',
-                    body: 'The abdominal aorta enters at T12 and lies just left of midline on the vertebral bodies. It bifurcates at L4 into the right and left common iliac arteries; the left common iliac vein crosses behind the right common iliac artery at this level.\n\nUnpaired visceral branches (anterior): coeliac trunk (T12), superior mesenteric artery / SMA (L1), inferior mesenteric artery / IMA (L3).\n\nPaired branches: inferior phrenic arteries (T12), middle suprarenal arteries, renal arteries (L1–L2), gonadal arteries — testicular/ovarian (L2), and four pairs of lumbar arteries.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Visceral Branches',
+                    title: 'Paired Lateral Branches',
                     body: [
-                      'Coeliac trunk (T12): trifurcates into left gastric, splenic, and common hepatic arteries; supplies the foregut (lower oesophagus to proximal duodenum / ampulla of Vater)',
-                      'Superior mesenteric artery — SMA (L1): arises behind the neck of the pancreas; supplies the midgut (distal duodenum to the mid-transverse colon); the superior mesenteric vein lies to its right',
-                      'Inferior mesenteric artery — IMA (L3): supplies the hindgut (left transverse colon to upper rectum); the marginal artery of Drummond provides the SMA–IMA anastomotic connection along the mesenteric border of the colon',
-                      'Renal arteries (L1–L2): the right renal artery is longer and passes posterior to the IVC and right renal vein; accessory renal arteries are present in ~25% and must be identified before aortic surgery or nephrectomy'
+                      'Abdominal wall (5 paired): inferior phrenic artery (1 pair) + 4 lumbar arteries',
+                      '  Inferior phrenic artery → gives superior suprarenal artery (to adrenal gland)',
+                      'Lateral visceral (3 paired): middle suprarenal artery, renal artery, gonadal artery (testicular or ovarian)',
+                      '  Renal artery → gives inferior suprarenal artery (to adrenal gland)',
+                      'Median sacral artery: small single posterior branch of the distal abdominal aorta'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Single Anterior Visceral Branches',
+                    body: [
+                      'Coeliac trunk (T12): supplies liver, stomach, abdominal oesophagus, spleen, superior half of duodenum and pancreas (embryonic foregut)',
+                      'Superior mesenteric artery / SMA (L1): supplies lower duodenum through 2/3 of transverse colon + pancreas (embryonic midgut)',
+                      'Inferior mesenteric artery / IMA (L3): supplies splenic flexure to upper rectum including descending and sigmoid colon (embryonic hindgut)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Coeliac Trunk Branches',
+                    body: [
+                      'Left gastric artery → gastric branches + oesophageal branches',
+                      'Splenic artery → pancreatic artery, short gastric arteries, left gastroepiploic artery',
+                      'Common hepatic artery → proper hepatic artery + gastroduodenal artery + right gastric artery',
+                      '  Proper hepatic → left hepatic + right hepatic (right hepatic → cystic artery)',
+                      '  Gastroduodenal → superior pancreaticoduodenal artery + right gastroepiploic artery',
+                      '  Right gastric artery: runs along the lesser curvature of the stomach'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'SMA Branches',
+                    body: [
+                      'Inferior pancreaticoduodenal artery',
+                      'Jejunal arteries (multiple)',
+                      'Ileal arteries (multiple)',
+                      'Ileocolic artery → anterior caecal + posterior caecal artery',
+                      '  Appendicular artery: branch of the posterior caecal artery',
+                      'Right colic artery',
+                      'Middle colic artery'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'IMA Branches',
+                    body: [
+                      'Left colic artery',
+                      'Sigmoid arteries (2–3 branches)',
+                      'Superior rectal artery: direct continuation of the IMA'
                     ],
                     type: 'list'
                   },
                   {
                     title: 'Iliac Arteries',
-                    body: 'The common iliac arteries (L4–L5) each divide into external and internal iliac arteries anterior to the sacroiliac joint.\n\nExternal iliac artery: continues beneath the inguinal ligament at the mid-inguinal point (midpoint between ASIS and pubic symphysis) to become the common femoral artery. Before the ligament it gives off the inferior epigastric and deep circumflex iliac arteries.\n\nInternal iliac artery (hypogastric): anterior division supplies pelvic organs (superior vesical, uterine or inferior vesical, middle rectal, internal pudendal, inferior gluteal); posterior division supplies the gluteal region and posterior pelvic wall (superior gluteal, iliolumbar, lateral sacral arteries).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'IVC & Portal System',
                     body: [
-                      'IVC: formed at L5 by the union of the right and left common iliac veins; lies to the right of the aorta; receives renal, hepatic, and lumbar veins; passes through the caval hiatus at T8 to enter the right atrium',
-                      'Left renal vein: longer than the right; crosses the aorta anteriorly; receives the left gonadal, left suprarenal, and left inferior phrenic veins; compressed between aorta and SMA in nutcracker syndrome',
-                      'Portal vein: formed behind the neck of the pancreas at L2 by the union of the superior mesenteric vein (SMV) and the splenic vein; the inferior mesenteric vein typically drains into the splenic vein',
-                      'Portosystemic anastomoses: oesophageal (left gastric ↔ azygos), rectal (superior rectal ↔ middle/inferior rectal), paraumbilical (portal ↔ epigastric), retroperitoneal (colic ↔ renal/lumbar veins)'
-                    ],
-                    type: 'list'
-                  },
-                  {
-                    title: 'Surgical Correlates',
-                    body: [
-                      'AAA: aortic diameter ≥3.0 cm = aneurysm; elective repair threshold ≥5.5 cm in men, ≥5.0 cm in women, or growth >1.0 cm/year (SVS/ESVS guidelines); EVAR preferred over open repair in eligible anatomy',
-                      'Renal artery stenosis: atherosclerotic (ostial/proximal, elderly) vs fibromuscular dysplasia (FMD — distal/mid artery, beaded appearance, young women); FMD treated by percutaneous transluminal angioplasty (PTA)',
-                      'Acute mesenteric ischaemia: SMA embolus is the most common cause (~50%); presents with sudden severe periumbilical pain disproportionate to examination; CT angiography is diagnostic; revascularisation ± bowel resection',
-                      'May-Thurner (Cockett) syndrome: left common iliac vein compressed by the overlying right common iliac artery → left iliofemoral DVT; treated by catheter-directed thrombolysis + iliac vein stenting',
-                      'Leriche syndrome: aortic bifurcation occlusion (atherosclerosis) → bilateral lower limb claudication, absent femoral pulses, and erectile dysfunction in men'
+                      'Common iliac artery divides into: external iliac artery + internal iliac artery',
+                      'External iliac artery: inferior epigastric artery + deep circumflex iliac artery (supply lower abdominal wall); continues under inguinal ligament as common femoral artery',
+                      'Internal iliac — Posterior division (3 branches): iliolumbar artery, lateral sacral artery, superior gluteal artery',
+                      'Internal iliac — Anterior division: umbilical artery → superior vesicular artery; obturator artery; inferior vesicular artery (male) / vaginal artery (female); middle rectal artery; internal pudendal artery; inferior gluteal artery',
+                      'Females only (additional branch from anterior division): uterine artery'
                     ],
                     type: 'list'
                   }
@@ -920,48 +1262,72 @@ export const DATA = [
               ru: {
                 sections: [
                   {
-                    title: 'Обзор',
-                    body: 'Брюшная аорта входит в брюшную полость на уровне T12 через аортальное отверстие диафрагмы и делится на уровне L4 на общие подвздошные артерии. Она кровоснабжает органы брюшной полости через непарные передние ветви (чревный ствол, ВБА, НБА) и парные боковые ветви (почечные, гонадные, поясничные). НПВ образуется на уровне L5, располагается справа от аорты и проходит через кавальное отверстие диафрагмы на уровне T8. Система воротной вены дренирует желудочно-кишечный тракт в печень. Ключевое хирургическое значение: коррекция аневризмы аорты, стеноз почечных артерий, мезентериальная ишемия и операции на сосудах таза.',
+                    title: 'Брюшная аорта — обзор и ветви',
+                    body: 'Брюшная аорта начинается у аортального отверстия диафрагмы (T12) и продолжается до бифуркации в общие подвздошные артерии на уровне L4. Ветви делятся на: (1) парные боковые ветви брюшной стенки, (2) парные боковые висцеральные, (3) три непарные передние висцеральные, (4) одна непарная задняя терминальная ветвь.',
                     type: 'text'
                   },
                   {
-                    title: 'Брюшная аорта и её ветви',
-                    body: 'Брюшная аорта входит на уровне T12 и располагается несколько левее средней линии на телах позвонков. Делится на уровне L4 на правую и левую общие подвздошные артерии; на этом уровне левая общая подвздошная вена пересекает правую общую подвздошную артерию сзади.\n\nНепарные висцеральные ветви (передние): чревный ствол (T12), верхняя брыжеечная артерия / ВБА (L1), нижняя брыжеечная артерия / НБА (L3).\n\nПарные ветви: нижние диафрагмальные артерии (T12), средние надпочечниковые артерии, почечные артерии (L1–L2), гонадные артерии — яичковые/яичниковые (L2) и четыре пары поясничных артерий.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Висцеральные ветви',
+                    title: 'Парные боковые ветви',
                     body: [
-                      'Чревный ствол (T12): трифуркируется на левую желудочную, селезёночную и общую печёночную артерии; кровоснабжает переднюю кишку (нижний отдел пищевода до проксимальной части двенадцатиперстной кишки / ампулы Фатера)',
-                      'Верхняя брыжеечная артерия — ВБА (L1): отходит позади шейки поджелудочной железы; кровоснабжает среднюю кишку (от дистального отдела двенадцатиперстной кишки до середины поперечной ободочной кишки); верхняя брыжеечная вена располагается справа от неё',
-                      'Нижняя брыжеечная артерия — НБА (L3): кровоснабжает заднюю кишку (левая поперечная ободочная кишка до верхней трети прямой кишки); краевая артерия Дрюммона обеспечивает анастомотическое соединение ВБА и НБА вдоль брыжеечного края толстой кишки',
-                      'Почечные артерии (L1–L2): правая почечная артерия длиннее и проходит позади НПВ и правой почечной вены; добавочные почечные артерии встречаются примерно в 25% случаев и должны быть выявлены до операций на аорте или нефрэктомии'
+                      'Ветви брюшной стенки (5 пар): нижняя диафрагмальная артерия (1 пара) + 4 поясничные артерии',
+                      '  Нижняя диафрагмальная → даёт верхнюю надпочечниковую артерию',
+                      'Боковые висцеральные (3 пары): средняя надпочечниковая, почечная, гонадная (яичковая или яичниковая) артерии',
+                      '  Почечная артерия → даёт нижнюю надпочечниковую артерию',
+                      'Средняя крестцовая артерия: небольшая непарная задняя ветвь дистального отдела брюшной аорты'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Непарные передние висцеральные ветви',
+                    body: [
+                      'Чревный ствол (T12): кровоснабжает печень, желудок, брюшной пищевод, селезёнку, верхнюю половину двенадцатиперстной кишки и поджелудочной железы (эмбриональная передняя кишка)',
+                      'Верхняя брыжеечная артерия / ВБА (L1): кровоснабжает нижние отделы двенадцатиперстной кишки, тощую кишку, подвздошную кишку до 2/3 поперечной ободочной кишки + поджелудочную железу (эмбриональная средняя кишка)',
+                      'Нижняя брыжеечная артерия / НБА (L3): кровоснабжает от селезёночного изгиба до верхнего отдела прямой кишки, включая нисходящую и сигмовидную кишку (эмбриональная задняя кишка)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ветви чревного ствола',
+                    body: [
+                      'Левая желудочная артерия → желудочные ветви + пищеводные ветви',
+                      'Селезёночная артерия → поджелудочные ветви, короткие желудочные артерии, левая желудочно-сальниковая артерия',
+                      'Общая печёночная артерия → собственная печёночная + желудочно-двенадцатиперстная + правая желудочная артерия',
+                      '  Собственная печёночная → левая печёночная + правая печёночная (правая печёночная → пузырная артерия)',
+                      '  Желудочно-двенадцатиперстная → верхняя панкреатодуоденальная + правая желудочно-сальниковая',
+                      '  Правая желудочная: проходит по малой кривизне желудка'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ветви ВБА',
+                    body: [
+                      'Нижняя панкреатодуоденальная артерия',
+                      'Тощекишечные артерии (множественные)',
+                      'Подвздошно-кишечные артерии (множественные)',
+                      'Подвздошно-ободочная артерия → передняя слепокишечная + задняя слепокишечная',
+                      '  Аппендикулярная артерия: ветвь задней слепокишечной артерии',
+                      'Правая ободочная артерия',
+                      'Средняя ободочная артерия'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ветви НБА',
+                    body: [
+                      'Левая ободочная артерия',
+                      'Сигмовидные артерии (2–3 ветви)',
+                      'Верхняя прямокишечная артерия: прямое продолжение НБА'
                     ],
                     type: 'list'
                   },
                   {
                     title: 'Подвздошные артерии',
-                    body: 'Общие подвздошные артерии (L4–L5) делятся на наружную и внутреннюю подвздошные артерии кпереди от крестцово-подвздошного сустава.\n\nНаружная подвздошная артерия: проходит под паховой связкой на уровне середины паховой связки (midpoint between ASIS and pubic symphysis) и переходит в общую бедренную артерию. Непосредственно перед паховой связкой отдаёт нижнюю надчревную и глубокую огибающую подвздошную артерии.\n\nВнутренняя подвздошная артерия (подчревная): передний ствол кровоснабжает органы таза (верхняя пузырная, маточная или нижняя пузырная, средняя прямокишечная, внутренняя половая, нижняя ягодичная артерии); задний ствол кровоснабжает ягодичную область и заднюю стенку таза (верхняя ягодичная, подвздошно-поясничная, латеральные крестцовые артерии).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'НПВ и система воротной вены',
                     body: [
-                      'НПВ: образуется на уровне L5 слиянием правой и левой общих подвздошных вен; располагается справа от аорты; принимает почечные, печёночные и поясничные вены; проходит через кавальное отверстие диафрагмы на уровне T8 и впадает в правое предсердие',
-                      'Левая почечная вена: длиннее правой; пересекает аорту кпереди; принимает левую гонадную, левую надпочечниковую и левую нижнюю диафрагмальную вены; сдавливается между аортой и ВБА при синдроме щелкунчика',
-                      'Воротная вена: образуется позади шейки поджелудочной железы на уровне L2 слиянием верхней брыжеечной вены (ВБВ) и селезёночной вены; нижняя брыжеечная вена обычно впадает в селезёночную вену',
-                      'Портосистемные анастомозы: пищеводные (левая желудочная ↔ непарная), прямокишечные (верхняя прямокишечная ↔ средняя/нижняя прямокишечные), параумбиликальные (воротная ↔ надчревные), забрюшинные (ободочнокишечные ↔ почечные/поясничные вены)'
-                    ],
-                    type: 'list'
-                  },
-                  {
-                    title: 'Хирургические корреляты',
-                    body: [
-                      'Аневризма брюшной аорты (АБА): диаметр аорты ≥3,0 см = аневризма; показание к плановой коррекции — ≥5,5 см у мужчин, ≥5,0 см у женщин или рост >1,0 см/год (рекомендации SVS/ESVS); EVAR предпочтительнее открытой операции при подходящей анатомии',
-                      'Стеноз почечной артерии: атеросклеротический (устье/проксимальный отдел, пожилые) и фибромышечная дисплазия (ФМД — дистальный/средний отдел, чёткообразный вид, молодые женщины); ФМД лечится чрескожной транслюминальной ангиопластикой (ЧТА)',
-                      'Острая мезентериальная ишемия: эмболия ВБА — наиболее частая причина (~50%); проявляется внезапной интенсивной болью в параумбиликальной области, непропорциональной данным осмотра; КТ-ангиография — диагностический метод выбора; реваскуляризация ± резекция кишки',
-                      'Синдром Мэй–Тёрнера (Кокетта): левая общая подвздошная вена сдавливается правой общей подвздошной артерией → левосторонний илеофеморальный тромбоз; лечение: катетер-направленный тромболизис + стентирование подвздошной вены',
-                      'Синдром Лериша: окклюзия бифуркации аорты (атеросклероз) → двусторонняя перемежающаяся хромота, отсутствие бедренного пульса и эректильная дисфункция у мужчин'
+                      'Общая подвздошная артерия делится на: наружную + внутреннюю подвздошные артерии',
+                      'Наружная подвздошная: нижняя надчревная артерия + глубокая артерия, огибающая подвздошную кость (кровоснабжают нижнюю брюшную стенку); продолжается под паховой связкой как общая бедренная артерия',
+                      'Внутренняя подвздошная — задний ствол (3 ветви): подвздошно-поясничная артерия, латеральная крестцовая артерия, верхняя ягодичная артерия',
+                      'Внутренняя подвздошная — передний ствол: пупочная артерия → верхняя мочепузырная; запирательная; нижняя мочепузырная (у мужчин) / влагалищная (у женщин); средняя прямокишечная; внутренняя половая; нижняя ягодичная артерии',
+                      'Только у женщин (дополнительная ветвь переднего ствола): маточная артерия'
                     ],
                     type: 'list'
                   }
@@ -970,149 +1336,219 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'abdominal-pelvic-vascular-001',
-                question_en: 'Aortic hiatus vertebral level?',
-                question_ru: 'Уровень аортального отверстия диафрагмы?',
-                answer_en: 'T12',
-                answer_ru: 'T12'
+                id: 'abdomen-anat-001',
+                question_en: 'Abdominal aorta begins at?',
+                question_ru: 'Откуда начинается брюшная аорта?',
+                answer_en: 'T12 aortic hiatus',
+                answer_ru: 'T12, аортальное отверстие'
               },
               {
-                id: 'abdominal-pelvic-vascular-002',
-                question_en: 'Abdominal aorta bifurcation level?',
-                question_ru: 'Уровень бифуркации брюшной аорты?',
+                id: 'abdomen-anat-002',
+                question_en: 'Abdominal aorta bifurcates at?',
+                question_ru: 'На каком уровне бифурцирует брюшная аорта?',
                 answer_en: 'L4',
                 answer_ru: 'L4'
               },
               {
-                id: 'abdominal-pelvic-vascular-003',
+                id: 'abdomen-anat-003',
                 question_en: 'Coeliac trunk vertebral level?',
-                question_ru: 'Уровень отхождения чревного ствола?',
+                question_ru: 'Уровень чревного ствола?',
                 answer_en: 'T12',
                 answer_ru: 'T12'
               },
               {
-                id: 'abdominal-pelvic-vascular-004',
-                question_en: 'Coeliac trunk gut territory?',
-                question_ru: 'Территория кровоснабжения чревного ствола?',
-                answer_en: 'Foregut',
-                answer_ru: 'Передняя кишка'
-              },
-              {
-                id: 'abdominal-pelvic-vascular-005',
+                id: 'abdomen-anat-004',
                 question_en: 'SMA vertebral level?',
-                question_ru: 'Уровень отхождения ВБА?',
+                question_ru: 'Уровень ВБА?',
                 answer_en: 'L1',
                 answer_ru: 'L1'
               },
               {
-                id: 'abdominal-pelvic-vascular-006',
-                question_en: 'SMA gut territory?',
-                question_ru: 'Территория кровоснабжения ВБА?',
-                answer_en: 'Midgut',
-                answer_ru: 'Средняя кишка'
-              },
-              {
-                id: 'abdominal-pelvic-vascular-007',
+                id: 'abdomen-anat-005',
                 question_en: 'IMA vertebral level?',
-                question_ru: 'Уровень отхождения НБА?',
+                question_ru: 'Уровень НБА?',
                 answer_en: 'L3',
                 answer_ru: 'L3'
               },
               {
-                id: 'abdominal-pelvic-vascular-008',
-                question_en: 'IMA gut territory?',
-                question_ru: 'Территория кровоснабжения НБА?',
+                id: 'abdomen-anat-006',
+                question_en: 'Coeliac trunk branches (3)?',
+                question_ru: 'Ветви чревного ствола (3)?',
+                answer_en: 'Left gastric, splenic, hepatic',
+                answer_ru: 'Левая желудочная, селезёночная, печёночная'
+              },
+              {
+                id: 'abdomen-anat-007',
+                question_en: 'Coeliac trunk embryonic territory?',
+                question_ru: 'Эмбриональная область чревного ствола?',
+                answer_en: 'Foregut',
+                answer_ru: 'Передняя кишка'
+              },
+              {
+                id: 'abdomen-anat-008',
+                question_en: 'SMA embryonic territory?',
+                question_ru: 'Эмбриональная область ВБА?',
+                answer_en: 'Midgut',
+                answer_ru: 'Средняя кишка'
+              },
+              {
+                id: 'abdomen-anat-009',
+                question_en: 'IMA embryonic territory?',
+                question_ru: 'Эмбриональная область НБА?',
                 answer_en: 'Hindgut',
                 answer_ru: 'Задняя кишка'
               },
               {
-                id: 'abdominal-pelvic-vascular-009',
-                question_en: 'SMA–IMA anastomotic arcade?',
-                question_ru: 'Анастомоз между ВБА и НБА?',
-                answer_en: 'Marginal artery, Drummond',
-                answer_ru: 'Краевая артерия Дрюммона'
+                id: 'abdomen-anat-010',
+                question_en: 'Inferior phrenic artery branch to adrenal?',
+                question_ru: 'Ветвь нижней диафрагмальной к надпочечнику?',
+                answer_en: 'Superior suprarenal',
+                answer_ru: 'Верхняя надпочечниковая'
               },
               {
-                id: 'abdominal-pelvic-vascular-010',
-                question_en: 'Right renal artery passes posterior to?',
-                question_ru: 'Правая почечная артерия проходит позади?',
-                answer_en: 'IVC',
-                answer_ru: 'НПВ'
+                id: 'abdomen-anat-011',
+                question_en: 'Renal artery branch to adrenal?',
+                question_ru: 'Ветвь почечной артерии к надпочечнику?',
+                answer_en: 'Inferior suprarenal',
+                answer_ru: 'Нижняя надпочечниковая'
               },
               {
-                id: 'abdominal-pelvic-vascular-011',
-                question_en: 'External iliac becomes femoral artery at?',
-                question_ru: 'Наружная подвздошная переходит в бедренную у?',
-                answer_en: 'Inguinal ligament',
-                answer_ru: 'Паховой связки'
+                id: 'abdomen-anat-012',
+                question_en: 'Common hepatic → which 3 branches?',
+                question_ru: 'На что делится общая печёночная (3 ветви)?',
+                answer_en: 'Proper hepatic, gastroduodenal, right gastric',
+                answer_ru: 'Собственная печёночная, желудочно-двенадцатиперстная, правая желудочная'
               },
               {
-                id: 'abdominal-pelvic-vascular-012',
-                question_en: 'IVC formation vertebral level?',
-                question_ru: 'Уровень образования НПВ?',
-                answer_en: 'L5',
-                answer_ru: 'L5'
+                id: 'abdomen-anat-013',
+                question_en: 'Right hepatic artery branch?',
+                question_ru: 'Ветвь правой печёночной артерии?',
+                answer_en: 'Cystic artery',
+                answer_ru: 'Пузырная артерия'
               },
               {
-                id: 'abdominal-pelvic-vascular-013',
-                question_en: 'IVC passes through diaphragm at?',
-                question_ru: 'НПВ проходит через диафрагму на уровне?',
-                answer_en: 'T8',
-                answer_ru: 'T8'
+                id: 'abdomen-anat-014',
+                question_en: 'Gastroduodenal artery branches?',
+                question_ru: 'Ветви желудочно-двенадцатиперстной артерии?',
+                answer_en: 'Superior pancreaticoduodenal, right gastroepiploic',
+                answer_ru: 'Верхняя панкреатодуоденальная, правая желудочно-сальниковая'
               },
               {
-                id: 'abdominal-pelvic-vascular-014',
-                question_en: 'Left renal vein crosses in front of?',
-                question_ru: 'Левая почечная вена пересекает кпереди?',
-                answer_en: 'Aorta',
-                answer_ru: 'Аорту'
+                id: 'abdomen-anat-015',
+                question_en: 'Appendicular artery arises from?',
+                question_ru: 'От чего отходит аппендикулярная артерия?',
+                answer_en: 'Posterior caecal artery',
+                answer_ru: 'Задняя слепокишечная артерия'
               },
               {
-                id: 'abdominal-pelvic-vascular-015',
-                question_en: 'Portal vein formed by?',
-                question_ru: 'Воротная вена образована слиянием?',
-                answer_en: 'SMV, splenic vein',
-                answer_ru: 'ВБВ и селезёночной'
+                id: 'abdomen-anat-016',
+                question_en: 'Posterior caecal artery arises from?',
+                question_ru: 'От чего отходит задняя слепокишечная артерия?',
+                answer_en: 'Ileocolic artery',
+                answer_ru: 'Подвздошно-ободочная артерия'
               },
               {
-                id: 'abdominal-pelvic-vascular-016',
-                question_en: 'AAA elective repair threshold in men?',
-                question_ru: 'Порог плановой коррекции АБА у мужчин?',
-                answer_en: '≥5.5 cm',
-                answer_ru: '≥5,5 см'
+                id: 'abdomen-anat-017',
+                question_en: 'IMA direct continuation?',
+                question_ru: 'Прямое продолжение НБА?',
+                answer_en: 'Superior rectal artery',
+                answer_ru: 'Верхняя прямокишечная артерия'
               },
               {
-                id: 'abdominal-pelvic-vascular-017',
-                question_en: 'AAA elective repair threshold in women?',
-                question_ru: 'Порог плановой коррекции АБА у женщин?',
-                answer_en: '≥5.0 cm',
-                answer_ru: '≥5,0 см'
+                id: 'abdomen-anat-018',
+                question_en: 'Median sacral artery — type?',
+                question_ru: 'Средняя крестцовая — парная или непарная?',
+                answer_en: 'Single posterior branch',
+                answer_ru: 'Непарная задняя ветвь'
               },
               {
-                id: 'abdominal-pelvic-vascular-018',
-                question_en: 'Most common cause of acute mesenteric ischaemia?',
-                question_ru: 'Наиболее частая причина острой мезентериальной ишемии?',
-                answer_en: 'SMA embolus',
-                answer_ru: 'Эмболия ВБА'
+                id: 'abdomen-anat-019',
+                question_en: 'Common iliac divides into?',
+                question_ru: 'На что делится общая подвздошная артерия?',
+                answer_en: 'External + internal iliac',
+                answer_ru: 'Наружная + внутренняя подвздошные'
               },
               {
-                id: 'abdominal-pelvic-vascular-019',
-                question_en: 'May-Thurner syndrome: compressed vein?',
-                question_ru: 'Синдром Мэй–Тёрнера: сдавленная вена?',
-                answer_en: 'Left common iliac',
-                answer_ru: 'Левая подвздошная'
+                id: 'abdomen-anat-020',
+                question_en: 'External iliac continues as?',
+                question_ru: 'В что продолжается наружная подвздошная?',
+                answer_en: 'Common femoral artery',
+                answer_ru: 'Общая бедренная артерия'
               },
               {
-                id: 'abdominal-pelvic-vascular-020',
-                question_en: 'Leriche syndrome cause?',
-                question_ru: 'Причина синдрома Лериша?',
-                answer_en: 'Aortic bifurcation occlusion',
-                answer_ru: 'Окклюзия бифуркации аорты'
+                id: 'abdomen-anat-021',
+                question_en: 'External iliac branches (2)?',
+                question_ru: 'Ветви наружной подвздошной (2)?',
+                answer_en: 'Inferior epigastric, deep circumflex iliac',
+                answer_ru: 'Нижняя надчревная, глубокая огибающая подвздошную кость'
+              },
+              {
+                id: 'abdomen-anat-022',
+                question_en: 'Internal iliac posterior division branches (3)?',
+                question_ru: 'Ветви заднего ствола внутренней подвздошной (3)?',
+                answer_en: 'Iliolumbar, lateral sacral, superior gluteal',
+                answer_ru: 'Подвздошно-поясничная, латеральная крестцовая, верхняя ягодичная'
+              },
+              {
+                id: 'abdomen-anat-023',
+                question_en: 'Superior gluteal arises from?',
+                question_ru: 'Откуда отходит верхняя ягодичная артерия?',
+                answer_en: 'Posterior division',
+                answer_ru: 'Задний ствол'
+              },
+              {
+                id: 'abdomen-anat-024',
+                question_en: 'Female-only internal iliac branch?',
+                question_ru: 'Ветвь внутренней подвздошной только у женщин?',
+                answer_en: 'Uterine artery',
+                answer_ru: 'Маточная артерия'
+              },
+              {
+                id: 'abdomen-anat-025',
+                question_en: 'Inferior vesicular artery in male — equivalent in female?',
+                question_ru: 'Мужской эквивалент нижней мочепузырной у женщин?',
+                answer_en: 'Vaginal artery',
+                answer_ru: 'Влагалищная артерия'
+              },
+              {
+                id: 'abdomen-anat-026',
+                question_en: 'Splenic artery branches (3 named)?',
+                question_ru: 'Ветви селезёночной артерии (3 именные)?',
+                answer_en: 'Short gastric, left gastroepiploic, pancreatic',
+                answer_ru: 'Короткие желудочные, левая желудочно-сальниковая, поджелудочные'
+              },
+              {
+                id: 'abdomen-anat-027',
+                question_en: 'Left gastric artery branches?',
+                question_ru: 'Ветви левой желудочной артерии?',
+                answer_en: 'Gastric + oesophageal',
+                answer_ru: 'Желудочные + пищеводные'
+              },
+              {
+                id: 'abdomen-anat-028',
+                question_en: 'Paired lateral visceral branches (3)?',
+                question_ru: 'Парные боковые висцеральные ветви (3)?',
+                answer_en: 'Middle suprarenal, renal, gonadal',
+                answer_ru: 'Средняя надпочечниковая, почечная, гонадная'
+              },
+              {
+                id: 'abdomen-anat-029',
+                question_en: 'Number of lumbar arteries?',
+                question_ru: 'Количество поясничных артерий?',
+                answer_en: '4 pairs',
+                answer_ru: '4 пары'
+              },
+              {
+                id: 'abdomen-anat-030',
+                question_en: 'Umbilical artery gives rise to?',
+                question_ru: 'Что даёт пупочная артерия?',
+                answer_en: 'Superior vesicular artery',
+                answer_ru: 'Верхняя мочепузырная артерия'
               }
             ]
           },
 
-          // ── Topic: Vascular Anatomy of the Lower Limb ──────────────────────
+          // ── Topic: Vascular Anatomy of the Lower Limb ───────────────────────────
           {
             slug: 'vascular-anatomy-lower-limb',
             title_en: 'Vascular Anatomy of the Lower Limb',
@@ -1121,78 +1557,78 @@ export const DATA = [
               en: {
                 sections: [
                   {
-                    title: 'Overview',
-                    body: 'The lower limb receives arterial supply from the distal aorta via the iliac and femoral systems. Venous drainage is via paired deep veins accompanying the arteries and two major superficial trunks — the great saphenous vein (GSV) and small saphenous vein (SSV) — linked to the deep system through named perforating veins. This anatomy underpins infrainguinal bypass, varicose vein and endovenous ablation surgery, fasciotomy, and limb salvage procedures.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Aorto-Iliac & Femoral Segments',
-                    body: 'The aorta bifurcates at L4 into the right and left common iliac arteries (CIA). Each CIA divides at the sacroiliac joint into the external iliac artery (EIA) and internal iliac artery (IIA). The EIA becomes the common femoral artery (CFA) at the mid-inguinal point — midway between the anterior superior iliac spine (ASIS) and the pubic symphysis (not the midpoint of the inguinal ligament itself). The CFA bifurcates 3–4 cm below the inguinal ligament.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Femoral Triangle',
-                    body: 'Boundaries: superior — inguinal ligament; lateral — sartorius; medial — adductor longus. Floor: iliopsoas (lateral), pectineus (medial). Roof: cribriform fascia / fascia lata. Contents (lateral → medial): femoral nerve (outside the femoral sheath), femoral artery, femoral vein, femoral canal. The femoral sheath encloses three compartments; the medial (femoral canal) contains Cloquet\'s node — the sentinel lymph node for the lower limb and genitalia — and is the path for femoral hernias.\n\nThe CFA bifurcates at 3–4 cm into the superficial femoral artery (SFA) and profunda femoris artery (PFA).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Profunda Femoris Artery',
-                    body: 'Arises posterolaterally from the CFA 3–4 cm below the inguinal ligament. Principal blood supply to the thigh muscles. Branches:\n\nLateral circumflex femoral artery (LCFA): ascending branch (anastomoses with superior gluteal artery); transverse branch (trochanteric anastomosis); descending branch (anastomoses with genicular branches — key collateral in SFA occlusion).\n\nMedial circumflex femoral artery (MCFA): deep branch enters the hip capsule posteriorly via retinacular vessels — principal supply to the femoral head. MCFA disruption (intracapsular fracture, dislocation) → avascular necrosis (AVN). Transverse and ascending branches also present.\n\nPerforating arteries (3–4): pierce adductor magnus to supply the hamstrings; first perforator supplies adductor brevis. The profunda femoris is the dominant collateral route in SFA occlusion via the descending LCFA and perforators reconstituting the popliteal.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'SFA, Adductor Canal & Popliteal Artery',
-                    body: 'The SFA enters the adductor (Hunter\'s) canal at the femoral triangle apex. Canal boundaries: anterolateral — vastus medialis; posteromedial — adductor longus then adductor magnus; roof — vasto-adductor membrane (sartorius overlies). Contents: SFA, femoral vein, saphenous nerve (sensory branch of femoral nerve — no motor fibres; injury during below-knee GSV harvest → medial leg and foot numbness).\n\nThe SFA exits via the adductor hiatus → becomes the popliteal artery, which is the deepest structure in the popliteal fossa (semimembranosus/semitendinosus medially, biceps femoris laterally, gastrocnemius heads inferiorly).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Popliteal Branches & Trifurcation',
-                    body: 'Branches before trifurcation: superior medial and lateral genicular arteries; middle genicular artery (pierces the oblique popliteal ligament → cruciate ligaments and joint capsule); inferior medial and lateral genicular arteries; sural arteries (medial and lateral — supply gastrocnemius and soleus). Together these form the genicular anastomosis — critical collateral network during knee surgery or popliteal occlusion.\n\nTrifurcation occurs at the lower border of popliteus into: anterior tibial artery (ATA), posterior tibial artery (PTA), and peroneal (fibular) artery.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Tibial & Pedal Arteries',
-                    body: 'ATA: passes anteriorly through the interosseous membrane → runs with the deep peroneal nerve in the anterior compartment → becomes the dorsalis pedis artery at the ankle, palpable between the extensor hallucis longus (EHL) and extensor digitorum longus (EDL) tendons. Continues as the arcuate artery → dorsal metatarsal arteries.\n\nPTA: larger trunk; descends with the tibial nerve → passes posterior to the medial malleolus (between flexor digitorum longus and flexor hallucis longus tendons) → divides into medial and lateral plantar arteries. The lateral plantar artery forms the plantar arch (completes with the first dorsal metatarsal branch of the dorsalis pedis).\n\nPeroneal artery: arises from the proximal PTA → descends along the fibula in the deep posterior compartment → terminates as perforating branch (pierces interosseous membrane distally, communicates with ATA) and calcaneal branches.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Deep Venous System',
-                    body: 'Paired veins (venae comitantes) accompany all named arteries. Plantar veins → posterior tibial veins; joined by anterior tibial and peroneal veins → popliteal vein at the trifurcation level. The popliteal vein also receives the sural veins and the SSV at the saphenopopliteal junction (SPJ). It continues as the femoral vein through the adductor canal, then receives the deep femoral (profunda femoris) vein just below the inguinal ligament → common femoral vein (CFV) → external iliac vein.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'GSV — Course & SFJ Tributaries',
-                    body: 'The GSV is the longest vein in the body. Origin: medial dorsal venous arch → passes anterior to the medial malleolus (1 cm anterior, 1 cm superior — key surgical landmark) → ascends medially with the saphenous nerve → anterior to the medial femoral condyle → joins the CFV at the saphenofemoral junction (SFJ), 3–4 cm inferolateral to the pubic tubercle.\n\nFive constant tributaries at the SFJ ("crow\'s foot"): (1) superficial epigastric vein, (2) superficial circumflex iliac vein, (3) superficial external pudendal vein, (4) deep external pudendal vein, (5) anterior/posterior accessory saphenous vein. All five must be individually ligated at high saphenous ligation to prevent recurrence.\n\nPosterior arch vein (Leonardo\'s vein): runs posteromedially and joins the GSV at knee level; drains the Cockett perforators into the GSV.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'SSV & Giacomini Vein',
-                    body: 'The SSV originates from the lateral dorsal venous arch, posterior to the lateral malleolus → ascends with the sural nerve in the posterior compartment → drains into the popliteal vein at the SPJ (typically 3–8 cm above the popliteal crease; highly variable — always mark with duplex before surgery). Variants: SSV may drain into the GSV, profunda femoris vein, or extend proximally as the Giacomini vein.\n\nGiacomini vein: thigh extension of the SSV that communicates with the GSV in the posterior thigh — SSV reflux can propagate to the GSV via this route, creating a source of varicose vein recurrence if not addressed.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Named Perforating Veins',
+                    title: 'Common Femoral Artery (CFA)',
                     body: [
-                      'Cockett I — 7 cm above the medial malleolus: drains posterior arch vein (Leonardo\'s vein) into posterior tibial veins',
-                      'Cockett II — 13.5 cm above the medial malleolus: same drainage pathway',
-                      'Cockett III — 18.5 cm above the medial malleolus: same drainage pathway',
-                      'Boyd\'s perforator — medial knee (~10 cm below joint line): connects GSV to popliteal/posterior tibial vein',
-                      'Dodd\'s and Hunterian perforators — mid and distal thigh: connect GSV to femoral vein',
-                      'Incompetent perforators → venous hypertension → CEAP C4–C6 disease (hyperpigmentation, lipodermatosclerosis, venous ulcers)'
+                      'Continuation of the external iliac artery from the inguinal ligament',
+                      'Branches before giving off profunda femoris:',
+                      '  Superficial epigastric artery',
+                      '  Superficial external pudendal artery',
+                      '  Deep external pudendal artery',
+                      '  Superficial circumflex iliac artery',
+                      'After giving off these branches, the CFA divides into the profunda femoris artery and the superficial femoral artery (SFA)'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Surgical Correlates',
+                    title: 'Profunda Femoris Artery (Deep Femoral)',
                     body: [
-                      'Mid-inguinal point (CFA pulse site) ≠ midpoint of inguinal ligament (deep inguinal ring) — do not confuse when accessing the CFA',
-                      'GSV stripping: strip groin to knee only — stripping below the knee risks saphenous nerve injury → chronic medial leg numbness',
-                      'EVLA/RFA: heat applied 2 cm distal to SFJ; tumescent anaesthesia compresses vein and protects overlying skin from thermal injury',
-                      'SFJ ligation: individually ligate all five tributaries flush with CFV — any stump or missed tributary enables re-canalisation and recurrence',
-                      'Dorsalis pedis pulse: palpated between EHL and EDL tendons at dorsum of foot — absent in advanced PAD or ATA occlusion',
-                      'Popliteal aneurysm: most common peripheral artery aneurysm; 50% bilateral; thrombosis → acute limb ischaemia; repair via medial approach',
-                      'Profunda femoris is the principal collateral in SFA occlusion; preserve it during CFA endarterectomy',
-                      'Posterior knee dislocation carries 7–20% risk of popliteal artery injury — mandatory ABI and vascular assessment'
+                      'Arises from the common femoral artery (lateral and posterior)',
+                      'Lateral circumflex femoral artery: supplies anterior thigh and hip',
+                      'Medial circumflex femoral artery: supplies posterior thigh; critical supply to femoral head',
+                      '4 perforating branches: pierce adductor magnus to supply posterior thigh compartment and provide collateral pathways',
+                      'The profunda is the dominant collateral pathway in SFA occlusion'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Superficial Femoral Artery (SFA) → Popliteal',
+                    body: [
+                      'Runs in the adductor (Hunter\'s) canal with the femoral vein and saphenous nerve',
+                      'Gives off the descending genicular artery before entering the adductor hiatus',
+                      'At the adductor hiatus (hiatus magnus), becomes the popliteal artery',
+                      'The most common site of atherosclerotic occlusion in the lower limb is the distal SFA at the adductor hiatus'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Popliteal Artery',
+                    body: [
+                      'Runs through the popliteal fossa (deepest structure)',
+                      'Gives off: geniculate branches (superior and inferior medial, superior and inferior lateral, middle genicular) to the knee joint',
+                      'Ends at the lower border of the popliteus muscle by dividing into:',
+                      '  Anterior tibial artery',
+                      '  Tibioperoneal (tibio-fibular) trunk'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Anterior Tibial → Dorsalis Pedis',
+                    body: [
+                      'Passes through the interosseous membrane to the anterior compartment of the leg',
+                      'When it crosses the anterior aspect of the ankle joint (inferior extensor retinaculum), it becomes the dorsalis pedis artery',
+                      'Dorsalis pedis: runs between extensor hallucis longus and extensor digitorum longus tendons',
+                      'Gives rise to the deep plantar branch which passes between 1st and 2nd metatarsal bases to form the plantar arch'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Tibioperoneal Trunk → Posterior Tibial & Peroneal',
+                    body: [
+                      'Tibioperoneal trunk: short segment that divides into posterior tibial artery + peroneal (fibular) artery',
+                      'Posterior tibial artery: passes posterior to the medial malleolus (palpable pulse site)',
+                      '  Gives medial plantar artery + lateral plantar artery',
+                      '  Lateral plantar artery anastomoses with the deep plantar branch of the dorsalis pedis to form the plantar arch',
+                      'Peroneal (fibular) artery: runs in the posterior compartment along the fibula; terminates as perforating and communicating branches at the ankle'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Plantar Arch',
+                    body: [
+                      'Formed by: lateral plantar artery + deep plantar branch of dorsalis pedis',
+                      'Lies deep in the foot (beneath flexor tendons)',
+                      'Supplies the toes via plantar metatarsal arteries → plantar digital arteries',
+                      'Analogous to the deep palmar arch in the hand'
                     ],
                     type: 'list'
                   }
@@ -1201,78 +1637,78 @@ export const DATA = [
               ru: {
                 sections: [
                   {
-                    title: 'Обзор',
-                    body: 'Нижняя конечность получает артериальное кровоснабжение от дистальной аорты через подвздошные и бедренные сосуды. Венозный отток осуществляется парными глубокими венами, сопровождающими артерии, и двумя крупными поверхностными стволами — большой подкожной веной (БПВ) и малой подкожной веной (МПВ) — связанными с глубокой системой через именные перфорантные вены. Знание этой анатомии необходимо для дистального шунтирования, флебохирургии и эндовенозных операций, фасциотомии и спасения конечности.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Аорто-подвздошный и бедренный сегменты',
-                    body: 'Аорта бифуркирует на уровне L4 на правую и левую общие подвздошные артерии (ОПА). Каждая ОПА делится на уровне крестцово-подвздошного сочленения на наружную подвздошную артерию (НПА) и внутреннюю подвздошную артерию (ВПА). НПА становится общей бедренной артерией (ОБА) на уровне средней паховой точки — середина расстояния между передней верхней подвздошной остью (ПВПО) и лонным симфизом (не середина паховой связки). ОБА бифуркирует в 3–4 см ниже паховой связки.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Бедренный треугольник',
-                    body: 'Границы: сверху — паховая связка; латерально — портняжная мышца; медиально — длинная приводящая мышца. Дно: подвздошно-поясничная (латерально), гребенчатая (медиально). Крыша: решётчатая фасция / широкая фасция. Содержимое (снаружи внутрь): бедренный нерв (вне бедренного влагалища), бедренная артерия, бедренная вена, бедренный канал. Бедренное влагалище включает три отдела; медиальный (бедренный канал) содержит лимфатический узел Клоке — сторожевой узел нижней конечности и гениталий — и является путём для бедренных грыж.\n\nОБА бифуркирует в 3–4 см на поверхностную бедренную артерию (ПБА) и глубокую артерию бедра (ГАБ).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Глубокая артерия бедра',
-                    body: 'Отходит заднелатерально от ОБА в 3–4 см ниже паховой связки. Основной источник кровоснабжения мышц бедра. Ветви:\n\nЛатеральная огибающая бедренную кость артерия (ЛОБКА): восходящая ветвь (анастомоз с верхней ягодичной артерией); поперечная ветвь (вертельный анастомоз); нисходящая ветвь (анастомоз с коленными ветвями — ключевой коллатеральный путь при окклюзии ПБА).\n\nМедиальная огибающая бедренную кость артерия (МОБКА): глубокая ветвь входит в капсулу тазобедренного сустава через ретинакулярные сосуды — основное кровоснабжение головки бедренной кости. Повреждение МОБКА (внутрикапсульный перелом, вывих) → асептический некроз (АН). Также присутствуют поперечная и восходящая ветви.\n\nПрободающие артерии (3–4): проходят через большую приводящую мышцу к задней группе мышц бедра; первая прободающая кровоснабжает короткую приводящую мышцу. ГАБ — основной коллатеральный путь при окклюзии ПБА через нисходящую ЛОБКА и прободающие артерии, восстанавливающие кровоток в подколенной артерии.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'ПБА, Гунтеров канал и подколенная артерия',
-                    body: 'ПБА входит в Гунтеров (бедренно-подколенный) канал на вершине бедренного треугольника. Границы канала: переднелатерально — медиальная широкая мышца; задне-медиально — длинная и большая приводящие мышцы; крыша — вастоаддукторная мембрана (сверху — портняжная мышца). Содержимое: ПБА, бедренная вена, подкожный нерв (чувствительная ветвь бедренного нерва — двигательных волокон нет; повреждение при заборе БПВ ниже колена → онемение медиальной поверхности голени и стопы).\n\nПБА выходит через hiatus adductorius → становится подколенной артерией — наиболее глубокой структурой подколенной ямки (медиально — полуперепончатая и полусухожильная мышцы, латерально — двуглавая мышца бедра, снизу — головки икроножной мышцы).',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Ветви подколенной артерии и трифуркация',
-                    body: 'Ветви до трифуркации: верхние медиальная и латеральная коленные артерии; средняя коленная артерия (пронизывает косую подколенную связку → крестообразные связки и капсулу сустава); нижние медиальная и латеральная коленные артерии; икроножные артерии (медиальная и латеральная — кровоснабжают икроножную и камбаловидную мышцы). Вместе образуют коленную артериальную сеть — критически важную коллатеральную сеть при операциях на колене или окклюзии подколенной артерии.\n\nТрифуркация происходит у нижнего края подколенной мышцы: передняя большеберцовая артерия (ПББА), задняя большеберцовая артерия (ЗББА) и малоберцовая артерия.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Большеберцовые и педальные артерии',
-                    body: 'ПББА: проходит кпереди через межкостную мембрану → следует с глубоким малоберцовым нервом в переднем ложе → становится тыльной артерией стопы на уровне голеностопного сустава, пальпируемой между сухожилиями длинного разгибателя большого пальца (ДРБП) и длинного разгибателя пальцев (ДРП). Продолжается как дугообразная артерия → тыльные плюсневые артерии.\n\nЗББА: более крупный ствол; следует с большеберцовым нервом → кзади от медиальной лодыжки (между сухожилиями длинного сгибателя пальцев и длинного сгибателя большого пальца) → делится на медиальную и латеральную подошвенные артерии. Латеральная подошвенная артерия формирует подошвенную дугу (завершается первой тыльной плюсневой ветвью тыльной артерии стопы).\n\nМалоберцовая артерия: отходит от проксимального отдела ЗББА → следует вдоль малоберцовой кости в глубоком заднем ложе → заканчивается прободающей ветвью (через межкостную мембрану дистально, анастомоз с ПББА) и пяточными ветвями.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Глубокая венозная система',
-                    body: 'Парные вены (venae comitantes) сопровождают все именные артерии. Подошвенные вены → задние большеберцовые вены; к ним присоединяются передние большеберцовые и малоберцовые вены → подколенная вена на уровне трифуркации. Подколенная вена также принимает икроножные вены и МПВ в сафено-поплитеальном соустье (СПС). Продолжается как бедренная вена через Гунтеров канал, затем принимает глубокую бедренную (ГАБ) вену непосредственно ниже паховой связки → общая бедренная вена (ОБВ) → наружная подвздошная вена.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'БПВ — ход и притоки в СФС',
-                    body: 'БПВ — самая длинная вена тела. Начало: медиальная тыльная венозная дуга стопы → кпереди от медиальной лодыжки (на 1 см кпереди и 1 см кверху — хирургический ориентир) → поднимается медиально с подкожным нервом → кпереди от медиального надмыщелка бедра → впадает в ОБВ в сафено-феморальном соустье (СФС) на 3–4 см нижнелатеральнее лонного бугорка.\n\nПять постоянных притоков в СФС («гусиная лапка»): (1) поверхностная надчревная вена, (2) поверхностная огибающая подвздошную кость вена, (3) поверхностная наружная половая вена, (4) глубокая наружная половая вена, (5) передняя/задняя добавочная подкожная вена. Все пять необходимо индивидуально перевязать при высоком лигировании БПВ для профилактики рецидива.\n\nЗадняя дуговая вена (вена Леонардо): проходит по задне-медиальной поверхности и впадает в БПВ на уровне коленного сустава; дренирует перфоранты Кокета в БПВ.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'МПВ и вена Джакомини',
-                    body: 'МПВ: начало — латеральная тыльная венозная дуга стопы, кзади от латеральной лодыжки → поднимается с икроножным нервом в заднем ложе → впадает в подколенную вену в СПС (обычно 3–8 см выше подколенной складки; очень вариабельно — всегда маркировать дуплексом перед операцией). Варианты: МПВ может впадать в БПВ, глубокую вену бедра или продолжаться проксимально как вена Джакомини.\n\nВена Джакомини: бедренное продолжение МПВ, соединяющееся с БПВ на задней поверхности бедра — рефлюкс из МПВ может распространяться на БПВ через этот путь, становясь источником рецидива варикозной болезни при отсутствии коррекции.',
-                    type: 'text'
-                  },
-                  {
-                    title: 'Именные перфорантные вены',
+                    title: 'Общая бедренная артерия (ОБА)',
                     body: [
-                      'Кокет I — 7 см выше медиальной лодыжки: дренирует заднюю дуговую вену (вену Леонардо) в задние большеберцовые вены',
-                      'Кокет II — 13,5 см выше медиальной лодыжки: тот же путь дренирования',
-                      'Кокет III — 18,5 см выше медиальной лодыжки: тот же путь дренирования',
-                      'Перфорант Бойда — медиальное колено (~10 см ниже суставной щели): соединяет БПВ с подколенной/задней большеберцовой веной',
-                      'Перфоранты Додда и Гунтера — средняя и дистальная треть бедра: соединяют БПВ с бедренной веной',
-                      'Несостоятельные перфоранты → венозная гипертензия → заболевание класса C4–C6 по классификации CEAP (пигментация, липодерматосклероз, венозные язвы)'
+                      'Продолжение наружной подвздошной артерии от паховой связки',
+                      'Ветви до отхождения глубокой артерии бедра:',
+                      '  Поверхностная надчревная артерия',
+                      '  Поверхностная наружная половая артерия',
+                      '  Глубокая наружная половая артерия',
+                      '  Поверхностная артерия, огибающая подвздошную кость',
+                      'После этих ветвей ОБА делится на глубокую артерию бедра (ГАБ) и поверхностную бедренную артерию (ПБА)'
                     ],
                     type: 'list'
                   },
                   {
-                    title: 'Хирургические корреляты',
+                    title: 'Глубокая артерия бедра (ГАБ)',
                     body: [
-                      'Средняя паховая точка (пульс ОБА) ≠ середина паховой связки (глубокое паховое кольцо) — не путать при доступе к ОБА',
-                      'Стриппинг БПВ: только от паха до колена — стриппинг ниже колена угрожает повреждением подкожного нерва → хроническое онемение медиальной поверхности голени',
-                      'ЭВЛТ/РЧА: энергия подаётся в 2 см дистальнее СФС; тумесцентная анестезия сдавливает вену и защищает кожу от термической травмы',
-                      'Лигирование СФС: индивидуальная перевязка всех пяти притоков заподлицо с ОБВ — любая культя или пропущенный приток обеспечивает реканализацию и рецидив',
-                      'Пульс тыльной артерии стопы: пальпируется между сухожилиями ДРБП и ДРП на тыле стопы — отсутствует при выраженном ОА АНК или окклюзии ПББА',
-                      'Аневризма подколенной артерии: наиболее частая аневризма периферических артерий; в 50% двусторонняя; тромбоз → острая ишемия конечности; коррекция медиальным доступом',
-                      'ГАБ — основной коллатеральный путь при окклюзии ПБА; сохранять при эндартерэктомии из ОБА',
-                      'Задний вывих голени: риск повреждения подколенной артерии 7–20% — обязательный контроль лодыжечно-плечевого индекса (ЛПИ) и сосудистая оценка'
+                      'Отходит от общей бедренной артерии (латерально и кзади)',
+                      'Латеральная артерия, огибающая бедро: кровоснабжает переднюю поверхность бедра и тазобедренный сустав',
+                      'Медиальная артерия, огибающая бедро: кровоснабжает заднюю поверхность бедра; критическое кровоснабжение головки бедренной кости',
+                      '4 прободающие ветви: прободают большую приводящую мышцу, кровоснабжают заднее ложе бедра и формируют коллатеральные пути',
+                      'ГАБ — основной коллатеральный путь при окклюзии ПБА'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Поверхностная бедренная артерия (ПБА) → Подколенная',
+                    body: [
+                      'Проходит в приводящем (гунтеровом) канале с бедренной веной и подкожным нервом',
+                      'Даёт нисходящую артерию колена перед вхождением в сухожильное отверстие',
+                      'В сухожильном отверстии (hiatus magnus) становится подколенной артерией',
+                      'Наиболее частое место атеросклеротической окклюзии — дистальная ПБА у сухожильного отверстия'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Подколенная артерия',
+                    body: [
+                      'Проходит через подколенную ямку (самая глубокая структура)',
+                      'Даёт: суставные ветви (верхние и нижние медиальные, верхние и нижние латеральные, средняя суставная) к коленному суставу',
+                      'Заканчивается у нижнего края подколенной мышцы делением на:',
+                      '  Переднюю большеберцовую артерию',
+                      '  Малоберцово-большеберцовый ствол (МББС)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Передняя большеберцовая → Тыльная артерия стопы',
+                    body: [
+                      'Проходит через межкостную перепонку в переднее ложе голени',
+                      'Пересекая переднюю поверхность голеностопного сустава, становится тыльной артерией стопы (ТАС)',
+                      'ТАС проходит между сухожилиями длинного разгибателя большого пальца и длинного разгибателя пальцев',
+                      'Даёт глубокую подошвенную ветвь, которая проходит между основаниями 1-й и 2-й плюсневых костей, формируя подошвенную дугу'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Малоберцово-большеберцовый ствол → Задняя большеберцовая и Малоберцовая',
+                    body: [
+                      'МББС: короткий сегмент, делящийся на заднюю большеберцовую + малоберцовую (фибулярную) артерии',
+                      'Задняя большеберцовая артерия: проходит позади медиальной лодыжки (место пальпации пульса)',
+                      '  Даёт медиальную подошвенную + латеральную подошвенную артерии',
+                      '  Латеральная подошвенная анастомозирует с глубокой подошвенной ветвью ТАС, образуя подошвенную дугу',
+                      'Малоберцовая артерия: проходит в заднем ложе вдоль малоберцовой кости; заканчивается прободающими и соединительными ветвями у лодыжки'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Подошвенная дуга',
+                    body: [
+                      'Образована: латеральной подошвенной артерией + глубокой подошвенной ветвью ТАС',
+                      'Расположена глубоко в стопе (под сухожилиями сгибателей)',
+                      'Кровоснабжает пальцы через подошвенные плюсневые → подошвенные пальцевые артерии',
+                      'Аналог глубокой ладонной дуги кисти'
                     ],
                     type: 'list'
                   }
@@ -1281,217 +1717,218 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'lower-limb-vascular-001',
-                question_en: 'Aortic bifurcation vertebral level?',
-                question_ru: 'Уровень бифуркации аорты?',
-                answer_en: 'L4',
-                answer_ru: 'L4'
+                id: 'lower-limb-anat-001',
+                question_en: 'Common femoral artery begins at?',
+                question_ru: 'Откуда начинается общая бедренная артерия?',
+                answer_en: 'Inguinal ligament',
+                answer_ru: 'Паховая связка'
               },
               {
-                id: 'lower-limb-vascular-002',
-                question_en: 'CFA arises from?',
-                question_ru: 'ОБА отходит от?',
-                answer_en: 'External iliac artery',
-                answer_ru: 'Наружной подвздошной артерии'
+                id: 'lower-limb-anat-002',
+                question_en: 'Superficial branches of CFA (4)?',
+                question_ru: 'Поверхностные ветви ОБА (4)?',
+                answer_en: 'Epigastric, pudendal (x2), circumflex iliac',
+                answer_ru: 'Надчревная, половые (×2), огибающая подвздошную'
               },
               {
-                id: 'lower-limb-vascular-003',
-                question_en: 'CFA bifurcation distance below inguinal ligament?',
-                question_ru: 'Расстояние бифуркации ОБА от паховой связки?',
-                answer_en: '3–4 cm',
-                answer_ru: '3–4 см'
+                id: 'lower-limb-anat-003',
+                question_en: 'CFA divides into?',
+                question_ru: 'На что делится ОБА?',
+                answer_en: 'SFA + profunda femoris',
+                answer_ru: 'ПБА + ГАБ'
               },
               {
-                id: 'lower-limb-vascular-004',
-                question_en: 'Femoral triangle medial border?',
-                question_ru: 'Медиальная граница бедренного треугольника?',
-                answer_en: 'Adductor longus',
-                answer_ru: 'Длинная приводящая мышца'
+                id: 'lower-limb-anat-004',
+                question_en: 'Profunda femoris branches (named, 2)?',
+                question_ru: 'Именные ветви ГАБ (2)?',
+                answer_en: 'Lateral + medial circumflex femoral',
+                answer_ru: 'Латеральная + медиальная огибающие бедро'
               },
               {
-                id: 'lower-limb-vascular-005',
-                question_en: 'Femoral sheath contents (lateral→medial)?',
-                question_ru: 'Содержимое бедренного влагалища (снаружи внутрь)?',
-                answer_en: 'Artery, vein, canal',
-                answer_ru: 'Артерия, вена, канал'
+                id: 'lower-limb-anat-005',
+                question_en: 'Profunda femoris perforating branches?',
+                question_ru: 'Прободающие ветви ГАБ?',
+                answer_en: '4 perforators',
+                answer_ru: '4 прободающие'
               },
               {
-                id: 'lower-limb-vascular-006',
-                question_en: 'Profunda femoris origin from CFA?',
-                question_ru: 'ГАБ отходит от ОБА на уровне?',
-                answer_en: '3–4 cm below',
-                answer_ru: '3–4 см ниже'
+                id: 'lower-limb-anat-006',
+                question_en: 'SFA runs within?',
+                question_ru: 'В каком канале проходит ПБА?',
+                answer_en: 'Adductor canal',
+                answer_ru: 'Приводящий канал'
               },
               {
-                id: 'lower-limb-vascular-007',
-                question_en: 'MCFA injury leads to?',
-                question_ru: 'Повреждение МОБКА ведёт к?',
-                answer_en: 'Femoral head AVN',
-                answer_ru: 'АН головки бедра'
+                id: 'lower-limb-anat-007',
+                question_en: 'SFA last branch before hiatus magnus?',
+                question_ru: 'Последняя ветвь ПБА перед hiatus magnus?',
+                answer_en: 'Descending genicular artery',
+                answer_ru: 'Нисходящая артерия колена'
               },
               {
-                id: 'lower-limb-vascular-008',
-                question_en: 'Adductor canal contents?',
-                question_ru: 'Содержимое Гунтерова канала?',
-                answer_en: 'SFA, vein, nerve',
-                answer_ru: 'ПБА, вена, нерв'
-              },
-              {
-                id: 'lower-limb-vascular-009',
+                id: 'lower-limb-anat-008',
                 question_en: 'SFA becomes popliteal at?',
-                question_ru: 'ПБА становится подколенной на уровне?',
-                answer_en: 'Adductor hiatus',
-                answer_ru: 'Hiatus adductorius'
+                question_ru: 'Где ПБА переходит в подколенную?',
+                answer_en: 'Adductor hiatus (hiatus magnus)',
+                answer_ru: 'Сухожильное отверстие'
               },
               {
-                id: 'lower-limb-vascular-010',
-                question_en: 'Popliteal trifurcation vessels?',
-                question_ru: 'Сосуды трифуркации подколенной артерии?',
-                answer_en: 'ATA, PTA, peroneal',
-                answer_ru: 'ПББА, ЗББА, малоберцовая'
+                id: 'lower-limb-anat-009',
+                question_en: 'Popliteal artery ends at?',
+                question_ru: 'Где заканчивается подколенная артерия?',
+                answer_en: 'Lower border popliteus',
+                answer_ru: 'Нижний край подколенной мышцы'
               },
               {
-                id: 'lower-limb-vascular-011',
-                question_en: 'ATA continues at ankle as?',
-                question_ru: 'ПББА продолжается у голеностопа как?',
+                id: 'lower-limb-anat-010',
+                question_en: 'Popliteal terminates into?',
+                question_ru: 'На что делится подколенная артерия?',
+                answer_en: 'Anterior tibial + tibioperoneal trunk',
+                answer_ru: 'Передняя большеберцовая + МББС'
+              },
+              {
+                id: 'lower-limb-anat-011',
+                question_en: 'Tibioperoneal trunk divides into?',
+                question_ru: 'На что делится МББС?',
+                answer_en: 'Posterior tibial + peroneal',
+                answer_ru: 'Задняя большеберцовая + малоберцовая'
+              },
+              {
+                id: 'lower-limb-anat-012',
+                question_en: 'Anterior tibial becomes at ankle?',
+                question_ru: 'В что переходит передняя большеберцовая у лодыжки?',
                 answer_en: 'Dorsalis pedis artery',
                 answer_ru: 'Тыльная артерия стопы'
               },
               {
-                id: 'lower-limb-vascular-012',
+                id: 'lower-limb-anat-013',
+                question_en: 'Posterior tibial passes behind?',
+                question_ru: 'Позади чего проходит задняя большеберцовая?',
+                answer_en: 'Medial malleolus',
+                answer_ru: 'Медиальная лодыжка'
+              },
+              {
+                id: 'lower-limb-anat-014',
+                question_en: 'Posterior tibial terminal branches?',
+                question_ru: 'Конечные ветви задней большеберцовой?',
+                answer_en: 'Medial + lateral plantar',
+                answer_ru: 'Медиальная + латеральная подошвенная'
+              },
+              {
+                id: 'lower-limb-anat-015',
                 question_en: 'Plantar arch formed by?',
-                question_ru: 'Подошвенная дуга образована?',
-                answer_en: 'Lateral plantar artery',
-                answer_ru: 'Латеральной подошвенной артерией'
+                question_ru: 'Из чего образована подошвенная дуга?',
+                answer_en: 'Lateral plantar + deep plantar branch',
+                answer_ru: 'Латеральная подошвенная + глубокая подошвенная ветвь'
               },
               {
-                id: 'lower-limb-vascular-013',
-                question_en: 'GSV drains into?',
-                question_ru: 'БПВ впадает в?',
-                answer_en: 'Common femoral vein',
-                answer_ru: 'Общую бедренную вену'
+                id: 'lower-limb-anat-016',
+                question_en: 'Deep plantar branch arises from?',
+                question_ru: 'Откуда отходит глубокая подошвенная ветвь?',
+                answer_en: 'Dorsalis pedis artery',
+                answer_ru: 'Тыльная артерия стопы'
               },
               {
-                id: 'lower-limb-vascular-014',
-                question_en: 'SFJ location relative to pubic tubercle?',
-                question_ru: 'Положение СФС относительно лонного бугорка?',
-                answer_en: '3–4 cm inferolateral',
-                answer_ru: '3–4 см нижнелатеральнее'
+                id: 'lower-limb-anat-017',
+                question_en: 'Medial circumflex femoral supplies?',
+                question_ru: 'Что кровоснабжает медиальная артерия, огибающая бедро?',
+                answer_en: 'Femoral head (posterior)',
+                answer_ru: 'Головка бедренной кости'
               },
               {
-                id: 'lower-limb-vascular-015',
-                question_en: 'SSV drains into?',
-                question_ru: 'МПВ впадает в?',
-                answer_en: 'Popliteal vein',
-                answer_ru: 'Подколенную вену'
+                id: 'lower-limb-anat-018',
+                question_en: 'Most common SFA occlusion site?',
+                question_ru: 'Наиболее частое место окклюзии ПБА?',
+                answer_en: 'Adductor hiatus',
+                answer_ru: 'Сухожильное отверстие'
               },
               {
-                id: 'lower-limb-vascular-016',
-                question_en: 'LCFA descending branch role in SFA occlusion?',
-                question_ru: 'Роль нисходящей ветви ЛОБКА при окклюзии ПБА?',
-                answer_en: 'Key collateral route',
-                answer_ru: 'Ключевой коллатеральный путь'
+                id: 'lower-limb-anat-019',
+                question_en: 'Main collateral in SFA occlusion?',
+                question_ru: 'Основной коллатеральный путь при окклюзии ПБА?',
+                answer_en: 'Profunda femoris',
+                answer_ru: 'Глубокая артерия бедра'
               },
               {
-                id: 'lower-limb-vascular-017',
-                question_en: 'Middle genicular artery supplies?',
-                question_ru: 'Средняя коленная артерия кровоснабжает?',
-                answer_en: 'Cruciate ligaments',
-                answer_ru: 'Крестообразные связки'
+                id: 'lower-limb-anat-020',
+                question_en: 'Dorsalis pedis lies between which tendons?',
+                question_ru: 'Между какими сухожилиями проходит тыльная артерия стопы?',
+                answer_en: 'EHL + EDL tendons',
+                answer_ru: 'Сухожилия длинного разгибателя большого пальца и пальцев'
               },
               {
-                id: 'lower-limb-vascular-018',
-                question_en: 'Posterior knee dislocation risks?',
-                question_ru: 'Задний вывих голени угрожает?',
-                answer_en: 'Popliteal artery injury',
-                answer_ru: 'Повреждению подколенной артерии'
+                id: 'lower-limb-anat-021',
+                question_en: 'Plantar arch analogy in the hand?',
+                question_ru: 'Аналог подошвенной дуги в кисти?',
+                answer_en: 'Deep palmar arch',
+                answer_ru: 'Глубокая ладонная дуга'
               },
               {
-                id: 'lower-limb-vascular-019',
-                question_en: 'GSV conduit used for?',
-                question_ru: 'БПВ используется как кондуит для?',
-                answer_en: 'CABG and bypass',
-                answer_ru: 'АКШ и шунтирования'
+                id: 'lower-limb-anat-022',
+                question_en: 'Peroneal artery runs along?',
+                question_ru: 'Вдоль чего проходит малоберцовая артерия?',
+                answer_en: 'Fibula (posterior compartment)',
+                answer_ru: 'Малоберцовая кость (заднее ложе)'
               },
               {
-                id: 'lower-limb-vascular-020',
-                question_en: 'Femoral hernias pass through?',
-                question_ru: 'Бедренные грыжи проходят через?',
-                answer_en: 'Femoral canal',
-                answer_ru: 'Бедренный канал'
+                id: 'lower-limb-anat-023',
+                question_en: 'CFA pulse palpation site?',
+                question_ru: 'Место пальпации пульса ОБА?',
+                answer_en: 'Below inguinal ligament',
+                answer_ru: 'Ниже паховой связки'
               },
               {
-                id: 'lower-limb-vascular-021',
-                question_en: 'SFJ tributary count ("crow\'s foot")?',
-                question_ru: 'Число притоков в СФС («гусиная лапка»)?',
-                answer_en: 'Five',
-                answer_ru: 'Пять'
+                id: 'lower-limb-anat-024',
+                question_en: 'Popliteal artery in fossa — relation?',
+                question_ru: 'Отношение подколенной артерии к другим структурам в ямке?',
+                answer_en: 'Deepest structure in fossa',
+                answer_ru: 'Самая глубокая структура'
               },
               {
-                id: 'lower-limb-vascular-022',
-                question_en: 'Posterior arch vein eponym?',
-                question_ru: 'Эпоним задней дуговой вены?',
-                answer_en: 'Leonardo\'s vein',
-                answer_ru: 'Вена Леонардо'
+                id: 'lower-limb-anat-025',
+                question_en: 'SFA canal companions?',
+                question_ru: 'Структуры рядом с ПБА в канале?',
+                answer_en: 'Femoral vein, saphenous nerve',
+                answer_ru: 'Бедренная вена, подкожный нерв'
               },
               {
-                id: 'lower-limb-vascular-023',
-                question_en: 'Giacomini vein connects?',
-                question_ru: 'Вена Джакомини соединяет?',
-                answer_en: 'SSV to GSV',
-                answer_ru: 'МПВ с БПВ'
+                id: 'lower-limb-anat-026',
+                question_en: 'Deep external pudendal origin?',
+                question_ru: 'Откуда отходит глубокая наружная половая артерия?',
+                answer_en: 'Common femoral artery',
+                answer_ru: 'Общая бедренная артерия'
               },
               {
-                id: 'lower-limb-vascular-024',
-                question_en: 'Cockett I height above medial malleolus?',
-                question_ru: 'Высота перфоранта Кокет I над медиальной лодыжкой?',
-                answer_en: '7 cm',
-                answer_ru: '7 см'
+                id: 'lower-limb-anat-027',
+                question_en: 'Lateral circumflex femoral supplies?',
+                question_ru: 'Что кровоснабжает латеральная артерия, огибающая бедро?',
+                answer_en: 'Anterior thigh, hip',
+                answer_ru: 'Передняя поверхность бедра, тазобедренный сустав'
               },
               {
-                id: 'lower-limb-vascular-025',
-                question_en: 'Cockett III height above medial malleolus?',
-                question_ru: 'Высота перфоранта Кокет III над медиальной лодыжкой?',
-                answer_en: '18.5 cm',
-                answer_ru: '18,5 см'
+                id: 'lower-limb-anat-028',
+                question_en: 'Profunda femoris — origin from CFA?',
+                question_ru: 'ГАБ отходит от ОБА — с какой стороны?',
+                answer_en: 'Lateral and posterior',
+                answer_ru: 'Латерально и кзади'
               },
               {
-                id: 'lower-limb-vascular-026',
-                question_en: 'Safe GSV stripping lower limit?',
-                question_ru: 'Безопасная нижняя граница стриппинга БПВ?',
-                answer_en: 'Knee only',
-                answer_ru: 'До колена'
+                id: 'lower-limb-anat-029',
+                question_en: 'Posterior tibial pulse location?',
+                question_ru: 'Место пульса задней большеберцовой?',
+                answer_en: 'Behind medial malleolus',
+                answer_ru: 'Позади медиальной лодыжки'
               },
               {
-                id: 'lower-limb-vascular-027',
-                question_en: 'Saphenous nerve travels with GSV where?',
-                question_ru: 'Подкожный нерв сопровождает БПВ где?',
-                answer_en: 'Below knee',
-                answer_ru: 'Ниже колена'
-              },
-              {
-                id: 'lower-limb-vascular-028',
-                question_en: 'Popliteal fossa: deepest structure?',
-                question_ru: 'Самая глубокая структура подколенной ямки?',
+                id: 'lower-limb-anat-030',
+                question_en: 'Geniculate branches arise from?',
+                question_ru: 'От чего отходят суставные ветви?',
                 answer_en: 'Popliteal artery',
                 answer_ru: 'Подколенная артерия'
-              },
-              {
-                id: 'lower-limb-vascular-029',
-                question_en: 'Dorsalis pedis: palpated between?',
-                question_ru: 'Тыльная артерия стопы пальпируется между?',
-                answer_en: 'EHL and EDL tendons',
-                answer_ru: 'Сухожилиями ДРБП и ДРП'
-              },
-              {
-                id: 'lower-limb-vascular-030',
-                question_en: 'SSV accompanies which nerve?',
-                question_ru: 'МПВ сопровождает какой нерв?',
-                answer_en: 'Sural nerve',
-                answer_ru: 'Икроножный нерв'
               }
             ]
           }
+
 
         ]
       },
