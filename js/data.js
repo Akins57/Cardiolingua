@@ -1927,7 +1927,1046 @@ export const DATA = [
                 answer_ru: 'Подколенная артерия'
               }
             ]
+          },
+
+
+          // ── Topic: Venous Drainage — Head, Neck & Upper Limb ────────────────────
+          {
+            slug: 'venous-head-neck-upper-limb',
+            title_en: 'Venous Drainage — Head, Neck & Upper Limb',
+            title_ru: 'Венозный отток — голова, шея и верхняя конечность',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Internal Jugular Vein (IJV)',
+                    body: [
+                      'Continuation of the sigmoid sinus at the jugular foramen',
+                      'Runs within the carotid sheath, lateral to the common carotid artery (CCA) and vagus nerve (CN X)',
+                      'Tributaries: facial vein, lingual vein, pharyngeal veins, superior thyroid vein, middle thyroid vein',
+                      'Joins the subclavian vein behind the sternoclavicular joint to form the brachiocephalic vein',
+                      'Right IJV is preferred for central venous access — provides the most direct (straight) route to the SVC and right atrium',
+                      'Landmark: medial border of SCM at the level of the thyroid cartilage'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'External Jugular Vein (EJV)',
+                    body: [
+                      'Formed by the junction of the posterior division of the retromandibular vein and the posterior auricular vein',
+                      'Crosses the sternocleidomastoid (SCM) muscle superficially',
+                      'Pierces deep fascia to drain into the subclavian vein',
+                      'Clinical use: assessment of jugular venous pressure (JVP) — normally not visible above clavicle with patient at 45°',
+                      'Anterior jugular vein: paired veins draining the anterior neck; communicate across the midline via the jugular venous arch just above the sternum'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Brachiocephalic Veins & SVC',
+                    body: [
+                      'Brachiocephalic (innominate) vein = IJV + subclavian vein union behind the sternoclavicular joint',
+                      'Right brachiocephalic vein: short, vertical course (~2.5 cm)',
+                      'Left brachiocephalic vein: longer, crosses the midline horizontally behind the manubrium (~6 cm)',
+                      'Superior Vena Cava (SVC): formed by the union of the two brachiocephalic veins at the level of the right 1st costal cartilage; drains into the right atrium',
+                      'Vertebral veins: descend through the transverse foramina accompanying the vertebral artery; drain into the brachiocephalic veins',
+                      'SVC syndrome: obstruction of SVC (thrombus, lung cancer, lymphoma) → facial and upper limb oedema, raised JVP, dilated chest wall collaterals'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Upper Limb Deep Veins',
+                    body: [
+                      'Radial veins and ulnar veins (venae comitantes): paired deep veins accompanying radial and ulnar arteries',
+                      'Brachial veins (venae comitantes): paired, accompanying the brachial artery; unite to form the axillary vein at the lower border of teres major',
+                      'Axillary vein: continuation of the brachial vein; becomes the subclavian vein at the outer border of the 1st rib',
+                      'Subclavian vein: crosses anterior to scalenus anterior (artery is posterior); joins IJV → brachiocephalic'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Upper Limb Superficial Veins',
+                    body: [
+                      'Cephalic vein: arises from lateral end of dorsal venous arch of hand; runs along lateral forearm and arm; passes through deltopectoral groove; drains into the axillary vein; used for IV access and PICC lines',
+                      'Basilic vein: arises from medial end of dorsal venous arch; runs along medial forearm and arm; pierces deep fascia at mid-arm; joins brachial vein to form axillary vein; used for brachiobasilic AV fistula',
+                      'Median cubital vein: connects cephalic and basilic veins in the antecubital fossa; most commonly used vein for venepuncture and IV cannulation',
+                      'Median antebrachial vein: runs on anterior forearm; variable; may drain into median cubital or separately into cephalic/basilic'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surgical Correlates',
+                    body: [
+                      'Paget-Schroetter syndrome: effort thrombosis of axillary-subclavian vein — thoracic outlet compression; treat with thrombolysis + rib resection',
+                      'AV fistula creation: radiocephalic (wrist), brachiocephalic (elbow), brachiobasilic (basilic transposition) in order of preference',
+                      'PICC lines: via cephalic or basilic vein; tip should lie at SVC-RA junction',
+                      'IJV cannulation complications: carotid artery puncture, pneumothorax, haemothorax, air embolism, infection'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Внутренняя яремная вена (ВЯВ)',
+                    body: [
+                      'Продолжение сигмовидного синуса у яремного отверстия',
+                      'Проходит в сонном влагалище, латеральнее общей сонной артерии (ОСА) и блуждающего нерва (ЧН X)',
+                      'Притоки: лицевая, язычная, глоточные, верхняя щитовидная, средняя щитовидная вены',
+                      'Сливается с подключичной веной позади грудино-ключичного сустава, образуя плечеголовную вену',
+                      'Правая ВЯВ предпочтительна для центрального венозного доступа — прямой путь к ВПВ и правому предсердию',
+                      'Ориентир: медиальный край грудино-ключично-сосцевидной мышцы (ГКСМ) на уровне щитовидного хряща'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Наружная яремная вена (НЯВ)',
+                    body: [
+                      'Образуется слиянием задней ветви занижнечелюстной вены и задней ушной вены',
+                      'Проходит поверхностно по ГКСМ',
+                      'Прободает глубокую фасцию, впадая в подключичную вену',
+                      'Клиническое значение: оценка венозного давления в яремных венах (ВДЯ) — в норме не видна выше ключицы при угле 45°',
+                      'Передняя яремная вена: парные вены, дренирующие переднюю поверхность шеи; соединяются по средней линии через яремную венозную дугу над грудиной'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Плечеголовные вены и верхняя полая вена',
+                    body: [
+                      'Плечеголовная (безымянная) вена = слияние ВЯВ и подключичной вены позади грудино-ключичного сустава',
+                      'Правая плечеголовная вена: короткая, вертикальная (~2,5 см)',
+                      'Левая плечеголовная вена: более длинная, горизонтальный ход позади рукоятки грудины (~6 см)',
+                      'Верхняя полая вена (ВПВ): образуется при слиянии двух плечеголовных вен на уровне правого I рёберного хряща; впадает в правое предсердие',
+                      'Позвоночные вены: спускаются через поперечные отверстия рядом с позвоночной артерией; впадают в плечеголовные вены',
+                      'Синдром ВПВ: обструкция (тромбоз, рак лёгкого, лимфома) → отёк лица и верхних конечностей, повышение ВДЯ, расширение коллатералей грудной стенки'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Глубокие вены верхней конечности',
+                    body: [
+                      'Лучевые и локтевые вены (venae comitantes): парные, сопровождают одноимённые артерии',
+                      'Плечевые вены (venae comitantes): парные, сопровождают плечевую артерию; сливаются, образуя подмышечную вену у нижнего края большой круглой мышцы',
+                      'Подмышечная вена: продолжение плечевых вен; переходит в подключичную у наружного края I ребра',
+                      'Подключичная вена: проходит кпереди от передней лестничной мышцы (артерия — кзади); сливается с ВЯВ → плечеголовная вена'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Поверхностные вены верхней конечности',
+                    body: [
+                      'Головная вена: начинается от латерального конца тыльной венозной дуги кисти; проходит по латеральной поверхности предплечья и плеча; через дельтопекторальную борозду впадает в подмышечную вену; используется для в/в доступа и ПИКК-катетеров',
+                      'Основная вена: начинается от медиального конца тыльной дуги; проходит по медиальной поверхности предплечья и плеча; прободает фасцию на середине плеча; вливается в плечевые вены → подмышечная; используется для брахиобазилической АВФ',
+                      'Срединная локтевая вена: соединяет головную и основную в локтевой ямке; наиболее часто используется для венепункции',
+                      'Срединная вена предплечья: проходит по передней поверхности предплечья; вариабельна'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические ориентиры',
+                    body: [
+                      'Синдром Педжета–Шреттера: усилиетромбоз подключично-подмышечной вены — компрессия в грудном выходе; лечение: тромболизис + резекция ребра',
+                      'Создание АВФ: лучезапястная (лучевая–головная), брахиоцефалическая (локтевая), брахиобазилическая (транспозиция основной) — в порядке предпочтения',
+                      'ПИКК-катетеры: через головную или основную вену; кончик должен находиться у ВПВ–ПП соединения',
+                      'Осложнения катетеризации ВЯВ: пункция сонной артерии, пневмоторакс, гемоторакс, воздушная эмболия, инфекция'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'venous-head-neck-001',
+                question_en: 'IJV is the continuation of?',
+                question_ru: 'ВЯВ является продолжением?',
+                answer_en: 'Sigmoid sinus',
+                answer_ru: 'Сигмовидный синус'
+              },
+              {
+                id: 'venous-head-neck-002',
+                question_en: 'IJV position in carotid sheath?',
+                question_ru: 'Положение ВЯВ в сонном влагалище?',
+                answer_en: 'Lateral to CCA',
+                answer_ru: 'Латеральнее ОСА'
+              },
+              {
+                id: 'venous-head-neck-003',
+                question_en: 'IJV tributaries (4 named)?',
+                question_ru: 'Притоки ВЯВ (4 именных)?',
+                answer_en: 'Facial, lingual, pharyngeal, thyroid',
+                answer_ru: 'Лицевая, язычная, глоточные, щитовидные'
+              },
+              {
+                id: 'venous-head-neck-004',
+                question_en: 'IJV + subclavian form?',
+                question_ru: 'ВЯВ + подключичная образуют?',
+                answer_en: 'Brachiocephalic vein',
+                answer_ru: 'Плечеголовную вену'
+              },
+              {
+                id: 'venous-head-neck-005',
+                question_en: 'Why right IJV preferred for CVC?',
+                question_ru: 'Почему правая ВЯВ предпочтительна для ЦВК?',
+                answer_en: 'Straight path to SVC',
+                answer_ru: 'Прямой путь к ВПВ'
+              },
+              {
+                id: 'venous-head-neck-006',
+                question_en: 'EJV formed by?',
+                question_ru: 'Из чего образуется НЯВ?',
+                answer_en: 'Retromandibular + posterior auricular',
+                answer_ru: 'Занижнечелюстная + задняя ушная'
+              },
+              {
+                id: 'venous-head-neck-007',
+                question_en: 'EJV drains to?',
+                question_ru: 'В что впадает НЯВ?',
+                answer_en: 'Subclavian vein',
+                answer_ru: 'Подключичная вена'
+              },
+              {
+                id: 'venous-head-neck-008',
+                question_en: 'EJV clinical use?',
+                question_ru: 'Клиническое применение НЯВ?',
+                answer_en: 'JVP assessment',
+                answer_ru: 'Оценка ВДЯ'
+              },
+              {
+                id: 'venous-head-neck-009',
+                question_en: 'Right brachiocephalic vein course?',
+                question_ru: 'Ход правой плечеголовной вены?',
+                answer_en: 'Short, vertical',
+                answer_ru: 'Короткая, вертикальная'
+              },
+              {
+                id: 'venous-head-neck-010',
+                question_en: 'Left brachiocephalic vein course?',
+                question_ru: 'Ход левой плечеголовной вены?',
+                answer_en: 'Long, horizontal',
+                answer_ru: 'Длинная, горизонтальная'
+              },
+              {
+                id: 'venous-head-neck-011',
+                question_en: 'SVC formed at which level?',
+                question_ru: 'На каком уровне образуется ВПВ?',
+                answer_en: 'Right 1st costal cartilage',
+                answer_ru: 'Правый I рёберный хрящ'
+              },
+              {
+                id: 'venous-head-neck-012',
+                question_en: 'SVC drains to?',
+                question_ru: 'ВПВ впадает в?',
+                answer_en: 'Right atrium',
+                answer_ru: 'Правое предсердие'
+              },
+              {
+                id: 'venous-head-neck-013',
+                question_en: 'SVC syndrome cardinal feature?',
+                question_ru: 'Кардинальный признак синдрома ВПВ?',
+                answer_en: 'Facial oedema + raised JVP',
+                answer_ru: 'Отёк лица + повышение ВДЯ'
+              },
+              {
+                id: 'venous-head-neck-014',
+                question_en: 'Axillary vein begins at?',
+                question_ru: 'Откуда начинается подмышечная вена?',
+                answer_en: 'Lower border teres major',
+                answer_ru: 'Нижний край большой круглой мышцы'
+              },
+              {
+                id: 'venous-head-neck-015',
+                question_en: 'Axillary vein becomes subclavian at?',
+                question_ru: 'Где подмышечная переходит в подключичную?',
+                answer_en: 'Outer border 1st rib',
+                answer_ru: 'Наружный край I ребра'
+              },
+              {
+                id: 'venous-head-neck-016',
+                question_en: 'Cephalic vein drains into?',
+                question_ru: 'В что впадает головная вена?',
+                answer_en: 'Axillary vein',
+                answer_ru: 'Подмышечная вена'
+              },
+              {
+                id: 'venous-head-neck-017',
+                question_en: 'Cephalic vein route at shoulder?',
+                question_ru: 'Путь головной вены у плеча?',
+                answer_en: 'Deltopectoral groove',
+                answer_ru: 'Дельтопекторальная борозда'
+              },
+              {
+                id: 'venous-head-neck-018',
+                question_en: 'Basilic vein drains into?',
+                question_ru: 'В что впадает основная вена?',
+                answer_en: 'Brachial → axillary vein',
+                answer_ru: 'Плечевые → подмышечная вена'
+              },
+              {
+                id: 'venous-head-neck-019',
+                question_en: 'Basilic vein used for?',
+                question_ru: 'Для чего используется основная вена?',
+                answer_en: 'Brachiobasilic AV fistula',
+                answer_ru: 'Брахиобазилическая АВФ'
+              },
+              {
+                id: 'venous-head-neck-020',
+                question_en: 'Median cubital vein connects?',
+                question_ru: 'Что соединяет срединная локтевая вена?',
+                answer_en: 'Cephalic + basilic veins',
+                answer_ru: 'Головная + основная вены'
+              },
+              {
+                id: 'venous-head-neck-021',
+                question_en: 'Best vein for venepuncture?',
+                question_ru: 'Лучшая вена для венепункции?',
+                answer_en: 'Median cubital vein',
+                answer_ru: 'Срединная локтевая вена'
+              },
+              {
+                id: 'venous-head-neck-022',
+                question_en: 'AV fistula first choice?',
+                question_ru: 'АВФ первый выбор?',
+                answer_en: 'Radiocephalic (wrist)',
+                answer_ru: 'Лучезапястная (лучевая–головная)'
+              },
+              {
+                id: 'venous-head-neck-023',
+                question_en: 'AV fistula second choice?',
+                question_ru: 'АВФ второй выбор?',
+                answer_en: 'Brachiocephalic (elbow)',
+                answer_ru: 'Брахиоцефалическая (локтевая)'
+              },
+              {
+                id: 'venous-head-neck-024',
+                question_en: 'Paget-Schroetter syndrome involves which vein?',
+                question_ru: 'Какая вена поражается при синдроме Педжета–Шреттера?',
+                answer_en: 'Axillary-subclavian vein',
+                answer_ru: 'Подмышечно-подключичная вена'
+              },
+              {
+                id: 'venous-head-neck-025',
+                question_en: 'Vertebral veins drain to?',
+                question_ru: 'В что впадают позвоночные вены?',
+                answer_en: 'Brachiocephalic vein',
+                answer_ru: 'Плечеголовная вена'
+              },
+              {
+                id: 'venous-head-neck-026',
+                question_en: 'Subclavian vein relation to scalenus anterior?',
+                question_ru: 'Отношение подключичной вены к передней лестничной?',
+                answer_en: 'Anterior to scalenus',
+                answer_ru: 'Кпереди от лестничной мышцы'
+              },
+              {
+                id: 'venous-head-neck-027',
+                question_en: 'Anterior jugular veins communicate via?',
+                question_ru: 'Через что соединяются передние яремные вены?',
+                answer_en: 'Jugular venous arch',
+                answer_ru: 'Яремная венозная дуга'
+              },
+              {
+                id: 'venous-head-neck-028',
+                question_en: 'IJV cannulation landmark?',
+                question_ru: 'Ориентир для катетеризации ВЯВ?',
+                answer_en: 'Medial border SCM, thyroid level',
+                answer_ru: 'Медиальный край ГКСМ, уровень щитовидного хряща'
+              },
+              {
+                id: 'venous-head-neck-029',
+                question_en: 'SVC syndrome most common cause?',
+                question_ru: 'Наиболее частая причина синдрома ВПВ?',
+                answer_en: 'Lung cancer / lymphoma',
+                answer_ru: 'Рак лёгкого / лимфома'
+              },
+              {
+                id: 'venous-head-neck-030',
+                question_en: 'PICC tip target location?',
+                question_ru: 'Целевое положение кончика ПИКК-катетера?',
+                answer_en: 'SVC–RA junction',
+                answer_ru: 'ВПВ–ПП соединение'
+              }
+            ]
+          },
+
+          // ── Topic: Venous Drainage — Thorax & Abdomen ───────────────────────────
+          {
+            slug: 'venous-thorax-abdomen',
+            title_en: 'Venous Drainage — Thorax & Abdomen',
+            title_ru: 'Венозный отток — грудная клетка и живот',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Azygos Venous System',
+                    body: [
+                      'Azygos vein (right side): begins at T12 from the right ascending lumbar vein / right subcostal vein; ascends in the posterior mediastinum; arches over the right main bronchus to drain into the SVC at T4',
+                      'Receives: right posterior intercostal veins (3rd–11th), right bronchial veins, right subcostal vein, hemiazygos and accessory hemiazygos via cross-communications',
+                      'Hemiazygos vein (left, lower): begins at T9 from the left ascending lumbar / left subcostal; crosses the midline at T9 to drain into the azygos; receives: left lower posterior intercostals (9th–11th)',
+                      'Accessory hemiazygos vein (left, upper): spans T4–T8; crosses midline at T7 to drain into the azygos; receives: left upper posterior intercostals (4th–8th)',
+                      'The 1st and 2nd intercostal spaces drain via the superior intercostal vein → brachiocephalic vein',
+                      'Clinical importance: the azygos system forms a collateral pathway when the IVC or SVC is obstructed'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Inferior Vena Cava (IVC)',
+                    body: [
+                      'Formed at L5 by the union of the two common iliac veins',
+                      'Passes through the IVC foramen in the diaphragm at T8 to drain into the right atrium',
+                      'Right-sided tributaries draining directly: right lumbar veins, right gonadal vein (testicular/ovarian), right suprarenal vein, right renal vein, hepatic veins',
+                      'Left-sided exceptions — drain indirectly: left gonadal vein → left renal vein; left suprarenal vein → left renal vein',
+                      'Left renal vein is longer than right because it must cross the aorta anteriorly (between aorta and SMA) — important surgical landmark; can be ligated at the aorta without renal loss due to collaterals',
+                      'Hepatic veins (right, middle, left): drain directly into IVC just below the diaphragm (T8)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Portal Venous System',
+                    body: [
+                      'Portal vein: formed by the union of the superior mesenteric vein (SMV) + splenic vein, behind the neck of the pancreas (at L1)',
+                      'Inferior mesenteric vein (IMV) typically drains into the splenic vein (occasionally SMV or at the angle of union)',
+                      'Portal vein carries nutrient-rich blood from the GI tract and spleen to the liver',
+                      'Divides into right and left portal vein branches within the porta hepatis',
+                      'Portal hypertension: elevated portal pressure (>10–12 mmHg) → varices (oesophageal, gastric, rectal, caput medusae), splenomegaly, ascites',
+                      'Porto-systemic anastomoses (sites of varices): lower oesophagus (left gastric ↔ azygos), rectum (superior rectal ↔ middle/inferior rectal), umbilicus (paraumbilical ↔ epigastric), retroperitoneum (Retzius veins)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Iliac Veins',
+                    body: [
+                      'External iliac vein: continuation of femoral vein from the inguinal ligament; joins internal iliac → common iliac',
+                      'Internal iliac vein: drains pelvic viscera; tributaries correspond to internal iliac artery branches',
+                      'Common iliac veins unite at L5 to form the IVC',
+                      'Right common iliac vein is shorter; crossed by right ureter',
+                      'May-Thurner (Cockett) syndrome: left common iliac vein compressed between the right common iliac artery and the lumbar vertebra → left iliac DVT; treat with catheter-directed thrombolysis + iliac stenting'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Система непарной вены',
+                    body: [
+                      'Непарная вена (справа): начинается на уровне T12 от правой восходящей поясничной / правой подрёберной вены; поднимается в заднем средостении; огибает правый главный бронх и впадает в ВПВ на уровне T4',
+                      'Получает: правые задние межрёберные вены (3–11), правые бронхиальные, правую подрёберную, полунепарную и добавочную полунепарную через перекрёстные анастомозы',
+                      'Полунепарная вена (слева, нижняя): начинается на T9; пересекает срединную линию на T9, впадая в непарную; получает: левые нижние задние межрёберные (9–11)',
+                      'Добавочная полунепарная вена (слева, верхняя): уровень T4–T8; пересекает срединную линию на T7, впадая в непарную; получает: левые верхние задние межрёберные (4–8)',
+                      '1-й и 2-й межрёберные промежутки дренируются через верхнюю межрёберную вену → плечеголовная вена',
+                      'Клиническое значение: система непарной вены формирует коллатеральный путь при обструкции НПВ или ВПВ'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Нижняя полая вена (НПВ)',
+                    body: [
+                      'Образуется на уровне L5 слиянием двух общих подвздошных вен',
+                      'Проходит через отверстие НПВ в диафрагме на уровне T8, впадая в правое предсердие',
+                      'Правосторонние притоки (прямые): правые поясничные, правая гонадная (яичковая/яичниковая), правая надпочечниковая, правая почечная, печёночные вены',
+                      'Левосторонние исключения — дренируются косвенно: левая гонадная → левая почечная; левая надпочечниковая → левая почечная',
+                      'Левая почечная вена длиннее правой, так как пересекает аорту спереди (между аортой и ВБА) — важный хирургический ориентир; может быть перевязана у аорты без потери почки благодаря коллатералям',
+                      'Печёночные вены (правая, средняя, левая): впадают непосредственно в НПВ чуть ниже диафрагмы (T8)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Система воротной вены',
+                    body: [
+                      'Воротная вена: образуется слиянием верхней брыжеечной (ВБВ) + селезёночной вены позади шейки поджелудочной железы (на уровне L1)',
+                      'Нижняя брыжеечная вена (НБВ) обычно впадает в селезёночную (реже в ВБВ или в угол слияния)',
+                      'Воротная вена несёт обогащённую питательными веществами кровь из желудочно-кишечного тракта и селезёнки в печень',
+                      'Делится на правую и левую воротные ветви в воротах печени',
+                      'Портальная гипертензия: давление >10–12 мм рт.ст. → варикоз (пищеводный, желудочный, ректальный, голова медузы), спленомегалия, асцит',
+                      'Портосистемные анастомозы (места варикоза): нижний пищевод (левая желудочная ↔ непарная), прямая кишка (верхняя прямокишечная ↔ средняя/нижняя), пуп (околопупочные ↔ надчревные), забрюшинное пространство (вены Ретциуса)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Подвздошные вены',
+                    body: [
+                      'Наружная подвздошная вена: продолжение бедренной вены от паховой связки; соединяется с внутренней подвздошной → общая подвздошная',
+                      'Внутренняя подвздошная вена: дренирует органы таза; притоки соответствуют ветвям внутренней подвздошной артерии',
+                      'Общие подвздошные вены сливаются на уровне L5, образуя НПВ',
+                      'Правая общая подвздошная вена короче; пересекается правым мочеточником',
+                      'Синдром Мэй–Тёрнера (Кокетта): сдавление левой общей подвздошной вены между правой общей подвздошной артерией и поясничным позвонком → ТГВ левой подвздошной вены; лечение: катетер-направленный тромболизис + стентирование подвздошной вены'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'venous-thorax-001',
+                question_en: 'Azygos vein drains into?',
+                question_ru: 'В что впадает непарная вена?',
+                answer_en: 'SVC at T4',
+                answer_ru: 'ВПВ на уровне T4'
+              },
+              {
+                id: 'venous-thorax-002',
+                question_en: 'Azygos vein begins at?',
+                question_ru: 'Откуда начинается непарная вена?',
+                answer_en: 'T12 (ascending lumbar)',
+                answer_ru: 'T12 (восходящая поясничная)'
+              },
+              {
+                id: 'venous-thorax-003',
+                question_en: 'Hemiazygos crosses midline at?',
+                question_ru: 'На каком уровне полунепарная пересекает среднюю линию?',
+                answer_en: 'T9',
+                answer_ru: 'T9'
+              },
+              {
+                id: 'venous-thorax-004',
+                question_en: 'Accessory hemiazygos level?',
+                question_ru: 'Уровень добавочной полунепарной вены?',
+                answer_en: 'T4–T8',
+                answer_ru: 'T4–T8'
+              },
+              {
+                id: 'venous-thorax-005',
+                question_en: 'Accessory hemiazygos crosses midline at?',
+                question_ru: 'Добавочная полунепарная пересекает среднюю линию на?',
+                answer_en: 'T7',
+                answer_ru: 'T7'
+              },
+              {
+                id: 'venous-thorax-006',
+                question_en: 'IVC formed at vertebral level?',
+                question_ru: 'На каком уровне позвоночника образуется НПВ?',
+                answer_en: 'L5',
+                answer_ru: 'L5'
+              },
+              {
+                id: 'venous-thorax-007',
+                question_en: 'IVC passes through diaphragm at?',
+                question_ru: 'НПВ проходит через диафрагму на уровне?',
+                answer_en: 'T8',
+                answer_ru: 'T8'
+              },
+              {
+                id: 'venous-thorax-008',
+                question_en: 'Left gonadal vein drains to?',
+                question_ru: 'В что впадает левая гонадная вена?',
+                answer_en: 'Left renal vein',
+                answer_ru: 'Левая почечная вена'
+              },
+              {
+                id: 'venous-thorax-009',
+                question_en: 'Right gonadal vein drains to?',
+                question_ru: 'В что впадает правая гонадная вена?',
+                answer_en: 'IVC directly',
+                answer_ru: 'НПВ напрямую'
+              },
+              {
+                id: 'venous-thorax-010',
+                question_en: 'Left suprarenal vein drains to?',
+                question_ru: 'В что впадает левая надпочечниковая вена?',
+                answer_en: 'Left renal vein',
+                answer_ru: 'Левая почечная вена'
+              },
+              {
+                id: 'venous-thorax-011',
+                question_en: 'Why is left renal vein longer?',
+                question_ru: 'Почему левая почечная вена длиннее?',
+                answer_en: 'Crosses aorta anteriorly',
+                answer_ru: 'Пересекает аорту спереди'
+              },
+              {
+                id: 'venous-thorax-012',
+                question_en: 'Hepatic veins drain to?',
+                question_ru: 'В что впадают печёночные вены?',
+                answer_en: 'IVC below diaphragm',
+                answer_ru: 'НПВ ниже диафрагмы'
+              },
+              {
+                id: 'venous-thorax-013',
+                question_en: 'Portal vein formed by?',
+                question_ru: 'Из чего образуется воротная вена?',
+                answer_en: 'SMV + splenic vein',
+                answer_ru: 'ВБВ + селезёночная вена'
+              },
+              {
+                id: 'venous-thorax-014',
+                question_en: 'Portal vein formed behind?',
+                question_ru: 'Воротная вена образуется позади?',
+                answer_en: 'Neck of pancreas',
+                answer_ru: 'Шейка поджелудочной железы'
+              },
+              {
+                id: 'venous-thorax-015',
+                question_en: 'IMV typically drains to?',
+                question_ru: 'В что обычно впадает НБВ?',
+                answer_en: 'Splenic vein',
+                answer_ru: 'Селезёночная вена'
+              },
+              {
+                id: 'venous-thorax-016',
+                question_en: 'Portal hypertension threshold pressure?',
+                question_ru: 'Пороговое давление при портальной гипертензии?',
+                answer_en: '>10–12 mmHg',
+                answer_ru: '>10–12 мм рт.ст.'
+              },
+              {
+                id: 'venous-thorax-017',
+                question_en: 'Porto-systemic site at oesophagus?',
+                question_ru: 'Портосистемный анастомоз у пищевода?',
+                answer_en: 'Left gastric ↔ azygos',
+                answer_ru: 'Левая желудочная ↔ непарная'
+              },
+              {
+                id: 'venous-thorax-018',
+                question_en: 'Porto-systemic site at rectum?',
+                question_ru: 'Портосистемный анастомоз у прямой кишки?',
+                answer_en: 'Superior rectal ↔ middle/inferior rectal',
+                answer_ru: 'Верхняя прямокишечная ↔ средняя/нижняя'
+              },
+              {
+                id: 'venous-thorax-019',
+                question_en: 'Common iliac veins join at?',
+                question_ru: 'Общие подвздошные вены сливаются на уровне?',
+                answer_en: 'L5',
+                answer_ru: 'L5'
+              },
+              {
+                id: 'venous-thorax-020',
+                question_en: 'May-Thurner syndrome: vein compressed?',
+                question_ru: 'Синдром Мэй–Тёрнера: какая вена сдавливается?',
+                answer_en: 'Left common iliac vein',
+                answer_ru: 'Левая общая подвздошная вена'
+              },
+              {
+                id: 'venous-thorax-021',
+                question_en: 'May-Thurner: compressed by which artery?',
+                question_ru: 'Мэй–Тёрнер: какой артерией сдавливается вена?',
+                answer_en: 'Right common iliac artery',
+                answer_ru: 'Правая общая подвздошная артерия'
+              },
+              {
+                id: 'venous-thorax-022',
+                question_en: 'May-Thurner treatment?',
+                question_ru: 'Лечение синдрома Мэй–Тёрнера?',
+                answer_en: 'Thrombolysis + iliac stenting',
+                answer_ru: 'Тромболизис + стентирование подвздошной'
+              },
+              {
+                id: 'venous-thorax-023',
+                question_en: 'Azygos system collateral role?',
+                question_ru: 'Коллатеральная роль системы непарной вены?',
+                answer_en: 'Bypass IVC or SVC obstruction',
+                answer_ru: 'Обход обструкции НПВ или ВПВ'
+              },
+              {
+                id: 'venous-thorax-024',
+                question_en: 'Caput medusae indicates?',
+                question_ru: 'О чём свидетельствует голова медузы?',
+                answer_en: 'Portal hypertension',
+                answer_ru: 'Портальная гипертензия'
+              },
+              {
+                id: 'venous-thorax-025',
+                question_en: '1st and 2nd intercostal veins drain to?',
+                question_ru: '1-я и 2-я межрёберные вены впадают в?',
+                answer_en: 'Superior intercostal → brachiocephalic',
+                answer_ru: 'Верхняя межрёберная → плечеголовная'
+              },
+              {
+                id: 'venous-thorax-026',
+                question_en: 'IVC foramen in diaphragm at?',
+                question_ru: 'Отверстие НПВ в диафрагме на уровне?',
+                answer_en: 'T8',
+                answer_ru: 'T8'
+              },
+              {
+                id: 'venous-thorax-027',
+                question_en: 'Budd-Chiari syndrome involves?',
+                question_ru: 'Что поражается при синдроме Бадда–Киари?',
+                answer_en: 'Hepatic vein occlusion',
+                answer_ru: 'Окклюзия печёночных вен'
+              },
+              {
+                id: 'venous-thorax-028',
+                question_en: 'Hemiazygos drains which intercostals?',
+                question_ru: 'Какие межрёберные вены дренирует полунепарная?',
+                answer_en: 'Left lower (9th–11th)',
+                answer_ru: 'Левые нижние (9–11)'
+              },
+              {
+                id: 'venous-thorax-029',
+                question_en: 'Accessory hemiazygos drains which intercostals?',
+                question_ru: 'Какие межрёберные дренирует добавочная полунепарная?',
+                answer_en: 'Left upper (4th–8th)',
+                answer_ru: 'Левые верхние (4–8)'
+              },
+              {
+                id: 'venous-thorax-030',
+                question_en: 'Left renal vein passes between?',
+                question_ru: 'Между чем проходит левая почечная вена?',
+                answer_en: 'Aorta and SMA',
+                answer_ru: 'Аорта и ВБА'
+              }
+            ]
+          },
+
+          // ── Topic: Venous Anatomy of the Lower Limb ─────────────────────────────
+          {
+            slug: 'venous-lower-limb',
+            title_en: 'Venous Anatomy of the Lower Limb',
+            title_ru: 'Венозная анатомия нижней конечности',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Great Saphenous Vein (GSV)',
+                    body: [
+                      'The longest vein in the body',
+                      'Origin: medial end of the dorsal venous arch of the foot',
+                      'Course: passes anterior to the medial malleolus; runs up the medial leg and thigh in the subcutaneous plane',
+                      'Termination: drains into the femoral vein at the saphenofemoral junction (SFJ), located 3–4 cm below and lateral to the pubic tubercle',
+                      'At the SFJ, the GSV receives 4 named tributaries: superficial epigastric vein, superficial external pudendal vein, deep external pudendal vein, superficial circumflex iliac vein',
+                      'Other named tributaries: anterior accessory saphenous, posterior accessory saphenous (forms the "arch" at the calf)',
+                      'Clinical uses: conduit for CABG and lower limb bypass grafts; SFJ incompetence → primary varicose veins'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Short (Small) Saphenous Vein (SSV)',
+                    body: [
+                      'Origin: lateral end of the dorsal venous arch of the foot',
+                      'Course: passes posterior to the lateral malleolus; runs up the posterior midline of the calf between the two heads of gastrocnemius',
+                      'Termination: drains into the popliteal vein at the saphenopopliteal junction (SPJ) — variable level but typically in the popliteal fossa behind the knee',
+                      'SPJ level must be confirmed pre-operatively with duplex ultrasound',
+                      'The SSV may have a thigh extension (vein of Giacomini) that connects to the GSV'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Perforating (Communicating) Veins',
+                    body: [
+                      'Connect the superficial (saphenous) system to the deep (axial) veins',
+                      'Normal direction of flow: superficial → deep (inward)',
+                      'Incompetent perforators: valves fail → reverse flow (outward) → superficial venous hypertension → varicose veins, lipodermatosclerosis, venous ulcers',
+                      'Named groups (high-yield):',
+                      '  Cockett\'s perforators (posterior tibial group): medial lower leg above medial malleolus — most clinically important (related to venous ulcers at gaiter zone)',
+                      '  Boyd\'s perforator: medial, just below the knee',
+                      '  Dodd\'s (Hunter\'s) perforators: medial mid-thigh',
+                      '  May\'s perforator: posterior calf / SSV territory'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Deep Venous System',
+                    body: [
+                      'Plantar veins → posterior tibial + anterior tibial + peroneal veins (venae comitantes — paired)',
+                      'Posterior tibial + peroneal → tibioperoneal trunk → popliteal vein',
+                      'Anterior tibial vein (from dorsalis pedis) → popliteal vein',
+                      'Popliteal vein: lies superficial to the popliteal artery in the popliteal fossa',
+                      'At the adductor hiatus → femoral vein (SFA companion)',
+                      'Femoral vein + deep femoral vein → common femoral vein',
+                      'Common femoral vein → external iliac vein at the inguinal ligament'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surgical Correlates',
+                    body: [
+                      'Varicose veins: most commonly due to SFJ incompetence → GSV reflux; treated by high ligation + stripping, EVLA, RFA, foam sclerotherapy',
+                      'GSV harvest for CABG: "reversed" technique (invert vein to correct valve direction) or "in-situ" technique (valves destroyed with valvulotome)',
+                      'Deep vein thrombosis (DVT): most commonly starts in calf veins; propagates proximally; risk of PE; treat with anticoagulation (LMWH/DOAC)',
+                      'Venous ulcers: at the gaiter zone (medial lower leg, over medial malleolus) — site of Cockett\'s perforators; treat with compression therapy',
+                      'Varicose vein CEAP classification: C0 (no signs) to C6 (active venous ulcer)',
+                      'Chronic venous insufficiency: caused by venous hypertension from reflux and/or obstruction'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Большая подкожная вена (БПВ)',
+                    body: [
+                      'Самая длинная вена в организме',
+                      'Начало: медиальный конец тыльной венозной дуги стопы',
+                      'Ход: проходит кпереди от медиальной лодыжки; поднимается по медиальной поверхности голени и бедра в подкожной клетчатке',
+                      'Окончание: впадает в бедренную вену в сафено-феморальном соустье (СФС) на 3–4 см ниже и латеральнее лобкового бугорка',
+                      'В области СФС БПВ принимает 4 именных притока: поверхностную надчревную, поверхностную наружную половую, глубокую наружную половую, поверхностную артерию, огибающую подвздошную кость',
+                      'Другие притоки: передняя добавочная подкожная, задняя добавочная подкожная (образует «дугу» на голени)',
+                      'Клиническое применение: кондуит для АКШ и шунтирования нижних конечностей; несостоятельность СФС → варикозная болезнь'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Малая подкожная вена (МПВ)',
+                    body: [
+                      'Начало: латеральный конец тыльной венозной дуги стопы',
+                      'Ход: проходит позади латеральной лодыжки; поднимается по задней средней линии голени между двумя головками икроножной мышцы',
+                      'Окончание: впадает в подколенную вену в сафено-подколенном соустье (СПС) — уровень вариабелен, как правило в подколенной ямке',
+                      'Уровень СПС необходимо уточнить предоперационно при дуплексном сканировании',
+                      'МПВ может иметь бедренное продолжение (вена Джакомини), соединяющееся с БПВ'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Перфорантные (коммуникантные) вены',
+                    body: [
+                      'Соединяют поверхностную (подкожную) и глубокую (аксиальную) системы',
+                      'Нормальное направление кровотока: поверхностная → глубокая (кнутри)',
+                      'Несостоятельные перфоранты: клапаны не работают → обратный ток (кнаружи) → венозная гипертензия → варикоз, липодерматосклероз, венозные язвы',
+                      'Именные группы (высокий приоритет):',
+                      '  Перфоранты Кокетта (задняя большеберцовая группа): медиальная поверхность нижней голени выше медиальной лодыжки — наибольшее клиническое значение (венозные язвы в «гетровой» зоне)',
+                      '  Перфорант Бойда: медиальная поверхность, чуть ниже колена',
+                      '  Перфоранты Додда (Хантера): медиальная поверхность середины бедра',
+                      '  Перфорант Мэя: задняя поверхность голени / зона МПВ'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Глубокая венозная система',
+                    body: [
+                      'Подошвенные вены → задние большеберцовые + передние большеберцовые + малоберцовые вены (venae comitantes — парные)',
+                      'Задние большеберцовые + малоберцовые → малоберцово-большеберцовый ствол → подколенная вена',
+                      'Передняя большеберцовая вена (от тыльной вены стопы) → подколенная вена',
+                      'Подколенная вена: расположена поверхностнее подколенной артерии в подколенной ямке',
+                      'В сухожильном отверстии → бедренная вена (спутник ПБА)',
+                      'Бедренная вена + глубокая вена бедра → общая бедренная вена',
+                      'Общая бедренная вена → наружная подвздошная вена у паховой связки'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические ориентиры',
+                    body: [
+                      'Варикозная болезнь: чаще всего из-за несостоятельности СФС → рефлюкс по БПВ; лечение: высокая перевязка + стриппинг, ЭВЛК, РЧА, пенная склеротерапия',
+                      'Забор БПВ для АКШ: «реверсная» техника (переворот вены) или «in situ» (разрушение клапанов вальвулотомом)',
+                      'Тромбоз глубоких вен (ТГВ): чаще начинается в венах голени; распространяется проксимально; риск ТЭЛА; лечение: антикоагулянты (НМГ/ПОАК)',
+                      'Венозные язвы: в «гетровой» зоне (медиальная поверхность нижней голени, над медиальной лодыжкой) — зона перфорантов Кокетта; лечение: компрессионная терапия',
+                      'Классификация CEAP: C0 (нет признаков) – C6 (активная венозная язва)',
+                      'Хроническая венозная недостаточность (ХВН): венозная гипертензия вследствие рефлюкса и/или обструкции'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'venous-lower-limb-001',
+                question_en: 'Longest vein in the body?',
+                question_ru: 'Самая длинная вена в организме?',
+                answer_en: 'Great saphenous vein',
+                answer_ru: 'Большая подкожная вена'
+              },
+              {
+                id: 'venous-lower-limb-002',
+                question_en: 'GSV begins at?',
+                question_ru: 'БПВ начинается от?',
+                answer_en: 'Medial dorsal venous arch',
+                answer_ru: 'Медиальный конец тыльной дуги'
+              },
+              {
+                id: 'venous-lower-limb-003',
+                question_en: 'GSV passes anterior to?',
+                question_ru: 'БПВ проходит кпереди от?',
+                answer_en: 'Medial malleolus',
+                answer_ru: 'Медиальная лодыжка'
+              },
+              {
+                id: 'venous-lower-limb-004',
+                question_en: 'GSV drains into?',
+                question_ru: 'БПВ впадает в?',
+                answer_en: 'Femoral vein at SFJ',
+                answer_ru: 'Бедренная вена в СФС'
+              },
+              {
+                id: 'venous-lower-limb-005',
+                question_en: 'SFJ location?',
+                question_ru: 'Расположение СФС?',
+                answer_en: '3–4 cm below pubic tubercle',
+                answer_ru: '3–4 см ниже лобкового бугорка'
+              },
+              {
+                id: 'venous-lower-limb-006',
+                question_en: 'GSV tributaries at groin (4)?',
+                question_ru: 'Притоки БПВ в паху (4)?',
+                answer_en: 'Epigastric, pudendal ×2, circumflex iliac',
+                answer_ru: 'Надчревная, половые ×2, огибающая подвздошную'
+              },
+              {
+                id: 'venous-lower-limb-007',
+                question_en: 'SSV origin?',
+                question_ru: 'Начало МПВ?',
+                answer_en: 'Lateral dorsal venous arch',
+                answer_ru: 'Латеральный конец тыльной дуги'
+              },
+              {
+                id: 'venous-lower-limb-008',
+                question_en: 'SSV passes posterior to?',
+                question_ru: 'МПВ проходит кзади от?',
+                answer_en: 'Lateral malleolus',
+                answer_ru: 'Латеральная лодыжка'
+              },
+              {
+                id: 'venous-lower-limb-009',
+                question_en: 'SSV drains into?',
+                question_ru: 'МПВ впадает в?',
+                answer_en: 'Popliteal vein at SPJ',
+                answer_ru: 'Подколенная вена в СПС'
+              },
+              {
+                id: 'venous-lower-limb-010',
+                question_en: 'SSV thigh extension called?',
+                question_ru: 'Бедренное продолжение МПВ называется?',
+                answer_en: 'Vein of Giacomini',
+                answer_ru: 'Вена Джакомини'
+              },
+              {
+                id: 'venous-lower-limb-011',
+                question_en: 'Normal perforator flow direction?',
+                question_ru: 'Нормальное направление кровотока в перфорантах?',
+                answer_en: 'Superficial to deep',
+                answer_ru: 'Поверхностная → глубокая'
+              },
+              {
+                id: 'venous-lower-limb-012',
+                question_en: 'Cockett\'s perforators location?',
+                question_ru: 'Расположение перфорантов Кокетта?',
+                answer_en: 'Medial lower leg (gaiter zone)',
+                answer_ru: 'Медиальная нижняя голень (гетровая зона)'
+              },
+              {
+                id: 'venous-lower-limb-013',
+                question_en: 'Boyd\'s perforator location?',
+                question_ru: 'Расположение перфоранта Бойда?',
+                answer_en: 'Medial, below knee',
+                answer_ru: 'Медиальная, ниже колена'
+              },
+              {
+                id: 'venous-lower-limb-014',
+                question_en: 'Dodd\'s perforators location?',
+                question_ru: 'Расположение перфорантов Додда?',
+                answer_en: 'Medial mid-thigh',
+                answer_ru: 'Медиальная середина бедра'
+              },
+              {
+                id: 'venous-lower-limb-015',
+                question_en: 'Popliteal vein position in fossa?',
+                question_ru: 'Положение подколенной вены в ямке?',
+                answer_en: 'Superficial to popliteal artery',
+                answer_ru: 'Поверхностнее подколенной артерии'
+              },
+              {
+                id: 'venous-lower-limb-016',
+                question_en: 'Common femoral vein formed by?',
+                question_ru: 'Из чего образуется общая бедренная вена?',
+                answer_en: 'Femoral + deep femoral vein',
+                answer_ru: 'Бедренная + глубокая вена бедра'
+              },
+              {
+                id: 'venous-lower-limb-017',
+                question_en: 'Varicose veins most common cause?',
+                question_ru: 'Наиболее частая причина варикозной болезни?',
+                answer_en: 'SFJ incompetence',
+                answer_ru: 'Несостоятельность СФС'
+              },
+              {
+                id: 'venous-lower-limb-018',
+                question_en: 'Venous ulcer typical site?',
+                question_ru: 'Типичное место венозной язвы?',
+                answer_en: 'Gaiter zone (medial malleolus)',
+                answer_ru: 'Гетровая зона (медиальная лодыжка)'
+              },
+              {
+                id: 'venous-lower-limb-019',
+                question_en: 'CEAP C6 means?',
+                question_ru: 'CEAP C6 означает?',
+                answer_en: 'Active venous ulcer',
+                answer_ru: 'Активная венозная язва'
+              },
+              {
+                id: 'venous-lower-limb-020',
+                question_en: 'GSV surgical uses (2)?',
+                question_ru: 'Хирургическое применение БПВ (2)?',
+                answer_en: 'CABG conduit, bypass graft',
+                answer_ru: 'Кондуит АКШ, шунт'
+              },
+              {
+                id: 'venous-lower-limb-021',
+                question_en: 'DVT most commonly starts in?',
+                question_ru: 'ТГВ чаще всего начинается в?',
+                answer_en: 'Calf (deep) veins',
+                answer_ru: 'Вены голени (глубокие)'
+              },
+              {
+                id: 'venous-lower-limb-022',
+                question_en: 'DVT first-line treatment?',
+                question_ru: 'Лечение ТГВ первой линии?',
+                answer_en: 'LMWH or DOAC',
+                answer_ru: 'НМГ или ПОАК'
+              },
+              {
+                id: 'venous-lower-limb-023',
+                question_en: 'Varicose vein treatments (3 minimally invasive)?',
+                question_ru: 'Малоинвазивные методы лечения варикоза (3)?',
+                answer_en: 'EVLA, RFA, foam sclerotherapy',
+                answer_ru: 'ЭВЛК, РЧА, пенная склеротерапия'
+              },
+              {
+                id: 'venous-lower-limb-024',
+                question_en: 'SPJ level must be confirmed by?',
+                question_ru: 'Уровень СПС подтверждается с помощью?',
+                answer_en: 'Duplex ultrasound',
+                answer_ru: 'Дуплексное сканирование'
+              },
+              {
+                id: 'venous-lower-limb-025',
+                question_en: 'Incompetent perforators cause?',
+                question_ru: 'Что вызывают несостоятельные перфоранты?',
+                answer_en: 'Superficial venous hypertension',
+                answer_ru: 'Поверхностная венозная гипертензия'
+              },
+              {
+                id: 'venous-lower-limb-026',
+                question_en: 'Popliteal vein at adductor hiatus becomes?',
+                question_ru: 'В что переходит подколенная вена в сухожильном отверстии?',
+                answer_en: 'Femoral vein',
+                answer_ru: 'Бедренная вена'
+              },
+              {
+                id: 'venous-lower-limb-027',
+                question_en: 'GSV in-situ bypass — valves destroyed by?',
+                question_ru: 'БПВ in situ — клапаны разрушаются с помощью?',
+                answer_en: 'Valvulotome',
+                answer_ru: 'Вальвулотом'
+              },
+              {
+                id: 'venous-lower-limb-028',
+                question_en: 'Venous ulcer first-line treatment?',
+                question_ru: 'Лечение венозной язвы первой линии?',
+                answer_en: 'Compression therapy',
+                answer_ru: 'Компрессионная терапия'
+              },
+              {
+                id: 'venous-lower-limb-029',
+                question_en: 'Both saphenous veins arise from?',
+                question_ru: 'Обе подкожные вены берут начало от?',
+                answer_en: 'Dorsal venous arch',
+                answer_ru: 'Тыльная венозная дуга'
+              },
+              {
+                id: 'venous-lower-limb-030',
+                question_en: 'Common femoral vein continues as?',
+                question_ru: 'В что продолжается общая бедренная вена?',
+                answer_en: 'External iliac vein',
+                answer_ru: 'Наружная подвздошная вена'
+              }
+            ]
           }
+
 
 
         ]
