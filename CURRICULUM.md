@@ -76,8 +76,8 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | 38 | `intermittent-claudication` | Intermittent Claudication | ✅ |
 | 39 | `chronic-limb-threatening-ischaemia` | Chronic Limb-Threatening Ischaemia (CLTI) | ✅ |
 | 40 | `open-surgical-pad` | Open Surgical Procedures for PAD | ✅ |
-| 41 | `endovascular-pad` | Endovascular Procedures for PAD (PTA, stenting, atherectomy) | 🔲 |
-| 42 | `diabetic-foot` | Diabetic Foot, Wound Classification & Amputation | 🔲 |
+| 41 | `endovascular-pad` | Endovascular Procedures for PAD (PTA, stenting, atherectomy) | ✅ |
+| 42 | `diabetic-foot` | Diabetic Foot, Wound Classification & Amputation | ✅ |
 
 ---
 
@@ -111,9 +111,9 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | Cardiac Surgery | 12 | 0 |
 | Aortic & Vascular | 10 | 0 |
 | Venous & Lymphatic | 6 | 0 |
-| Peripheral Arterial | 6 | 4 ✅ |
+| Peripheral Arterial | 6 | 6 ✅ |
 | Pharmacology & Critical Care | 5 | 0 |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **50** | **12 ✅ / 38 🔲** |
+| **TOTAL** | **50** | **14 ✅ / 36 🔲** |
 
-**Target: ~1,500 cards → 3,000 virtual cards (EN + RU)**
+**Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**

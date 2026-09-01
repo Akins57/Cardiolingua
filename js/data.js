@@ -4207,6 +4207,682 @@ export const DATA = [
                 answer_ru: 'Предвестниковое ЖК-кровотечение'
               }
             ]
+          },
+
+          // ── Topic: Endovascular Procedures for PAD ──────────────────────────────
+          {
+            slug: 'endovascular-pad',
+            title_en: 'Endovascular Procedures for PAD (PTA, Stenting, Atherectomy)',
+            title_ru: 'Эндоваскулярные вмешательства при ХАН (ЧТА, стентирование, атерэктомия)',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Endovascular therapy (EVT) is the preferred first-line revascularisation strategy for most aorto-iliac and femoro-popliteal lesions due to lower procedural risk and equivalent medium-term outcomes compared to open surgery in suitable anatomy. Lesion complexity is stratified by TASC II classification (A–D), guiding the choice between endovascular and surgical approaches. Techniques include percutaneous transluminal angioplasty (PTA), bare-metal stenting (BMS), drug-eluting stenting (DES), drug-coated balloons (DCB), subintimal angioplasty, and atherectomy.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'TASC II Classification',
+                    body: [
+                      'Type A: short stenoses/occlusions — endovascular preferred',
+                      'Type B: longer lesions — endovascular preferred if operator experienced',
+                      'Type C: complex lesions — surgery preferred if good surgical risk',
+                      'Type D: chronic total occlusions, diffuse disease — surgery preferred',
+                      'Applies separately to aorto-iliac and femoro-popliteal segments'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Aorto-Iliac Disease',
+                    body: [
+                      'Access: ipsilateral antegrade or contralateral retrograde common femoral artery puncture',
+                      'Common iliac stenting: primary stenting preferred over PTA alone (lower dissection, higher patency)',
+                      '"Kissing stents" technique: simultaneous bilateral iliac stents deployed into distal aorta for bifurcation disease — prevents "snow-plough" effect',
+                      'Iliac stent 5-year primary patency: ~75–80% (BMS); covered stents preferred for occlusions',
+                      'Aortic occlusion (Leriche): endovascular feasible but complex; open ABF often superior for TASC D'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Femoro-Popliteal Disease',
+                    body: [
+                      'PTA alone: acceptable for short lesions <5 cm; re-stenosis rate 40–60% at 1 year for longer lesions',
+                      'Self-expanding nitinol stent: preferred for SFA due to vessel tortuosity and compression — superior to PTA alone for lesions >5 cm',
+                      'Drug-coated balloon (DCB): paclitaxel-coated; inhibits neo-intimal hyperplasia; 12-month primary patency ~20% higher than plain PTA (IN.PACT SFA trial)',
+                      'Drug-eluting stent (DES): paclitaxel or everolimus-eluting; reduces re-stenosis; Zilver PTX trial: 5-year primary patency ~66% vs 43% for PTA',
+                      'SFA stent 1-year re-stenosis: ~20–30%; long lesions and calcification worsen outcomes',
+                      'Subintimal angioplasty: traverses chronic total occlusion (CTO) in subintimal plane; re-entry via Outback or Pioneer catheter'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Infrapopliteal Disease',
+                    body: [
+                      'Primarily for limb salvage in CLTI — not for claudication',
+                      'PTA preferred over stenting (vessel calibre too small for most stents)',
+                      'Angiosome-directed revascularisation: target artery feeding the wound angiosome when possible',
+                      'Retrograde tibial access (pedal loop): used when antegrade wiring fails',
+                      'DCB for tibial disease: DEBATE-BTK and BIOLUX-II trials show reduced re-stenosis',
+                      'Technical success rates >90% but 1-year patency 50–60% due to calcification and distal disease'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Atherectomy',
+                    body: [
+                      'Directional atherectomy (HawkOne): shaves plaque into collection chamber; best for focal non-calcified lesions',
+                      'Rotational atherectomy (Rotarex, JetStream): pulverises calcified plaque; also used for in-stent re-stenosis',
+                      'Laser atherectomy (Turbo-Elite): vaporises plaque using ultraviolet laser; used for CTO and in-stent re-stenosis',
+                      'Often combined with DCB ("atherectomy + DCB") to optimise lumen and drug delivery',
+                      'No consistent long-term patency benefit over PTA/DCB alone in RCTs'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Procedural Details',
+                    body: [
+                      'Anticoagulation: IV heparin 70–100 IU/kg; target ACT >250 s',
+                      'Antiplatelet: DAPT (aspirin 75 mg + clopidogrel 75 mg) for 1–3 months after BMS; lifelong single antiplatelet thereafter',
+                      'DCB/DES: DAPT 1–3 months minimum; clopidogrel 75 mg loading dose 300–600 mg pre-procedure',
+                      'Contrast: use iso-osmolar contrast; limit volume to ≤3 mL/kg; pre-hydrate in CKD patients',
+                      'CO₂ angiography: alternative in severe renal impairment',
+                      'Distal embolic protection devices: consider for below-knee interventions and subintimal recanalisations'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications',
+                    body: [
+                      'Access site haematoma/pseudoaneurysm: most common; manage with ultrasound-guided compression or thrombin injection',
+                      'Vessel dissection: treat with prolonged balloon inflation or stenting',
+                      'Distal embolisation: thrombus aspiration catheter or IA thrombolysis',
+                      'Vessel perforation/rupture: covered stent (endograft) deployment',
+                      'Contrast nephropathy: hydration, N-acetylcysteine, CO₂ in CKD',
+                      'In-stent re-stenosis: DCB or laser atherectomy + DCB'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surveillance',
+                    body: [
+                      'Duplex ultrasound at 1 month, 6 months, then annually',
+                      'Peak systolic velocity ratio (PSVR) >2.5 at stent/anastomosis = haemodynamically significant re-stenosis',
+                      'ABI at each visit; >0.15 drop from post-procedure baseline indicates re-stenosis',
+                      'Re-intervention for symptomatic re-stenosis with PSVR >3.5 or ABI drop + symptoms'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Эндоваскулярное лечение (ЭВЛ) является предпочтительной стратегией первой линии реваскуляризации при большинстве аорто-подвздошных и бедренно-подколенных поражений благодаря меньшему операционному риску и сопоставимым среднесрочным результатам по сравнению с открытой хирургией при подходящей анатомии. Сложность поражений стратифицируется по классификации TASC II (A–D), что определяет выбор между эндоваскулярным и хирургическим подходом. Методы включают чрескожную транслюминальную ангиопластику (ЧТА), имплантацию непокрытых металлических стентов (НМС), стентов с лекарственным покрытием (СЛП), баллонов с лекарственным покрытием (БЛП), субинтимальную ангиопластику и атерэктомию.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Классификация TASC II',
+                    body: [
+                      'Тип A: короткие стенозы/окклюзии — предпочтительно ЭВЛ',
+                      'Тип B: более протяжённые поражения — предпочтительно ЭВЛ при опытном операторе',
+                      'Тип C: сложные поражения — предпочтительна операция при удовлетворительном хирургическом риске',
+                      'Тип D: хронические тотальные окклюзии, диффузное поражение — предпочтительна операция',
+                      'Применяется отдельно для аорто-подвздошного и бедренно-подколенного сегментов'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Аорто-подвздошное поражение',
+                    body: [
+                      'Доступ: ипсилатеральная антеградная или контралатеральная ретроградная пункция общей бедренной артерии (ОБА)',
+                      'Стентирование подвздошной артерии: первичное стентирование предпочтительнее ЧТА (меньше диссекций, выше проходимость)',
+                      'Техника "целующихся стентов" (kissing stents): одновременное билатеральное стентирование подвздошных артерий в дистальную аорту при бифуркационном поражении — предотвращает смещение бляшки',
+                      'Первичная проходимость подвздошного стента через 5 лет: ~75–80% (НМС); покрытые стенты предпочтительны при окклюзиях',
+                      'Окклюзия аорты (синдром Лериша): ЭВЛ возможно, но технически сложно; открытое АБФ-шунтирование часто предпочтительнее при TASC D'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Бедренно-подколенное поражение',
+                    body: [
+                      'ЧТА: приемлема при коротких поражениях <5 см; рестеноз 40–60% в год при более протяжённых',
+                      'Самораскрывающийся нитиноловый стент: предпочтителен для ПБА из-за извитости и компрессии сосуда — превосходит ЧТА при поражениях >5 см',
+                      'Баллон с лекарственным покрытием (БЛП): покрытие паклитакселем; подавляет неоинтимальную гиперплазию; первичная проходимость через 12 мес. выше на ~20% по сравнению с обычной ЧТА (исследование IN.PACT SFA)',
+                      'Стент с лекарственным покрытием (СЛП): паклитаксель или эверолимус; снижает рестеноз; исследование Zilver PTX: 5-летняя первичная проходимость ~66% против 43% при ЧТА',
+                      'Рестеноз стента ПБА через 1 год: ~20–30%; протяжённые поражения и кальциноз ухудшают результаты',
+                      'Субинтимальная ангиопластика: проведение через хроническую тотальную окклюзию (ХТО) в субинтимальной плоскости; реканализация с помощью катетеров Outback или Pioneer'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Инфрапоплитеальное поражение',
+                    body: [
+                      'Преимущественно для спасения конечности при хронической угрожающей ишемии конечности (ХУИК) — не при перемежающейся хромоте',
+                      'ЧТА предпочтительнее стентирования (калибр сосудов слишком мал)',
+                      'Реваскуляризация, направленная на ангиосому: целевая артерия должна кровоснабжать ангиосому раны',
+                      'Ретроградный тибиальный доступ (педальная петля): применяется при неудачном антеградном проведении проводника',
+                      'БЛП при тибиальном поражении: исследования DEBATE-BTK и BIOLUX-II демонстрируют снижение рестеноза',
+                      'Технический успех >90%, но проходимость через 1 год 50–60% из-за кальциноза и дистального поражения'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Атерэктомия',
+                    body: [
+                      'Направленная атерэктомия (HawkOne): срезает бляшку в коллекционную камеру; оптимальна при фокальных некальцинированных поражениях',
+                      'Ротационная атерэктомия (Rotarex, JetStream): измельчает кальцинированную бляшку; применяется также при рестенозе в стенте',
+                      'Лазерная атерэктомия (Turbo-Elite): испаряет бляшку ультрафиолетовым лазером; используется при ХТО и рестенозе в стенте',
+                      'Часто комбинируется с БЛП ("атерэктомия + БЛП") для оптимизации просвета и доставки препарата',
+                      'В РКИ не показано стабильного долгосрочного преимущества по проходимости над ЧТА/БЛП'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Детали процедуры',
+                    body: [
+                      'Антикоагуляция: гепарин в/в 70–100 МЕ/кг; целевое активированное время свёртывания (АВС) >250 с',
+                      'Антиагреганты: двойная антиагрегантная терапия (ДАТ) — аспирин 75 мг + клопидогрел 75 мг на 1–3 мес. после НМС; пожизненная монотерапия в дальнейшем',
+                      'БЛП/СЛП: ДАТ минимум 1–3 месяца; нагрузочная доза клопидогрела 300–600 мг до процедуры',
+                      'Контраст: использовать изоосмолярный контраст; ограничить объём до ≤3 мл/кг; предварительная гидратация при хронической болезни почек (ХБП)',
+                      'Ангиография с CO₂: альтернатива при выраженной почечной недостаточности',
+                      'Устройства дистальной эмболической защиты: рассмотреть при вмешательствах ниже колена и субинтимальных реканализациях'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения',
+                    body: [
+                      'Гематома/ложная аневризма в месте доступа: наиболее частое; лечение — компрессия под УЗ-контролем или инъекция тромбина',
+                      'Диссекция сосуда: длительная баллонная инфляция или стентирование',
+                      'Дистальная эмболизация: аспирационный катетер или интраартериальный тромболизис',
+                      'Перфорация/разрыв сосуда: имплантация покрытого стента (эндографта)',
+                      'Контраст-индуцированная нефропатия: гидратация, N-ацетилцистеин, CO₂ при ХБП',
+                      'Рестеноз в стенте: БЛП или лазерная атерэктомия + БЛП'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Наблюдение',
+                    body: [
+                      'Дуплексное УЗИ через 1 месяц, 6 месяцев, затем ежегодно',
+                      'Соотношение пиковых систолических скоростей (СПСС) >2,5 в зоне стента/анастомоза = гемодинамически значимый рестеноз',
+                      'ЛПИ при каждом визите; снижение >0,15 от послеоперационного уровня указывает на рестеноз',
+                      'Повторное вмешательство при симптомном рестенозе с СПСС >3,5 или снижении ЛПИ + симптомы'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'endovascular-pad-001',
+                question_en: 'TASC II A/B iliac disease: preferred treatment?',
+                question_ru: 'TASC II A/B подвздошное поражение: предпочтительное лечение?',
+                answer_en: 'Endovascular',
+                answer_ru: 'Эндоваскулярное'
+              },
+              {
+                id: 'endovascular-pad-002',
+                question_en: 'TASC II D aorto-iliac disease: preferred treatment?',
+                question_ru: 'TASC II D аорто-подвздошное поражение: предпочтительное лечение?',
+                answer_en: 'Open surgery',
+                answer_ru: 'Открытая операция'
+              },
+              {
+                id: 'endovascular-pad-003',
+                question_en: '"Kissing stents" indication?',
+                question_ru: 'Показание к технике "целующихся стентов"?',
+                answer_en: 'Aortic bifurcation disease',
+                answer_ru: 'Поражение бифуркации аорты'
+              },
+              {
+                id: 'endovascular-pad-004',
+                question_en: 'Iliac BMS 5-year primary patency?',
+                question_ru: '5-летняя первичная проходимость НМС подвздошной артерии?',
+                answer_en: '~75–80%',
+                answer_ru: '~75–80%'
+              },
+              {
+                id: 'endovascular-pad-005',
+                question_en: 'Preferred SFA stent type?',
+                question_ru: 'Предпочтительный тип стента для ПБА?',
+                answer_en: 'Self-expanding nitinol',
+                answer_ru: 'Самораскрывающийся нитиноловый'
+              },
+              {
+                id: 'endovascular-pad-006',
+                question_en: 'DCB mechanism of action?',
+                question_ru: 'Механизм действия БЛП?',
+                answer_en: 'Paclitaxel antiproliferative',
+                answer_ru: 'Паклитаксель антипролиферативный'
+              },
+              {
+                id: 'endovascular-pad-007',
+                question_en: 'DCB vs PTA: 12-month patency advantage?',
+                question_ru: 'БЛП vs ЧТА: преимущество проходимости через 12 мес.?',
+                answer_en: '~20% higher',
+                answer_ru: 'Выше на ~20%'
+              },
+              {
+                id: 'endovascular-pad-008',
+                question_en: 'SFA stent 1-year re-stenosis rate?',
+                question_ru: 'Рестеноз стента ПБА через 1 год?',
+                answer_en: '20–30%',
+                answer_ru: '20–30%'
+              },
+              {
+                id: 'endovascular-pad-009',
+                question_en: 'Subintimal angioplasty re-entry catheter examples?',
+                question_ru: 'Примеры катетеров для реканализации при субинтимальной ангиопластике?',
+                answer_en: 'Outback / Pioneer',
+                answer_ru: 'Outback / Pioneer'
+              },
+              {
+                id: 'endovascular-pad-010',
+                question_en: 'Infrapopliteal EVT: indication (not claudication)?',
+                question_ru: 'ЭВЛ инфрапоплитеального сегмента: показание (не ПХ)?',
+                answer_en: 'Limb salvage (CLTI)',
+                answer_ru: 'Спасение конечности (ХУИК)'
+              },
+              {
+                id: 'endovascular-pad-011',
+                question_en: 'Heparin dose for EVT?',
+                question_ru: 'Доза гепарина при ЭВЛ?',
+                answer_en: '70–100 IU/kg',
+                answer_ru: '70–100 МЕ/кг'
+              },
+              {
+                id: 'endovascular-pad-012',
+                question_en: 'Target ACT during EVT?',
+                question_ru: 'Целевое АВС во время ЭВЛ?',
+                answer_en: '>250 seconds',
+                answer_ru: '>250 секунд'
+              },
+              {
+                id: 'endovascular-pad-013',
+                question_en: 'DAPT duration after iliac BMS?',
+                question_ru: 'Длительность ДАТ после НМС подвздошной артерии?',
+                answer_en: '1–3 months',
+                answer_ru: '1–3 месяца'
+              },
+              {
+                id: 'endovascular-pad-014',
+                question_en: 'EVT access site complication: ultrasound treatment?',
+                question_ru: 'Осложнение в месте доступа: УЗ-лечение?',
+                answer_en: 'Thrombin injection',
+                answer_ru: 'Инъекция тромбина'
+              },
+              {
+                id: 'endovascular-pad-015',
+                question_en: 'Vessel perforation during EVT: endovascular fix?',
+                question_ru: 'Перфорация сосуда при ЭВЛ: эндоваскулярное решение?',
+                answer_en: 'Covered stent',
+                answer_ru: 'Покрытый стент'
+              },
+              {
+                id: 'endovascular-pad-016',
+                question_en: 'Distal embolisation during EVT: first step?',
+                question_ru: 'Дистальная эмболизация при ЭВЛ: первый шаг?',
+                answer_en: 'Thrombus aspiration',
+                answer_ru: 'Аспирация тромба'
+              },
+              {
+                id: 'endovascular-pad-017',
+                question_en: 'PSVR indicating haemodynamically significant re-stenosis?',
+                question_ru: 'СПСС, указывающее на гемодинамически значимый рестеноз?',
+                answer_en: '>2.5',
+                answer_ru: '>2,5'
+              },
+              {
+                id: 'endovascular-pad-018',
+                question_en: 'Post-EVT duplex: first surveillance timing?',
+                question_ru: 'Дуплекс после ЭВЛ: первый контрольный срок?',
+                answer_en: '1 month',
+                answer_ru: '1 месяц'
+              },
+              {
+                id: 'endovascular-pad-019',
+                question_en: 'Contrast volume limit to reduce nephropathy?',
+                question_ru: 'Ограничение объёма контраста для профилактики нефропатии?',
+                answer_en: '≤3 mL/kg',
+                answer_ru: '≤3 мл/кг'
+              },
+              {
+                id: 'endovascular-pad-020',
+                question_en: 'Alternative to iodinated contrast in severe CKD?',
+                question_ru: 'Альтернатива йодированному контрасту при тяжёлой ХБП?',
+                answer_en: 'CO₂ angiography',
+                answer_ru: 'Ангиография с CO₂'
+              }
+            ]
+          },
+
+          // ── Topic: Diabetic Foot, Wound Classification & Amputation ────────────
+          {
+            slug: 'diabetic-foot',
+            title_en: 'Diabetic Foot, Wound Classification & Amputation',
+            title_ru: 'Диабетическая стопа, классификация ран и ампутация',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Diabetic foot disease results from a triad of peripheral neuropathy, peripheral arterial disease (PAD), and susceptibility to infection. It is the leading cause of non-traumatic lower limb amputation worldwide. Early multidisciplinary assessment — vascular, podiatric, infectious disease, and orthopaedic — is essential to achieve limb salvage. Revascularisation, infection control, offloading, and structured wound care are the four pillars of management.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology — The Triad',
+                    body: [
+                      'Peripheral neuropathy: sensory loss → undetected trauma and pressure injury; motor loss → intrinsic muscle wasting → claw toes, abnormal load distribution; autonomic loss → anhidrosis → dry, fissured skin',
+                      'Most common site for neuropathic ulcer: plantar surface of the first metatarsophalangeal (MTP) joint',
+                      'PAD: present in 50% of diabetic foot ulcers; macrovascular (tibial/peroneal occlusion) + microvascular dysfunction',
+                      'Infection: impaired neutrophil function + hyperglycaemia → polymicrobial in moderate/severe; most common mild isolate: Staphylococcus aureus',
+                      'Charcot neuropathic osteoarthropathy: acute — warm, swollen, red foot in a neuropathic patient; must exclude infection; most commonly affects Lisfranc (tarsometatarsal) joint'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Wound Classification',
+                    body: [
+                      'Wagner grading (anatomical depth): 0 = at-risk foot, no ulcer; 1 = superficial ulcer; 2 = deep ulcer to tendon/capsule/bone; 3 = deep ulcer + abscess/osteomyelitis; 4 = forefoot gangrene; 5 = whole foot gangrene',
+                      'University of Texas (UT) classification: two axes — Grade (0–3: depth) × Stage (A = clean; B = infected; C = ischaemic; D = infected + ischaemic)',
+                      'WIfI classification (SVS 2014): three components — Wound (0–3), Ischaemia (0–3), foot Infection (0–3); predicts 1-year amputation risk and benefit of revascularisation',
+                      'WIfI is preferred for CLTI/diabetic foot as it integrates all three pathological axes',
+                      'Probe-to-bone (PTB) test: positive = high specificity for osteomyelitis; PPV ~89% in high-prevalence setting'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Vascular & Neurological Assessment',
+                    body: [
+                      'ABI: <0.5 or ankle pressure <70 mmHg → revascularisation likely needed for healing',
+                      'Toe pressure: <30 mmHg → healing unlikely without revascularisation',
+                      'TcPO₂ (transcutaneous oxygen pressure): <30 mmHg → poor healing; >40 mmHg → adequate for healing',
+                      'MRI: gold standard for osteomyelitis; bone biopsy + culture guides antibiotic choice',
+                      'Plain X-ray: may show cortical destruction, periosteal reaction, gas in soft tissue (gas-forming infection = surgical emergency)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Infection Management (IDSA Guidelines)',
+                    body: [
+                      'Mild DFI (localised, <2 cm cellulitis, no systemic signs): oral amoxicillin-clavulanate or cefalexin',
+                      'Moderate–severe DFI: IV piperacillin-tazobactam or carbapenem if ESBL risk; add MRSA cover (vancomycin or linezolid) if risk factors present',
+                      'MRSA risk factors: prior MRSA colonisation/infection, chronic wound, recent hospitalisation, nasal carriage',
+                      'Duration: mild 1–2 weeks; moderate/severe 2–4 weeks; osteomyelitis 6 weeks (IV then oral step-down)',
+                      'Surgical debridement: all necrotic and infected tissue must be excised; do not close primarily if infection present'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Offloading & Wound Care',
+                    body: [
+                      'Total contact cast (TCC): gold standard for neuropathic plantar ulcer offloading; reduces plantar pressure by ~80%',
+                      'Removable cast walker (RCW): acceptable alternative; compliance dependent',
+                      'Moist wound healing: hydrocolloid/foam dressings; debridement (sharp, enzymatic, or larval therapy)',
+                      'Negative pressure wound therapy (NPWT): accelerates granulation; useful post-debridement and for preparing amputation stumps',
+                      'Hyperbaric oxygen (HBO): consider for Wagner 3–4 with adequate perfusion and no revascularisation option'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Amputation Levels',
+                    body: [
+                      'Minor amputation: preserves weight-bearing function — digit/ray amputation, transmetatarsal amputation (TMA), Lisfranc/Chopart disarticulation',
+                      'TMA: amputates all metatarsals; preserves plantar flexion; requires good perfusion of plantar flap; best functional outcome for forefoot gangrene',
+                      'Syme amputation: disarticulation at ankle with heel pad preservation; allows end-bearing; rarely performed',
+                      'Below-knee amputation (BKA / transtibial): preferred major amputation when knee can be preserved; better rehabilitation than AKA; requires ABI ≥0.5 at popliteal or TcPO₂ >20 mmHg at proposed level',
+                      'Above-knee amputation (AKA / transfemoral): when BKA not feasible; 5-year survival ~50%; only 30–40% of AKA patients become community ambulators',
+                      'Guillotine amputation: open, level not yet defined; used for severe sepsis to achieve rapid source control; formal closure after infection resolved',
+                      'Revascularise before major amputation if feasible — even marginal perfusion improvement may allow a more distal level'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Charcot Foot Management',
+                    body: [
+                      'Acute phase: total offloading with TCC until skin temperature normalises (within 2°C of contralateral foot) — typically 3–6 months',
+                      'Bisphosphonates (e.g., pamidronate): reduce osteoclast activity; evidence limited but considered in acute phase',
+                      'Reconstruction (exostectomy / arthrodesis): for chronic deformity with ulceration or instability — only when acute phase resolved',
+                      'Radiological: "rocker-bottom" deformity on lateral X-ray; fragmentation and dislocation in acute phase'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Синдром диабетической стопы (СДС) является следствием триады: периферическая нейропатия, периферический атеросклероз и повышенная восприимчивость к инфекции. СДС — ведущая причина нетравматических ампутаций нижних конечностей в мире. Необходима ранняя мультидисциплинарная оценка (сосудистый хирург, подиатр, специалист по инфекционным болезням, ортопед) для сохранения конечности. Четыре основных направления: реваскуляризация, контроль инфекции, разгрузка и структурированный уход за раной.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология — триада',
+                    body: [
+                      'Периферическая нейропатия: потеря чувствительности → незамеченная травма и повреждения от давления; двигательные нарушения → атрофия внутренних мышц стопы → когтеобразные пальцы, аномальное распределение нагрузки; вегетативные нарушения → ангидроз → сухая, растрескавшаяся кожа',
+                      'Наиболее частая локализация нейропатической язвы: подошвенная поверхность первого плюснефалангового сустава (ПФС)',
+                      'Периферический атеросклероз: присутствует у 50% больных с язвами диабетической стопы; макрососудистое поражение (окклюзия большеберцовых/малоберцовых артерий) + микрососудистая дисфункция',
+                      'Инфекция: нарушение функции нейтрофилов + гипергликемия → полимикробная при умеренной/тяжёлой форме; наиболее частый возбудитель при лёгкой форме: Staphylococcus aureus',
+                      'Нейроостеоартропатия Шарко: острая фаза — тёплая, отёчная, красная стопа у пациента с нейропатией; необходимо исключить инфекцию; чаще всего поражается сустав Лисфранка (предплюсне-плюсневой)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Классификация ран',
+                    body: [
+                      'Классификация Вагнера (анатомическая глубина): 0 = стопа в группе риска, нет язвы; 1 = поверхностная язва; 2 = глубокая язва до сухожилия/капсулы/кости; 3 = глубокая язва + абсцесс/остеомиелит; 4 = гангрена переднего отдела стопы; 5 = гангрена всей стопы',
+                      'Классификация Техасского университета (ТУ): две оси — Степень (0–3: глубина) × Стадия (A = чистая; B = инфицированная; C = ишемическая; D = инфицированная + ишемическая)',
+                      'Классификация WIfI (SVS, 2014): три компонента — рана (Wound, 0–3), ишемия (Ischaemia, 0–3), инфекция стопы (foot Infection, 0–3); прогнозирует риск ампутации в течение 1 года и пользу реваскуляризации',
+                      'WIfI предпочтительна при хронической угрожающей ишемии конечности (ХУИК)/диабетической стопе, так как объединяет все три патологических оси',
+                      'Проба "зонд до кости" (probe-to-bone): положительная = высокая специфичность для остеомиелита; прогностическая ценность положительного результата ~89% в условиях высокой распространённости'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Сосудистая и неврологическая оценка',
+                    body: [
+                      'ЛПИ (лодыжечно-плечевой индекс): <0,5 или давление на лодыжке <70 мм рт. ст. → реваскуляризация, вероятно, необходима для заживления',
+                      'Давление на первом пальце стопы: <30 мм рт. ст. → заживление маловероятно без реваскуляризации',
+                      'TcPO₂ (транскутанное парциальное давление кислорода): <30 мм рт. ст. → плохое заживление; >40 мм рт. ст. → достаточное для заживления',
+                      'МРТ: золотой стандарт диагностики остеомиелита; биопсия кости + посев определяют выбор антибиотика',
+                      'Рентгенография: деструкция кортикального слоя, периостальная реакция, газ в мягких тканях (газообразующая инфекция = хирургическая экстренность)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Лечение инфекции (рекомендации IDSA)',
+                    body: [
+                      'Лёгкая диабетическая инфекция стопы (ДИС) (локальная, <2 см целлюлита, нет системных признаков): амоксициллин-клавуланат или цефалексин внутрь',
+                      'Умеренная–тяжёлая ДИС: пиперациллин-тазобактам в/в или карбапенем при риске БЛРС; добавить покрытие против метициллинорезистентного Staphylococcus aureus (МРСА) — ванкомицин или линезолид — при наличии факторов риска',
+                      'Факторы риска МРСА: предшествующая колонизация/инфекция МРСА, хроническая рана, недавняя госпитализация, носительство в носоглотке',
+                      'Длительность: лёгкая — 1–2 нед.; умеренная/тяжёлая — 2–4 нед.; остеомиелит — 6 нед. (в/в с переходом на пероральный приём)',
+                      'Хирургическая обработка: иссечение всех некротических и инфицированных тканей; первичное ушивание недопустимо при наличии инфекции'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Разгрузка и уход за раной',
+                    body: [
+                      'Тотальный контактный гипс (ТКГ): золотой стандарт разгрузки нейропатической подошвенной язвы; снижает подошвенное давление на ~80%',
+                      'Съёмный разгрузочный ботинок (RCW): приемлемая альтернатива; зависит от соблюдения режима',
+                      'Влажное заживление раны: гидроколлоидные/пенные повязки; дебридмент (острый, ферментный или личиночная терапия)',
+                      'Терапия отрицательным давлением (ТОД): ускоряет грануляцию; применяется после дебридмента и при подготовке культи',
+                      'Гипербарическая оксигенация (ГБО): рассматривать при Вагнер 3–4 с достаточной перфузией при отсутствии возможности реваскуляризации'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Уровни ампутации',
+                    body: [
+                      'Малые ампутации: сохраняют опорную функцию — ампутация пальца/луча, трансметатарзальная ампутация (ТМА), экзартикуляция по Лисфранку/Шопару',
+                      'ТМА: резекция всех плюсневых костей; сохраняет подошвенное сгибание; требует достаточной перфузии подошвенного лоскута; лучший функциональный результат при гангрене переднего отдела стопы',
+                      'Ампутация по Сайму: экзартикуляция в голеностопном суставе с сохранением пяточной жировой подушки; позволяет опираться на торец культи; выполняется редко',
+                      'Ампутация ниже колена (АНК / транстибиальная): предпочтительная большая ампутация при сохранении коленного сустава; лучше реабилитируется; требует ЛПИ ≥0,5 на уровне подколенной артерии или TcPO₂ >20 мм рт. ст. на предполагаемом уровне',
+                      'Ампутация выше колена (АВК / трансфеморальная): при невозможности АНК; 5-летняя выживаемость ~50%; лишь 30–40% пациентов после АВК становятся амбулаторными',
+                      'Гильотинная ампутация: открытая, уровень не определён окончательно; применяется при тяжёлом сепсисе для быстрого устранения очага инфекции; окончательное закрытие — после купирования инфекции',
+                      'Реваскуляризация до большой ампутации при возможности — даже незначительное улучшение перфузии может позволить выполнить ампутацию на более дистальном уровне'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Лечение стопы Шарко',
+                    body: [
+                      'Острая фаза: полная разгрузка с ТКГ до нормализации температуры кожи (разница <2°C с контралатеральной стопой) — как правило, 3–6 месяцев',
+                      'Бисфосфонаты (например, памидронат): снижают активность остеокластов; доказательная база ограничена, но применяются в острой фазе',
+                      'Реконструкция (экзостэктомия/артродез): при хронической деформации с изъязвлением или нестабильностью — только после разрешения острой фазы',
+                      'Рентгенологически: деформация "качалки" на боковой рентгенограмме; фрагментация и вывих в острой фазе'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'diabetic-foot-001',
+                question_en: 'Three components of diabetic foot triad?',
+                question_ru: 'Три компонента триады диабетической стопы?',
+                answer_en: 'Neuropathy, ischaemia, infection',
+                answer_ru: 'Нейропатия, ишемия, инфекция'
+              },
+              {
+                id: 'diabetic-foot-002',
+                question_en: 'Most common site for neuropathic plantar ulcer?',
+                question_ru: 'Наиболее частая локализация нейропатической подошвенной язвы?',
+                answer_en: 'First MTP joint',
+                answer_ru: 'Первый ПФС'
+              },
+              {
+                id: 'diabetic-foot-003',
+                question_en: 'Wagner grade 3 definition?',
+                question_ru: 'Определение Вагнер степень 3?',
+                answer_en: 'Deep ulcer + osteomyelitis',
+                answer_ru: 'Глубокая язва + остеомиелит'
+              },
+              {
+                id: 'diabetic-foot-004',
+                question_en: 'Wagner grade 5 definition?',
+                question_ru: 'Определение Вагнер степень 5?',
+                answer_en: 'Whole foot gangrene',
+                answer_ru: 'Гангрена всей стопы'
+              },
+              {
+                id: 'diabetic-foot-005',
+                question_en: 'WIfI classification: three components?',
+                question_ru: 'Классификация WIfI: три компонента?',
+                answer_en: 'Wound, ischaemia, foot infection',
+                answer_ru: 'Рана, ишемия, инфекция стопы'
+              },
+              {
+                id: 'diabetic-foot-006',
+                question_en: 'Probe-to-bone test positive: diagnosis?',
+                question_ru: 'Положительная проба "зонд до кости": диагноз?',
+                answer_en: 'Osteomyelitis',
+                answer_ru: 'Остеомиелит'
+              },
+              {
+                id: 'diabetic-foot-007',
+                question_en: 'Gold standard imaging for osteomyelitis?',
+                question_ru: 'Золотой стандарт визуализации остеомиелита?',
+                answer_en: 'MRI',
+                answer_ru: 'МРТ'
+              },
+              {
+                id: 'diabetic-foot-008',
+                question_en: 'Toe pressure below which healing unlikely?',
+                question_ru: 'Давление на пальце, ниже которого заживление маловероятно?',
+                answer_en: '<30 mmHg',
+                answer_ru: '<30 мм рт. ст.'
+              },
+              {
+                id: 'diabetic-foot-009',
+                question_en: 'TcPO₂ below which healing unlikely?',
+                question_ru: 'TcPO₂, ниже которого заживление маловероятно?',
+                answer_en: '<30 mmHg',
+                answer_ru: '<30 мм рт. ст.'
+              },
+              {
+                id: 'diabetic-foot-010',
+                question_en: 'Gold standard offloading for neuropathic ulcer?',
+                question_ru: 'Золотой стандарт разгрузки нейропатической язвы?',
+                answer_en: 'Total contact cast',
+                answer_ru: 'Тотальный контактный гипс'
+              },
+              {
+                id: 'diabetic-foot-011',
+                question_en: 'First-line antibiotic for mild DFI (IDSA)?',
+                question_ru: 'Антибиотик первой линии при лёгкой ДИС (IDSA)?',
+                answer_en: 'Amoxicillin-clavulanate',
+                answer_ru: 'Амоксициллин-клавуланат'
+              },
+              {
+                id: 'diabetic-foot-012',
+                question_en: 'MRSA cover antibiotic in severe DFI?',
+                question_ru: 'Антибиотик против МРСА при тяжёлой ДИС?',
+                answer_en: 'Vancomycin or linezolid',
+                answer_ru: 'Ванкомицин или линезолид'
+              },
+              {
+                id: 'diabetic-foot-013',
+                question_en: 'Osteomyelitis antibiotic duration?',
+                question_ru: 'Длительность антибиотикотерапии при остеомиелите?',
+                answer_en: '6 weeks',
+                answer_ru: '6 недель'
+              },
+              {
+                id: 'diabetic-foot-014',
+                question_en: 'TMA: functional advantage preserved?',
+                question_ru: 'ТМА: сохраняемая функциональная способность?',
+                answer_en: 'Plantar flexion',
+                answer_ru: 'Подошвенное сгибание'
+              },
+              {
+                id: 'diabetic-foot-015',
+                question_en: 'AKA 5-year survival?',
+                question_ru: '5-летняя выживаемость после АВК?',
+                answer_en: '~50%',
+                answer_ru: '~50%'
+              },
+              {
+                id: 'diabetic-foot-016',
+                question_en: 'Gas in soft tissues on X-ray: urgency?',
+                question_ru: 'Газ в мягких тканях на рентгенограмме: срочность?',
+                answer_en: 'Surgical emergency',
+                answer_ru: 'Хирургическая экстренность'
+              },
+              {
+                id: 'diabetic-foot-017',
+                question_en: 'Charcot foot most commonly affected joint?',
+                question_ru: 'Наиболее часто поражаемый сустав при стопе Шарко?',
+                answer_en: 'Lisfranc (tarsometatarsal)',
+                answer_ru: 'Лисфранка (предплюсне-плюсневой)'
+              },
+              {
+                id: 'diabetic-foot-018',
+                question_en: 'Acute Charcot: offloading duration?',
+                question_ru: 'Острая стопа Шарко: длительность разгрузки?',
+                answer_en: '3–6 months',
+                answer_ru: '3–6 месяцев'
+              },
+              {
+                id: 'diabetic-foot-019',
+                question_en: 'Guillotine amputation indication?',
+                question_ru: 'Показание к гильотинной ампутации?',
+                answer_en: 'Severe sepsis control',
+                answer_ru: 'Контроль тяжёлого сепсиса'
+              },
+              {
+                id: 'diabetic-foot-020',
+                question_en: 'Preferred major amputation when knee preserved?',
+                question_ru: 'Предпочтительная большая ампутация при сохранении колена?',
+                answer_en: 'Below-knee (BKA)',
+                answer_ru: 'Ниже колена (АНК)'
+              }
+            ]
           }
 
         ]
