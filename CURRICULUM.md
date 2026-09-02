@@ -61,9 +61,9 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 |---|---|---|---|
 | 31 | `dvt-pe` | Deep Vein Thrombosis & Pulmonary Embolism | 🔲 |
 | 32 | `may-thurner` | May-Thurner Syndrome & Iliac Vein Disease | 🔲 |
-| 33 | `chronic-venous-insufficiency` | Chronic Venous Insufficiency & Varicose Veins | 🔲 |
-| 34 | `venous-ulcers` | Venous Ulcers & Wound Care | 🔲 |
-| 35 | `svc-syndrome` | SVC Syndrome & Central Venous Obstruction | 🔲 |
+| 33 | `chronic-venous-insufficiency` | Chronic Venous Insufficiency & Varicose Veins | ✅ |
+| 34 | `venous-ulcers` | Venous Ulcers & Wound Care | ✅ |
+| 35 | `svc-syndrome` | SVC Syndrome & Central Venous Obstruction | ✅ |
 | 36 | `lymphoedema` | Lymphoedema & Lymphatic Disease | 🔲 |
 
 ---
@@ -85,7 +85,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 
 | # | Slug | Topic | Status |
 |---|---|---|---|
-| 43 | `anticoagulation` | Anticoagulation (heparin, LMWH, warfarin, DOACs, reversal agents) | 🔲 |
+| 43 | `anticoagulation` | Anticoagulation (heparin, LMWH, warfarin, DOACs, reversal agents) | ✅ |
 | 44 | `antiplatelet-thrombolytics` | Antiplatelet & Thrombolytic Therapy | 🔲 |
 | 45 | `vasopressors-inotropes` | Vasopressors, Vasodilators & Inotropes | 🔲 |
 | 46 | `postop-cardiac` | Postoperative Care after Cardiac Surgery | 🔲 |
@@ -110,10 +110,10 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | Anatomy | 8 | 8 ✅ |
 | Cardiac Surgery | 12 | 0 |
 | Aortic & Vascular | 10 | 0 |
-| Venous & Lymphatic | 6 | 0 |
+| Venous & Lymphatic | 6 | 3 ✅ |
 | Peripheral Arterial | 6 | 6 ✅ |
-| Pharmacology & Critical Care | 5 | 0 |
+| Pharmacology & Critical Care | 5 | 1 ✅ |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **50** | **14 ✅ / 36 🔲** |
+| **TOTAL** | **50** | **18 ✅ / 32 🔲** |
 
 **Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**

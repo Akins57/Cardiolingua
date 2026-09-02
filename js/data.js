@@ -4886,6 +4886,1308 @@ export const DATA = [
           }
 
         ]
+      },
+
+      // ── VENOUS & LYMPHATIC ───────────────────────────────────────────────────
+      {
+        slug: 'venous-lymphatic',
+        title_en: 'Venous & Lymphatic',
+        title_ru: 'Венозная и лимфатическая система',
+        topics: [
+
+          // ── Topic: Chronic Venous Insufficiency & Varicose Veins ─────────────
+          {
+            slug: 'chronic-venous-insufficiency',
+            title_en: 'Chronic Venous Insufficiency & Varicose Veins',
+            title_ru: 'Хроническая венозная недостаточность и варикозная болезнь',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Chronic venous insufficiency (CVI) results from sustained venous hypertension due to valvular incompetence, venous obstruction, or both. Varicose veins (dilated, tortuous superficial veins) are the most visible manifestation. CVI spans a clinical spectrum from cosmetic telangiectasias to active venous ulceration and affects approximately 30% of adults. The great saphenous vein (GSV) is the most commonly affected trunk.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology',
+                    body: [
+                      'Primary CVI: intrinsic valvular weakness → venous reflux → sustained ambulatory venous hypertension → capillary leak → lipodermatosclerosis → ulceration',
+                      'Secondary CVI: post-thrombotic syndrome (PTS) after deep vein thrombosis (DVT); venous outflow obstruction + reflux',
+                      'Venous reflux defined as: reversed flow >0.5 seconds on duplex ultrasound with Valsalva or cuff deflation',
+                      'Ambulatory venous pressure (AVP): normally <30 mmHg; CVI patients may have AVP >80 mmHg',
+                      'GSV drains via the saphenofemoral junction (SFJ) into the common femoral vein at the level of the inguinal ligament',
+                      'Short saphenous vein (SSV) drains via the saphenopopliteal junction (SPJ) into the popliteal vein in the popliteal fossa',
+                      'Perforating veins: connect superficial to deep systems; incompetent perforators (Cockett, Boyd, Dodd) transmit deep venous pressure to superficial system'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'CEAP Classification',
+                    body: [
+                      'C0: no visible or palpable signs',
+                      'C1: telangiectasias or reticular veins',
+                      'C2: varicose veins (≥3 mm diameter)',
+                      'C3: oedema of venous origin',
+                      'C4a: pigmentation or eczema; C4b: lipodermatosclerosis or atrophie blanche',
+                      'C5: healed venous ulcer',
+                      'C6: active venous ulcer',
+                      'Suffix A (asymptomatic) or S (symptomatic); E (aetiology), A (anatomy), P (pathophysiology) components also classified'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Clinical Assessment',
+                    body: [
+                      'Symptoms: aching, heaviness, itching, restless legs — worse at end of day and with prolonged standing; relieved by leg elevation',
+                      'Venous ulcer: most common at medial gaiter area (above medial malleolus); shallow, irregular, sloughy base; surrounding lipodermatosclerosis',
+                      'Trendelenburg test: tourniquet at SFJ level — vein refills slowly after standing → SFJ incompetence confirmed when vein fills rapidly on tourniquet release',
+                      'Duplex ultrasound: gold standard; maps reflux in GSV, SSV, perforators, and deep system; essential before any intervention',
+                      'Exclude arterial disease: ABI (лодыжечно-плечевой индекс — ЛПИ) before compression therapy; ABI <0.8 → modified compression; ABI <0.5 → compression contraindicated'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Conservative Management',
+                    body: [
+                      'Compression hosiery: mainstay; Class 1 (14–17 mmHg) for mild; Class 2 (18–24 mmHg) for moderate CVI/varicose veins; Class 3 (25–35 mmHg) for severe CVI',
+                      'Venous ulcer compression: four-layer compression bandaging (e.g., Profore) or equivalent; 40 mmHg at ankle; heals ~70% of ulcers within 24 weeks',
+                      'Leg elevation: above heart level; reduces ambulatory venous pressure',
+                      'Exercise: calf muscle pump activation; walking programme',
+                      'Venoactive drugs (e.g., diosmin/hesperidin 500 mg twice daily): reduce oedema and symptoms; adjunct only'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Interventional & Surgical Management',
+                    body: [
+                      'Endovenous laser ablation (EVLA): laser fibre inserted into GSV/SSV under duplex guidance; thermal energy ablates vein wall; tumescent anaesthesia injected perivenously as heat sink and nerve protection; comparable outcomes to surgery (NICE guidelines)',
+                      'Radiofrequency ablation (RFA / ClosureFast): radiofrequency energy via catheter; similar outcomes to EVLA; less postoperative bruising',
+                      'Foam sclerotherapy: sodium tetradecyl sulphate (STS) 1–3% or polidocanol foam injected under duplex guidance; used for truncal veins, tributaries, and perforators; multiple sessions often needed',
+                      'High ligation and stripping: SFJ flush ligation + inversion stripping of GSV to knee; gold standard historically; higher recurrence from neovascularisation vs thermal techniques',
+                      'Subfascial endoscopic perforator surgery (SEPS): divides incompetent perforators endoscopically; used for recalcitrant perforator incompetence with ulceration',
+                      'Phlebectomy (avulsions): ambulatory removal of varicose tributaries via 2–3 mm stab incisions; adjunct to thermal ablation',
+                      'Recurrence after treatment: most commonly due to neovascularisation at the SFJ (after stripping) or technical failure; reassess with duplex'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications',
+                    body: [
+                      'Superficial thrombophlebitis: inflammation ± thrombus in varicose vein; treat with NSAIDs + fondaparinux 2.5 mg daily for 45 days if >5 cm or near SFJ (CALISTO trial)',
+                      'Venous ulcer infection: clinical diagnosis; swab only if not improving; systemic antibiotics if cellulitis present',
+                      'Thermal ablation complications: endovenous heat-induced thrombosis (EHIT) — thrombus extending into deep vein; monitor with duplex; anticoagulate if EHIT class ≥2',
+                      'DVT risk: low with modern thermal techniques; NICE recommends prophylactic LMWH for high-risk patients undergoing varicose vein surgery'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Хроническая венозная недостаточность (ХВН) возникает вследствие стойкой венозной гипертензии, обусловленной несостоятельностью клапанов, венозной обструкцией или их сочетанием. Варикозное расширение вен — дилатация и извитость поверхностных вен — является наиболее видимым проявлением. ХВН охватывает клинический спектр от косметических телеангиэктазий до активных венозных язв и встречается примерно у 30% взрослых. Большая подкожная вена (БПВ) поражается наиболее часто.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология',
+                    body: [
+                      'Первичная хроническая венозная недостаточность (ХВН): внутренняя слабость клапанов → венозный рефлюкс → стойкая амбулаторная венозная гипертензия → капиллярная экссудация → липодерматосклероз → изъязвление',
+                      'Вторичная ХВН: посттромботический синдром (ПТС) после тромбоза глубоких вен (ТГВ); обструкция венозного оттока + рефлюкс',
+                      'Венозный рефлюкс определяется как обратный кровоток длительностью >0,5 сек при дуплексном УЗИ (проба Вальсальвы или компрессионный манжеточный тест)',
+                      'Амбулаторное венозное давление (АВД): в норме <30 мм рт. ст.; при ХВН АВД может превышать 80 мм рт. ст.',
+                      'Большая подкожная вена (БПВ) впадает через сафено-феморальное соустье (СФС) в общую бедренную вену на уровне паховой связки',
+                      'Малая подкожная вена (МПВ) впадает через сафено-поплитеальное соустье (СПС) в подколенную вену в подколенной ямке',
+                      'Перфорантные вены: соединяют поверхностную и глубокую системы; несостоятельные перфоранты (Кокетта, Бойда, Додда) передают глубокое венозное давление в поверхностную систему'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Классификация CEAP',
+                    body: [
+                      'C0: нет видимых или пальпируемых признаков',
+                      'C1: телеангиэктазии или ретикулярные вены',
+                      'C2: варикозно расширенные вены (диаметр ≥3 мм)',
+                      'C3: отёк венозного происхождения',
+                      'C4a: пигментация или экзема; C4b: липодерматосклероз или белая атрофия кожи',
+                      'C5: зажившая венозная язва',
+                      'C6: активная венозная язва',
+                      'Суффикс A (бессимптомная) или S (симптомная); также классифицируются компоненты E (этиология), A (анатомия), P (патофизиология)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клиническая оценка',
+                    body: [
+                      'Симптомы: боль, тяжесть, зуд, синдром беспокойных ног — усиливаются к концу дня и при длительном стоянии; облегчаются при подъёме ног',
+                      'Венозная язва: наиболее часто располагается в области медиальной гетры (выше медиальной лодыжки); поверхностная, неправильной формы, с покрытым налётом дном; окружающий липодерматосклероз',
+                      'Проба Тренделенбурга: жгут на уровне сафено-феморального соустья (СФС) — медленное наполнение вены после вставания → быстрое наполнение при снятии жгута подтверждает несостоятельность СФС',
+                      'Дуплексное УЗИ: золотой стандарт; картирует рефлюкс в большой подкожной вене (БПВ), малой подкожной вене (МПВ), перфорантах и глубокой системе; обязательно перед любым вмешательством',
+                      'Исключить артериальную патологию: лодыжечно-плечевой индекс (ЛПИ) до назначения компрессии; ЛПИ <0,8 → модифицированная компрессия; ЛПИ <0,5 → компрессия противопоказана'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Консервативное лечение',
+                    body: [
+                      'Компрессионный трикотаж: основа лечения; класс 1 (14–17 мм рт. ст.) при лёгкой форме; класс 2 (18–24 мм рт. ст.) при умеренной ХВН/варикозе; класс 3 (25–35 мм рт. ст.) при тяжёлой ХВН',
+                      'Компрессия при венозной язве: четырёхслойное компрессионное бинтование (например, Profore) или эквивалент; 40 мм рт. ст. на уровне лодыжки; обеспечивает заживление ~70% язв в течение 24 недель',
+                      'Возвышенное положение конечности: выше уровня сердца; снижает амбулаторное венозное давление (АВД)',
+                      'Физическая активность: активация мышечно-венозной помпы голени; ходьба',
+                      'Венотонические препараты (например, диосмин/гесперидин 500 мг дважды в сутки): уменьшают отёк и симптомы; только вспомогательный эффект'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Интервенционное и хирургическое лечение',
+                    body: [
+                      'Эндовенозная лазерная абляция (ЭВЛА): лазерный световод вводится в большую подкожную вену (БПВ)/малую подкожную вену (МПВ) под контролем дуплексного УЗИ; термическая энергия облитерирует стенку вены; тумесцентная анестезия вводится перивенозно — теплоотвод и защита нервов; сопоставимые результаты с операцией (рекомендации NICE)',
+                      'Радиочастотная абляция (РЧА / ClosureFast): радиочастотная энергия через катетер; результаты сопоставимы с ЭВЛА; меньше послеоперационных гематом',
+                      'Пенная склеротерапия: пена натрия тетрадецилсульфата (NTS) 1–3% или полидоканола вводится под контролем дуплексного УЗИ; применяется для стволовых вен, притоков и перфорантов; как правило, требуется несколько сеансов',
+                      'Высокое лигирование и стриппинг: флеш-лигирование сафено-феморального соустья (СФС) + инвагинационный стриппинг БПВ до уровня колена; исторически золотой стандарт; более высокая частота рецидивов вследствие неоваскуляризации по сравнению с термическими методами',
+                      'Субфасциальная эндоскопическая диссекция перфорантов (СЭДП): эндоскопическое пересечение несостоятельных перфорантных вен; применяется при рефрактерной несостоятельности перфорантов с изъязвлением',
+                      'Минифлебэктомия (авульсия): амбулаторное удаление варикозных притоков через разрезы 2–3 мм; дополнение к термической абляции',
+                      'Рецидив после лечения: наиболее часто обусловлен неоваскуляризацией в области сафено-феморального соустья (СФС) (после стриппинга) или технической неудачей; повторное дуплексное исследование'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения',
+                    body: [
+                      'Поверхностный тромбофлебит: воспаление ± тромбоз варикозной вены; лечение — НПВС + фондапаринукс 2,5 мг/сут в течение 45 дней при протяжённости >5 см или близости к СФС (исследование CALISTO)',
+                      'Инфекция венозной язвы: клинический диагноз; посев — только при отсутствии улучшения; системные антибиотики при наличии целлюлита',
+                      'Осложнения термической абляции: эндовенозный термоиндуцированный тромбоз (ЭТИТ) — распространение тромба в глубокую вену; контроль дуплексным УЗИ; антикоагуляция при ЭТИТ класса ≥2',
+                      'Риск тромбоза глубоких вен (ТГВ): низкий при современных термических методах; NICE рекомендует профилактический низкомолекулярный гепарин (НМГ) для пациентов с высоким риском, подвергающихся операции по поводу варикозной болезни'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'chronic-venous-insufficiency-001',
+                question_en: 'CEAP C2 definition?',
+                question_ru: 'Определение CEAP C2?',
+                answer_en: 'Varicose veins',
+                answer_ru: 'Варикозные вены'
+              },
+              {
+                id: 'chronic-venous-insufficiency-002',
+                question_en: 'CEAP C6 definition?',
+                question_ru: 'Определение CEAP C6?',
+                answer_en: 'Active venous ulcer',
+                answer_ru: 'Активная венозная язва'
+              },
+              {
+                id: 'chronic-venous-insufficiency-003',
+                question_en: 'GSV drains into which junction?',
+                question_ru: 'Большая подкожная вена (БПВ) впадает через какое соустье?',
+                answer_en: 'Saphenofemoral junction (SFJ)',
+                answer_ru: 'Сафено-феморальное соустье (СФС)'
+              },
+              {
+                id: 'chronic-venous-insufficiency-004',
+                question_en: 'SFJ anatomical level?',
+                question_ru: 'Анатомический уровень сафено-феморального соустья (СФС)?',
+                answer_en: 'Inguinal ligament',
+                answer_ru: 'Паховая связка'
+              },
+              {
+                id: 'chronic-venous-insufficiency-005',
+                question_en: 'Duplex reflux: minimum reverse flow duration?',
+                question_ru: 'Дуплекс: минимальная длительность обратного кровотока для рефлюкса?',
+                answer_en: '>0.5 seconds',
+                answer_ru: '>0,5 секунды'
+              },
+              {
+                id: 'chronic-venous-insufficiency-006',
+                question_en: 'Gold standard investigation for CVI?',
+                question_ru: 'Золотой стандарт диагностики хронической венозной недостаточности (ХВН)?',
+                answer_en: 'Duplex ultrasound',
+                answer_ru: 'Дуплексное УЗИ'
+              },
+              {
+                id: 'chronic-venous-insufficiency-007',
+                question_en: 'ABI below which compression is contraindicated?',
+                question_ru: 'Лодыжечно-плечевой индекс (ЛПИ), ниже которого компрессия противопоказана?',
+                answer_en: '<0.5',
+                answer_ru: '<0,5'
+              },
+              {
+                id: 'chronic-venous-insufficiency-008',
+                question_en: 'Compression class for active venous ulcer?',
+                question_ru: 'Класс компрессии при активной венозной язве?',
+                answer_en: 'Class 3 / four-layer',
+                answer_ru: 'Класс 3 / четырёхслойное'
+              },
+              {
+                id: 'chronic-venous-insufficiency-009',
+                question_en: 'Most common site for venous ulcer?',
+                question_ru: 'Наиболее частая локализация венозной язвы?',
+                answer_en: 'Medial gaiter area',
+                answer_ru: 'Медиальная гетра'
+              },
+              {
+                id: 'chronic-venous-insufficiency-010',
+                question_en: 'Four-layer compression: ulcer healing rate at 24 weeks?',
+                question_ru: 'Четырёхслойная компрессия: частота заживления язвы за 24 недели?',
+                answer_en: '~70%',
+                answer_ru: '~70%'
+              },
+              {
+                id: 'chronic-venous-insufficiency-011',
+                question_en: 'EVLA: perivenous injection purpose?',
+                question_ru: 'Эндовенозная лазерная абляция (ЭВЛА): цель перивенозной инъекции?',
+                answer_en: 'Heat sink / nerve protection',
+                answer_ru: 'Теплоотвод / защита нервов'
+              },
+              {
+                id: 'chronic-venous-insufficiency-012',
+                question_en: 'Foam sclerotherapy agent?',
+                question_ru: 'Препарат для пенной склеротерапии?',
+                answer_en: 'STS or polidocanol',
+                answer_ru: 'Натрия тетрадецилсульфат или полидоканол'
+              },
+              {
+                id: 'chronic-venous-insufficiency-013',
+                question_en: 'SSV drains via which junction?',
+                question_ru: 'Малая подкожная вена (МПВ) впадает через какое соустье?',
+                answer_en: 'Saphenopopliteal junction (SPJ)',
+                answer_ru: 'Сафено-поплитеальное соустье (СПС)'
+              },
+              {
+                id: 'chronic-venous-insufficiency-014',
+                question_en: 'Most common cause of varicose vein recurrence after stripping?',
+                question_ru: 'Наиболее частая причина рецидива варикоза после стриппинга?',
+                answer_en: 'Neovascularisation',
+                answer_ru: 'Неоваскуляризация'
+              },
+              {
+                id: 'chronic-venous-insufficiency-015',
+                question_en: 'Superficial thrombophlebitis near SFJ: drug treatment?',
+                question_ru: 'Поверхностный тромбофлебит вблизи сафено-феморального соустья (СФС): медикаментозное лечение?',
+                answer_en: 'Fondaparinux 2.5 mg × 45 days',
+                answer_ru: 'Фондапаринукс 2,5 мг × 45 дней'
+              },
+              {
+                id: 'chronic-venous-insufficiency-016',
+                question_en: 'Trendelenburg test: what does it assess?',
+                question_ru: 'Проба Тренделенбурга: что она оценивает?',
+                answer_en: 'SFJ incompetence',
+                answer_ru: 'Несостоятельность сафено-феморального соустья (СФС)'
+              },
+              {
+                id: 'chronic-venous-insufficiency-017',
+                question_en: 'EHIT: when to anticoagulate?',
+                question_ru: 'Эндовенозный термоиндуцированный тромбоз (ЭТИТ): когда начинать антикоагуляцию?',
+                answer_en: 'Class ≥2',
+                answer_ru: 'Класс ≥2'
+              },
+              {
+                id: 'chronic-venous-insufficiency-018',
+                question_en: 'Normal ambulatory venous pressure?',
+                question_ru: 'Нормальное амбулаторное венозное давление (АВД)?',
+                answer_en: '<30 mmHg',
+                answer_ru: '<30 мм рт. ст.'
+              },
+              {
+                id: 'chronic-venous-insufficiency-019',
+                question_en: 'CEAP C4b: skin change?',
+                question_ru: 'CEAP C4b: изменение кожи?',
+                answer_en: 'Lipodermatosclerosis',
+                answer_ru: 'Липодерматосклероз'
+              },
+              {
+                id: 'chronic-venous-insufficiency-020',
+                question_en: 'Perforator incompetence endoscopic treatment?',
+                question_ru: 'Эндоскопическое лечение несостоятельности перфорантных вен?',
+                answer_en: 'SEPS',
+                answer_ru: 'Субфасциальная эндоскопическая диссекция перфорантов (СЭДП)'
+              }
+            ]
+          },
+
+          // ── Topic: Venous Ulcers & Wound Care ───────────────────────────────
+          {
+            slug: 'venous-ulcers',
+            title_en: 'Venous Ulcers & Wound Care',
+            title_ru: 'Венозные язвы и уход за ранами',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Venous leg ulcers (VLU) are the most common cause of chronic lower limb ulceration, accounting for 70–80% of all leg ulcers. They arise from sustained ambulatory venous hypertension caused by valvular incompetence, post-thrombotic damage, or venous obstruction. Without structured compression therapy, recurrence rates exceed 70% within 3 years. Management is multidisciplinary: compression, wound care, address the underlying venous pathology, and treat any infective or arterial component.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology',
+                    body: [
+                      'Venous hypertension → capillary leak → fibrin cuff deposition around capillaries → impaired oxygen diffusion → tissue hypoxia → ulceration',
+                      'White cell trapping hypothesis: leucocytes trapped in capillaries → degranulation → inflammatory mediators → tissue damage',
+                      'Lipodermatosclerosis: chronic fibrotic induration of subcutaneous fat; precedes or accompanies ulceration',
+                      'Atrophie blanche: white, avascular scar tissue; marker of severe microvascular disease; not an ulcer itself but high-risk area',
+                      'Post-thrombotic syndrome (PTS): combination of reflux + obstruction after deep vein thrombosis (DVT); produces the most severe and refractory ulcers'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Clinical Features & Diagnosis',
+                    body: [
+                      'Site: medial gaiter area (above medial malleolus) is classical; lateral ulcers or atypical sites — consider arterial, vasculitic, or malignant aetiology',
+                      'Appearance: shallow, irregular edges, sloughy or granulating base; surrounding haemosiderin pigmentation, lipodermatosclerosis, varicose eczema',
+                      'Symptoms: aching, heaviness, exudate; painless in pure neuropathy; painful in arterial/mixed or infected ulcers',
+                      'Differential: arterial ulcer (punched-out, painful, pale base, distal), neuropathic (plantar, painless), malignant (Marjolin ulcer — suspect if non-healing >3 months or raised edges)',
+                      'ABI (ankle-brachial index) mandatory before compression: ABI >0.8 → full compression safe; 0.5–0.8 → modified compression (20–25 mmHg); <0.5 → compression contraindicated, refer vascular',
+                      'Duplex ultrasound: assess for superficial and deep reflux, perforator incompetence, and DVT/obstruction',
+                      'Wound swab: only if signs of clinical infection (erythema, warmth, purulence, pain); routine swabbing does not guide treatment'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Wound Bed Preparation (TIME Principle)',
+                    body: [
+                      'T — Tissue: debride non-viable, sloughy, or necrotic tissue (sharp, larval, enzymatic, or autolytic)',
+                      'I — Infection/Inflammation: identify and treat clinical infection; do not treat colonisation',
+                      'M — Moisture balance: match dressing absorbency to exudate level; avoid maceration and desiccation',
+                      'E — Edge: non-advancing wound edge → exclude infection, check ABI, reassess compression; consider biopsy if >3 months'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Dressing Selection',
+                    body: [
+                      'Low exudate: hydrocolloid (e.g., Duoderm) or hydrogel',
+                      'Moderate exudate: foam dressing (e.g., Mepilex, Allevyn)',
+                      'High exudate: alginate or hydrofibre (e.g., Aquacel) — absorptive, haemostatic',
+                      'Infected wound: silver-containing dressing (e.g., Aquacel Ag) or iodine-based (Inadine) — short-term only',
+                      'Larval therapy (maggots): Lucilia sericata larvae; highly effective debridement of sloughy wounds; also antimicrobial',
+                      'Negative pressure wound therapy (NPWT / VAC): accelerates granulation, reduces oedema; useful post-debridement or for large cavities',
+                      'Avoid: adhesive dressings on fragile skin; antiseptic solutions (e.g., hydrogen peroxide, povidone-iodine in open wounds) — cytotoxic to granulation tissue'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Compression Therapy',
+                    body: [
+                      'Cornerstone of VLU healing and prevention of recurrence',
+                      'Four-layer compression bandaging (e.g., Profore): 40 mmHg at ankle, reduces to 17 mmHg at knee; heals ~70% of ulcers in 24 weeks (RCT evidence)',
+                      'Two-layer compression (e.g., Coban 2): equivalent efficacy to four-layer; easier to apply',
+                      'Compression hosiery (Class 2–3) after healing: reduces recurrence from 70% to <30% at 5 years',
+                      'Intermittent pneumatic compression (IPC): adjunct when hosiery poorly tolerated; also used for mixed ulcers when ABI 0.5–0.8',
+                      'ABPI reassess at each visit; if healing plateaus, reassess venous anatomy and consider intervention'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Adjunctive & Surgical Treatment',
+                    body: [
+                      'Pentoxifylline 400 mg three times daily: improves ulcer healing when added to compression; Cochrane evidence supports use (OR 1.7 vs placebo)',
+                      'Skin grafting: split-thickness skin graft (SSG) for large, clean, non-healing ulcers; fails without adequate compression; meshed graft allows drainage',
+                      'Bioengineered skin substitutes (e.g., Apligraf, Dermagraft): growth factor delivery; used when SSG not possible',
+                      'Hyperbaric oxygen (HBO): limited evidence for VLU; consider refractory cases',
+                      'Treat underlying venous disease: EVLA (endovenous laser ablation) or foam sclerotherapy of incompetent superficial veins accelerates ulcer healing (ESCHAR trial: no improvement in healing rate but significant reduction in recurrence)',
+                      'ESCHAR trial key result: superficial venous surgery + compression did not heal ulcers faster than compression alone, but reduced 4-year recurrence from 56% to 31%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Infection Management',
+                    body: [
+                      'Clinical infection signs: increased pain, erythema >2 cm from wound edge, warmth, purulence, systemic features',
+                      'Mild cellulitis: oral flucloxacillin 500 mg four times daily for 5–7 days; add doxycycline if penicillin-allergic',
+                      'Severe/spreading cellulitis: IV flucloxacillin 1–2 g four times daily; MRSA cover if risk factors',
+                      'Biofilm: not visible clinically; suspect if wound plateaus despite good care; treat with antimicrobial dressings + debridement',
+                      'Osteomyelitis: rare in VLU; MRI if suspected; requires prolonged antibiotic course ± surgical debridement'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Венозные язвы нижних конечностей (ВЯ) являются наиболее частой причиной хронических язв нижних конечностей и составляют 70–80% всех язв ног. Они возникают вследствие стойкой амбулаторной венозной гипертензии, обусловленной несостоятельностью клапанов, посттромботическим поражением или венозной обструкцией. Без структурированной компрессионной терапии частота рецидивов превышает 70% в течение 3 лет. Лечение — мультидисциплинарное: компрессия, уход за раной, устранение основной венозной патологии, лечение инфекционного или артериального компонента.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология',
+                    body: [
+                      'Венозная гипертензия → капиллярная экссудация → отложение фибриновых манжет вокруг капилляров → нарушение диффузии кислорода → тканевая гипоксия → изъязвление',
+                      'Гипотеза захвата лейкоцитов: лейкоциты задерживаются в капиллярах → дегрануляция → воспалительные медиаторы → повреждение тканей',
+                      'Липодерматосклероз: хроническая фиброзная индурация подкожной жировой клетчатки; предшествует изъязвлению или сопровождает его',
+                      'Белая атрофия кожи: белая, аваскулярная рубцовая ткань; признак тяжёлого микрососудистого заболевания; сама по себе не является язвой, но представляет зону высокого риска',
+                      'Посттромботический синдром (ПТС): сочетание рефлюкса и обструкции после тромбоза глубоких вен (ТГВ); обусловливает наиболее тяжёлые и резистентные язвы'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клиническая картина и диагностика',
+                    body: [
+                      'Локализация: медиальная гетра (выше медиальной лодыжки) — классическое расположение; латеральные язвы или атипичные локализации — исключить артериальный, васкулитный или злокачественный генез',
+                      'Вид: поверхностная, неправильные края, покрытое налётом или гранулирующее дно; окружающая гемосидериновая пигментация, липодерматосклероз, варикозная экзема',
+                      'Симптомы: боль, тяжесть, экссудат; безболезненная при чистой нейропатии; болезненная при артериальной/смешанной этиологии или инфицировании',
+                      'Дифференциальный диагноз: артериальная язва (пробойник, болезненная, бледное дно, дистальная), нейропатическая (подошва, безболезненная), злокачественная (язва Маржолена — подозрение при незаживлении >3 мес. или приподнятых краях)',
+                      'Лодыжечно-плечевой индекс (ЛПИ) обязателен перед компрессией: ЛПИ >0,8 → полная компрессия безопасна; 0,5–0,8 → модифицированная компрессия (20–25 мм рт. ст.); <0,5 → компрессия противопоказана, направить к сосудистому хирургу',
+                      'Дуплексное УЗИ: оценка поверхностного и глубокого рефлюкса, несостоятельности перфорантов, тромбоза глубоких вен (ТГВ)/обструкции',
+                      'Мазок из раны: только при признаках клинической инфекции (эритема, тепло, гнойное отделяемое, боль); рутинный посев не определяет тактику лечения'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Подготовка раневого ложа (принцип TIME)',
+                    body: [
+                      'T — Ткань (Tissue): дебридмент нежизнеспособных, покрытых налётом или некротических тканей (острый, личиночный, ферментный или аутолитический)',
+                      'I — Инфекция/Воспаление (Infection/Inflammation): выявить и лечить клиническую инфекцию; колонизацию не лечить',
+                      'M — Влажный баланс (Moisture balance): подобрать повязку по уровню абсорбции к количеству экссудата; избегать мацерации и высыхания',
+                      'E — Край (Edge): незаживающий край раны → исключить инфекцию, проверить лодыжечно-плечевой индекс (ЛПИ), пересмотреть компрессию; биопсия при незаживлении >3 мес.'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Выбор повязки',
+                    body: [
+                      'Малый экссудат: гидроколлоид (например, Duoderm) или гидрогель',
+                      'Умеренный экссудат: пенная повязка (например, Mepilex, Allevyn)',
+                      'Обильный экссудат: альгинат или гидрофибра (например, Aquacel) — абсорбирующие, гемостатические',
+                      'Инфицированная рана: повязка с серебром (например, Aquacel Ag) или на основе йода (Inadine) — только краткосрочно',
+                      'Личиночная терапия (магготы): личинки Lucilia sericata; высокоэффективный дебридмент покрытых налётом ран; также антимикробный эффект',
+                      'Терапия отрицательным давлением (ТОД / VAC): ускоряет грануляцию, уменьшает отёк; применяется после дебридмента или при больших полостях',
+                      'Избегать: клейких повязок на хрупкой коже; антисептических растворов (перекись водорода, повидон-йод в открытых ранах) — цитотоксичны для грануляционной ткани'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Компрессионная терапия',
+                    body: [
+                      'Краеугольный камень заживления венозных язв нижних конечностей (ВЯ) и профилактики рецидивов',
+                      'Четырёхслойное компрессионное бинтование (например, Profore): 40 мм рт. ст. на лодыжке, снижается до 17 мм рт. ст. на колене; заживление ~70% язв за 24 недели (данные рандомизированных контролируемых исследований)',
+                      'Двухслойная компрессия (например, Coban 2): эффективность сопоставима с четырёхслойной; проще наносить',
+                      'Компрессионный трикотаж (класс 2–3) после заживления: снижает рецидивы с 70% до <30% за 5 лет',
+                      'Переменная пневматическая компрессия (ППК): вспомогательный метод при плохой переносимости трикотажа; применяется также при смешанных язвах при лодыжечно-плечевом индексе (ЛПИ) 0,5–0,8',
+                      'ЛПИ переоценивать при каждом визите; при плато в заживлении — переоценить венозную анатомию и рассмотреть вмешательство'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Вспомогательное и хирургическое лечение',
+                    body: [
+                      'Пентоксифиллин 400 мг три раза в сутки: улучшает заживление язвы в сочетании с компрессией; данные Cochrane подтверждают применение (отношение шансов — ОШ 1,7 против плацебо)',
+                      'Кожная пластика: расщеплённый кожный трансплантат (РКТ) при обширных, чистых, незаживающих язвах; не эффективен без компрессии; сетчатый трансплантат обеспечивает дренирование',
+                      'Биоинженерные кожные субституты (например, Apligraf, Dermagraft): доставка факторов роста; применяются при невозможности использования расщеплённого кожного трансплантата (РКТ)',
+                      'Гипербарическая оксигенация (ГБО): ограниченные данные при венозных язвах нижних конечностей (ВЯ); рассмотреть при рефрактерных случаях',
+                      'Лечение основного венозного заболевания: эндовенозная лазерная абляция (ЭВЛА) или пенная склеротерапия несостоятельных поверхностных вен ускоряет заживление язвы (исследование ESCHAR: без улучшения скорости заживления, но значительное снижение рецидивов)',
+                      'Ключевой результат исследования ESCHAR: хирургия поверхностных вен + компрессия не ускоряла заживление по сравнению с только компрессией, но снизила 4-летние рецидивы с 56% до 31%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Лечение инфекции',
+                    body: [
+                      'Признаки клинической инфекции: усиление боли, эритема >2 см от края раны, тепло, гнойное отделяемое, системные проявления',
+                      'Лёгкий целлюлит: флуклоксациллин 500 мг внутрь четыре раза в сутки 5–7 дней; при аллергии на пенициллин — доксициклин',
+                      'Тяжёлый/распространяющийся целлюлит: флуклоксациллин 1–2 г в/в четыре раза в сутки; покрытие против метициллинорезистентного Staphylococcus aureus (МРСА) при наличии факторов риска',
+                      'Биоплёнка: клинически не видна; подозревать при плато в заживлении, несмотря на правильный уход; лечение — антимикробные повязки + дебридмент',
+                      'Остеомиелит: редко при венозных язвах нижних конечностей (ВЯ); МРТ при подозрении; требует длительного курса антибиотиков ± хирургического дебридмента'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'venous-ulcers-001',
+                question_en: 'Proportion of leg ulcers due to venous disease?',
+                question_ru: 'Доля язв нижних конечностей венозного генеза?',
+                answer_en: '70–80%',
+                answer_ru: '70–80%'
+              },
+              {
+                id: 'venous-ulcers-002',
+                question_en: 'Classical site for venous leg ulcer?',
+                question_ru: 'Классическая локализация венозной язвы нижней конечности?',
+                answer_en: 'Medial gaiter area',
+                answer_ru: 'Медиальная гетра'
+              },
+              {
+                id: 'venous-ulcers-003',
+                question_en: 'ABI below which compression is contraindicated?',
+                question_ru: 'Лодыжечно-плечевой индекс (ЛПИ), ниже которого компрессия противопоказана?',
+                answer_en: '<0.5',
+                answer_ru: '<0,5'
+              },
+              {
+                id: 'venous-ulcers-004',
+                question_en: 'ABI range for modified compression?',
+                question_ru: 'Диапазон лодыжечно-плечевого индекса (ЛПИ) для модифицированной компрессии?',
+                answer_en: '0.5–0.8',
+                answer_ru: '0,5–0,8'
+              },
+              {
+                id: 'venous-ulcers-005',
+                question_en: 'Four-layer bandage ankle pressure target?',
+                question_ru: 'Целевое давление на лодыжке при четырёхслойном бинтовании?',
+                answer_en: '40 mmHg',
+                answer_ru: '40 мм рт. ст.'
+              },
+              {
+                id: 'venous-ulcers-006',
+                question_en: 'Four-layer compression: ulcer healing at 24 weeks?',
+                question_ru: 'Четырёхслойная компрессия: заживление язвы за 24 недели?',
+                answer_en: '~70%',
+                answer_ru: '~70%'
+              },
+              {
+                id: 'venous-ulcers-007',
+                question_en: 'TIME principle — T stands for?',
+                question_ru: 'Принцип TIME — T означает?',
+                answer_en: 'Tissue (debridement)',
+                answer_ru: 'Ткань (дебридмент)'
+              },
+              {
+                id: 'venous-ulcers-008',
+                question_en: 'High-exudate wound: dressing choice?',
+                question_ru: 'Рана с обильным экссудатом: выбор повязки?',
+                answer_en: 'Alginate or hydrofibre',
+                answer_ru: 'Альгинат или гидрофибра'
+              },
+              {
+                id: 'venous-ulcers-009',
+                question_en: 'Larval therapy organism used?',
+                question_ru: 'Организм, используемый в личиночной терапии?',
+                answer_en: 'Lucilia sericata',
+                answer_ru: 'Lucilia sericata'
+              },
+              {
+                id: 'venous-ulcers-010',
+                question_en: 'Pentoxifylline dose for VLU?',
+                question_ru: 'Доза пентоксифиллина при венозных язвах нижних конечностей (ВЯ)?',
+                answer_en: '400 mg three times daily',
+                answer_ru: '400 мг три раза в сутки'
+              },
+              {
+                id: 'venous-ulcers-011',
+                question_en: 'ESCHAR trial: venous surgery effect on healing rate?',
+                question_ru: 'Исследование ESCHAR: влияние операции на поверхностных венах на скорость заживления?',
+                answer_en: 'No improvement',
+                answer_ru: 'Без улучшения'
+              },
+              {
+                id: 'venous-ulcers-012',
+                question_en: 'ESCHAR trial: 4-year recurrence with surgery + compression vs compression alone?',
+                question_ru: 'Исследование ESCHAR: рецидивы за 4 года — операция + компрессия против только компрессии?',
+                answer_en: '31% vs 56%',
+                answer_ru: '31% против 56%'
+              },
+              {
+                id: 'venous-ulcers-013',
+                question_en: 'Atrophie blanche: significance?',
+                question_ru: 'Белая атрофия кожи: клиническое значение?',
+                answer_en: 'Severe microvascular disease',
+                answer_ru: 'Тяжёлое микрососудистое заболевание'
+              },
+              {
+                id: 'venous-ulcers-014',
+                question_en: 'VLU recurrence without compression at 3 years?',
+                question_ru: 'Рецидив венозных язв нижних конечностей (ВЯ) без компрессии за 3 года?',
+                answer_en: '>70%',
+                answer_ru: '>70%'
+              },
+              {
+                id: 'venous-ulcers-015',
+                question_en: 'Wound swab: when indicated in VLU?',
+                question_ru: 'Мазок из раны: когда показан при венозных язвах нижних конечностей (ВЯ)?',
+                answer_en: 'Signs of infection only',
+                answer_ru: 'Только при признаках инфекции'
+              },
+              {
+                id: 'venous-ulcers-016',
+                question_en: 'Mild cellulitis around VLU: antibiotic?',
+                question_ru: 'Лёгкий целлюлит вокруг венозной язвы нижней конечности (ВЯ): антибиотик?',
+                answer_en: 'Flucloxacillin 500 mg QDS',
+                answer_ru: 'Флуклоксациллин 500 мг четыре раза в сутки'
+              },
+              {
+                id: 'venous-ulcers-017',
+                question_en: 'Skin graft for VLU: prerequisite?',
+                question_ru: 'Кожная пластика при венозных язвах нижних конечностей (ВЯ): обязательное условие?',
+                answer_en: 'Adequate compression',
+                answer_ru: 'Достаточная компрессия'
+              },
+              {
+                id: 'venous-ulcers-018',
+                question_en: 'Compression hosiery class after VLU healing: recurrence reduction?',
+                question_ru: 'Компрессионный трикотаж после заживления венозной язвы нижней конечности (ВЯ): снижение рецидивов?',
+                answer_en: '70% → <30% at 5 years',
+                answer_ru: '70% → <30% за 5 лет'
+              },
+              {
+                id: 'venous-ulcers-019',
+                question_en: 'Non-advancing ulcer edge >3 months: action?',
+                question_ru: 'Незаживающий край язвы >3 месяцев: действие?',
+                answer_en: 'Biopsy',
+                answer_ru: 'Биопсия'
+              },
+              {
+                id: 'venous-ulcers-020',
+                question_en: 'Post-thrombotic syndrome cause of ulcer?',
+                question_ru: 'Причина язвы при посттромботическом синдроме (ПТС)?',
+                answer_en: 'Reflux + obstruction',
+                answer_ru: 'Рефлюкс + обструкция'
+              }
+            ]
+          },
+
+          // ── Topic: SVC Syndrome & Central Venous Obstruction ─────────────────
+          {
+            slug: 'svc-syndrome',
+            title_en: 'SVC Syndrome & Central Venous Obstruction',
+            title_ru: 'Синдром верхней полой вены и центральная венозная обструкция',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Superior vena cava (SVC) syndrome results from obstruction of blood flow through the SVC, causing elevated venous pressure in the head, neck, and upper extremities. Malignancy — most commonly lung cancer and lymphoma — accounts for 60–85% of cases. The remainder are benign, predominantly caused by intravascular devices (central venous catheters, pacemaker leads). Severity ranges from mild facial oedema to life-threatening airway compromise; management depends on aetiology, severity, and prognosis.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Aetiology',
+                    body: [
+                      'Malignant (60–85%): non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC) — most common; mediastinal lymphoma (Hodgkin and non-Hodgkin); metastatic disease; thymoma; germ cell tumours',
+                      'Benign (15–40%): central venous catheter (CVC) or pacemaker/ICD lead thrombosis — most common benign cause; fibrosing mediastinitis (histoplasmosis, TB); goitre; thoracic aortic aneurysm; post-radiation fibrosis',
+                      'Device-related thrombosis: incidence 1–4% per CVC; left-sided leads carry higher risk due to longer course across SVC',
+                      'SCLC: most likely to cause rapid-onset SVC syndrome due to rapid tumour growth'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Clinical Features',
+                    body: [
+                      'Facial oedema and plethora: worse on waking, improves on sitting upright',
+                      'Arm oedema: bilateral or ipsilateral to dominant vessel obstruction',
+                      'Dilated collateral veins: anterior chest wall, neck, upper arms — Pemberton\'s sign: raise arms above head → facial congestion worsens if thoracic inlet compression',
+                      'Dyspnoea: laryngeal/tracheal oedema; can progress to stridor',
+                      'Headache, visual disturbance, confusion: raised intracranial venous pressure',
+                      'Symptoms worsen on bending forward or lying flat'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Grading (Yu et al. / CTCAE)',
+                    body: [
+                      'Grade 0: asymptomatic radiological finding',
+                      'Grade 1: oedema of head/neck — does not require treatment',
+                      'Grade 2: moderate oedema — functional impairment; medication indicated',
+                      'Grade 3: severe oedema with cerebral and/or laryngeal oedema; urgent treatment required',
+                      'Grade 4: life-threatening — stridor, coma; emergency intervention'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Investigation',
+                    body: [
+                      'CT chest with IV contrast: first-line — identifies level and extent of obstruction, collateral pathways, and likely aetiology; assess airway',
+                      'MRI venography: alternative if contrast contraindicated; better soft tissue detail',
+                      'Histological diagnosis mandatory before chemotherapy/radiotherapy — CT-guided biopsy, bronchoscopy, or mediastinoscopy',
+                      'Do NOT delay tissue diagnosis in stable patients — treatment without diagnosis may mask lymphoma and prevent cure',
+                      'Venography: reserved for endovascular planning',
+                      'Echo: assess cardiac tamponade if pericardial effusion present'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Management — Malignant SVC Syndrome',
+                    body: [
+                      'Urgent measures: sit upright; dexamethasone 8–16 mg IV/oral — reduces peritumoral oedema; diuretics for oedema (limited evidence)',
+                      'Endovascular stenting: treatment of choice for rapid symptom relief regardless of aetiology; self-expanding metallic stent (SEMS) placed under fluoroscopy; symptom relief in >90% within 24–72 hours; preferred over radiotherapy for urgent relief',
+                      'SCLC: highly chemosensitive — systemic chemotherapy is definitive treatment; stent first if grade ≥3 then chemotherapy',
+                      'NSCLC: radiotherapy (external beam) or stenting + radiotherapy; stent provides faster symptom relief',
+                      'Lymphoma: chemotherapy ± radiotherapy; excellent response — stenting rarely needed',
+                      'Anticoagulation: recommended if thrombus present on imaging; LMWH (low molecular weight heparin) or DOAC (direct oral anticoagulant)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Management — Benign SVC Syndrome',
+                    body: [
+                      'Device-related thrombosis: remove device if no longer needed + anticoagulation; catheter-directed thrombolysis (CDT) for acute thrombosis (<14 days); stenting if thrombolysis fails or chronic',
+                      'Catheter-directed thrombolysis (CDT): urokinase or alteplase via catheter directly into thrombus; reduces clot burden; follow with angioplasty ± stenting',
+                      'Balloon venoplasty: for non-thrombotic stenosis (e.g., post-radiation, fibrosing mediastinitis); stenting if recurrent',
+                      'Surgical bypass: SVC bypass using PTFE or autologous vein (e.g., femoral vein or spiral saphenous graft) — reserved for benign disease where endovascular options fail or recur; good long-term patency in benign disease',
+                      'Fibrosing mediastinitis: most challenging — medical treatment with antifungals (histoplasmosis) may halt progression; endovascular stenting for symptomatic relief'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Prognosis',
+                    body: [
+                      'Malignant SVC syndrome: median survival 6 months (NSCLC), longer for SCLC and lymphoma if chemo-responsive',
+                      'Stent patency: ~90% at 1 year for malignant disease; re-stenting for in-stent re-stenosis',
+                      'Benign SVC syndrome: good long-term outcome after stenting or bypass; 5-year patency of surgical bypass ~70%'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Синдром верхней полой вены (СВПВ) возникает вследствие нарушения кровотока через верхнюю полую вену (ВПВ), что приводит к повышению венозного давления в области головы, шеи и верхних конечностей. Злокачественные новообразования — преимущественно рак лёгкого и лимфома — составляют 60–85% случаев. Оставшаяся часть носит доброкачественный характер и обусловлена преимущественно внутрисосудистыми устройствами (центральные венозные катетеры, электроды кардиостимуляторов). Тяжесть варьирует от умеренного отёка лица до угрожающей жизни обструкции дыхательных путей; тактика определяется этиологией, степенью тяжести и прогнозом.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Этиология',
+                    body: [
+                      'Злокачественная (60–85%): немелкоклеточный рак лёгкого (НМРЛ) и мелкоклеточный рак лёгкого (МРЛ) — наиболее частая причина; медиастинальная лимфома (болезнь Ходжкина и неходжкинская); метастатическое поражение; тимома; герминогенные опухоли',
+                      'Доброкачественная (15–40%): тромбоз центрального венозного катетера (ЦВК) или электродов кардиостимулятора/имплантируемого кардиовертера-дефибриллятора (ИКД) — наиболее частая доброкачественная причина; фиброзный медиастинит (гистоплазмоз, туберкулёз); зоб; аневризма грудной аорты; постлучевой фиброз',
+                      'Тромбоз, связанный с устройствами: частота 1–4% на каждый центральный венозный катетер (ЦВК); левосторонние электроды несут более высокий риск из-за более длинного пути через верхнюю полую вену (ВПВ)',
+                      'Мелкоклеточный рак лёгкого (МРЛ): наиболее вероятная причина быстро развивающегося синдрома верхней полой вены (СВПВ) вследствие быстрого роста опухоли'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клиническая картина',
+                    body: [
+                      'Отёк и полнокровие лица: усиливаются при пробуждении, уменьшаются в положении сидя',
+                      'Отёк рук: двусторонний или ипсилатеральный при доминирующей обструкции сосуда',
+                      'Расширенные коллатеральные вены: передняя грудная стенка, шея, верхние конечности; признак Пембертона: подъём рук выше головы → усиление застоя на лице при компрессии грудного выхода',
+                      'Одышка: отёк гортани/трахеи; может прогрессировать до стридора',
+                      'Головная боль, нарушения зрения, спутанность сознания: повышение внутричерепного венозного давления',
+                      'Симптомы усиливаются при наклоне вперёд или в положении лёжа'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Степени тяжести (шкала Ю и соавт. / CTCAE)',
+                    body: [
+                      'Степень 0: бессимптомная рентгенологическая находка',
+                      'Степень 1: отёк головы/шеи — лечения не требует',
+                      'Степень 2: умеренный отёк — функциональные нарушения; показана медикаментозная терапия',
+                      'Степень 3: выраженный отёк с отёком мозга и/или гортани; необходимо срочное лечение',
+                      'Степень 4: угроза жизни — стридор, кома; экстренное вмешательство'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Диагностика',
+                    body: [
+                      'КТ органов грудной клетки с в/в контрастом: первая линия — определяет уровень и протяжённость обструкции, коллатеральные пути и вероятную этиологию; оценка дыхательных путей',
+                      'МР-венография: альтернатива при противопоказаниях к контрасту; лучшая детализация мягких тканей',
+                      'Гистологическая верификация обязательна до начала химио-/лучевой терапии — КТ-биопсия, бронхоскопия или медиастиноскопия',
+                      'НЕ откладывать морфологическую диагностику у стабильных пациентов — лечение без диагноза может маскировать лимфому и препятствовать излечению',
+                      'Флебография: только при планировании эндоваскулярного вмешательства',
+                      'ЭхоКГ: исключить тампонаду сердца при наличии перикардиального выпота'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Лечение — злокачественный синдром верхней полой вены',
+                    body: [
+                      'Неотложные меры: положение сидя; дексаметазон 8–16 мг в/в или внутрь — уменьшает перитуморальный отёк; диуретики при отёке (ограниченные данные)',
+                      'Эндоваскулярное стентирование: метод выбора для быстрого купирования симптомов вне зависимости от этиологии; самораскрывающийся металлический стент (СРМС) под рентгеноскопическим контролем; облегчение симптомов >90% в течение 24–72 часов; предпочтительнее лучевой терапии для срочного облегчения',
+                      'Мелкоклеточный рак лёгкого (МРЛ): высокочувствителен к химиотерапии — системная химиотерапия является основным методом лечения; стентирование сначала при степени ≥3, затем химиотерапия',
+                      'Немелкоклеточный рак лёгкого (НМРЛ): лучевая терапия (дистанционная) или стентирование + лучевая терапия; стент обеспечивает более быстрое облегчение симптомов',
+                      'Лимфома: химиотерапия ± лучевая терапия; отличный ответ — стентирование редко необходимо',
+                      'Антикоагуляция: рекомендуется при наличии тромба на изображениях; низкомолекулярный гепарин (НМГ) или прямые оральные антикоагулянты (ПОАК)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Лечение — доброкачественный синдром верхней полой вены',
+                    body: [
+                      'Тромбоз, связанный с устройством: удаление устройства при отсутствии необходимости в нём + антикоагуляция; катетер-направленный тромболизис (КНТ) при остром тромбозе (<14 дней); стентирование при неудаче тромболизиса или хроническом поражении',
+                      'Катетер-направленный тромболизис (КНТ): урокиназа или альтеплаза через катетер непосредственно в тромб; уменьшает тромботическую нагрузку; далее ангиопластика ± стентирование',
+                      'Баллонная венопластика: при нетромботических стенозах (например, постлучевых, при фиброзном медиастините); стентирование при рецидиве',
+                      'Хирургическое шунтирование верхней полой вены (ВПВ): с использованием политетрафторэтилена (ПТФЭ) или аутовены (бедренная вена или спиральный трансплантат из большой подкожной вены (БПВ)) — резерв при доброкачественном поражении при неэффективности или рецидиве эндоваскулярных методов; хорошая долгосрочная проходимость',
+                      'Фиброзный медиастинит: наиболее сложный случай — противогрибковые препараты (гистоплазмоз) могут замедлить прогрессирование; эндоваскулярное стентирование для симптоматического облегчения'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Прогноз',
+                    body: [
+                      'Злокачественный синдром верхней полой вены (СВПВ): медиана выживаемости 6 месяцев (немелкоклеточный рак лёгкого — НМРЛ), дольше при мелкоклеточном раке лёгкого (МРЛ) и химиочувствительной лимфоме',
+                      'Проходимость стента: ~90% в течение 1 года при злокачественном поражении; ре-стентирование при рестенозе в стенте',
+                      'Доброкачественный синдром верхней полой вены (СВПВ): благоприятный долгосрочный исход после стентирования или шунтирования; 5-летняя проходимость хирургического шунта ~70%'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'svc-syndrome-001',
+                question_en: 'Most common cause of SVC syndrome overall?',
+                question_ru: 'Наиболее частая причина синдрома верхней полой вены (СВПВ) в целом?',
+                answer_en: 'Lung cancer',
+                answer_ru: 'Рак лёгкого'
+              },
+              {
+                id: 'svc-syndrome-002',
+                question_en: 'Proportion of SVC syndrome caused by malignancy?',
+                question_ru: 'Доля злокачественных причин синдрома верхней полой вены (СВПВ)?',
+                answer_en: '60–85%',
+                answer_ru: '60–85%'
+              },
+              {
+                id: 'svc-syndrome-003',
+                question_en: 'Most common benign cause of SVC syndrome?',
+                question_ru: 'Наиболее частая доброкачественная причина синдрома верхней полой вены (СВПВ)?',
+                answer_en: 'CVC / pacemaker lead thrombosis',
+                answer_ru: 'Тромбоз центрального венозного катетера (ЦВК) / электрода кардиостимулятора'
+              },
+              {
+                id: 'svc-syndrome-004',
+                question_en: 'Pemberton\'s sign: how to elicit?',
+                question_ru: 'Признак Пембертона: как вызвать?',
+                answer_en: 'Raise arms above head',
+                answer_ru: 'Поднять руки выше головы'
+              },
+              {
+                id: 'svc-syndrome-005',
+                question_en: 'First-line imaging for SVC syndrome?',
+                question_ru: 'Первая линия визуализации при синдроме верхней полой вены (СВПВ)?',
+                answer_en: 'CT chest with contrast',
+                answer_ru: 'КТ грудной клетки с контрастом'
+              },
+              {
+                id: 'svc-syndrome-006',
+                question_en: 'Treatment of choice for rapid symptom relief in SVC syndrome?',
+                question_ru: 'Метод выбора для быстрого купирования симптомов синдрома верхней полой вены (СВПВ)?',
+                answer_en: 'Endovascular stenting',
+                answer_ru: 'Эндоваскулярное стентирование'
+              },
+              {
+                id: 'svc-syndrome-007',
+                question_en: 'Stent symptom relief: time to effect?',
+                question_ru: 'Стентирование: время до наступления эффекта?',
+                answer_en: '24–72 hours',
+                answer_ru: '24–72 часа'
+              },
+              {
+                id: 'svc-syndrome-008',
+                question_en: 'SCLC SVC syndrome: definitive treatment?',
+                question_ru: 'Синдром верхней полой вены (СВПВ) при мелкоклеточном раке лёгкого (МРЛ): основное лечение?',
+                answer_en: 'Systemic chemotherapy',
+                answer_ru: 'Системная химиотерапия'
+              },
+              {
+                id: 'svc-syndrome-009',
+                question_en: 'Steroid used for urgent SVC oedema?',
+                question_ru: 'Стероид для срочного лечения отёка при синдроме верхней полой вены (СВПВ)?',
+                answer_en: 'Dexamethasone',
+                answer_ru: 'Дексаметазон'
+              },
+              {
+                id: 'svc-syndrome-010',
+                question_en: 'Why obtain tissue diagnosis before treating malignant SVC syndrome?',
+                question_ru: 'Почему необходима морфологическая верификация до лечения злокачественного синдрома верхней полой вены (СВПВ)?',
+                answer_en: 'Prevent masking curable lymphoma',
+                answer_ru: 'Не маскировать излечимую лимфому'
+              },
+              {
+                id: 'svc-syndrome-011',
+                question_en: 'Grade 4 SVC syndrome features?',
+                question_ru: 'Признаки синдрома верхней полой вены (СВПВ) 4 степени?',
+                answer_en: 'Stridor or coma',
+                answer_ru: 'Стридор или кома'
+              },
+              {
+                id: 'svc-syndrome-012',
+                question_en: 'Device-related SVC thrombosis <14 days: treatment?',
+                question_ru: 'Тромбоз верхней полой вены (ВПВ), связанный с устройством, <14 дней: лечение?',
+                answer_en: 'Catheter-directed thrombolysis',
+                answer_ru: 'Катетер-направленный тромболизис (КНТ)'
+              },
+              {
+                id: 'svc-syndrome-013',
+                question_en: 'Surgical SVC bypass conduit options?',
+                question_ru: 'Варианты кондуита для хирургического шунтирования верхней полой вены (ВПВ)?',
+                answer_en: 'PTFE or autologous vein',
+                answer_ru: 'Политетрафторэтилен (ПТФЭ) или аутовена'
+              },
+              {
+                id: 'svc-syndrome-014',
+                question_en: 'Benign SVC bypass 5-year patency?',
+                question_ru: '5-летняя проходимость шунта при доброкачественном синдроме верхней полой вены (СВПВ)?',
+                answer_en: '~70%',
+                answer_ru: '~70%'
+              },
+              {
+                id: 'svc-syndrome-015',
+                question_en: 'Fibrosing mediastinitis: most common infectious cause?',
+                question_ru: 'Фиброзный медиастинит: наиболее частая инфекционная причина?',
+                answer_en: 'Histoplasmosis',
+                answer_ru: 'Гистоплазмоз'
+              },
+              {
+                id: 'svc-syndrome-016',
+                question_en: 'Malignant SVC stent 1-year patency?',
+                question_ru: '1-летняя проходимость стента при злокачественном синдроме верхней полой вены (СВПВ)?',
+                answer_en: '~90%',
+                answer_ru: '~90%'
+              },
+              {
+                id: 'svc-syndrome-017',
+                question_en: 'Malignant SVC syndrome (NSCLC) median survival?',
+                question_ru: 'Медиана выживаемости при злокачественном синдроме верхней полой вены (СВПВ) (немелкоклеточный рак лёгкого — НМРЛ)?',
+                answer_en: '~6 months',
+                answer_ru: '~6 месяцев'
+              },
+              {
+                id: 'svc-syndrome-018',
+                question_en: 'Pericardial effusion with SVC syndrome: investigation?',
+                question_ru: 'Перикардиальный выпот при синдроме верхней полой вены (СВПВ): исследование?',
+                answer_en: 'Echocardiography',
+                answer_ru: 'Эхокардиография (ЭхоКГ)'
+              },
+              {
+                id: 'svc-syndrome-019',
+                question_en: 'Lymphoma SVC syndrome: preferred treatment?',
+                question_ru: 'Синдром верхней полой вены (СВПВ) при лимфоме: предпочтительное лечение?',
+                answer_en: 'Chemotherapy ± radiotherapy',
+                answer_ru: 'Химиотерапия ± лучевая терапия'
+              },
+              {
+                id: 'svc-syndrome-020',
+                question_en: 'Non-thrombotic SVC stenosis: endovascular treatment?',
+                question_ru: 'Нетромботический стеноз верхней полой вены (ВПВ): эндоваскулярное лечение?',
+                answer_en: 'Balloon venoplasty ± stenting',
+                answer_ru: 'Баллонная венопластика ± стентирование'
+              }
+            ]
+          }
+
+        ]
+      },
+
+      // ── PHARMACOLOGY & CRITICAL CARE ─────────────────────────────────────────
+      {
+        slug: 'pharmacology-critical-care',
+        title_en: 'Pharmacology & Critical Care',
+        title_ru: 'Фармакология и интенсивная терапия',
+        topics: [
+
+          // ── Topic: Anticoagulation ───────────────────────────────────────────
+          {
+            slug: 'anticoagulation',
+            title_en: 'Anticoagulation (Heparin, LMWH, Warfarin, DOACs, Reversal Agents)',
+            title_ru: 'Антикоагуляция (гепарин, НМГ, варфарин, ПОАК, антидоты)',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Anticoagulation is central to vascular and cardiac surgery — for prevention and treatment of venous thromboembolism (VTE), management of atrial fibrillation (AF), bridging peri-operatively, and during endovascular and cardiac procedures. The main classes are: unfractionated heparin (UFH), low molecular weight heparin (LMWH), vitamin K antagonists (VKA — warfarin), direct oral anticoagulants (DOACs), and parenteral direct thrombin inhibitors. Each has distinct mechanisms, monitoring requirements, and reversal agents.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Unfractionated Heparin (UFH)',
+                    body: [
+                      'Mechanism: binds antithrombin III (AT III) → irreversibly inhibits thrombin (factor IIa) and factor Xa; also inhibits IXa, XIa, XIIa',
+                      'Route: IV infusion (therapeutic) or SC (prophylactic); immediate onset',
+                      'Monitoring: activated partial thromboplastin time (APTT) — target 1.5–2.5× control; or activated clotting time (ACT) during procedures (target >250 s for PCI, >300 s for bypass)',
+                      'Intraoperative dose: 70–100 IU/kg bolus for EVT; 300 IU/kg for cardiopulmonary bypass (CPB)',
+                      'Reversal: protamine sulphate 1 mg per 100 IU heparin given in last 2–3 hours; risk of protamine reaction (hypotension, pulmonary hypertension) in fish-allergic or prior protamine-exposed patients',
+                      'Heparin-induced thrombocytopenia (HIT): platelet drop >50% after 5–10 days → stop all heparin; diagnose with 4T score + anti-PF4 antibody (ELISA); treat with argatroban or fondaparinux',
+                      'HIT type II: immune-mediated; thrombotic complications; mortality ~10–20% if untreated'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Low Molecular Weight Heparin (LMWH)',
+                    body: [
+                      'Mechanism: predominantly inhibits factor Xa > thrombin (IIa); anti-Xa:anti-IIa ratio ~4:1 (enoxaparin)',
+                      'Examples: enoxaparin (Clexane), dalteparin (Fragmin), tinzaparin (Innohep)',
+                      'Route: subcutaneous (SC); predictable pharmacokinetics; once or twice daily dosing',
+                      'Monitoring: not routinely required; anti-Xa level in renal impairment, pregnancy, extremes of weight',
+                      'Therapeutic dose (enoxaparin): 1 mg/kg SC twice daily or 1.5 mg/kg SC once daily',
+                      'VTE prophylaxis: enoxaparin 40 mg SC once daily (20 mg if eGFR <30)',
+                      'Renal clearance: accumulates in CKD (eGFR <30) — use UFH instead or monitor anti-Xa',
+                      'Reversal: protamine partially reverses (neutralises anti-IIa, ~60% anti-Xa activity); no complete reversal agent'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Warfarin (Vitamin K Antagonist)',
+                    body: [
+                      'Mechanism: inhibits vitamin K epoxide reductase → blocks γ-carboxylation of factors II, VII, IX, X and proteins C and S',
+                      'Monitoring: INR (international normalised ratio); therapeutic range 2.0–3.0 for most indications; 2.5–3.5 for mechanical mitral valve',
+                      'Onset: 3–5 days (factor VII depleted first — shortest half-life); full effect 5–7 days',
+                      'Interactions: extensive — potentiated by amiodarone, metronidazole, fluconazole, NSAIDs; inhibited by rifampicin, carbamazepine, alcohol (chronic)',
+                      'Reversal for urgent surgery: vitamin K 5–10 mg IV (effect in 6–12 h) + four-factor prothrombin complex concentrate (4F-PCC, e.g., Beriplex) for immediate reversal',
+                      'Reversal for life-threatening bleeding: 4F-PCC + vitamin K IV',
+                      'Bridging: for high-risk patients (mechanical valves, AF with high CHA₂DS₂-VASc) peri-operatively — LMWH while warfarin held; evidence for bridging in AF is weak (BRIDGE trial: no benefit, more bleeding)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Direct Oral Anticoagulants (DOACs)',
+                    body: [
+                      'Direct factor Xa inhibitors: rivaroxaban, apixaban, edoxaban — inhibit free and clot-bound Xa directly',
+                      'Direct thrombin (IIa) inhibitor: dabigatran — directly inhibits thrombin',
+                      'Advantages over warfarin: fixed dosing, no routine monitoring, fewer interactions, faster onset/offset, lower intracranial haemorrhage rate',
+                      'Monitoring: not routinely required; anti-Xa level (for Xa inhibitors) or thrombin time/ecarin clotting time (for dabigatran) in emergencies',
+                      'Renal excretion: dabigatran 80% renal — contraindicated if eGFR <30; rivaroxaban/apixaban less renally dependent',
+                      'Reversal: idarucizumab (Praxbind) — monoclonal antibody fragment; reverses dabigatran immediately; andexanet alfa — reverses Xa inhibitors (rivaroxaban, apixaban); 4F-PCC: off-label but used for Xa inhibitors when andexanet not available'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Parenteral Direct Thrombin Inhibitors',
+                    body: [
+                      'Argatroban: IV direct thrombin inhibitor; hepatic metabolism (use in renal failure); monitored by APTT; drug of choice for HIT',
+                      'Bivalirudin: IV; used during PCI and cardiac surgery as heparin alternative in HIT; short half-life (~25 min); monitored by ACT',
+                      'Fondaparinux: selective anti-Xa; SC; no HIT risk (does not bind PF4); used for VTE prophylaxis/treatment and as HIT alternative'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Peri-operative Management',
+                    body: [
+                      'Warfarin: stop 5 days before elective surgery; check INR day before; target INR <1.5 for most procedures',
+                      'DOACs: stop 24–48 h before low-bleeding-risk procedures; 48–72 h before high-risk (renal function dependent for dabigatran)',
+                      'LMWH bridging: give last dose 24 h before surgery; restart 24–48 h post-op when haemostasis secure',
+                      'Emergency reversal — heparin: protamine; warfarin: 4F-PCC + vit K; dabigatran: idarucizumab; Xa inhibitors: andexanet alfa or 4F-PCC',
+                      'Re-starting anticoagulation post-op: balance bleeding vs thrombosis risk; most guidelines recommend 24–72 h for VTE prophylaxis, longer for therapeutic'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Антикоагуляция занимает центральное место в сосудистой и кардиохирургии — для профилактики и лечения венозной тромбоэмболии (ВТЭ), ведения фибрилляции предсердий (ФП), периоперационного перехода (bridging) и при проведении эндоваскулярных и кардиохирургических вмешательств. Основные классы: нефракционированный гепарин (НФГ), низкомолекулярный гепарин (НМГ), антагонисты витамина K (АВК — варфарин), прямые оральные антикоагулянты (ПОАК) и парентеральные прямые ингибиторы тромбина. Каждый из них имеет свой механизм действия, требования к мониторингу и антидоты.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Нефракционированный гепарин (НФГ)',
+                    body: [
+                      'Механизм: связывается с антитромбином III (АТ III) → необратимо ингибирует тромбин (фактор IIa) и фактор Xa; также ингибирует IXa, XIa, XIIa',
+                      'Путь введения: в/в инфузия (терапевтическая) или п/к (профилактическая); немедленное начало действия',
+                      'Мониторинг: активированное частичное тромбопластиновое время (АЧТВ) — целевой показатель 1,5–2,5× контроль; или активированное время свёртывания (АВС) во время процедур (>250 с при ЧКВ, >300 с при искусственном кровообращении — ИК)',
+                      'Интраоперационная доза: 70–100 МЕ/кг болюс при эндоваскулярных вмешательствах; 300 МЕ/кг при искусственном кровообращении (ИК)',
+                      'Антидот: протамина сульфат 1 мг на 100 МЕ гепарина, введённого за последние 2–3 часа; риск реакции на протамин (гипотензия, лёгочная гипертензия) у пациентов с аллергией на рыбу или ранее получавших протамин',
+                      'Гепарин-индуцированная тромбоцитопения (ГИТ): снижение тромбоцитов >50% через 5–10 дней → отменить весь гепарин; диагностика по шкале 4T + антитела к тромбоцитарному фактору 4 (ТФ-4) методом ИФА (ELISA); лечение: аргатробан или фондапаринукс',
+                      'ГИТ II типа: иммуноопосредованная; тромботические осложнения; смертность ~10–20% без лечения'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Низкомолекулярный гепарин (НМГ)',
+                    body: [
+                      'Механизм: преимущественно ингибирует фактор Xa > тромбин (IIa); соотношение анти-Xa:анти-IIa активности ~4:1 (эноксапарин)',
+                      'Примеры: эноксапарин (Клексан), далтепарин (Фрагмин), тинзапарин (Иннохеп)',
+                      'Путь введения: подкожно (п/к); предсказуемая фармакокинетика; введение один или два раза в сутки',
+                      'Мониторинг: рутинно не требуется; уровень анти-Xa при почечной недостаточности, беременности, крайних значениях массы тела',
+                      'Терапевтическая доза (эноксапарин): 1 мг/кг п/к дважды в сутки или 1,5 мг/кг п/к один раз в сутки',
+                      'Профилактика венозной тромбоэмболии (ВТЭ): эноксапарин 40 мг п/к один раз в сутки (20 мг при скорости клубочковой фильтрации — СКФ <30)',
+                      'Почечный клиренс: накапливается при хронической болезни почек (ХБП) (СКФ <30) — применять нефракционированный гепарин (НФГ) или мониторировать уровень анти-Xa',
+                      'Антидот: протамин частично нейтрализует (нейтрализует анти-IIa активность, ~60% анти-Xa активности); полного антидота нет'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Варфарин (антагонист витамина K)',
+                    body: [
+                      'Механизм: ингибирует эпоксид-редуктазу витамина K → блокирует γ-карбоксилирование факторов II, VII, IX, X и протеинов C и S',
+                      'Мониторинг: международное нормализованное отношение (МНО); терапевтический диапазон 2,0–3,0 при большинстве показаний; 2,5–3,5 при механическом митральном клапане',
+                      'Начало действия: 3–5 дней (первым истощается фактор VII — наименьший период полувыведения); полный эффект через 5–7 дней',
+                      'Взаимодействия: многочисленные — усиливается амиодароном, метронидазолом, флуконазолом, нестероидными противовоспалительными средствами (НПВС); ослабляется рифампицином, карбамазепином, хроническим употреблением алкоголя',
+                      'Нейтрализация при экстренной операции: витамин K 5–10 мг в/в (эффект через 6–12 ч) + концентрат четырёхфакторного протромбинового комплекса (КПК-4Ф, например, Берипекс) для немедленного устранения антикоагуляции',
+                      'Нейтрализация при угрожающем жизни кровотечении: КПК-4Ф + витамин K в/в',
+                      'Периоперационный переход (bridging): для пациентов высокого риска (механические клапаны, фибрилляция предсердий — ФП с высоким индексом CHA₂DS₂-VASc) — низкомолекулярный гепарин (НМГ) на время отмены варфарина; эффективность bridging при ФП не доказана (исследование BRIDGE: нет пользы, больше кровотечений)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Прямые оральные антикоагулянты (ПОАК)',
+                    body: [
+                      'Прямые ингибиторы фактора Xa: ривароксабан, апиксабан, эдоксабан — напрямую ингибируют свободный и связанный с тромбом Xa',
+                      'Прямой ингибитор тромбина (IIa): дабигатран — непосредственно ингибирует тромбин',
+                      'Преимущества перед варфарином: фиксированная доза, рутинный мониторинг не требуется, меньше взаимодействий, более быстрое начало/окончание действия, более низкая частота внутричерепных кровоизлияний',
+                      'Мониторинг: рутинно не требуется; уровень анти-Xa (для ингибиторов Xa) или тромбиновое время/время свёртывания по экарину (для дабигатрана) — при экстренных ситуациях',
+                      'Почечная экскреция: дабигатран 80% почечный — противопоказан при СКФ <30; ривароксабан/апиксабан менее зависимы от почечной функции',
+                      'Антидоты: идаруцизумаб (Праксбайнд) — фрагмент моноклонального антитела; немедленно нейтрализует дабигатран; андексанет альфа — нейтрализует ингибиторы Xa (ривароксабан, апиксабан); КПК-4Ф: применяется вне инструкции для ингибиторов Xa при отсутствии андексанета'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Парентеральные прямые ингибиторы тромбина',
+                    body: [
+                      'Аргатробан: в/в прямой ингибитор тромбина; печёночный метаболизм (применять при почечной недостаточности); мониторинг по активированному частичному тромбопластиновому времени (АЧТВ); препарат выбора при гепарин-индуцированной тромбоцитопении (ГИТ)',
+                      'Бивалирудин: в/в; применяется при чрескожном коронарном вмешательстве (ЧКВ) и кардиохирургии как альтернатива гепарину при ГИТ; короткий период полувыведения (~25 мин); мониторинг по активированному времени свёртывания (АВС)',
+                      'Фондапаринукс: селективный ингибитор анти-Xa; п/к; не вызывает ГИТ (не связывается с тромбоцитарным фактором 4 — ТФ-4); применяется для профилактики/лечения венозной тромбоэмболии (ВТЭ) и как альтернатива при ГИТ'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Периоперационное ведение',
+                    body: [
+                      'Варфарин: отменить за 5 дней до плановой операции; проверить МНО накануне; целевой МНО <1,5 для большинства вмешательств',
+                      'Прямые оральные антикоагулянты (ПОАК): отменить за 24–48 ч до процедур с низким риском кровотечения; за 48–72 ч до высокорискованных (в зависимости от почечной функции для дабигатрана)',
+                      'Bridging с НМГ: последняя доза за 24 ч до операции; возобновить через 24–48 ч после операции при надёжном гемостазе',
+                      'Экстренная нейтрализация: НФГ — протамин; варфарин — КПК-4Ф + витамин K; дабигатран — идаруцизумаб; ингибиторы Xa — андексанет альфа или КПК-4Ф',
+                      'Возобновление антикоагуляции после операции: баланс риска кровотечения и тромбоза; большинство руководств рекомендуют 24–72 ч для профилактики ВТЭ, дольше — для терапевтических доз'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'anticoagulation-001',
+                question_en: 'UFH mechanism of action?',
+                question_ru: 'Механизм действия нефракционированного гепарина (НФГ)?',
+                answer_en: 'Binds AT III → inhibits IIa + Xa',
+                answer_ru: 'Связывает АТ III → ингибирует IIa + Xa'
+              },
+              {
+                id: 'anticoagulation-002',
+                question_en: 'UFH monitoring test?',
+                question_ru: 'Тест мониторинга нефракционированного гепарина (НФГ)?',
+                answer_en: 'APTT (target 1.5–2.5× control)',
+                answer_ru: 'АЧТВ (целевое 1,5–2,5× контроль)'
+              },
+              {
+                id: 'anticoagulation-003',
+                question_en: 'UFH reversal agent?',
+                question_ru: 'Антидот нефракционированного гепарина (НФГ)?',
+                answer_en: 'Protamine sulphate',
+                answer_ru: 'Протамина сульфат'
+              },
+              {
+                id: 'anticoagulation-004',
+                question_en: 'HIT diagnosis: score + confirmatory test?',
+                question_ru: 'Диагностика гепарин-индуцированной тромбоцитопении (ГИТ): шкала + подтверждающий тест?',
+                answer_en: '4T score + anti-PF4 ELISA',
+                answer_ru: 'Шкала 4T + антитела к ТФ-4 (ИФА)'
+              },
+              {
+                id: 'anticoagulation-005',
+                question_en: 'HIT: platelet drop threshold and timing?',
+                question_ru: 'Гепарин-индуцированная тромбоцитопения (ГИТ): порог снижения тромбоцитов и сроки?',
+                answer_en: '>50% drop, days 5–10',
+                answer_ru: 'Снижение >50%, дни 5–10'
+              },
+              {
+                id: 'anticoagulation-006',
+                question_en: 'HIT treatment: anticoagulant of choice?',
+                question_ru: 'Лечение гепарин-индуцированной тромбоцитопении (ГИТ): антикоагулянт выбора?',
+                answer_en: 'Argatroban or fondaparinux',
+                answer_ru: 'Аргатробан или фондапаринукс'
+              },
+              {
+                id: 'anticoagulation-007',
+                question_en: 'LMWH: main factor inhibited?',
+                question_ru: 'Низкомолекулярный гепарин (НМГ): основной ингибируемый фактор?',
+                answer_en: 'Factor Xa',
+                answer_ru: 'Фактор Xa'
+              },
+              {
+                id: 'anticoagulation-008',
+                question_en: 'LMWH: when to monitor anti-Xa?',
+                question_ru: 'Низкомолекулярный гепарин (НМГ): когда мониторировать анти-Xa?',
+                answer_en: 'Renal impairment / pregnancy',
+                answer_ru: 'Почечная недостаточность / беременность'
+              },
+              {
+                id: 'anticoagulation-009',
+                question_en: 'Enoxaparin therapeutic dose (twice daily)?',
+                question_ru: 'Терапевтическая доза эноксапарина (два раза в сутки)?',
+                answer_en: '1 mg/kg SC BD',
+                answer_ru: '1 мг/кг п/к дважды в сутки'
+              },
+              {
+                id: 'anticoagulation-010',
+                question_en: 'Warfarin mechanism?',
+                question_ru: 'Механизм действия варфарина?',
+                answer_en: 'Inhibits vitamin K epoxide reductase',
+                answer_ru: 'Ингибирует эпоксид-редуктазу витамина K'
+              },
+              {
+                id: 'anticoagulation-011',
+                question_en: 'Warfarin target INR for most indications?',
+                question_ru: 'Целевое МНО при большинстве показаний к варфарину?',
+                answer_en: '2.0–3.0',
+                answer_ru: '2,0–3,0'
+              },
+              {
+                id: 'anticoagulation-012',
+                question_en: 'Warfarin reversal for emergency surgery?',
+                question_ru: 'Нейтрализация варфарина при экстренной операции?',
+                answer_en: '4F-PCC + vitamin K IV',
+                answer_ru: 'КПК-4Ф + витамин K в/в'
+              },
+              {
+                id: 'anticoagulation-013',
+                question_en: 'BRIDGE trial conclusion on warfarin bridging in AF?',
+                question_ru: 'Вывод исследования BRIDGE о периоперационном переходе (bridging) при фибрилляции предсердий (ФП)?',
+                answer_en: 'No benefit, more bleeding',
+                answer_ru: 'Нет пользы, больше кровотечений'
+              },
+              {
+                id: 'anticoagulation-014',
+                question_en: 'Dabigatran reversal agent?',
+                question_ru: 'Антидот дабигатрана?',
+                answer_en: 'Idarucizumab',
+                answer_ru: 'Идаруцизумаб'
+              },
+              {
+                id: 'anticoagulation-015',
+                question_en: 'Rivaroxaban / apixaban reversal agent?',
+                question_ru: 'Антидот ривароксабана / апиксабана?',
+                answer_en: 'Andexanet alfa',
+                answer_ru: 'Андексанет альфа'
+              },
+              {
+                id: 'anticoagulation-016',
+                question_en: 'Dabigatran: contraindicated below which eGFR?',
+                question_ru: 'Дабигатран: противопоказан при скорости клубочковой фильтрации (СКФ) ниже какого значения?',
+                answer_en: 'eGFR <30 mL/min',
+                answer_ru: 'СКФ <30 мл/мин'
+              },
+              {
+                id: 'anticoagulation-017',
+                question_en: 'Argatroban: clinical use?',
+                question_ru: 'Аргатробан: клиническое применение?',
+                answer_en: 'HIT anticoagulation',
+                answer_ru: 'Антикоагуляция при гепарин-индуцированной тромбоцитопении (ГИТ)'
+              },
+              {
+                id: 'anticoagulation-018',
+                question_en: 'Fondaparinux: why no HIT risk?',
+                question_ru: 'Фондапаринукс: почему нет риска гепарин-индуцированной тромбоцитопении (ГИТ)?',
+                answer_en: 'Does not bind PF4',
+                answer_ru: 'Не связывается с тромбоцитарным фактором 4 (ТФ-4)'
+              },
+              {
+                id: 'anticoagulation-019',
+                question_en: 'Warfarin: stop how many days before elective surgery?',
+                question_ru: 'Варфарин: за сколько дней отменить до плановой операции?',
+                answer_en: '5 days',
+                answer_ru: '5 дней'
+              },
+              {
+                id: 'anticoagulation-020',
+                question_en: 'ACT target during cardiopulmonary bypass?',
+                question_ru: 'Целевое активированное время свёртывания (АВС) при искусственном кровообращении (ИК)?',
+                answer_en: '>300 seconds',
+                answer_ru: '>300 секунд'
+              }
+            ]
+          }
+
+        ]
       }
     ]
   }
