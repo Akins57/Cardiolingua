@@ -5862,6 +5862,295 @@ export const DATA = [
                 answer_ru: 'Баллонная венопластика ± стентирование'
               }
             ]
+          },
+
+          // ── Topic: DVT & PE ───────────────────────────────────────────────────
+          {
+            slug: 'dvt-pe',
+            title_en: 'Deep Vein Thrombosis & Pulmonary Embolism',
+            title_ru: 'Тромбоз глубоких вен (ТГВ) и тромбоэмболия лёгочной артерии (ТЭЛА)',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Venous thromboembolism (VTE) encompasses deep vein thrombosis (DVT) and pulmonary embolism (PE). DVT is thrombus formation within the deep venous system (most commonly lower limb); PE results from embolisation of thrombus to the pulmonary circulation. VTE affects ~1–3 per 1,000 per year; incidence doubles with each decade after 40. Untreated proximal DVT carries ~50% risk of PE. Case fatality of massive PE is 30–50%. Understanding risk stratification, diagnosis, and evidence-based treatment is central to vascular and cardiac surgical practice.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology — Virchow\'s Triad',
+                    body: [
+                      'Stasis: immobility, heart failure, venous obstruction, pregnancy — reduces venous return and creates turbulence-free laminar flow favouring clot formation',
+                      'Endothelial injury: surgery, trauma, central venous catheters, inflammation — exposes subendothelial collagen and tissue factor → platelet adhesion and coagulation cascade activation',
+                      'Hypercoagulability: inherited thrombophilias (Factor V Leiden — most common inherited; Prothrombin G20210A; Protein C/S deficiency; antithrombin III deficiency) or acquired (malignancy, antiphospholipid syndrome, OCP, HRT, pregnancy)',
+                      'DVT classification: proximal (iliac, femoral, popliteal — highest PE risk) vs distal (calf); upper limb (axillary/subclavian — effort thrombosis / Paget-Schroetter syndrome in young athletes)',
+                      'Provoked vs unprovoked: provoked = identifiable transient risk factor (surgery, trauma, hospitalisation, OCP); unprovoked = no identifiable cause → higher recurrence risk'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'DVT — Diagnosis',
+                    body: [
+                      'Wells score (pre-test probability): active cancer +1; paralysis/cast +1; bedridden >3 days or surgery ≤12 weeks +1; localised tenderness +1; entire leg swollen +1; calf >3 cm difference +1; pitting oedema +1; collateral superficials +1; previous DVT +1; alternative diagnosis as likely −2. Score ≥2: high probability; <2: low/moderate probability',
+                      'D-dimer: highly sensitive (>95%), low specificity; if low pre-test probability AND D-dimer negative → DVT excluded; do NOT use if high pre-test probability or in hospital inpatients',
+                      'Duplex ultrasound: gold standard; non-compressibility of vein = DVT; assess extent and chronicity; sensitivity >95% for proximal DVT, ~75% for distal',
+                      'CT venography / MRI: for central (iliac, IVC) or pelvic DVT not seen on USS; useful in May-Thurner syndrome workup',
+                      'Phlegmasia cerulea dolens: massive ilio-femoral DVT with venous gangrene risk; limb blue, painful, oedematous — surgical emergency'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'DVT — Treatment',
+                    body: [
+                      'Anticoagulation — start immediately on clinical suspicion (do not await imaging if high probability): DOACs preferred (NICE/ESC/ACCP): rivaroxaban 15 mg BD × 21 days then 20 mg OD; OR apixaban 10 mg BD × 7 days then 5 mg BD',
+                      'LMWH (enoxaparin 1.5 mg/kg SC OD or 1 mg/kg BD) + warfarin (INR 2–3): if DOAC contraindicated (severe renal impairment, antiphospholipid syndrome); LMWH monotherapy preferred in active cancer (CLOT trial)',
+                      'Duration: provoked (transient risk factor) = 3 months; unprovoked first episode = ≥3 months, consider extended; second unprovoked = indefinite; cancer-associated = indefinite until cancer resolved',
+                      'IVC filter: if anticoagulation absolutely contraindicated with proximal DVT/PE; use retrievable filter; does NOT reduce PE mortality; increases DVT recurrence',
+                      'Catheter-directed thrombolysis (CDT): acute massive ilio-femoral DVT or phlegmasia; ATTRACT trial (2017): CDT reduced PTS severity but not overall incidence — use selectively in young, fit patients with severe symptoms within 14 days',
+                      'Compression: graduated compression stockings (30–40 mmHg) post-DVT; SOX trial (2014): did not prevent PTS — ACCP/NICE no longer routinely recommend for PTS prevention',
+                      'Post-thrombotic syndrome (PTS): chronic venous insufficiency from valve damage; occurs in 20–50% after DVT; Villalta score used to grade severity (0–4 per symptom/sign; ≥5 = PTS)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'PE — Classification & Diagnosis',
+                    body: [
+                      'Massive (high-risk PE): haemodynamic instability — SBP <90 mmHg or drop ≥40 mmHg for >15 min, cardiac arrest, or obstructive shock; requires immediate reperfusion',
+                      'Submassive (intermediate-risk): haemodynamically stable + RV dysfunction on echo/CT + elevated troponin or BNP/NT-proBNP; monitor closely for deterioration',
+                      'Low-risk PE: haemodynamically stable, no RV dysfunction, normal biomarkers; PESI score class I–II → outpatient treatment (HESTIA criteria)',
+                      'Wells PE score: DVT signs/symptoms +3; PE most likely diagnosis +3; HR >100 +1.5; immobilisation/surgery ≤4 weeks +1.5; prior DVT/PE +1.5; haemoptysis +1; malignancy +1. ≤4 = PE unlikely; >4 = PE likely',
+                      'CT pulmonary angiography (CTPA): gold standard — sensitivity/specificity >95%; provides RV:LV ratio for risk stratification',
+                      'V/Q scan: when CTPA contraindicated (renal failure, contrast allergy, pregnancy); normal V/Q excludes PE; high-probability = segmental defects with normal ventilation',
+                      'ECG: sinus tachycardia (most common); S1Q3T3 (10–15% — right heart strain pattern); new right bundle branch block (RBBB); right axis deviation',
+                      'Echocardiography (TTE/TOE): RV dilatation and hypokinesia; McConnell\'s sign — RV free wall akinesia with preserved apical contraction (highly specific for acute PE); paradoxical septal motion; tricuspid regurgitation',
+                      'Biomarkers: troponin I/T (myocardial injury from RV strain); BNP/NT-proBNP (wall stress); elevated = worse prognosis and intermediate/high-risk category'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'PE — Treatment',
+                    body: [
+                      'Massive PE: systemic thrombolysis — alteplase 100 mg IV over 2 hours; contraindicated if recent surgery <10 days, prior intracranial haemorrhage, active bleeding; if thrombolysis contraindicated or fails → surgical pulmonary embolectomy (on cardiopulmonary bypass); ECMO as bridge',
+                      'Intermediate-risk PE: therapeutic anticoagulation + monitoring in HDU/ICU; escalate to catheter-directed therapy (PERT — pulmonary embolism response team) or systemic thrombolysis if deterioration',
+                      'Low-risk PE: therapeutic anticoagulation; HESTIA criteria for outpatient eligibility; PESI class I–II supports early discharge',
+                      'Anticoagulation: same agents as DVT; rivaroxaban or apixaban preferred; duration: provoked = 3 months; unprovoked = ≥3 months, consider indefinite; cancer-associated = indefinite',
+                      'Chronic thromboembolic pulmonary hypertension (CTEPH): occurs in ~2–4% after PE; presents as progressive dyspnoea >3 months post-PE; diagnose with V/Q scan (perfusion defects) then right heart catheterisation; mPAP ≥25 mmHg; treatment: pulmonary endarterectomy (PEA — surgical standard); riociguat (medical); balloon pulmonary angioplasty (BPA — for inoperable CTEPH)'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Венозный тромбоэмболизм (ВТЭ) включает тромбоз глубоких вен (ТГВ) и тромбоэмболию лёгочной артерии (ТЭЛА). ТГВ — формирование тромба в системе глубоких вен (чаще всего нижних конечностей); ТЭЛА возникает вследствие эмболизации тромба в лёгочное кровообращение. Частота ВТЭ составляет ~1–3 на 1 000 в год; удваивается с каждым десятилетием после 40 лет. Нелечёный проксимальный ТГВ несёт ~50% риск ТЭЛА. Летальность массивной ТЭЛА — 30–50%.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология — триада Вирхова',
+                    body: [
+                      'Стаз: иммобилизация, сердечная недостаточность, венозная обструкция, беременность',
+                      'Повреждение эндотелия: хирургия, травма, центральные венозные катетеры, воспаление — обнажение субэндотелиального коллагена и тканевого фактора',
+                      'Гиперкоагуляция: наследственные тромбофилии (мутация фактора V Лейдена — наиболее частая; мутация протромбина G20210A; дефицит протеина C/S; дефицит антитромбина III) или приобретённые (злокачественные новообразования, антифосфолипидный синдром, ОКП, заместительная гормональная терапия / ЗГТ, беременность)',
+                      'Классификация ТГВ: проксимальный (подвздошные, бедренные, подколенные вены — наибольший риск ТЭЛА) и дистальный (вены голени); ТГВ верхней конечности (подмышечная/подключичная — синдром Педжета–Шреттера у спортсменов)',
+                      'Провоцированный и непровоцированный ТГВ: провоцированный — выявляемый преходящий фактор риска (операция, травма, госпитализация, ОКП); непровоцированный — нет выявляемой причины → выше риск рецидива'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'ТГВ — Диагностика',
+                    body: [
+                      'Шкала Уэллса (предтестовая вероятность): активный рак +1; паралич/гипс +1; постельный режим >3 дней или операция ≤12 нед +1; локальная болезненность +1; отёк всей ноги +1; разница окружности голени >3 см +1; ямочный отёк +1; коллатеральные поверхностные вены +1; ТГВ в анамнезе +1; альтернативный диагноз более вероятен −2. Счёт ≥2: высокая вероятность',
+                      'Д-димер: высокая чувствительность (>95%), низкая специфичность; низкая предтестовая вероятность + отрицательный Д-димер → ТГВ исключён',
+                      'Дуплексное УЗИ: золотой стандарт; несжимаемость вены = ТГВ; чувствительность >95% для проксимального ТГВ, ~75% для дистального',
+                      'КТ-венография / МРТ: для центрального (подвздошного, нижняя полая вена / НПВ) или тазового ТГВ',
+                      'Флегмазия цеурулеа (синяя флегмазия): массивный илиофеморальный тромбоз с риском венозной гангрены — хирургическая экстренная ситуация'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'ТГВ — Лечение',
+                    body: [
+                      'Антикоагуляция — начать немедленно при клиническом подозрении: предпочтительны прямые оральные антикоагулянты (ПОАК): ривароксабан 15 мг 2 раза/сут × 21 день, затем 20 мг 1 раз/сут; или апиксабан 10 мг 2 раза/сут × 7 дней, затем 5 мг 2 раза/сут',
+                      'Низкомолекулярный гепарин (НМГ) (эноксапарин 1,5 мг/кг п/к 1 раз/сут или 1 мг/кг 2 раза/сут) + варфарин (международное нормализованное отношение / МНО 2–3): при противопоказаниях к ПОАК; НМГ-монотерапия предпочтительна при активном раке (исследование CLOT)',
+                      'Длительность: провоцированный (преходящий фактор) = 3 мес; первый непровоцированный ≥3 мес, рассмотреть продлённую терапию; второй непровоцированный = бессрочно; при раке = бессрочно до ремиссии',
+                      'Кава-фильтр: при абсолютных противопоказаниях к антикоагуляции + проксимальный ТГВ/ТЭЛА; использовать извлекаемый фильтр',
+                      'Катетерный тромболизис (КТ): острый массивный илиофеморальный ТГВ или флегмазия; исследование ATTRACT (2017): снижает тяжесть постромботического синдрома (ПТС), но не его частоту',
+                      'Постромботический синдром (ПТС): хроническая венозная недостаточность от повреждения клапанов; возникает у 20–50% после ТГВ; оценка по шкале Виллальта'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'ТЭЛА — Классификация и диагностика',
+                    body: [
+                      'Массивная (высокого риска): гемодинамическая нестабильность — систолическое артериальное давление (сАД) <90 мм рт. ст. или снижение ≥40 мм рт. ст. >15 мин, остановка сердца; требует немедленной реперфузии',
+                      'Субмассивная (промежуточного риска): гемодинамически стабильная + дисфункция правого желудочка (ПЖ) по ЭхоКГ/КТ + повышенный тропонин или мозговой натрийуретический пептид (МНУП / BNP)',
+                      'Низкого риска: гемодинамически стабильная, нет дисфункции ПЖ, нормальные биомаркеры; шкала PESI класс I–II → амбулаторное лечение',
+                      'КТ-ангиография лёгочных артерий (КТАЛ): золотой стандарт — чувствительность/специфичность >95%',
+                      'Вентиляционно-перфузионная (В/П) сцинтиграфия: при противопоказаниях к КТАЛ (почечная недостаточность, аллергия на контраст, беременность)',
+                      'ЭКГ: синусовая тахикардия (наиболее часто); паттерн S1Q3T3 (10–15%); новая блокада правой ножки пучка Гиса (БПНПГ); отклонение электрической оси вправо',
+                      'Эхокардиография (ЭхоКГ): признак МакКоннелла — акинез свободной стенки ПЖ при сохранённой подвижности верхушки (высокоспецифичен для острой ТЭЛА); дилатация ПЖ',
+                      'Биомаркеры: тропонин I/T; МНУП / BNP или NT-proBNP; повышение = ухудшение прогноза'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'ТЭЛА — Лечение',
+                    body: [
+                      'Массивная ТЭЛА: системный тромболизис — альтеплаза 100 мг в/в за 2 ч; при противопоказаниях или неэффективности → хирургическая тромбэктомия из лёгочной артерии (на аппарате искусственного кровообращения / АИК); экстракорпоральная мембранная оксигенация (ЭКМО / ECMO) как мост',
+                      'Промежуточного риска: терапевтическая антикоагуляция + мониторинг в отделении реанимации и интенсивной терапии (ОРИТ); при ухудшении — катетерный тромболизис (мультидисциплинарная команда по ТЭЛА / PERT)',
+                      'Низкого риска: антикоагуляция; критерии HESTIA для амбулаторного лечения',
+                      'Антикоагуляция: ПОАК предпочтительны; ривароксабан или апиксабан; длительность: провоцированная = 3 мес; непровоцированная = ≥3 мес, рассмотреть бессрочно',
+                      'Хроническая тромбоэмболическая лёгочная гипертензия (ХТЭЛГ / CTEPH): ~2–4% после ТЭЛА; прогрессирующая одышка >3 мес; диагностика: В/П сцинтиграфия + катетеризация правых отделов сердца; среднее давление в лёгочной артерии (сДЛА) ≥25 мм рт. ст.; лечение: лёгочная эндартерэктомия (ЛЭЭ) — хирургический стандарт; риоцигуат; баллонная ангиопластика лёгочных артерий (БАЛЛА) при неоперабельной форме'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'dvt-pe-001',
+                question_en: 'Most common inherited thrombophilia?',
+                question_ru: 'Наиболее частая наследственная тромбофилия?',
+                answer_en: 'Factor V Leiden',
+                answer_ru: 'Мутация фактора V Лейдена'
+              },
+              {
+                id: 'dvt-pe-002',
+                question_en: 'DVT gold standard diagnosis?',
+                question_ru: 'Золотой стандарт диагностики тромбоза глубоких вен (ТГВ)?',
+                answer_en: 'Duplex ultrasound',
+                answer_ru: 'Дуплексное УЗИ'
+              },
+              {
+                id: 'dvt-pe-003',
+                question_en: 'DVT Wells score: alternative diagnosis as likely = ?',
+                question_ru: 'Шкала Уэллса при тромбозе глубоких вен (ТГВ): альтернативный диагноз более вероятен = ?',
+                answer_en: '−2 points',
+                answer_ru: '−2 балла'
+              },
+              {
+                id: 'dvt-pe-004',
+                question_en: 'D-dimer: clinical value?',
+                question_ru: 'Д-димер: клиническое значение?',
+                answer_en: 'Excludes DVT/PE if negative',
+                answer_ru: 'Исключает тромбоз глубоких вен (ТГВ)/тромбоэмболию лёгочной артерии (ТЭЛА) при отрицательном результате'
+              },
+              {
+                id: 'dvt-pe-005',
+                question_en: 'Rivaroxaban initial DVT dose?',
+                question_ru: 'Начальная доза ривароксабана при тромбозе глубоких вен (ТГВ)?',
+                answer_en: '15 mg BD × 21 days',
+                answer_ru: '15 мг 2 раза/сут × 21 день'
+              },
+              {
+                id: 'dvt-pe-006',
+                question_en: 'DVT treatment duration (provoked)?',
+                question_ru: 'Длительность лечения провоцированного тромбоза глубоких вен (ТГВ)?',
+                answer_en: '3 months',
+                answer_ru: '3 месяца'
+              },
+              {
+                id: 'dvt-pe-007',
+                question_en: 'Cancer DVT: preferred anticoagulant (trial)?',
+                question_ru: 'Тромбоз глубоких вен (ТГВ) при раке: предпочтительный антикоагулянт (исследование)?',
+                answer_en: 'LMWH (CLOT trial)',
+                answer_ru: 'Низкомолекулярный гепарин (НМГ) (исследование CLOT)'
+              },
+              {
+                id: 'dvt-pe-008',
+                question_en: 'Massive PE haemodynamic instability threshold?',
+                question_ru: 'Порог гемодинамической нестабильности при массивной тромбоэмболии лёгочной артерии (ТЭЛА)?',
+                answer_en: 'SBP <90 mmHg',
+                answer_ru: 'сАД <90 мм рт. ст.'
+              },
+              {
+                id: 'dvt-pe-009',
+                question_en: 'PE gold standard imaging?',
+                question_ru: 'Золотой стандарт визуализации при тромбоэмболии лёгочной артерии (ТЭЛА)?',
+                answer_en: 'CTPA',
+                answer_ru: 'КТ-ангиография лёгочных артерий (КТАЛ)'
+              },
+              {
+                id: 'dvt-pe-010',
+                question_en: 'Most common PE ECG finding?',
+                question_ru: 'Наиболее частая находка на ЭКГ при тромбоэмболии лёгочной артерии (ТЭЛА)?',
+                answer_en: 'Sinus tachycardia',
+                answer_ru: 'Синусовая тахикардия'
+              },
+              {
+                id: 'dvt-pe-011',
+                question_en: 'McConnell\'s sign: what is it?',
+                question_ru: 'Признак МакКоннелла: что это?',
+                answer_en: 'RV free wall akinesia',
+                answer_ru: 'Акинез свободной стенки правого желудочка (ПЖ)'
+              },
+              {
+                id: 'dvt-pe-012',
+                question_en: 'Massive PE: systemic thrombolytic agent & dose?',
+                question_ru: 'Массивная тромбоэмболия лёгочной артерии (ТЭЛА): системный тромболитик и доза?',
+                answer_en: 'Alteplase 100 mg/2h',
+                answer_ru: 'Альтеплаза 100 мг за 2 ч'
+              },
+              {
+                id: 'dvt-pe-013',
+                question_en: 'When is V/Q scan preferred over CTPA?',
+                question_ru: 'Когда В/П сцинтиграфия предпочтительнее КТ-ангиографии лёгочных артерий (КТАЛ)?',
+                answer_en: 'Contrast contraindicated',
+                answer_ru: 'Противопоказание к контрасту'
+              },
+              {
+                id: 'dvt-pe-014',
+                question_en: 'IVC filter main indication?',
+                question_ru: 'Основное показание к кава-фильтру?',
+                answer_en: 'Anticoagulation contraindicated',
+                answer_ru: 'Противопоказание к антикоагуляции'
+              },
+              {
+                id: 'dvt-pe-015',
+                question_en: 'Post-thrombotic syndrome severity scale?',
+                question_ru: 'Шкала тяжести постромботического синдрома (ПТС)?',
+                answer_en: 'Villalta score',
+                answer_ru: 'Шкала Виллальта'
+              },
+              {
+                id: 'dvt-pe-016',
+                question_en: 'CTEPH incidence after PE?',
+                question_ru: 'Частота хронической тромбоэмболической лёгочной гипертензии (ХТЭЛГ) после тромбоэмболии лёгочной артерии (ТЭЛА)?',
+                answer_en: '~2–4%',
+                answer_ru: '~2–4%'
+              },
+              {
+                id: 'dvt-pe-017',
+                question_en: 'CTEPH surgical treatment?',
+                question_ru: 'Хирургическое лечение хронической тромбоэмболической лёгочной гипертензии (ХТЭЛГ)?',
+                answer_en: 'Pulmonary endarterectomy',
+                answer_ru: 'Лёгочная эндартерэктомия (ЛЭЭ)'
+              },
+              {
+                id: 'dvt-pe-018',
+                question_en: 'Phlegmasia cerulea dolens: cause?',
+                question_ru: 'Синяя флегмазия: причина?',
+                answer_en: 'Massive ilio-femoral DVT',
+                answer_ru: 'Массивный илиофеморальный тромбоз глубоких вен (ТГВ)'
+              },
+              {
+                id: 'dvt-pe-019',
+                question_en: 'ATTRACT trial (2017): conclusion on CDT for DVT?',
+                question_ru: 'Исследование ATTRACT (2017): вывод о катетерном тромболизисе (КТ) при тромбозе глубоких вен (ТГВ)?',
+                answer_en: 'Reduced PTS severity, not incidence',
+                answer_ru: 'Снижает тяжесть постромботического синдрома (ПТС), не частоту'
+              },
+              {
+                id: 'dvt-pe-020',
+                question_en: 'Virchow\'s triad components?',
+                question_ru: 'Составляющие триады Вирхова?',
+                answer_en: 'Stasis, injury, hypercoagulability',
+                answer_ru: 'Стаз, повреждение, гиперкоагуляция'
+              }
+            ]
           }
 
         ]

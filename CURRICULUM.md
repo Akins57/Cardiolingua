@@ -59,7 +59,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 
 | # | Slug | Topic | Status |
 |---|---|---|---|
-| 31 | `dvt-pe` | Deep Vein Thrombosis & Pulmonary Embolism | 🔲 |
+| 31 | `dvt-pe` | Deep Vein Thrombosis & Pulmonary Embolism | ✅ |
 | 32 | `may-thurner` | May-Thurner Syndrome & Iliac Vein Disease | 🔲 |
 | 33 | `chronic-venous-insufficiency` | Chronic Venous Insufficiency & Varicose Veins | ✅ |
 | 34 | `venous-ulcers` | Venous Ulcers & Wound Care | ✅ |
@@ -110,10 +110,10 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | Anatomy | 8 | 8 ✅ |
 | Cardiac Surgery | 12 | 0 |
 | Aortic & Vascular | 10 | 1 ✅ |
-| Venous & Lymphatic | 6 | 3 ✅ |
+| Venous & Lymphatic | 6 | 4 ✅ |
 | Peripheral Arterial | 6 | 6 ✅ |
 | Pharmacology & Critical Care | 5 | 2 ✅ |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **50** | **20 ✅ / 30 🔲** |
+| **TOTAL** | **50** | **21 ✅ / 29 🔲** |
 
 **Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**
