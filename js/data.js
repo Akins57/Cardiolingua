@@ -5867,6 +5867,326 @@ export const DATA = [
         ]
       },
 
+      // ── AORTIC & VASCULAR ────────────────────────────────────────────────────
+      {
+        slug: 'aortic-vascular',
+        title_en: 'Aortic & Vascular',
+        title_ru: 'Аортальная и сосудистая хирургия',
+        topics: [
+
+          // ── Topic: AAA — Open Repair ─────────────────────────────────────────
+          {
+            slug: 'aaa-open',
+            title_en: 'AAA — Open Repair',
+            title_ru: 'Аневризма брюшной аорты (АБА) — открытое хирургическое лечение',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'An abdominal aortic aneurysm (AAA) is a permanent focal dilatation of the infrarenal aorta ≥3 cm (1.5× normal diameter). Open repair remains the gold standard for juxtarenal and pararenal aneurysms, anatomically hostile EVAR cases, young fit patients requiring durable repair, and haemodynamically unstable ruptured AAA. Elective open repair carries ~2–3% mortality in high-volume centres; emergency repair for rupture carries 30–50% mortality.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Indications for Repair (ESVS 2019 / SVS Guidelines)',
+                    body: [
+                      'Diameter ≥5.5 cm in men (Class I, Level A — ESVS 2019)',
+                      'Diameter ≥5.0 cm in women (Class IIa)',
+                      'Rapid expansion >1.0 cm/year regardless of size',
+                      'Symptomatic AAA: abdominal/back pain, tenderness, distal embolisation — repair regardless of size',
+                      'Ruptured AAA — surgical emergency',
+                      'Anatomically unsuitable for EVAR: short or angled neck, bilateral iliac occlusion, prior groin surgery precluding femoral access',
+                      'Connective tissue disorders (Marfan syndrome, Ehlers-Danlos type IV) — open preferred due to risk of proximal seal zone failure with EVAR'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Pre-operative Assessment',
+                    body: [
+                      'CT angiography (CTA): mandatory — defines neck length (≥10–15 mm required infrarenally), neck angulation, iliac anatomy, accessory renals, IMA patency',
+                      'Cardiac: ECG; transthoracic echocardiography (TTE) if symptomatic or poor functional status (MET <4); consider stress testing/coronary imaging if high risk',
+                      'Renal function: baseline eGFR — influences clamp level choice and contrast load',
+                      'Respiratory: spirometry if significant respiratory history; FEV₁ <50% predicted increases risk',
+                      'Optimise: antihypertensives (target SBP <140 mmHg), statin (high-intensity: atorvastatin 40–80 mg), antiplatelet (aspirin 75–100 mg daily — continue perioperatively)',
+                      'Smoking cessation: each year of cessation reduces aneurysm growth rate by ~15%',
+                      'Group & save / cross-match; cell salvage (intraoperative autologous transfusion)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Operative Technique',
+                    body: [
+                      'Anaesthesia: general anaesthesia ± epidural (reduces postoperative ileus, aids analgesia); arterial line + central venous catheter + urinary catheter; cell salvage active throughout',
+                      'Approach — midline laparotomy (most common): xiphoid-to-pubis incision; bowels retracted right; good access to entire aorta and iliac vessels',
+                      'Approach — left retroperitoneal (flank): for re-do procedures, obese patients, hostile abdomen, juxtarenal AAA, horseshoe kidney; associated with less ileus and better respiratory outcomes; limited access to right iliac',
+                      'Exposure: divide ligament of Treitz; identify infrarenal aortic neck; mobilise left renal vein (may need division if juxtarenal — first ligate adrenal, gonadal and lumbar tributaries to preserve renal drainage via collaterals)',
+                      'Distal control: dissect common iliac arteries (or external + internal iliac separately if iliac aneurysm); avoid hypogastric plexus on anterior surface of aortic bifurcation (risk: retrograde ejaculation)',
+                      'Heparinisation: unfractionated heparin 100 IU/kg IV before clamping; confirm ACT >200–250 s',
+                      'Clamping: proximal clamp below renal arteries first (suprarenal or supraceliac if juxtarenal/emergency), then distal clamps',
+                      'Aortotomy: open sac longitudinally; evacuate thrombus; oversew back-bleeding lumbar arteries (2-0 or 3-0 prolene); assess IMA',
+                      'Proximal anastomosis: end-to-end; 2-0 prolene continuous suture to aortic neck',
+                      'Graft selection: tube graft (aorto-aortic) if no significant iliac disease; bifurcated (trouser) graft to common iliacs for iliac aneurysm or occlusive disease; material — Dacron (most common) or ePTFE',
+                      'IMA management: ligate if: patent arc of Riolan, IMA <3 mm, normal Doppler signal in sigmoid. Reimplant (Carrel patch technique) if: absent arc of Riolan, IMA >3 mm, signs of sigmoid ischaemia',
+                      'Declamping: release distal clamps first to flush debris, then proximal; anticipate declamping hypotension (vasodilation, acidosis release — communicate with anaesthetist)',
+                      'Closure: close aneurysm sac over graft (prevents aorto-enteric fistula); peritonealise if possible; mass closure of abdomen'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications',
+                    body: [
+                      'Intraoperative haemorrhage: venous injuries most hazardous — left renal vein, iliac veins, inferior vena cava (IVC); control with pressure, proximal balloon, direct repair',
+                      'Colonic ischaemia (2–3%): most serious early complication; results from IMA ligation ± internal iliac compromise; presents with bloody diarrhoea within 24–72 h; diagnose by sigmoidoscopy; mild (mucosal) — conservative; transmural — Hartmann\'s procedure',
+                      'Renal impairment: prolonged suprarenal clamping >30 min increases risk; aim infrarenal clamp time <60 min; perioperative renal protection: maintain euvolaemia, avoid nephrotoxins',
+                      'Spinal cord ischaemia (<1% infrarenal): anterior spinal artery syndrome (motor loss, preserved proprioception); higher risk with thoracoabdominal extension; CSF drainage if developed',
+                      'Sexual dysfunction: retrograde ejaculation (10–15%) and impotence from hypogastric plexus injury; minimise by hugging aortic bifurcation during dissection',
+                      'Aorto-enteric fistula (AEF): late complication (months–years); presents with "herald bleed" — small GI haemorrhage preceding massive haemorrhage; CT shows perigraft gas/fluid; treatment: aortic reconstruction + bowel repair',
+                      'Graft infection (1–2%): fever, elevated CRP, perigraft fluid on CT; treatment: graft excision + extra-anatomic bypass (axillo-bifemoral) or in-situ reconstruction with rifampicin-soaked Dacron or cryopreserved allograft',
+                      'Para-anastomotic aneurysm: false aneurysm at suture line; surveillance CT recommended at 5 years post-repair'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ruptured AAA — Emergency Management',
+                    body: [
+                      'Classic triad: hypotension, acute abdominal/back pain, pulsatile abdominal mass — present together in only ~50% of cases',
+                      'Retroperitoneal rupture: contained by retroperitoneum — patient may be haemodynamically stable; allows time for CT and transfer',
+                      'Free intraperitoneal rupture: immediate exsanguination; CT contraindicated if haemodynamically unstable — proceed directly to theatre',
+                      'Permissive hypotension: target systolic BP 50–70 mmHg until aortic control achieved — prevent clot disruption; avoid aggressive resuscitation',
+                      'REBOA (Resuscitative Endovascular Balloon Occlusion of the Aorta): placed in Zone I (supraceliac) via femoral access; bridges to definitive repair in haemodynamically unstable patients',
+                      'Mortality: 30–50% overall; <10% if patient reaches theatre without cardiac arrest'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Аневризма брюшной аорты (АБА) — постоянное локальное расширение инфраренального отдела аорты ≥3 см (в 1,5 раза больше нормального диаметра). Открытое хирургическое вмешательство остаётся золотым стандартом при юкстаренальных и параренальных аневризмах, анатомически неблагоприятных для эндоваскулярного протезирования аорты (ЭВПА / EVAR) случаях, у молодых пациентов с хорошим соматическим статусом, требующих долгосрочного результата, а также при гемодинамически нестабильном разрыве АБА. Плановое открытое вмешательство сопровождается летальностью ~2–3% в высокообъёмных центрах; при экстренном лечении разрыва летальность составляет 30–50%.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Показания к вмешательству (ESVS 2019 / SVS)',
+                    body: [
+                      'Диаметр ≥5,5 см у мужчин (класс I, уровень A — ESVS 2019)',
+                      'Диаметр ≥5,0 см у женщин (класс IIa)',
+                      'Быстрый рост >1,0 см/год вне зависимости от размера',
+                      'Симптомная АБА: боль в животе/спине, болезненность при пальпации, дистальная эмболизация — вмешательство вне зависимости от размера',
+                      'Разрыв АБА — хирургическая экстренная ситуация',
+                      'Анатомически неблагоприятные условия для ЭВПА: короткая или угловатая шейка аорты, двусторонняя окклюзия подвздошных артерий',
+                      'Наследственные заболевания соединительной ткани (синдром Марфана, тип IV синдрома Элерса–Данлоса) — предпочтительно открытое вмешательство'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Предоперационная подготовка',
+                    body: [
+                      'Компьютерно-томографическая ангиография (КТА): обязательна — определяет длину шейки (≥10–15 мм инфраренально), угол шейки, анатомию подвздошных артерий, добавочные почечные артерии, проходимость нижней брыжеечной артерии (НБА)',
+                      'Сердце: электрокардиография (ЭКГ); трансторакальная эхокардиография (ТТЭхо) при симптомах или низкой функциональной нагрузке (метаболический эквивалент задачи / МЭТ <4)',
+                      'Функция почек: исходная скорость клубочковой фильтрации (СКФ) — влияет на выбор уровня пережатия',
+                      'Дыхательная система: спирометрия при значимом анамнезе; объём форсированного выдоха за 1 с (ОФВ₁) <50% от должного повышает риск',
+                      'Оптимизация: антигипертензивные препараты (целевое систолическое артериальное давление / сАД <140 мм рт. ст.), статины (высокоинтенсивная терапия: аторвастатин 40–80 мг), антиагреганты (аспирин 75–100 мг/сут — продолжать периоперационно)',
+                      'Отказ от курения; аппаратная аутотрансфузия (реинфузия клеток) в ходе операции'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Оперативная техника',
+                    body: [
+                      'Анестезия: общая ± эпидуральная; артериальная линия, центральный венозный катетер (ЦВК), мочевой катетер; аппаратная аутотрансфузия',
+                      'Доступ — срединная лапаротомия (наиболее частый): разрез от мечевидного отростка до лобка; тонкая кишка отводится вправо',
+                      'Доступ — левый забрюшинный (фланговый): повторные операции, ожирение, враждебный живот, юкстаренальная АБА; меньше пареза кишечника, лучшие дыхательные результаты; ограниченный доступ к правой подвздошной артерии',
+                      'Экспозиция: пересечение связки Трейтца; выделение инфраренальной шейки аорты; мобилизация левой почечной вены (при необходимости — пересечение после лигирования надпочечниковой, гонадной и поясничной ветвей)',
+                      'Дистальный контроль: выделение общих подвздошных артерий; избегать гипогастрального сплетения на передней поверхности бифуркации аорты (риск: ретроградная эякуляция)',
+                      'Гепаринизация: нефракционированный гепарин (НФГ) 100 МЕ/кг внутривенно перед пережатием; контроль активированного времени свёртывания (АВС) >200–250 с',
+                      'Пережатие: проксимально ниже почечных артерий, затем дистально',
+                      'Вскрытие мешка: эвакуация тромботических масс; прошивание поясничных артерий (2-0 или 3-0 пролен); оценка НБА',
+                      'Проксимальный анастомоз: конец-в-конец; непрерывный шов пролен 2-0 к шейке аорты',
+                      'Выбор протеза: прямой (аорто-аортальный) при отсутствии поражения подвздошных артерий; бифуркационный («брюки») — при аневризме или окклюзии подвздошных; материал — дакрон (наиболее часто) или политетрафторэтилен (ПТФЭ / ePTFE)',
+                      'НБА: лигировать при: проходимой дуге Риолана, диаметре НБА <3 мм, нормальном допплеровском сигнале в сигме. Реимплантировать по методике заплаты Каррела при: отсутствии дуги Риолана, диаметре НБА >3 мм, признаках ишемии сигмовидной кишки',
+                      'Снятие зажимов: сначала дистально, затем проксимально; ожидать гипотензию после деблокирования',
+                      'Закрытие: укрытие протеза стенкой мешка (профилактика аорто-кишечного свища); ушивание брюшины; послойное закрытие раны'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения',
+                    body: [
+                      'Интраоперационное кровотечение: наиболее опасны венозные повреждения — левая почечная вена, подвздошные вены, нижняя полая вена (НПВ)',
+                      'Ишемия ободочной кишки (2–3%): наиболее серьёзное раннее осложнение; кровавый стул в течение 24–72 ч; диагностика — сигмоидоскопия; лёгкая (слизистая) — консервативно; трансмуральная — операция Хартмана',
+                      'Почечная недостаточность: длительное супраренальное пережатие >30 мин; цель — время пережатия инфраренально <60 мин',
+                      'Ишемия спинного мозга (<1% при инфраренальной АБА): синдром передней спинномозговой артерии (двигательный дефицит при сохранённой проприоцепции)',
+                      'Половая дисфункция: ретроградная эякуляция (10–15%) и импотенция при повреждении гипогастрального сплетения; минимизировать диссекцию у бифуркации',
+                      'Аорто-кишечный свищ (АКС): позднее осложнение; «сигнальное» кровотечение, предшествующее массивному; лечение: реконструкция аорты + ушивание кишки',
+                      'Инфекция протеза (1–2%): удаление протеза + экстраанатомическое шунтирование или реконструкция протезом, пропитанным рифампицином',
+                      'Параанастомотическая аневризма: ложная аневризма по линии анастомоза; КТ-наблюдение через 5 лет после операции'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Разрыв АБА — Экстренное лечение',
+                    body: [
+                      'Классическая триада: гипотензия, острая боль в животе/спине, пульсирующее образование в животе — присутствует одновременно лишь у ~50% пациентов',
+                      'Забрюшинный разрыв: отграничен забрюшинным пространством — пациент может быть гемодинамически стабилен; допускает КТ и транспортировку',
+                      'Свободный внутрибрюшинный разрыв: немедленная экзсангвинация; КТ противопоказана при нестабильной гемодинамике — немедленно в операционную',
+                      'Допустимая гипотензия: целевое систолическое артериальное давление (сАД) 50–70 мм рт. ст. до достижения аортального контроля',
+                      'REBOA (эндоваскулярная баллонная окклюзия аорты при реанимации): устанавливается в зону I (надчревная) через бедренный доступ у гемодинамически нестабильных пациентов',
+                      'Летальность: 30–50% в целом; <10% при поступлении в операционную без остановки сердца'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'aaa-open-001',
+                question_en: 'Elective AAA repair threshold (men)?',
+                question_ru: 'Порог планового вмешательства при аневризме брюшной аорты (АБА) у мужчин?',
+                answer_en: '≥5.5 cm',
+                answer_ru: '≥5,5 см'
+              },
+              {
+                id: 'aaa-open-002',
+                question_en: 'Elective AAA repair threshold (women)?',
+                question_ru: 'Порог планового вмешательства при аневризме брюшной аорты (АБА) у женщин?',
+                answer_en: '≥5.0 cm',
+                answer_ru: '≥5,0 см'
+              },
+              {
+                id: 'aaa-open-003',
+                question_en: 'Growth rate threshold mandating repair?',
+                question_ru: 'Темп роста аневризмы брюшной аорты (АБА), требующий вмешательства?',
+                answer_en: '>1 cm/year',
+                answer_ru: '>1 см/год'
+              },
+              {
+                id: 'aaa-open-004',
+                question_en: 'Elective open AAA repair mortality?',
+                question_ru: 'Летальность планового открытого вмешательства при аневризме брюшной аорты (АБА)?',
+                answer_en: '~2–3%',
+                answer_ru: '~2–3%'
+              },
+              {
+                id: 'aaa-open-005',
+                question_en: 'Ruptured AAA mortality?',
+                question_ru: 'Летальность при разрыве аневризмы брюшной аорты (АБА)?',
+                answer_en: '30–50%',
+                answer_ru: '30–50%'
+              },
+              {
+                id: 'aaa-open-006',
+                question_en: 'Heparin dose before aortic clamping?',
+                question_ru: 'Доза гепарина перед пережатием аорты?',
+                answer_en: '100 IU/kg IV',
+                answer_ru: '100 МЕ/кг внутривенно'
+              },
+              {
+                id: 'aaa-open-007',
+                question_en: 'Classic ruptured AAA triad?',
+                question_ru: 'Классическая триада разрыва аневризмы брюшной аорты (АБА)?',
+                answer_en: 'Hypotension, pain, mass',
+                answer_ru: 'Гипотензия, боль, пульсация'
+              },
+              {
+                id: 'aaa-open-008',
+                question_en: 'Most serious early post-op complication?',
+                question_ru: 'Наиболее серьёзное раннее послеоперационное осложнение?',
+                answer_en: 'Colonic ischaemia',
+                answer_ru: 'Ишемия ободочной кишки'
+              },
+              {
+                id: 'aaa-open-009',
+                question_en: 'How to confirm colonic ischaemia post-AAA repair?',
+                question_ru: 'Как подтвердить ишемию кишки после вмешательства на аневризме брюшной аорты (АБА)?',
+                answer_en: 'Sigmoidoscopy',
+                answer_ru: 'Сигмоидоскопия'
+              },
+              {
+                id: 'aaa-open-010',
+                question_en: 'Aorto-enteric fistula: hallmark presentation?',
+                question_ru: 'Аорто-кишечный свищ: характерный симптом?',
+                answer_en: 'Herald bleed',
+                answer_ru: '«Сигнальное» кровотечение'
+              },
+              {
+                id: 'aaa-open-011',
+                question_en: 'Target clamp time to minimise renal injury?',
+                question_ru: 'Целевое время пережатия для минимизации почечного повреждения?',
+                answer_en: '<60 min',
+                answer_ru: '<60 мин'
+              },
+              {
+                id: 'aaa-open-012',
+                question_en: 'Nerve plexus damaged causing sexual dysfunction?',
+                question_ru: 'Какое нервное сплетение повреждается, вызывая половую дисфункцию?',
+                answer_en: 'Hypogastric plexus',
+                answer_ru: 'Гипогастральное сплетение'
+              },
+              {
+                id: 'aaa-open-013',
+                question_en: 'Vein most at risk of intraoperative injury?',
+                question_ru: 'Вена, наиболее подверженная интраоперационному повреждению?',
+                answer_en: 'Left renal vein',
+                answer_ru: 'Левая почечная вена'
+              },
+              {
+                id: 'aaa-open-014',
+                question_en: 'Proximal anastomosis suture material?',
+                question_ru: 'Шовный материал для проксимального анастомоза?',
+                answer_en: '2-0 prolene',
+                answer_ru: 'Пролен 2-0'
+              },
+              {
+                id: 'aaa-open-015',
+                question_en: 'IMA reimplantation technique?',
+                question_ru: 'Техника реимплантации нижней брыжеечной артерии (НБА)?',
+                answer_en: 'Carrel patch',
+                answer_ru: 'Заплата Каррела'
+              },
+              {
+                id: 'aaa-open-016',
+                question_en: 'Retroperitoneal approach advantage vs midline?',
+                question_ru: 'Преимущество забрюшинного доступа перед срединным?',
+                answer_en: 'Less ileus/respiratory',
+                answer_ru: 'Меньше пареза/дыхательных осложнений'
+              },
+              {
+                id: 'aaa-open-017',
+                question_en: 'REBOA zone for ruptured AAA?',
+                question_ru: 'Зона установки баллонной окклюзии аорты (REBOA) при разрыве аневризмы брюшной аорты (АБА)?',
+                answer_en: 'Zone I',
+                answer_ru: 'Зона I'
+              },
+              {
+                id: 'aaa-open-018',
+                question_en: 'Permissive hypotension target in rupture?',
+                question_ru: 'Целевое систолическое артериальное давление (сАД) при допустимой гипотензии при разрыве?',
+                answer_en: 'SBP 50–70 mmHg',
+                answer_ru: 'сАД 50–70 мм рт. ст.'
+              },
+              {
+                id: 'aaa-open-019',
+                question_en: 'Graft materials used in open AAA repair?',
+                question_ru: 'Материалы протеза при открытом вмешательстве на аневризме брюшной аорты (АБА)?',
+                answer_en: 'Dacron or ePTFE',
+                answer_ru: 'Дакрон или политетрафторэтилен (ПТФЭ)'
+              },
+              {
+                id: 'aaa-open-020',
+                question_en: 'Minimum infrarenal neck length for open repair?',
+                question_ru: 'Минимальная длина инфраренальной шейки аорты для открытого вмешательства?',
+                answer_en: '≥10–15 mm',
+                answer_ru: '≥10–15 мм'
+              }
+            ]
+          }
+
+        ]
+      },
+
       // ── PHARMACOLOGY & CRITICAL CARE ─────────────────────────────────────────
       {
         slug: 'pharmacology-critical-care',
@@ -6183,6 +6503,309 @@ export const DATA = [
                 question_ru: 'Целевое активированное время свёртывания (АВС) при искусственном кровообращении (ИК)?',
                 answer_en: '>300 seconds',
                 answer_ru: '>300 секунд'
+              }
+            ]
+          },
+
+          // ── Topic: Antiplatelet & Thrombolytic Therapy ───────────────────────
+          {
+            slug: 'antiplatelet-thrombolytics',
+            title_en: 'Antiplatelet & Thrombolytic Therapy',
+            title_ru: 'Антиагрегантная и тромболитическая терапия',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Antiplatelet agents inhibit platelet activation and aggregation, reducing arterial thrombosis. They are cornerstone therapy in coronary artery disease (CAD), peripheral arterial disease (PAD), stroke prevention, and post-endovascular intervention. Thrombolytics (fibrinolytics) dissolve established thrombus by activating plasminogen to plasmin; they are used in acute limb ischaemia, stroke, pulmonary embolism (PE), and myocardial infarction (MI). Understanding mechanisms, indications, contraindications, and bleeding risk is essential in vascular and cardiac surgical practice.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Antiplatelet Agents — Mechanisms',
+                    body: [
+                      'Aspirin (acetylsalicylic acid): irreversibly inhibits cyclo-oxygenase-1 (COX-1) → blocks thromboxane A₂ (TXA₂) synthesis → reduces platelet aggregation; effect lasts platelet lifespan (~7–10 days)',
+                      'Clopidogrel (P2Y₁₂ inhibitor): prodrug → hepatic conversion by CYP2C19 to active metabolite → irreversibly blocks ADP-mediated P2Y₁₂ receptor → inhibits ADP-induced platelet aggregation',
+                      'Ticagrelor (P2Y₁₂ inhibitor): direct-acting (not prodrug); reversible P2Y₁₂ inhibition; faster onset and greater potency than clopidogrel; metabolised by CYP3A4',
+                      'Prasugrel (P2Y₁₂ inhibitor): prodrug; irreversible; more potent than clopidogrel; higher bleeding risk; contraindicated in prior stroke/TIA and age >75 years',
+                      'Dipyridamole: inhibits phosphodiesterase → increases cAMP → reduces platelet aggregation; also inhibits adenosine uptake; used in combination with aspirin (Aggrenox) for secondary stroke prevention',
+                      'Cilostazol: phosphodiesterase-3 inhibitor; increases cAMP in platelets and vascular smooth muscle → antiplatelet + vasodilatory; used for intermittent claudication'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Clinical Use of Antiplatelet Agents',
+                    body: [
+                      'Single antiplatelet therapy (SAPT): aspirin 75 mg daily — lifelong after any arterial revascularisation (bypass, endovascular), MI, stroke/TIA, PAD',
+                      'Dual antiplatelet therapy (DAPT): aspirin + P2Y₁₂ inhibitor; mandatory after coronary stenting (DES: 12 months; BMS: 1 month minimum); after peripheral stenting: 1–3 months; after ACS: ticagrelor preferred over clopidogrel (PLATO trial: lower MACE, higher bleeding)',
+                      'Clopidogrel resistance: CYP2C19 poor metabolisers (~30% of population) → reduced active metabolite → higher risk of stent thrombosis; platelet function testing (VerifyNow) can guide therapy',
+                      'Pre-operative management: aspirin — continue for most vascular procedures (reduces thrombotic events); DAPT — ideally continue, but surgeon-anaesthetist consensus needed; stop clopidogrel 5 days, ticagrelor 3–5 days, prasugrel 7 days before elective surgery if high bleeding risk',
+                      'Carotid endarterectomy (CEA): aspirin 75–300 mg peri-operatively reduces stroke and MI risk; continue lifelong'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Thrombolytics — Mechanisms & Agents',
+                    body: [
+                      'Mechanism: all activate plasminogen → plasmin → fibrinolysis (clot dissolution); also degrade fibrinogen, factors V and VIII',
+                      'Alteplase (tPA — tissue plasminogen activator): recombinant; fibrin-selective; short half-life (~5 min); most widely used; IV or intra-arterial',
+                      'Tenecteplase (TNK-tPA): modified tPA; longer half-life; single IV bolus; fibrin-selective; used in STEMI',
+                      'Urokinase: non-fibrin-selective; no antibody formation; preferred for catheter-directed thrombolysis (CDT) in peripheral arterial and venous disease',
+                      'Streptokinase: derived from streptococci; antigenic (antibodies after 5 days); rarely used now',
+                      'Reteplase: double-bolus IV; used in STEMI'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Catheter-Directed Thrombolysis (CDT)',
+                    body: [
+                      'Indication: acute limb ischaemia (ALI) Rutherford IIa (threatened but salvageable) — native vessel or graft occlusion; acute DVT (ilio-femoral, <14 days); SVC/subclavian vein thrombosis',
+                      'Agent: urokinase or alteplase infused via multi-sidehole catheter positioned within thrombus under fluoroscopic guidance',
+                      'Typical regimen: alteplase 0.5–1 mg/h for 12–24 h; check-angiogram at 12–24 h; concurrent UFH infusion to maintain catheter patency (not therapeutic anticoagulation)',
+                      'Advantages over surgical embolectomy in ALI: traverses distal thrombus; unmasks underlying stenosis for treatment; avoids general anaesthesia',
+                      'STILE trial / TOPAS trial: CDT vs surgery for ALI — CDT has lower amputation rate at 1 year for native vessel occlusion; surgery faster for severely threatened limb',
+                      'Contraindications to thrombolysis: active internal bleeding, recent stroke <3 months, intracranial surgery/trauma <3 months, intracranial neoplasm, severe hypertension (>185/110 mmHg uncontrolled), recent major surgery <10 days'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Systemic Thrombolysis',
+                    body: [
+                      'Ischaemic stroke: IV alteplase 0.9 mg/kg (max 90 mg) within 4.5 hours of symptom onset; absolute contraindication: haemorrhagic stroke, anticoagulation, recent major surgery',
+                      'STEMI (ST-elevation myocardial infarction): when primary PCI not available within 120 min; tenecteplase single weight-based IV bolus',
+                      'Massive pulmonary embolism (PE): alteplase 100 mg IV over 2 hours; indicated for haemodynamically unstable PE (SBP <90 mmHg); catheter-directed thrombolysis (CDT) for submassive PE or when systemic lysis contraindicated',
+                      'Bleeding risk: intracranial haemorrhage (ICH) ~0.5–1% with systemic lysis; higher in elderly, hypertensive, anticoagulated patients'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Reversal & Bleeding Management',
+                    body: [
+                      'No specific reversal agent for antiplatelet agents; transfuse platelets if major bleeding — 1–2 pools (or apheresis); desmopressin (DDAVP) may partially restore platelet function',
+                      'Thrombolytic bleeding: stop infusion immediately; cryoprecipitate (fibrinogen source) 10 units — target fibrinogen >1.5 g/L; fresh frozen plasma (FFP); tranexamic acid (antifibrinolytic) 1 g IV',
+                      'Aspirin-related GI bleeding: stop aspirin; PPI (proton pump inhibitor); restart aspirin once bleeding controlled if high cardiovascular risk',
+                      'Platelet transfusion threshold: major surgery <50 × 10⁹/L; neurosurgery <100 × 10⁹/L'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Антиагрегантные препараты ингибируют активацию и агрегацию тромбоцитов, снижая риск артериального тромбоза. Они являются основой терапии при ишемической болезни сердца (ИБС), заболеваниях периферических артерий (ЗПА), профилактике инсульта и после эндоваскулярных вмешательств. Тромболитики (фибринолитики) растворяют уже сформировавшийся тромб, активируя плазминоген до плазмина; применяются при острой ишемии конечностей, инсульте, тромбоэмболии лёгочной артерии (ТЭЛА) и инфаркте миокарда (ИМ). Знание механизмов действия, показаний, противопоказаний и риска кровотечений принципиально важно в сосудистой и кардиохирургической практике.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Антиагрегантные препараты — механизмы действия',
+                    body: [
+                      'Аспирин (ацетилсалициловая кислота): необратимо ингибирует циклооксигеназу-1 (ЦОГ-1) → блокирует синтез тромбоксана A₂ (ТXA₂) → снижает агрегацию тромбоцитов; эффект сохраняется в течение жизни тромбоцита (~7–10 дней)',
+                      'Клопидогрел (ингибитор P2Y₁₂): пролекарство → печёночное превращение ферментом CYP2C19 в активный метаболит → необратимо блокирует АДФ-опосредованный рецептор P2Y₁₂ → ингибирует АДФ-индуцированную агрегацию тромбоцитов',
+                      'Тикагрелор (ингибитор P2Y₁₂): прямого действия (не пролекарство); обратимое ингибирование P2Y₁₂; более быстрое начало и большая эффективность по сравнению с клопидогрелем; метаболизируется CYP3A4',
+                      'Прасугрел (ингибитор P2Y₁₂): пролекарство; необратимое ингибирование; более мощный, чем клопидогрел; выше риск кровотечений; противопоказан при инсульте/транзиторной ишемической атаке (ТИА) в анамнезе и возрасте >75 лет',
+                      'Дипиридамол: ингибирует фосфодиэстеразу → повышает цАМФ → снижает агрегацию тромбоцитов; также ингибирует захват аденозина; применяется в комбинации с аспирином (Агренокс) для вторичной профилактики инсульта',
+                      'Цилостазол: ингибитор фосфодиэстеразы-3; повышает цАМФ в тромбоцитах и гладкомышечных клетках сосудов → антиагрегантный + вазодилататорный эффект; применяется при перемежающейся хромоте'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клиническое применение антиагрегантов',
+                    body: [
+                      'Монотерапия антиагрегантом (МАТ): аспирин 75 мг/сут — пожизненно после любой артериальной реваскуляризации (шунтирование, эндоваскулярное вмешательство), инфаркта миокарда (ИМ), инсульта/транзиторной ишемической атаки (ТИА), заболеваний периферических артерий (ЗПА)',
+                      'Двойная антиагрегантная терапия (ДАТ): аспирин + ингибитор P2Y₁₂; обязательна после коронарного стентирования (стент с лекарственным покрытием — СЛП: 12 месяцев; непокрытый металлический стент — НМС: минимум 1 месяц); после периферического стентирования: 1–3 месяца; после острого коронарного синдрома (ОКС): тикагрелор предпочтительнее клопидогрела (исследование PLATO: меньше нежелательных сердечно-сосудистых событий, больше кровотечений)',
+                      'Резистентность к клопидогрелу: слабые метаболизаторы CYP2C19 (~30% популяции) → снижение активного метаболита → выше риск тромбоза стента; тест функции тромбоцитов (VerifyNow) может определять тактику',
+                      'Периоперационное ведение: аспирин — продолжать при большинстве сосудистых операций (снижает тромботические осложнения); двойная антиагрегантная терапия (ДАТ) — в идеале продолжать, но требуется консенсус хирурга и анестезиолога; отменить клопидогрел за 5 дней, тикагрелор за 3–5 дней, прасугрел за 7 дней до плановой операции при высоком риске кровотечения',
+                      'Каротидная эндартерэктомия (КЭА): аспирин 75–300 мг периоперационно снижает риск инсульта и инфаркта миокарда (ИМ); продолжать пожизненно'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Тромболитики — механизмы и препараты',
+                    body: [
+                      'Механизм: все активируют плазминоген → плазмин → фибринолиз (лизис тромба); также разрушают фибриноген, факторы V и VIII',
+                      'Алтеплаза (тканевой активатор плазминогена — тАП): рекомбинантный; фибрин-селективный; короткий период полувыведения (~5 мин); наиболее широко применяемый; в/в или внутриартериально',
+                      'Тенектеплаза (ТНК-тАП): модифицированный тАП; более длительный период полувыведения; однократный в/в болюс с учётом массы тела; фибрин-селективный; применяется при инфаркте миокарда с подъёмом ST (ИМпST)',
+                      'Урокиназа: нефибрин-селективная; не вызывает образования антител; предпочтительна для катетер-направленного тромболизиса (КНТ) при периферических артериальных и венозных окклюзиях',
+                      'Стрептокиназа: получена из стрептококков; антигенная (антитела образуются через 5 дней); в настоящее время применяется редко',
+                      'Ретеплаза: двойной в/в болюс; применяется при инфаркте миокарда с подъёмом ST (ИМпST)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Катетер-направленный тромболизис (КНТ)',
+                    body: [
+                      'Показание: острая ишемия конечности (ОИК) Rutherford IIa (под угрозой, но жизнеспособна) — окклюзия нативного сосуда или шунта; острый тромбоз глубоких вен (ТГВ) (подвздошно-бедренный, <14 дней); тромбоз верхней полой вены (ВПВ)/подключичной вены',
+                      'Препарат: урокиназа или алтеплаза, вводимая через многоотверстный катетер, установленный в тромб под рентгеноскопическим контролем',
+                      'Типичный режим: алтеплаза 0,5–1 мг/ч в течение 12–24 ч; контрольная ангиография через 12–24 ч; параллельная инфузия нефракционированного гепарина (НФГ) для поддержания проходимости катетера (не терапевтическая антикоагуляция)',
+                      'Преимущества перед хирургической эмболэктомией при острой ишемии конечности (ОИК): лизирует дистальный тромб; выявляет лежащий в основе стеноз для последующего лечения; избегает общей анестезии',
+                      'Исследования STILE / TOPAS: катетер-направленный тромболизис (КНТ) против операции при острой ишемии конечности (ОИК) — КНТ имеет меньшую частоту ампутаций через 1 год при окклюзии нативного сосуда; операция быстрее при тяжёлой угрозе конечности',
+                      'Противопоказания к тромболизису: активное внутреннее кровотечение, инсульт <3 месяцев назад, нейрохирургическая операция/травма головы <3 месяцев, внутричерепная опухоль, тяжёлая гипертензия (>185/110 мм рт. ст. неконтролируемая), крупная операция <10 дней назад'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Системный тромболизис',
+                    body: [
+                      'Ишемический инсульт: в/в алтеплаза 0,9 мг/кг (максимум 90 мг) в течение 4,5 часов от начала симптомов; абсолютные противопоказания: геморрагический инсульт, антикоагуляция, крупная операция в недавнем анамнезе',
+                      'Инфаркт миокарда с подъёмом ST (ИМпST): при невозможности первичного чрескожного коронарного вмешательства (ЧКВ) в течение 120 мин; тенектеплаза — однократный в/в болюс с учётом массы тела',
+                      'Массивная тромбоэмболия лёгочной артерии (ТЭЛА): алтеплаза 100 мг в/в в течение 2 часов; показана при гемодинамически нестабильной ТЭЛА (систолическое артериальное давление — САД <90 мм рт. ст.); катетер-направленный тромболизис (КНТ) при субмассивной ТЭЛА или противопоказаниях к системному тромболизису',
+                      'Риск кровотечения: внутричерепное кровоизлияние (ВЧК) ~0,5–1% при системном тромболизисе; выше у пожилых, гипертоников, пациентов на антикоагулянтах'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Нейтрализация и лечение кровотечений',
+                    body: [
+                      'Специфического антидота для антиагрегантов нет; при значительном кровотечении — переливание тромбоцитов (1–2 дозы или аферезный концентрат); десмопрессин (ДДАВП) может частично восстановить функцию тромбоцитов',
+                      'Кровотечение при тромболизисе: немедленно прекратить инфузию; криопреципитат (источник фибриногена) 10 единиц — целевой фибриноген >1,5 г/л; свежезамороженная плазма (СЗП); транексамовая кислота (антифибринолитик) 1 г в/в',
+                      'Желудочно-кишечное кровотечение на фоне аспирина: отменить аспирин; ингибитор протонной помпы (ИПП); возобновить аспирин после остановки кровотечения при высоком сердечно-сосудистом риске',
+                      'Пороговый уровень тромбоцитов для переливания: большая операция <50 × 10⁹/л; нейрохирургия <100 × 10⁹/л'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'antiplatelet-thrombolytics-001',
+                question_en: 'Aspirin mechanism of antiplatelet action?',
+                question_ru: 'Механизм антиагрегантного действия аспирина?',
+                answer_en: 'Irreversible COX-1 inhibition → ↓TXA₂',
+                answer_ru: 'Необратимое ингибирование ЦОГ-1 → ↓ТXA₂'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-002',
+                question_en: 'Aspirin effect duration?',
+                question_ru: 'Длительность эффекта аспирина?',
+                answer_en: 'Platelet lifespan (7–10 days)',
+                answer_ru: 'Жизнь тромбоцита (7–10 дней)'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-003',
+                question_en: 'Clopidogrel receptor target?',
+                question_ru: 'Рецептор-мишень клопидогрела?',
+                answer_en: 'P2Y₁₂ (ADP receptor)',
+                answer_ru: 'P2Y₁₂ (рецептор АДФ)'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-004',
+                question_en: 'Clopidogrel: enzyme required for activation?',
+                question_ru: 'Клопидогрел: фермент, необходимый для активации?',
+                answer_en: 'CYP2C19',
+                answer_ru: 'CYP2C19'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-005',
+                question_en: 'Ticagrelor vs clopidogrel: reversibility?',
+                question_ru: 'Тикагрелор против клопидогрела: обратимость?',
+                answer_en: 'Ticagrelor reversible',
+                answer_ru: 'Тикагрелор — обратимый'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-006',
+                question_en: 'PLATO trial: ticagrelor vs clopidogrel in ACS outcome?',
+                question_ru: 'Исследование PLATO: тикагрелор против клопидогрела при остром коронарном синдроме (ОКС)?',
+                answer_en: 'Lower MACE, higher bleeding',
+                answer_ru: 'Меньше нежелательных сердечно-сосудистых событий, больше кровотечений'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-007',
+                question_en: 'DAPT duration after DES coronary stent?',
+                question_ru: 'Длительность двойной антиагрегантной терапии (ДАТ) после стента с лекарственным покрытием (СЛП)?',
+                answer_en: '12 months',
+                answer_ru: '12 месяцев'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-008',
+                question_en: 'Stop clopidogrel how many days before elective surgery?',
+                question_ru: 'За сколько дней отменить клопидогрел до плановой операции?',
+                answer_en: '5 days',
+                answer_ru: '5 дней'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-009',
+                question_en: 'Cilostazol: indication in vascular disease?',
+                question_ru: 'Цилостазол: показание в сосудистой патологии?',
+                answer_en: 'Intermittent claudication',
+                answer_ru: 'Перемежающаяся хромота'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-010',
+                question_en: 'Thrombolytics mechanism?',
+                question_ru: 'Механизм действия тромболитиков?',
+                answer_en: 'Activate plasminogen → plasmin',
+                answer_ru: 'Активируют плазминоген → плазмин'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-011',
+                question_en: 'Preferred agent for catheter-directed thrombolysis (CDT)?',
+                question_ru: 'Предпочтительный препарат для катетер-направленного тромболизиса (КНТ)?',
+                answer_en: 'Urokinase or alteplase',
+                answer_ru: 'Урокиназа или алтеплаза'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-012',
+                question_en: 'CDT indication in acute limb ischaemia (ALI): Rutherford class?',
+                question_ru: 'Показание катетер-направленного тромболизиса (КНТ) при острой ишемии конечности (ОИК): класс по Рутерфорду?',
+                answer_en: 'Rutherford IIa',
+                answer_ru: 'Рутерфорд IIa'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-013',
+                question_en: 'IV alteplase dose for ischaemic stroke?',
+                question_ru: 'Доза в/в алтеплазы при ишемическом инсульте?',
+                answer_en: '0.9 mg/kg (max 90 mg)',
+                answer_ru: '0,9 мг/кг (максимум 90 мг)'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-014',
+                question_en: 'Time window for alteplase in ischaemic stroke?',
+                question_ru: 'Временное окно для алтеплазы при ишемическом инсульте?',
+                answer_en: '4.5 hours',
+                answer_ru: '4,5 часа'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-015',
+                question_en: 'Systemic thrombolysis for massive PE: alteplase dose?',
+                question_ru: 'Системный тромболизис при массивной тромбоэмболии лёгочной артерии (ТЭЛА): доза алтеплазы?',
+                answer_en: '100 mg IV over 2 hours',
+                answer_ru: '100 мг в/в за 2 часа'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-016',
+                question_en: 'Thrombolysis absolute contraindication: recent stroke?',
+                question_ru: 'Абсолютное противопоказание к тромболизису: недавний инсульт?',
+                answer_en: '<3 months',
+                answer_ru: '<3 месяцев'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-017',
+                question_en: 'Thrombolytic bleeding: fibrinogen replacement?',
+                question_ru: 'Кровотечение при тромболизисе: восполнение фибриногена?',
+                answer_en: 'Cryoprecipitate',
+                answer_ru: 'Криопреципитат'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-018',
+                question_en: 'Antifibrinolytic to reverse thrombolytic bleeding?',
+                question_ru: 'Антифибринолитик при кровотечении на фоне тромболизиса?',
+                answer_en: 'Tranexamic acid',
+                answer_ru: 'Транексамовая кислота'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-019',
+                question_en: 'Platelet transfusion threshold for major surgery?',
+                question_ru: 'Пороговый уровень тромбоцитов для переливания при большой операции?',
+                answer_en: '<50 × 10⁹/L',
+                answer_ru: '<50 × 10⁹/л'
+              },
+              {
+                id: 'antiplatelet-thrombolytics-020',
+                question_en: 'Prasugrel: two contraindications?',
+                question_ru: 'Прасугрел: два противопоказания?',
+                answer_en: 'Prior stroke/TIA; age >75',
+                answer_ru: 'Инсульт/транзиторная ишемическая атака (ТИА) в анамнезе; возраст >75 лет'
               }
             ]
           }
