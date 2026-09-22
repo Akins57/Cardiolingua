@@ -19,29 +19,77 @@ export const DATA = [
     title_en: 'Cardiovascular Surgery',
     title_ru: 'Сердечно-сосудистая хирургия',
     subdisciplines: [
+      // ── Cardiac Surgery ───────────────────────────────────────────────────────
       {
-        slug: 'sample-subdiscipline',
-        title_en: 'Sample Subdiscipline',
-        title_ru: 'Пример подраздела',
+        slug: 'cardiac-surgery',
+        title_en: 'Cardiac Surgery',
+        title_ru: 'Кардиохирургия',
         topics: [
           {
-            slug: 'sample-topic',
-            title_en: 'Sample Topic',
-            title_ru: 'Пример темы',
+            slug: 'cardiac-surgery-anatomy',
+            title_en: 'Cardiac Surgery Anatomy',
+            title_ru: 'Анатомия сердца в кардиохирургии',
             note: {
               en: {
                 sections: [
                   {
                     title: 'Overview',
-                    body: 'This is a placeholder topic. Ask Claude Code to add a real topic and it will be written here with full bilingual content.',
+                    body: 'The heart lies in the middle mediastinum enclosed within the fibrous pericardium, tilted so that the apex points inferiorly, anteriorly, and to the left (surface marking: 5th intercostal space, midclavicular line). The pericardium consists of two layers: an outer fibrous pericardium and an inner serous pericardium (parietal and visceral/epicardium layers); the pericardial cavity normally contains 15–50 mL of serous fluid. During cardiac surgery the pericardium is opened with a longitudinal incision anterior to the left phrenic nerve, which runs along the lateral aspect of the pericardium bilaterally and must be protected throughout.',
                     type: 'text'
                   },
                   {
-                    title: 'Key Points',
+                    title: 'Chambers & Great Vessels',
                     body: [
-                      'Topic notes will appear in this section',
-                      'Each bullet point is a high-yield fact',
-                      'Toggle the tab above to see the Russian version'
+                      'Right atrium (RA): receives systemic venous return via the superior vena cava (SVC) and inferior vena cava (IVC); internal features include the crista terminalis, pectinate muscles, fossa ovalis (remnant of the foramen ovale), and the coronary sinus ostium guarded by the Thebesian valve',
+                      'Right ventricle (RV): anterior and rightward; consists of inlet (tricuspid valve), trabecular, and outlet (infundibulum → pulmonary valve) components; the moderator band (septomarginal trabecula) carries the right bundle branch (RBB) to the anterior papillary muscle',
+                      'Left atrium (LA): posterior chamber; receives four pulmonary veins; smooth-walled body with a laterally placed auricle; the mitral valve orifice opens into its floor',
+                      'Left ventricle (LV): ellipsoid, thick-walled (8–12 mm); anteromedial and posterolateral papillary muscles support the mitral valve via chordae tendineae; the left ventricular outflow tract (LVOT) is in fibrous continuity with the anterior (aortic) mitral leaflet — the aorto-mitral curtain',
+                      'Ascending aorta (~5 cm): arises from the LV; left and right coronary ostia arise from the left and right aortic sinuses of Valsalva respectively; the posterior sinus is the non-coronary sinus',
+                      'Pulmonary trunk: arises anterior to the aorta from the RV infundibulum; bifurcates beneath the aortic arch into right and left pulmonary arteries'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Valves',
+                    body: [
+                      'Aortic valve: 3 semilunar cusps — right coronary cusp (most anterior), left coronary cusp, and non-coronary cusp (posterior); the bundle of His runs beneath the commissure between the non-coronary and right coronary cusps and is at risk during aortic valve replacement (AVR)',
+                      'Mitral valve: 2 leaflets — anterior (aortic, larger) and posterior (mural); D-shaped annulus; the left circumflex artery (LCx) runs in the left atrioventricular groove directly behind the mitral annulus and is at risk during mitral annuloplasty or replacement',
+                      'Tricuspid valve: 3 leaflets — anterior, posterior, and septal; the septal leaflet overlies the membranous septum and the atrioventricular (AV) node — at risk during ventricular septal defect (VSD) patch repair; the annulus is larger and more apical than the mitral annulus',
+                      'Pulmonary valve: 3 semilunar cusps — anterior, right, and left; has no named coronary ostia; protected position beneath the sternum'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Coronary Arteries',
+                    body: [
+                      'Left main coronary artery (LMCA): arises from the left aortic sinus of Valsalva; ~10–15 mm long; bifurcates into the left anterior descending artery (LAD) and the left circumflex artery (LCx); a ramus intermedius is present in ~20% of cases',
+                      'Left anterior descending artery (LAD): runs in the anterior interventricular groove to the apex; supplies the anterior left ventricular (LV) wall, anterior two-thirds of the interventricular septum, and apex via septal perforators and diagonal branches',
+                      'Left circumflex artery (LCx): runs in the left atrioventricular groove; gives obtuse marginal (OM) branches; supplies the lateral and posterior LV wall in left-dominant systems',
+                      'Right coronary artery (RCA): runs in the right atrioventricular groove; gives the sinoatrial (SA) nodal artery in ~60% of cases, acute marginal branches, and the posterior descending artery (PDA) in right-dominant systems; supplies the atrioventricular (AV) node in 85–90% of cases',
+                      'Coronary dominance: defined by which vessel gives rise to the posterior descending artery (PDA). Right dominant: ~70%; co-dominant: ~15%; left dominant: ~15%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Conduction System',
+                    body: [
+                      'Sinoatrial (SA) node: crescent-shaped structure at the junction of the superior vena cava (SVC) and right atrium (RA), at the superior end of the crista terminalis (sulcus terminalis); the cardiac pacemaker; blood supply: SA nodal artery (60% from right coronary artery (RCA), 40% from left circumflex artery (LCx))',
+                      'Atrioventricular (AV) node: located in the triangle of Koch, bounded by the tendon of Todaro, the septal leaflet of the tricuspid valve, and the coronary sinus ostium; blood supply: AV nodal artery (branch of RCA in 85–90% of cases)',
+                      'Bundle of His: passes through the central fibrous body and runs along the inferior edge of the membranous interventricular septum — at risk during aortic valve replacement (AVR) and ventricular septal defect (VSD) repair',
+                      'Left bundle branch (LBB): broad fan of fibres on the left side of the interventricular septum; divides into anterior and posterior fascicles',
+                      'Right bundle branch (RBB): narrow cord running in the moderator band (septomarginal trabecula) to the anterior papillary muscle of the right ventricle (RV)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Surgical Landmarks',
+                    body: [
+                      'Aortic cannulation: ascending aorta, proximal to the brachiocephalic trunk; avoid calcified or atherosclerotic areas',
+                      'Venous cannulation: bicaval (superior vena cava (SVC) and inferior vena cava (IVC)) for open-heart procedures; single right atrial (RA) cannula for coronary artery bypass grafting (CABG)',
+                      'Cardioplegia: antegrade via aortic root cannula (proximal to the aortic cross-clamp); retrograde via coronary sinus catheter inserted through the right atrial (RA) wall',
+                      'Transverse pericardial sinus: pericardial recess posterior to the ascending aorta and pulmonary trunk, anterior to the atria — the aortic cross-clamp is placed through this space',
+                      'Oblique pericardial sinus: blind-ended recess posterior to the left atrium (LA), bounded by the pulmonary veins; relevant during posterior pericardial dissection',
+                      'Phrenic nerve: runs bilaterally on the lateral pericardium, anterior to the lung hilum; protected by staying anterior to it when opening the pericardium; also at risk during internal thoracic artery (ITA) / internal mammary artery harvest'
                     ],
                     type: 'list'
                   }
@@ -51,15 +99,62 @@ export const DATA = [
                 sections: [
                   {
                     title: 'Обзор',
-                    body: 'Это тема-заполнитель. Попросите Claude Code добавить реальную тему, и она будет написана здесь с полным двуязычным содержанием.',
+                    body: 'Сердце расположено в среднем средостении, заключено в фиброзный перикард; верхушка направлена вниз, вперёд и влево (проекция на поверхность: V межреберье по среднеключичной линии). Перикард состоит из двух слоёв: наружного фиброзного перикарда и внутреннего серозного перикарда (париетального и висцерального/эпикарда); в норме полость перикарда содержит 15–50 мл серозной жидкости. В ходе кардиохирургической операции перикард вскрывают продольным разрезом кпереди от левого диафрагмального нерва, который проходит вдоль боковой поверхности перикарда с обеих сторон и должен быть защищён на всём протяжении.',
                     type: 'text'
                   },
                   {
-                    title: 'Ключевые пункты',
+                    title: 'Камеры сердца и магистральные сосуды',
                     body: [
-                      'Заметки по теме появятся в этом разделе',
-                      'Каждый пункт — это важный клинический факт',
-                      'Переключите вкладку выше, чтобы увидеть английскую версию'
+                      'Правое предсердие (ПП): принимает системный венозный возврат через верхнюю полую вену (ВПВ) и нижнюю полую вену (НПВ); внутренние структуры: пограничный гребень (crista terminalis), гребенчатые мышцы, овальная ямка (fossa ovalis; остаток овального отверстия) и устье венечного синуса, прикрытое клапаном Тебезия',
+                      'Правый желудочек (ПЖ): расположен спереди и правее; состоит из входного (трёхстворчатый клапан), трабекулярного и выходного (инфундибулум → клапан лёгочной артерии) отделов; модераторный пучок (перегородочно-краевая трабекула) несёт правую ножку пучка Гиса (ПНПГ) к передней сосочковой мышце',
+                      'Левое предсердие (ЛП): задняя камера; принимает четыре лёгочные вены; гладкостенное тело с ушком, расположенным латерально; митральный клапан открывается в его дно',
+                      'Левый желудочек (ЛЖ): эллипсоидный, толстостенный (8–12 мм); переднемедиальная и заднелатеральная сосочковые мышцы удерживают митральный клапан посредством хорд; выходной тракт левого желудочка (ВТЛЖ) находится в фиброзной преемственности с передней (аортальной) створкой митрального клапана — аортально-митральный контакт',
+                      'Восходящая аорта (~5 см): отходит от ЛЖ; устья левой и правой коронарных артерий расположены в левом и правом синусах Вальсальвы соответственно; задний синус — некоронарный',
+                      'Лёгочный ствол: отходит кпереди от аорты из инфундибулума ПЖ; делится под дугой аорты на правую и левую лёгочные артерии'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клапаны сердца',
+                    body: [
+                      'Аортальный клапан: 3 полулунные створки — правая коронарная (наиболее передняя), левая коронарная и некоронарная (задняя); пучок Гиса проходит под комиссурой некоронарной и правой коронарной створок и подвергается риску при протезировании аортального клапана (ПАК)',
+                      'Митральный клапан: 2 створки — передняя (аортальная, большая) и задняя (пристеночная); D-образное фиброзное кольцо; левая огибающая артерия (ЛОА) проходит в левой предсердно-желудочковой борозде непосредственно за митральным кольцом и подвергается риску при аннулопластике или протезировании митрального клапана',
+                      'Трёхстворчатый клапан: 3 створки — передняя, задняя и перегородочная; перегородочная створка прикрывает перепончатую часть межжелудочковой перегородки и предсердно-желудочковый (АВ) узел — риск повреждения при пластике дефекта межжелудочковой перегородки (ДМЖП); кольцо клапана крупнее и расположено апикальнее, чем митральное',
+                      'Клапан лёгочной артерии: 3 полулунные створки — передняя, правая и левая; коронарных устьев нет; защищённое положение под грудиной'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Коронарные артерии',
+                    body: [
+                      'Ствол левой коронарной артерии (СЛКА): отходит из левого синуса Вальсальвы; длина ~10–15 мм; делится на переднюю межжелудочковую артерию (ПМЖА) и левую огибающую артерию (ЛОА); промежуточная ветвь (ramus intermedius) присутствует примерно в 20% случаев',
+                      'Передняя межжелудочковая артерия (ПМЖА): проходит в передней межжелудочковой борозде к верхушке; кровоснабжает переднюю стенку левого желудочка (ЛЖ), передние 2/3 межжелудочковой перегородки и верхушку через септальные перфораторы и диагональные ветви',
+                      'Левая огибающая артерия (ЛОА): проходит в левой предсердно-желудочковой борозде; отдаёт ветви тупого края; кровоснабжает боковую и заднюю стенки ЛЖ при левом типе доминирования',
+                      'Правая коронарная артерия (ПКА): проходит в правой предсердно-желудочковой борозде; отдаёт артерию синусно-предсердного (СА) узла примерно в 60% случаев, ветви острого края и заднюю межжелудочковую артерию (ЗМЖА) при правом типе доминирования; кровоснабжает предсердно-желудочковый (АВ) узел в 85–90% случаев',
+                      'Тип доминирования коронарного кровоснабжения: определяется тем, от какого сосуда отходит задняя межжелудочковая артерия (ЗМЖА). Правый тип: ~70%; сбалансированный: ~15%; левый тип: ~15%'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Проводящая система сердца',
+                    body: [
+                      'Синусно-предсердный (СА) узел: серповидная структура в месте соединения верхней полой вены (ВПВ) и правого предсердия (ПП), у верхнего конца пограничного гребня (sulcus terminalis); водитель ритма сердца; кровоснабжение: артерия СА-узла (60% от правой коронарной артерии (ПКА), 40% от левой огибающей артерии (ЛОА))',
+                      'Предсердно-желудочковый (АВ) узел: расположен в треугольнике Коха, ограниченном сухожилием Тодаро, перегородочной створкой трёхстворчатого клапана и устьем венечного синуса; кровоснабжение: артерия АВ-узла (ветвь ПКА в 85–90% случаев)',
+                      'Пучок Гиса: проходит через центральное фиброзное тело и следует вдоль нижнего края перепончатой части межжелудочковой перегородки — подвергается риску при протезировании аортального клапана (ПАК) и пластике дефекта межжелудочковой перегородки (ДМЖП)',
+                      'Левая ножка пучка Гиса (ЛНПГ): широкий веер волокон на левой поверхности межжелудочковой перегородки; делится на переднюю и заднюю ветви',
+                      'Правая ножка пучка Гиса (ПНПГ): тонкий тяж, проходящий в модераторном пучке (перегородочно-краевой трабекуле) к передней сосочковой мышце правого желудочка (ПЖ)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Хирургические ориентиры',
+                    body: [
+                      'Аортальная канюляция: восходящая аорта, проксимально от плечеголовного ствола; избегать кальцинированных и атеросклеротических участков',
+                      'Венозная канюляция: бикавальная (верхняя полая вена (ВПВ) и нижняя полая вена (НПВ)) — при операциях с открытым сердцем; одна канюля в правое предсердие (ПП) — при аортокоронарном шунтировании (АКШ)',
+                      'Кардиоплегия: антеградная — через канюлю в корне аорты (проксимально от аортального зажима); ретроградная — через катетер в венечном синусе, введённый через стенку правого предсердия (ПП)',
+                      'Поперечный перикардиальный синус: перикардиальный карман позади восходящей аорты и лёгочного ствола, кпереди от предсердий — аортальный зажим накладывается через это пространство',
+                      'Косой перикардиальный синус: слепой карман позади левого предсердия (ЛП), ограниченный лёгочными венами; актуален при заднем перикардиальном доступе',
+                      'Диафрагмальный нерв: с обеих сторон проходит по боковой поверхности перикарда, кпереди от корня лёгкого; защищается смещением разреза кпереди; также подвергается риску при заборе внутренней грудной артерии (ВГА) / внутренней молочной артерии'
                     ],
                     type: 'list'
                   }
@@ -68,18 +163,144 @@ export const DATA = [
             },
             cards: [
               {
-                id: 'sample-topic-001',
-                question_en: 'This is a sample flashcard. What will real cards look like?',
-                question_ru: 'Это пример карточки. Как будут выглядеть настоящие карточки?',
-                answer_en: 'Real cards will have precise clinical questions and answers in both English and Russian, covering key facts from each topic\'s note.',
-                answer_ru: 'Настоящие карточки будут содержать точные клинические вопросы и ответы на английском и русском языках, охватывающие ключевые факты из каждой темы.'
+                id: 'cardiac-surgery-anatomy-001',
+                question_en: 'What are the two main layers of the pericardium?',
+                question_ru: 'Из каких двух основных слоёв состоит перикард?',
+                answer_en: 'Fibrous and serous',
+                answer_ru: 'Фиброзный и серозный'
               },
               {
-                id: 'sample-topic-002',
-                question_en: 'How do I add new topics to this app?',
-                question_ru: 'Как добавить новые темы в это приложение?',
-                answer_en: 'Ask Claude Code: "Add a note and flashcards for [topic name]". Claude will write the content directly into data.js. Refresh the app and the topic appears.',
-                answer_ru: 'Попросите Claude Code: "Добавь заметку и карточки для [название темы]". Claude запишет содержание прямо в data.js. Обновите приложение — тема появится.'
+                id: 'cardiac-surgery-anatomy-002',
+                question_en: 'What is the normal pericardial fluid volume?',
+                question_ru: 'Каков нормальный объём жидкости в перикардиальной полости?',
+                answer_en: '15–50 mL',
+                answer_ru: '15–50 мл'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-003',
+                question_en: 'On which surface of the pericardium does the phrenic nerve run, placing it at risk during pericardiotomy?',
+                question_ru: 'По какой поверхности перикарда проходит диафрагмальный нерв, подвергаясь риску при перикардиотомии?',
+                answer_en: 'Lateral pericardium',
+                answer_ru: 'Боковая поверхность перикарда'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-004',
+                question_en: 'How many semilunar cusps does the aortic valve have?',
+                question_ru: 'Сколько полулунных створок имеет аортальный клапан?',
+                answer_en: 'Three',
+                answer_ru: 'Три'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-005',
+                question_en: 'Which conduction structure runs beneath the non-coronary and right coronary cusp commissure of the aortic valve, placing it at risk during aortic valve replacement (AVR)?',
+                question_ru: 'Какая структура проводящей системы проходит под комиссурой некоронарной и правой коронарной створок аортального клапана и подвергается риску при протезировании аортального клапана (ПАК)?',
+                answer_en: 'Bundle of His',
+                answer_ru: 'Пучок Гиса'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-006',
+                question_en: 'Where is the sinoatrial (SA) node located in the right atrium (RA)?',
+                question_ru: 'Где расположен синусно-предсердный (СА) узел в правом предсердии (ПП)?',
+                answer_en: 'Sulcus terminalis (SVC–RA junction)',
+                answer_ru: 'Sulcus terminalis (соединение ВПВ–ПП)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-007',
+                question_en: 'From which artery does the sinoatrial (SA) node most commonly receive its blood supply (~60%)?',
+                question_ru: 'От какой артерии чаще всего (~60%) кровоснабжается синусно-предсердный (СА) узел?',
+                answer_en: 'Right coronary artery (RCA)',
+                answer_ru: 'Правая коронарная артерия (ПКА)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-008',
+                question_en: 'In which anatomical triangle is the atrioventricular (AV) node located?',
+                question_ru: 'В каком анатомическом треугольнике расположен предсердно-желудочковый (АВ) узел?',
+                answer_en: 'Triangle of Koch',
+                answer_ru: 'Треугольник Коха'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-009',
+                question_en: 'From which artery is the atrioventricular (AV) node supplied in 85–90% of hearts?',
+                question_ru: 'От какой артерии кровоснабжается предсердно-желудочковый (АВ) узел в 85–90% случаев?',
+                answer_en: 'Right coronary artery (RCA)',
+                answer_ru: 'Правая коронарная артерия (ПКА)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-010',
+                question_en: 'How is coronary dominance defined in cardiac surgery?',
+                question_ru: 'Как определяется тип доминирования коронарного кровоснабжения в кардиохирургии?',
+                answer_en: 'Posterior descending artery (PDA) origin',
+                answer_ru: 'Источник задней межжелудочковой артерии (ЗМЖА)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-011',
+                question_en: 'What percentage of hearts have right coronary artery (RCA) dominance?',
+                question_ru: 'В каком проценте случаев наблюдается правый тип доминирования (правая коронарная артерия (ПКА) даёт заднюю межжелудочковую артерию (ЗМЖА))?',
+                answer_en: '~70%',
+                answer_ru: '~70%'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-012',
+                question_en: 'What is the approximate length of the left main coronary artery (LMCA)?',
+                question_ru: 'Какова приблизительная длина ствола левой коронарной артерии (СЛКА)?',
+                answer_en: '10–15 mm',
+                answer_ru: '10–15 мм'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-013',
+                question_en: 'Which artery runs in the left atrioventricular groove and is at risk during mitral valve surgery?',
+                question_ru: 'Какая артерия проходит в левой предсердно-желудочковой борозде и подвергается риску при операциях на митральном клапане?',
+                answer_en: 'Left circumflex artery (LCx)',
+                answer_ru: 'Левая огибающая артерия (ЛОА)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-014',
+                question_en: 'What does passage through the transverse pericardial sinus allow during cardiac surgery?',
+                question_ru: 'Что обеспечивает прохождение через поперечный перикардиальный синус во время кардиохирургической операции?',
+                answer_en: 'Aortic cross-clamp placement',
+                answer_ru: 'Наложение аортального зажима'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-015',
+                question_en: 'Into which chamber does the coronary sinus drain?',
+                question_ru: 'В какую камеру сердца впадает венечный синус?',
+                answer_en: 'Right atrium (RA)',
+                answer_ru: 'Правое предсердие (ПП)'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-016',
+                question_en: 'Via which route is retrograde cardioplegia delivered during cardiac surgery?',
+                question_ru: 'Каким путём доставляется ретроградная кардиоплегия во время кардиохирургической операции?',
+                answer_en: 'Coronary sinus catheter',
+                answer_ru: 'Катетер венечного синуса'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-017',
+                question_en: 'Which two papillary muscles support the mitral valve via chordae tendineae?',
+                question_ru: 'Какие две сосочковые мышцы поддерживают митральный клапан посредством хорд?',
+                answer_en: 'Anteromedial and posterolateral',
+                answer_ru: 'Переднемедиальная и заднелатеральная'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-018',
+                question_en: 'Which cardiac structure carries the right bundle branch (RBB) to the anterior papillary muscle of the right ventricle (RV)?',
+                question_ru: 'Какая структура сердца несёт правую ножку пучка Гиса (ПНПГ) к передней сосочковой мышце правого желудочка (ПЖ)?',
+                answer_en: 'Moderator band',
+                answer_ru: 'Модераторный пучок'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-019',
+                question_en: 'What is the fossa ovalis in the interatrial septum?',
+                question_ru: 'Что представляет собой овальная ямка (fossa ovalis) в межпредсердной перегородке?',
+                answer_en: 'Foramen ovale remnant',
+                answer_ru: 'Остаток овального отверстия'
+              },
+              {
+                id: 'cardiac-surgery-anatomy-020',
+                question_en: 'Which structure in the right ventricle (RV) separates the inlet from the outlet compartment and is important in congenital heart surgery?',
+                question_ru: 'Какая структура правого желудочка (ПЖ) разделяет входной и выходной отделы и важна в хирургии врождённых пороков сердца?',
+                answer_en: 'Infundibulum (conus arteriosus)',
+                answer_ru: 'Инфундибулум (конус артериозус)'
               }
             ]
           }

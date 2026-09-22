@@ -23,7 +23,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 
 | # | Slug | Topic | Status |
 |---|---|---|---|
-| 9 | `cardiac-surgery-anatomy` | Cardiac Surgery Anatomy (chambers, valves, conduction system, pericardium) | 🔲 |
+| 9 | `cardiac-surgery-anatomy` | Cardiac Surgery Anatomy (chambers, valves, conduction system, pericardium) | ✅ |
 | 10 | `coronary-artery-disease` | Coronary Artery Disease — Pathophysiology & Indications for CABG | 🔲 |
 | 11 | `cabg` | CABG — Conduits, Techniques & Outcomes | 🔲 |
 | 12 | `cardiopulmonary-bypass` | Cardiopulmonary Bypass & Myocardial Protection | 🔲 |
@@ -109,12 +109,12 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | Domain | Topics | Done |
 |---|---|---|
 | Anatomy | 8 | 8 ✅ |
-| Cardiac Surgery | 12 | 0 |
+| Cardiac Surgery | 12 | 1 ✅ |
 | Aortic & Vascular | 10 | 1 ✅ |
 | Venous & Lymphatic | 6 | 4 ✅ |
 | Peripheral Arterial | 6 | 6 ✅ |
 | Pharmacology & Critical Care | 6 | 2 ✅ |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **51** | **21 ✅ / 30 🔲** |
+| **TOTAL** | **51** | **23 ✅ / 28 🔲** |
 
 **Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**
