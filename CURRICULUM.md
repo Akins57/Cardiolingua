@@ -43,7 +43,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | # | Slug | Topic | Status |
 |---|---|---|---|
 | 21 | `aaa-open` | AAA — Open Repair | ✅ |
-| 22 | `aaa-evar` | AAA — EVAR | 🔲 |
+| 22 | `aaa-evar` | AAA — EVAR | ✅ |
 | 23 | `carotid-cea` | Carotid Artery Disease & CEA | 🔲 |
 | 24 | `carotid-stenting` | Carotid Artery Stenting & Cerebrovascular Disease | 🔲 |
 | 25 | `renovascular-disease` | Renal Artery Stenosis & Renovascular Disease | 🔲 |
@@ -110,11 +110,11 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 |---|---|---|
 | Anatomy | 8 | 8 ✅ |
 | Cardiac Surgery | 12 | 2 ✅ |
-| Aortic & Vascular | 10 | 1 ✅ |
+| Aortic & Vascular | 10 | 2 ✅ |
 | Venous & Lymphatic | 6 | 4 ✅ |
 | Peripheral Arterial | 6 | 6 ✅ |
 | Pharmacology & Critical Care | 6 | 2 ✅ |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **51** | **24 ✅ / 27 🔲** |
+| **TOTAL** | **51** | **25 ✅ / 26 🔲** |
 
 **Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**

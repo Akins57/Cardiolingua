@@ -6980,6 +6980,287 @@ export const DATA = [
                 answer_ru: '≥10–15 мм'
               }
             ]
+          },
+
+          // ── aaa-evar ──────────────────────────────────────────────────────────
+          {
+            slug: 'aaa-evar',
+            title_en: 'AAA — EVAR',
+            title_ru: 'АБА — ЭВАР',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Endovascular aneurysm repair (EVAR) is the deployment of a stent-graft within the aortic lumen to exclude an abdominal aortic aneurysm (AAA) from arterial pressure, preventing rupture. First described by Parodi in 1991. EVAR now accounts for >70% of elective AAA repairs in the UK. It offers lower 30-day mortality than open repair (0.5–1.5% vs 3–5%) and shorter hospital stay (2–3 days vs 7–10 days), but requires lifelong surveillance due to ongoing device-related complications.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Anatomical Prerequisites & Patient Selection',
+                    body: [
+                      'Infrarenal neck: length ≥15 mm (absolute minimum 10 mm), diameter 17–32 mm (device-dependent); neck angulation <60°; suprarenal angulation <45°; no heavy circumferential thrombus or calcification; no conical (reverse-taper) neck',
+                      'Access vessels: bilateral common iliac artery (CIA) diameter ≥7 mm for sheath delivery; iliac tortuosity must be traversable; severe aorto-iliac occlusive disease may preclude EVAR',
+                      'Iliac landing zones: common iliac artery (CIA) diameter ≤20 mm for distal seal; internal iliac artery (IIA) must be preserved on at least one side — bilateral IIA occlusion risks pelvic ischaemia (buttock claudication, erectile dysfunction, colonic ischaemia)',
+                      'Fenestrated EVAR (FEVAR): indicated for juxtarenal or pararenal AAA with an infrarenal neck <10 mm; requires pre-operative CT planning and custom-manufactured graft with fenestrations/branches for renal and mesenteric vessels',
+                      'Branched EVAR (BEVAR): for thoraco-abdominal aneurysms involving the visceral segment'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'EVAR Procedure',
+                    body: [
+                      'Anaesthesia: general, regional (spinal/epidural), or local with sedation — EVAR allows regional/local anaesthesia unlike open repair',
+                      'Access: bilateral common femoral artery (CFA) surgical cut-down or large-bore percutaneous access (MANTA or ProGlide closure devices)',
+                      'Deployment: bifurcated endograft main body deployed from ipsilateral (right) access via a large-bore delivery sheath (14–26 Fr); contralateral limb snared from left via cross-over wire; performed under fluoroscopic guidance',
+                      'Graft oversizing: 10–20% relative to aortic neck diameter to ensure adequate radial force and proximal seal',
+                      'Completion angiogram: confirms position below renal arteries, absence of endoleak, and patency of iliac limbs',
+                      'Contrast: iodinated contrast carries risk of contrast-induced nephropathy (CIN); CO₂ angiography can substitute in patients with renal impairment'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Endoleaks',
+                    body: [
+                      'Type I — attachment zone leak: perigraft flow at proximal (Ia) or distal (Ib) fixation; continued AAA pressurisation → ALWAYS requires intervention (balloon moulding, Palmaz stent, extension cuff, or conversion to open)',
+                      'Type II — collateral backflow: retrograde filling of sac from patent inferior mesenteric artery (IMA) or lumbar arteries; most common endoleak type; does NOT always require intervention — treat if sac expands ≥5 mm over 6 months (transarterial or translumbar embolisation)',
+                      'Type III — structural failure: graft fabric tear (IIIa) or modular junctional disconnection (IIIb); re-pressurises sac → requires intervention (re-lining)',
+                      'Type IV — graft porosity: microporous bleeding through fabric within 30 days; now rare with modern low-porosity grafts; self-limiting',
+                      'Type V (endotension): sac expansion without demonstrable endoleak on imaging; mechanism uncertain (possibly transmitted pressure through mural thrombus); treat if significant sac growth'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications & Surveillance',
+                    body: [
+                      'Post-implantation syndrome: fever + raised C-reactive protein (CRP) at 2–5 days post-EVAR; self-limiting inflammatory response to graft material; distinguish from infection; treat symptomatically',
+                      'Graft limb thrombosis: unilateral lower limb ischaemia; treated by thrombectomy + stenting or femoro-femoral crossover bypass',
+                      'Graft migration: loss of proximal seal → Type I endoleak; risk with neck dilatation over time or undersizing',
+                      'Sac rupture: can still occur if endoleak re-pressurises sac',
+                      'EVAR surveillance protocol: CT angiography (CTA) at 1 month post-op, 12 months, then annually; duplex ultrasound (DUS) can substitute CTA in stable patients to reduce radiation and contrast exposure',
+                      'Secondary interventions: required in 10–20% of patients by 5 years (endoleak treatment, limb extension, open conversion)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Key Trials',
+                    body: [
+                      'EVAR 1 trial (UK, 2004): EVAR vs open repair in fit patients — EVAR had lower 30-day mortality but no late survival advantage; similar all-cause mortality at 8 years; EVAR had higher re-intervention rate',
+                      'OVER trial (USA, 2012): confirmed EVAR 1 findings — early mortality benefit of EVAR lost by 5–9 years',
+                      'EVAR 2 trial (UK): EVAR vs no repair in surgically unfit patients — no survival benefit for EVAR due to high perioperative mortality and late device-related deaths; best medical therapy comparable',
+                      'IMPROVE trial (UK, 2014): emergency EVAR (REVAR) vs open repair for ruptured AAA — no significant 30-day mortality difference overall; EVAR group had shorter hospital stay; local expertise is the key determinant'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Эндоваскулярное аортальное протезирование (ЭВАР) — имплантация стент-графта в просвет аорты для выключения аневризмы брюшной аорты (АБА) из артериального кровотока и предотвращения разрыва. Впервые описано Пароди в 1991 году. В настоящее время ЭВАР составляет >70% плановых вмешательств по поводу АБА в Великобритании. Метод обеспечивает более низкую 30-дневную летальность по сравнению с открытой операцией (0,5–1,5% против 3–5%) и более короткий период госпитализации (2–3 дня против 7–10 дней), однако требует пожизненного динамического наблюдения в связи с возможными осложнениями, связанными с устройством.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Анатомические требования и отбор пациентов',
+                    body: [
+                      'Инфраренальная шейка: длина ≥15 мм (абсолютный минимум 10 мм), диаметр 17–32 мм (зависит от устройства); угол изгиба шейки <60°; наддиафрагмальный угол <45°; отсутствие выраженного циркулярного тромба или кальциноза; отсутствие конической (обратно-конусной) шейки',
+                      'Доступные артерии: диаметр общей подвздошной артерии (ОПА) ≥7 мм для проведения интродьюсера; извитость подвздошных артерий должна быть преодолимой; выраженная аортоподвздошная окклюзия может исключать ЭВАР',
+                      'Дистальные зоны фиксации: диаметр ОПА ≤20 мм для обеспечения герметичности; необходимо сохранить внутреннюю подвздошную артерию (ВПА) хотя бы с одной стороны — двусторонняя окклюзия ВПА грозит ишемией органов таза (перемежающаяся хромота ягодиц, эректильная дисфункция, ишемия ободочной кишки)',
+                      'Фенестрированный ЭВАР (ФЭВАР): показан при юкстаренальной или параренальной АБА с инфраренальной шейкой <10 мм; требует предоперационного КТ-планирования и изготовления стент-графта на заказ с фенестрами/браншами для почечных и мезентериальных сосудов',
+                      'Ветвистый ЭВАР (ВЭВАР): применяется при торакоабдоминальных аневризмах с вовлечением висцерального сегмента'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Техника ЭВАР',
+                    body: [
+                      'Анестезия: общая, регионарная (спинальная/эпидуральная) или местная с седацией — ЭВАР, в отличие от открытой операции, позволяет применять регионарную/местную анестезию',
+                      'Доступ: хирургическое выделение общей бедренной артерии (ОБА) с обеих сторон или пункционный доступ большого диаметра (устройства закрытия MANTA или ProGlide)',
+                      'Имплантация: основное тело бифуркационного эндографта вводится через ипсилатеральный (правый) доступ по интродьюсеру большого диаметра (14–26 Fr); контралатеральная браншa захватывается проводником через контралатеральный доступ; выполняется под рентгеноскопическим контролем',
+                      'Овердайзинг: стент-графт превышает диаметр шейки аорты на 10–20% для обеспечения достаточной радиальной силы и проксимальной герметичности',
+                      'Контрольная ангиография: подтверждает расположение ниже почечных артерий, отсутствие эндолика и проходимость подвздошных браншей',
+                      'Контрастное вещество: йодсодержащий контраст несёт риск контраст-индуцированной нефропатии (КИН); CO₂-ангиография может использоваться вместо него у пациентов с нарушением функции почек'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Эндолики',
+                    body: [
+                      'Тип I — утечка в зонах фиксации: периграфтный кровоток у проксимального (Ia) или дистального (Ib) края; продолжающееся давление на мешок аневризмы — ВСЕГДА требует вмешательства (баллонная ремоделировка, стент Palmaz, удлиняющая манжета или конверсия в открытую операцию)',
+                      'Тип II — ретроградный коллатеральный кровоток: ретроградное заполнение мешка из проходимой нижней брыжеечной артерии (НБА) или поясничных артерий; наиболее распространённый тип эндолика; вмешательство не всегда требуется — лечить при расширении мешка ≥5 мм за 6 месяцев (трансартериальная или транслюмбарная эмболизация)',
+                      'Тип III — структурная несостоятельность: разрыв ткани графта (IIIa) или разъединение модульных стыков (IIIb); давление в мешке восстанавливается — требует вмешательства (реэндоваскуляризация)',
+                      'Тип IV — пористость графта: микропористое просачивание через ткань в первые 30 дней; редок при современных низкопористых графтах; самоустраняется',
+                      'Тип V (эндотензия): расширение мешка при отсутствии визуализируемого эндолика; механизм неясен (возможно, давление передаётся через пристеночный тромб); лечение при значительном росте мешка'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения и динамическое наблюдение',
+                    body: [
+                      'Постимплантационный синдром: лихорадка + повышение C-реактивного белка (СРБ) на 2–5-е сутки после ЭВАР; самоограничивающаяся воспалительная реакция на материал графта; дифференцировать с инфекцией; лечение симптоматическое',
+                      'Тромбоз браншей графта: острая ишемия нижней конечности на стороне поражения; лечится тромбэктомией + стентированием или бедренно-бедренным обходным шунтированием',
+                      'Миграция графта: потеря проксимальной герметичности → эндолик типа I; риск увеличивается при дилатации шейки аорты или недостаточном овердайзинге',
+                      'Разрыв мешка: возможен при восстановлении давления в мешке на фоне эндолика',
+                      'Протокол наблюдения после ЭВАР: КТ-ангиография (КТА) через 1 месяц после операции, через 12 месяцев, затем ежегодно; дуплексное ультразвуковое сканирование (ДУЗС) может заменять КТА у стабильных пациентов для уменьшения лучевой нагрузки и введения контраста',
+                      'Повторные вмешательства: требуются у 10–20% пациентов в течение 5 лет (устранение эндолика, имплантация удлиняющей бранши, конверсия в открытую операцию)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Ключевые исследования',
+                    body: [
+                      'EVAR 1 (Великобритания, 2004): ЭВАР против открытой операции у сохранных пациентов — ЭВАР показал более низкую 30-дневную летальность, однако не имел преимуществ в долгосрочной выживаемости; к 8 годам показатели общей смертности сравнялись; у ЭВАР выше частота повторных вмешательств',
+                      'OVER (США, 2012): подтвердил результаты EVAR 1 — раннее преимущество ЭВАР в летальности нивелируется к 5–9 годам',
+                      'EVAR 2 (Великобритания): ЭВАР против консервативной терапии у неоперабельных пациентов — ЭВАР не улучшил выживаемость из-за высокой периоперационной летальности и поздних осложнений устройства; результаты сопоставимы с наилучшей медикаментозной терапией',
+                      'IMPROVE (Великобритания, 2014): экстренный ЭВАР против открытой операции при разрыве АБА — достоверного различия в 30-дневной летальности не выявлено; в группе ЭВАР — более короткая госпитализация; ключевым фактором является опыт конкретного центра'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'aaa-evar-001',
+                question_en: 'What is the minimum infrarenal aortic neck length required for standard endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Какова минимальная длина инфраренальной шейки аорты, необходимая для стандартного эндоваскулярного аортального протезирования (ЭВАР)?',
+                answer_en: '≥15 mm',
+                answer_ru: '≥15 мм'
+              },
+              {
+                id: 'aaa-evar-002',
+                question_en: 'What is the minimum common iliac artery (CIA) diameter required for endovascular aneurysm repair (EVAR) device sheath delivery?',
+                question_ru: 'Каков минимальный диаметр общей подвздошной артерии (ОПА), необходимый для проведения интродьюсера при ЭВАР?',
+                answer_en: '≥7 mm',
+                answer_ru: '≥7 мм'
+              },
+              {
+                id: 'aaa-evar-003',
+                question_en: 'By what percentage is an endovascular aneurysm repair (EVAR) stent-graft oversized relative to the aortic neck diameter?',
+                question_ru: 'На какой процент стент-графт при ЭВАР превышает диаметр шейки аорты (овердайзинг)?',
+                answer_en: '10–20%',
+                answer_ru: '10–20%'
+              },
+              {
+                id: 'aaa-evar-004',
+                question_en: 'What is the maximum aortic neck angulation permitted for standard endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Каков максимально допустимый угол изгиба шейки аорты для стандартного ЭВАР?',
+                answer_en: '<60°',
+                answer_ru: '<60°'
+              },
+              {
+                id: 'aaa-evar-005',
+                question_en: 'Which endoleak type after endovascular aneurysm repair (EVAR) involves retrograde flow into the aneurysm sac from the inferior mesenteric artery (IMA) or lumbar arteries?',
+                question_ru: 'Какой тип эндолика после ЭВАР характеризуется ретроградным заполнением мешка аневризмы из нижней брыжеечной артерии (НБА) или поясничных артерий?',
+                answer_en: 'Type II endoleak',
+                answer_ru: 'Эндолик типа II'
+              },
+              {
+                id: 'aaa-evar-006',
+                question_en: 'Which endoleak type after endovascular aneurysm repair (EVAR) involves perigraft flow at the proximal or distal attachment zones and always requires intervention?',
+                question_ru: 'Какой тип эндолика после ЭВАР характеризуется периграфтным кровотоком в проксимальной или дистальной зонах фиксации и всегда требует вмешательства?',
+                answer_en: 'Type I endoleak',
+                answer_ru: 'Эндолик типа I'
+              },
+              {
+                id: 'aaa-evar-007',
+                question_en: 'Which endoleak type after endovascular aneurysm repair (EVAR) is caused by structural graft failure — fabric tear or modular disconnection?',
+                question_ru: 'Какой тип эндолика после ЭВАР обусловлен структурной несостоятельностью — разрывом ткани или разъединением модульных стыков графта?',
+                answer_en: 'Type III endoleak',
+                answer_ru: 'Эндолик типа III'
+              },
+              {
+                id: 'aaa-evar-008',
+                question_en: 'What is the most common endoleak type after endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Какой тип эндолика является наиболее распространённым после ЭВАР?',
+                answer_en: 'Type II endoleak',
+                answer_ru: 'Эндолик типа II'
+              },
+              {
+                id: 'aaa-evar-009',
+                question_en: 'What is endotension (Type V endoleak) after endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Что такое эндотензия (эндолик типа V) после ЭВАР?',
+                answer_en: 'Sac expansion, no leak',
+                answer_ru: 'Рост мешка без эндолика'
+              },
+              {
+                id: 'aaa-evar-010',
+                question_en: 'When does a Type II endoleak after endovascular aneurysm repair (EVAR) require intervention?',
+                question_ru: 'В каком случае эндолик типа II после ЭВАР требует вмешательства?',
+                answer_en: 'Sac expansion ≥5 mm',
+                answer_ru: 'Рост мешка ≥5 мм'
+              },
+              {
+                id: 'aaa-evar-011',
+                question_en: 'At what time point is the first post-operative CT angiography (CTA) performed after endovascular aneurysm repair (EVAR)?',
+                question_ru: 'В какой срок выполняется первая послеоперационная КТ-ангиография (КТА) после ЭВАР?',
+                answer_en: '1 month post-op',
+                answer_ru: 'Через 1 месяц после операции'
+              },
+              {
+                id: 'aaa-evar-012',
+                question_en: 'What is the approximate 30-day mortality of elective endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Какова приблизительная 30-дневная летальность при плановом ЭВАР?',
+                answer_en: '0.5–1.5%',
+                answer_ru: '0,5–1,5%'
+              },
+              {
+                id: 'aaa-evar-013',
+                question_en: 'What is the typical hospital stay after endovascular aneurysm repair (EVAR) compared to open abdominal aortic aneurysm (AAA) repair?',
+                question_ru: 'Какова типичная продолжительность госпитализации после ЭВАР по сравнению с открытой операцией при АБА?',
+                answer_en: '2–3 days vs 7–10',
+                answer_ru: '2–3 дня против 7–10'
+              },
+              {
+                id: 'aaa-evar-014',
+                question_en: 'What is post-implantation syndrome after endovascular aneurysm repair (EVAR) characterised by?',
+                question_ru: 'Чем характеризуется постимплантационный синдром после ЭВАР?',
+                answer_en: 'Fever, raised CRP',
+                answer_ru: 'Лихорадка, рост СРБ'
+              },
+              {
+                id: 'aaa-evar-015',
+                question_en: 'Which UK trial compared endovascular aneurysm repair (EVAR) versus open repair in fit patients and found no late survival advantage for EVAR?',
+                question_ru: 'Какое британское исследование сравнивало ЭВАР с открытой операцией у сохранных пациентов и не выявило преимуществ ЭВАР в долгосрочной выживаемости?',
+                answer_en: 'EVAR 1 trial',
+                answer_ru: 'Исследование EVAR 1'
+              },
+              {
+                id: 'aaa-evar-016',
+                question_en: 'What did the EVAR 2 trial show about endovascular aneurysm repair (EVAR) in surgically unfit patients?',
+                question_ru: 'Что показало исследование EVAR 2 относительно ЭВАР у пациентов с высоким хирургическим риском?',
+                answer_en: 'No survival benefit',
+                answer_ru: 'Нет преимущества в выживаемости'
+              },
+              {
+                id: 'aaa-evar-017',
+                question_en: 'When is fenestrated endovascular aneurysm repair (FEVAR) indicated instead of standard EVAR?',
+                question_ru: 'В каких случаях показан фенестрированный ЭВАР (ФЭВАР) вместо стандартного ЭВАР?',
+                answer_en: 'Juxtarenal AAA (short neck)',
+                answer_ru: 'Юкстаренальная АБА (короткая шейка)'
+              },
+              {
+                id: 'aaa-evar-018',
+                question_en: 'What vascular complication results from bilateral internal iliac artery (IIA) occlusion during endovascular aneurysm repair (EVAR)?',
+                question_ru: 'Какое сосудистое осложнение возникает при двусторонней окклюзии внутренней подвздошной артерии (ВПА) во время ЭВАР?',
+                answer_en: 'Pelvic ischaemia',
+                answer_ru: 'Ишемия органов таза'
+              },
+              {
+                id: 'aaa-evar-019',
+                question_en: 'What aortic neck diameter range is suitable for standard endovascular aneurysm repair (EVAR) device sizing?',
+                question_ru: 'Какой диаметр шейки аорты соответствует диапазону стандартных устройств для ЭВАР?',
+                answer_en: '17–32 mm',
+                answer_ru: '17–32 мм'
+              },
+              {
+                id: 'aaa-evar-020',
+                question_en: 'Which UK trial compared emergency endovascular aneurysm repair (EVAR) versus open repair for ruptured abdominal aortic aneurysm (AAA)?',
+                question_ru: 'Какое британское исследование сравнивало экстренный ЭВАР с открытой операцией при разрыве АБА?',
+                answer_en: 'IMPROVE trial',
+                answer_ru: 'Исследование IMPROVE'
+              }
+            ]
           }
 
         ]
