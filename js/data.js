@@ -7097,6 +7097,288 @@ export const DATA = [
                 answer_ru: 'Инсульт/транзиторная ишемическая атака (ТИА) в анамнезе; возраст >75 лет'
               }
             ]
+          },
+
+          // ── Topic: Perioperative Antibiotics ─────────────────────────────────
+          {
+            slug: 'perioperative-antibiotics',
+            title_en: 'Perioperative Antibiotics in Cardiovascular Surgery',
+            title_ru: 'Периоперационная антибиотикотерапия в сердечно-сосудистой хирургии',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Surgical site infection (SSI) is a major source of morbidity in cardiovascular surgery. Sternal wound infection (including mediastinitis) carries 10–47% mortality. Prosthetic vascular graft infection is limb- and life-threatening. Antibiotic prophylaxis — correctly timed, dosed, and chosen — is the primary preventive strategy. UK practice follows NICE guideline NG125 (2019) and individual institutional protocols aligned with local microbiology.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Principles of Surgical Antibiotic Prophylaxis',
+                    body: [
+                      'Timing: administer within 60 minutes before skin incision (within 30 minutes for glycopeptides — vancomycin / teicoplanin — due to slower infusion); intraoperative re-dosing if procedure >4 hours or blood loss >1.5 L',
+                      'Route: intravenous (IV) only for prophylaxis — oral absorption unreliable in the perioperative setting',
+                      'Duration: single dose at induction is sufficient for most clean cardiovascular procedures (NICE NG125); additional doses within 24 hours acceptable for high-risk cases; prophylaxis beyond 24 hours is NOT recommended and drives resistance',
+                      'Spectrum: cover skin flora (Staphylococcus aureus, Staphylococcus epidermidis) plus bowel flora for abdominal vascular cases (Gram-negative enteric organisms)',
+                      'MRSA (methicillin-resistant Staphylococcus aureus) risk: screen elective patients preoperatively; if MRSA-positive → decolonise (chlorhexidine wash, mupirocin nasal ointment × 5 days) and use glycopeptide prophylaxis'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'First-Line Prophylactic Agents',
+                    body: [
+                      'Co-amoxiclav (amoxicillin + clavulanate) 1.2 g IV at induction: first-line in most UK cardiac and vascular centres; broad spectrum covering staphylococci, streptococci, and Gram-negative organisms; contraindicated in penicillin allergy',
+                      'Cefuroxime 1.5 g IV at induction: second-generation cephalosporin; alternative to co-amoxiclav; also covers most staphylococci and Gram-negatives; avoid in severe penicillin allergy (cross-reactivity ~1–2%)',
+                      'Flucloxacillin 1 g IV + gentamicin 1.5 mg/kg IV: used in some centres for cardiac surgery; excellent anti-staphylococcal cover; gentamicin adds Gram-negative cover',
+                      'Teicoplanin 400–800 mg IV (slow infusion ≥30 min before incision): for MRSA-positive patients or penicillin/cephalosporin allergy; glycopeptide — covers MRSA but NOT Gram-negatives; add gentamicin 1.5 mg/kg for Gram-negative cover',
+                      'Vancomycin 15–20 mg/kg IV (infuse over ≥60 min, start 90–120 min before incision): alternative glycopeptide; red man syndrome if infused too fast; monitor levels if renal impairment',
+                      'Metronidazole 500 mg IV: added for abdominal aortic surgery (bowel flora coverage — Bacteroides spp.); combined with cefuroxime or co-amoxiclav'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Procedure-Specific Regimens',
+                    body: [
+                      'Cardiac surgery (coronary artery bypass grafting / CABG, valve surgery): co-amoxiclav 1.2 g IV at induction ± repeat at 4 h; MRSA-positive → teicoplanin 800 mg IV + gentamicin 1.5 mg/kg; wound irrigation with dilute povidone-iodine before sternal closure reduces mediastinitis rate',
+                      'Open abdominal aortic aneurysm (AAA) repair / aorto-iliac surgery: co-amoxiclav 1.2 g IV at induction; if penicillin-allergic → cefuroxime 1.5 g + metronidazole 500 mg IV; graft soaking in rifampicin 60 mg/60 mL saline NOT recommended routinely (reserved for graft infection treatment)',
+                      'Carotid endarterectomy (CEA): co-amoxiclav 1.2 g IV at induction; single dose sufficient; low SSI risk but patch infection is catastrophic',
+                      'Lower limb bypass / peripheral vascular surgery: co-amoxiclav 1.2 g IV; groin incisions have higher SSI risk (skin flora + proximity to bowel); continue prophylaxis for 24 h in some protocols',
+                      'Endovascular aortic repair (EVAR) / TEVAR: single dose co-amoxiclav at induction; evidence for prolonged prophylaxis after stent-graft implantation is lacking'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Sternal Wound Infection & Mediastinitis',
+                    body: [
+                      'Incidence: superficial SSI ~5%; deep sternal wound infection (DSWI) / mediastinitis ~1–3% after cardiac surgery',
+                      'Causative organisms: Staphylococcus aureus and Staphylococcus epidermidis (~60–70%); Gram-negative organisms (Pseudomonas, Klebsiella) in immunocompromised; polymicrobial in diabetics',
+                      'Risk factors: diabetes mellitus, obesity (body mass index / BMI >30), bilateral internal mammary artery (BIMA) harvest (impairs sternal blood supply), reoperation, prolonged cardiopulmonary bypass (CPB) time, postoperative low cardiac output',
+                      'Diagnosis: fever, sternal instability ("clicking"), wound erythema/discharge, elevated C-reactive protein (CRP) / white cell count (WCC); CT chest confirms mediastinal gas/fluid',
+                      'Treatment: urgent surgical debridement + vacuum-assisted closure (VAC) dressing (negative pressure wound therapy / NPWT) → delayed primary closure or omental/pectoralis muscle flap; prolonged IV antibiotics guided by cultures (typically 6 weeks)',
+                      'Mortality: 10–47% (mediastinitis); prevention is paramount'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Vascular Graft Infection',
+                    body: [
+                      'Incidence: aortic graft 0.5–2%; peripheral bypass graft up to 5% (groin anastomosis highest risk)',
+                      'Causative organisms: Staphylococcus epidermidis (late, indolent — forms biofilm on graft); Staphylococcus aureus (early, aggressive); Gram-negatives (early aortic); Candida (immunocompromised)',
+                      'Presentation: early (<4 months) — fever, wound breakdown, perigraft abscess; late — false aneurysm at anastomosis, aorto-enteric fistula (AEF — herald bleed)',
+                      'Diagnosis: CT (perigraft gas/fluid, false aneurysm); FDG-PET-CT (metabolic activity); labelled white cell scan; blood cultures',
+                      'Treatment: graft excision + extra-anatomic bypass (axillo-bifemoral / obturator bypass) — gold standard for aortic graft infection; OR in-situ reconstruction with rifampicin-soaked Dacron, cryopreserved allograft, or silver-impregnated graft; prolonged IV antibiotics (≥6 weeks) then oral suppression'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Инфекция в области хирургического вмешательства (ИОХВ) — одна из ведущих причин осложнений в сердечно-сосудистой хирургии. Инфекция грудинной раны (включая медиастинит) сопровождается летальностью 10–47%. Инфекция синтетического сосудистого протеза угрожает как конечности, так и жизни пациента. Антибиотикопрофилактика — правильно выбранная, своевременно введённая и правильно дозированная — является основной стратегией профилактики.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Принципы хирургической антибиотикопрофилактики',
+                    body: [
+                      'Сроки: ввести внутривенно в течение 60 минут до разреза кожи (в течение 30 минут для гликопептидов — ванкомицин / тейкопланин — в связи с медленным введением); повторное интраоперационное введение при операции >4 ч или кровопотере >1,5 л',
+                      'Путь введения: только внутривенный (в/в) — всасывание при пероральном приёме ненадёжно в периоперационном периоде',
+                      'Продолжительность: однократная доза на вводном наркозе достаточна для большинства чистых сердечно-сосудистых операций (NICE NG125); дополнительные дозы в течение 24 ч допустимы при высоком риске; профилактика свыше 24 ч НЕ рекомендована и способствует резистентности',
+                      'Спектр: перекрывает флору кожи (Staphylococcus aureus, Staphylococcus epidermidis); при абдоминальной сосудистой хирургии — также кишечная флора (грамотрицательные)',
+                      'Метициллинрезистентный золотистый стафилококк (MRSA): скрининг плановых пациентов до операции; при MRSA-положительном статусе → деколонизация (хлоргексидин, мупироцин назальная мазь × 5 дней) + гликопептид для профилактики'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Препараты первой линии для профилактики',
+                    body: [
+                      'Ко-амоксиклав (амоксициллин + клавуланат) 1,2 г в/в на вводном наркозе: препарат первой линии в большинстве кардиохирургических и сосудистых центров Великобритании; противопоказан при аллергии на пенициллин',
+                      'Цефуроксим 1,5 г в/в на вводном наркозе: цефалоспорин второго поколения; альтернатива ко-амоксиклаву; избегать при тяжёлой аллергии на пенициллин (перекрёстная реактивность ~1–2%)',
+                      'Тейкопланин 400–800 мг в/в (медленная инфузия ≥30 мин до разреза): для MRSA-положительных пациентов или при аллергии на пенициллин/цефалоспорины; гликопептид — перекрывает MRSA, НЕ перекрывает грамотрицательные; добавить гентамицин 1,5 мг/кг',
+                      'Ванкомицин 15–20 мг/кг в/в (инфузия ≥60 мин, начать за 90–120 мин до разреза): альтернативный гликопептид; синдром «красного человека» при быстром введении; контролировать уровень при почечной недостаточности',
+                      'Метронидазол 500 мг в/в: добавляется при абдоминальной аортальной хирургии (покрытие кишечной флоры — Bacteroides spp.)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Режимы по видам операций',
+                    body: [
+                      'Кардиохирургия (коронарное шунтирование / КШ, операции на клапанах): ко-амоксиклав 1,2 г в/в на вводном наркозе ± повтор через 4 ч; при MRSA → тейкопланин 800 мг в/в + гентамицин 1,5 мг/кг',
+                      'Открытое лечение аневризмы брюшной аорты (АБА) / аорто-подвздошная хирургия: ко-амоксиклав 1,2 г в/в; при аллергии на пенициллин → цефуроксим 1,5 г + метронидазол 500 мг в/в',
+                      'Каротидная эндартерэктомия (КЭА): ко-амоксиклав 1,2 г в/в, однократно; низкий риск ИОХВ, но инфекция заплаты — катастрофическое осложнение',
+                      'Шунтирование нижних конечностей: ко-амоксиклав 1,2 г в/в; паховые разрезы имеют повышенный риск ИОХВ',
+                      'Эндоваскулярное протезирование аорты (ЭВПА): однократная доза ко-амоксиклава на вводном наркозе'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Инфекция грудинной раны и медиастинит',
+                    body: [
+                      'Частота: поверхностная ИОХВ ~5%; глубокая инфекция грудинной раны (ГИГР) / медиастинит ~1–3% после кардиохирургических операций',
+                      'Возбудители: Staphylococcus aureus и Staphylococcus epidermidis (~60–70%); грамотрицательные у иммунокомпрометированных; полимикробная флора у диабетиков',
+                      'Факторы риска: сахарный диабет (СД), ожирение (индекс массы тела / ИМТ >30), забор обеих внутренних грудных артерий (ОВГА), повторная операция, длительное искусственное кровообращение (ИК)',
+                      'Диагностика: лихорадка, нестабильность грудины, эритема/отделяемое раны, повышение С-реактивного белка (СРБ) / лейкоцитоз; компьютерная томография (КТ) грудной клетки подтверждает медиастинальный газ/жидкость',
+                      'Лечение: срочная хирургическая обработка + вакуум-ассистированное закрытие (ВАЗ / VAC) → отсроченное первичное закрытие или лоскутная пластика; длительная в/в антибиотикотерапия под контролем посевов (~6 нед)',
+                      'Летальность: 10–47% при медиастините'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Инфекция сосудистого протеза',
+                    body: [
+                      'Частота: аортальный протез 0,5–2%; периферическое шунтирование до 5% (наибольший риск — паховый анастомоз)',
+                      'Возбудители: Staphylococcus epidermidis (поздняя, вялая — биоплёнка); Staphylococcus aureus (ранняя, агрессивная); грамотрицательные (ранняя аортальная); Candida у иммунокомпрометированных',
+                      'Проявления: ранняя (<4 мес) — лихорадка, расхождение раны, перипротезный абсцесс; поздняя — ложная аневризма анастомоза, аорто-кишечный свищ (АКС)',
+                      'Диагностика: КТ (газ/жидкость вокруг протеза); ПЭТ-КТ с ФДГ; сцинтиграфия с мечеными лейкоцитами; гемокультура',
+                      'Лечение: удаление протеза + экстраанатомическое шунтирование (подмышечно-бедренное / запирательное) — золотой стандарт при аортальной инфекции; или реконструкция in situ протезом, пропитанным рифампицином, криосохранённым аллографтом или серебросодержащим протезом; в/в антибиотики ≥6 нед с последующей пероральной супрессивной терапией'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'perioperative-antibiotics-001',
+                question_en: 'First-line antibiotic prophylaxis for cardiac surgery in the UK?',
+                question_ru: 'Антибиотик первой линии для профилактики в кардиохирургии в Великобритании?',
+                answer_en: 'Co-amoxiclav 1.2 g IV',
+                answer_ru: 'Ко-амоксиклав 1,2 г в/в'
+              },
+              {
+                id: 'perioperative-antibiotics-002',
+                question_en: 'Timing of antibiotic prophylaxis before skin incision?',
+                question_ru: 'Сроки введения антибиотикопрофилактики до разреза кожи?',
+                answer_en: 'Within 60 minutes',
+                answer_ru: 'В течение 60 минут'
+              },
+              {
+                id: 'perioperative-antibiotics-003',
+                question_en: 'Glycopeptide infusion timing before skin incision (cardiovascular surgery prophylaxis)?',
+                question_ru: 'Сроки инфузии гликопептида до разреза кожи (профилактика в сердечно-сосудистой хирургии)?',
+                answer_en: 'Within 30 minutes',
+                answer_ru: 'В течение 30 минут'
+              },
+              {
+                id: 'perioperative-antibiotics-004',
+                question_en: 'Maximum recommended duration of prophylactic antibiotics after cardiovascular surgery (NICE NG125)?',
+                question_ru: 'Максимальная рекомендованная продолжительность антибиотикопрофилактики после сердечно-сосудистых операций (NICE NG125)?',
+                answer_en: '24 hours',
+                answer_ru: '24 часа'
+              },
+              {
+                id: 'perioperative-antibiotics-005',
+                question_en: 'When should intraoperative re-dosing of prophylactic antibiotics occur during cardiovascular surgery?',
+                question_ru: 'Когда выполняется повторное интраоперационное введение антибиотиков при сердечно-сосудистых операциях?',
+                answer_en: '>4 h or >1.5 L blood loss',
+                answer_ru: '>4 ч или кровопотеря >1,5 л'
+              },
+              {
+                id: 'perioperative-antibiotics-006',
+                question_en: 'Antibiotic prophylaxis for MRSA-positive patients undergoing cardiovascular surgery?',
+                question_ru: 'Антибиотикопрофилактика у MRSA-положительных пациентов при сердечно-сосудистых операциях?',
+                answer_en: 'Teicoplanin + gentamicin',
+                answer_ru: 'Тейкопланин + гентамицин'
+              },
+              {
+                id: 'perioperative-antibiotics-007',
+                question_en: 'MRSA decolonisation regimen before elective cardiovascular surgery?',
+                question_ru: 'Схема деколонизации MRSA перед плановой сердечно-сосудистой операцией?',
+                answer_en: 'Chlorhexidine wash + mupirocin',
+                answer_ru: 'Хлоргексидин + мупироцин назально'
+              },
+              {
+                id: 'perioperative-antibiotics-008',
+                question_en: 'Additional antibiotic added for open abdominal aortic surgery to cover bowel flora?',
+                question_ru: 'Дополнительный антибиотик при открытой операции на брюшной аорте для перекрытия кишечной флоры?',
+                answer_en: 'Metronidazole 500 mg IV',
+                answer_ru: 'Метронидазол 500 мг в/в'
+              },
+              {
+                id: 'perioperative-antibiotics-009',
+                question_en: 'Vancomycin: main adverse effect of rapid infusion during cardiovascular surgery prophylaxis?',
+                question_ru: 'Ванкомицин: основной побочный эффект быстрой инфузии при профилактике в сердечно-сосудистой хирургии?',
+                answer_en: 'Red man syndrome',
+                answer_ru: 'Синдром «красного человека»'
+              },
+              {
+                id: 'perioperative-antibiotics-010',
+                question_en: 'Deep sternal wound infection (mediastinitis) incidence after cardiac surgery?',
+                question_ru: 'Частота глубокой инфекции грудинной раны (медиастинита) после кардиохирургических операций?',
+                answer_en: '1–3%',
+                answer_ru: '1–3%'
+              },
+              {
+                id: 'perioperative-antibiotics-011',
+                question_en: 'Mortality of mediastinitis after cardiac surgery?',
+                question_ru: 'Летальность медиастинита после кардиохирургических операций?',
+                answer_en: '10–47%',
+                answer_ru: '10–47%'
+              },
+              {
+                id: 'perioperative-antibiotics-012',
+                question_en: 'Most common organism causing deep sternal wound infection after cardiac surgery?',
+                question_ru: 'Наиболее частый возбудитель глубокой инфекции грудинной раны после кардиохирургических операций?',
+                answer_en: 'Staphylococcus aureus',
+                answer_ru: 'Staphylococcus aureus'
+              },
+              {
+                id: 'perioperative-antibiotics-013',
+                question_en: 'Surgical treatment of deep sternal wound infection after cardiac surgery?',
+                question_ru: 'Хирургическое лечение глубокой инфекции грудинной раны после кардиохирургических операций?',
+                answer_en: 'Debridement + VAC dressing',
+                answer_ru: 'Хирургическая обработка + вакуум-ассистированное закрытие (ВАЗ)'
+              },
+              {
+                id: 'perioperative-antibiotics-014',
+                question_en: 'Risk factor for deep sternal wound infection: bilateral internal mammary artery (BIMA) harvest — why?',
+                question_ru: 'Фактор риска глубокой инфекции грудинной раны: забор обеих внутренних грудных артерий (ОВГА) — почему?',
+                answer_en: 'Impairs sternal blood supply',
+                answer_ru: 'Нарушает кровоснабжение грудины'
+              },
+              {
+                id: 'perioperative-antibiotics-015',
+                question_en: 'Incidence of vascular graft infection after aortic surgery?',
+                question_ru: 'Частота инфекции сосудистого протеза после аортальной хирургии?',
+                answer_en: '0.5–2%',
+                answer_ru: '0,5–2%'
+              },
+              {
+                id: 'perioperative-antibiotics-016',
+                question_en: 'Most common organism in late vascular graft infection (biofilm-forming)?',
+                question_ru: 'Наиболее частый возбудитель поздней инфекции сосудистого протеза (образующий биоплёнку)?',
+                answer_en: 'Staphylococcus epidermidis',
+                answer_ru: 'Staphylococcus epidermidis'
+              },
+              {
+                id: 'perioperative-antibiotics-017',
+                question_en: 'Gold standard treatment for infected aortic graft?',
+                question_ru: 'Золотой стандарт лечения инфицированного аортального протеза?',
+                answer_en: 'Excision + extra-anatomic bypass',
+                answer_ru: 'Удаление + экстраанатомическое шунтирование'
+              },
+              {
+                id: 'perioperative-antibiotics-018',
+                question_en: 'Duration of intravenous antibiotics for vascular graft infection?',
+                question_ru: 'Продолжительность в/в антибиотикотерапии при инфекции сосудистого протеза?',
+                answer_en: '≥6 weeks',
+                answer_ru: '≥6 недель'
+              },
+              {
+                id: 'perioperative-antibiotics-019',
+                question_en: 'Highest-risk peripheral bypass site for surgical site infection (SSI)?',
+                question_ru: 'Наиболее частое место для инфекции в области хирургического вмешательства (ИОХВ) при периферическом шунтировании?',
+                answer_en: 'Groin anastomosis',
+                answer_ru: 'Паховый анастомоз'
+              },
+              {
+                id: 'perioperative-antibiotics-020',
+                question_en: 'In-situ aortic reconstruction options for infected aortic graft?',
+                question_ru: 'Варианты реконструкции in situ аорты при инфекции аортального протеза?',
+                answer_en: 'Rifampicin Dacron; allograft; silver graft',
+                answer_ru: 'Дакрон с рифампицином; аллографт; серебросодержащий протез'
+              }
+            ]
           }
 
         ]

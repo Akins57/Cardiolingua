@@ -81,7 +81,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 
 ---
 
-## PHARMACOLOGY & CRITICAL CARE — 5 topics
+## PHARMACOLOGY & CRITICAL CARE — 6 topics
 
 | # | Slug | Topic | Status |
 |---|---|---|---|
@@ -90,6 +90,7 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | 45 | `vasopressors-inotropes` | Vasopressors, Vasodilators & Inotropes | 🔲 |
 | 46 | `postop-cardiac` | Postoperative Care after Cardiac Surgery | 🔲 |
 | 47 | `postop-vascular` | Postoperative Care after Vascular Surgery | 🔲 |
+| 48 | `perioperative-antibiotics` | Perioperative Antibiotics in Cardiovascular Surgery | 🔲 |
 
 ---
 
@@ -97,9 +98,9 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 
 | # | Slug | Topic | Status |
 |---|---|---|---|
-| 48 | `vascular-ultrasound-abi` | Vascular Ultrasound & ABI | 🔲 |
-| 49 | `cta-mra-angiography` | CTA, MRA & Conventional Angiography | 🔲 |
-| 50 | `echocardiography` | Echocardiography (TTE & TOE) | 🔲 |
+| 49 | `vascular-ultrasound-abi` | Vascular Ultrasound & ABI | 🔲 |
+| 50 | `cta-mra-angiography` | CTA, MRA & Conventional Angiography | 🔲 |
+| 51 | `echocardiography` | Echocardiography (TTE & TOE) | 🔲 |
 
 ---
 
@@ -112,8 +113,8 @@ Track progress here. ✅ = written & pushed. 🔲 = not yet written.
 | Aortic & Vascular | 10 | 1 ✅ |
 | Venous & Lymphatic | 6 | 4 ✅ |
 | Peripheral Arterial | 6 | 6 ✅ |
-| Pharmacology & Critical Care | 5 | 2 ✅ |
+| Pharmacology & Critical Care | 6 | 2 ✅ |
 | Imaging & Investigation | 3 | 0 |
-| **TOTAL** | **50** | **21 ✅ / 29 🔲** |
+| **TOTAL** | **51** | **21 ✅ / 30 🔲** |
 
 **Target: ~1,000 cards → 2,000 virtual cards (EN + RU)**
