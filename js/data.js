@@ -7261,6 +7261,295 @@ export const DATA = [
                 answer_ru: 'Исследование IMPROVE'
               }
             ]
+          },
+
+          // ── carotid-cea ────────────────────────────────────────────────────────
+          {
+            slug: 'carotid-cea',
+            title_en: 'Carotid Artery Disease & CEA',
+            title_ru: 'Заболевания сонных артерий и КЭА',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Carotid artery disease (CAD) is atherosclerotic narrowing of the internal carotid artery (ICA) at the bifurcation, responsible for ~20% of all ischaemic strokes. Carotid endarterectomy (CEA) is the surgical removal of the atheromatous plaque from the carotid bifurcation to prevent stroke. Degree of stenosis is measured by duplex ultrasound (DUS) and confirmed with CT angiography (CTA) or MR angiography (MRA) using the North American Symptomatic Carotid Endarterectomy Trial (NASCET) method: stenosis (%) = (1 − [minimum residual lumen / distal normal ICA diameter]) × 100.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Clinical Presentation',
+                    body: [
+                      'Symptomatic carotid stenosis: ipsilateral neurological event within 6 months of stenosis detection',
+                      'Transient ischaemic attack (TIA): focal neurological deficit lasting <24 hours with full recovery; hemispheric TIA (contralateral arm/leg weakness, dysphasia) or amaurosis fugax (transient monocular blindness — ipsilateral retinal TIA from ophthalmic artery territory)',
+                      'Stroke: persistent neurological deficit >24 hours; disabling or non-disabling',
+                      'Asymptomatic stenosis: incidentally found on duplex ultrasound or CT angiography (CTA); no ipsilateral neurological event — lower annual stroke risk (~1–2% per year) than symptomatic disease (~10–15% within 2 years)',
+                      'High-risk plaque features on imaging: echolucent (soft) plaque, irregular surface, intraplaque haemorrhage, rapidly progressing stenosis'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Investigations',
+                    body: [
+                      'Duplex ultrasound (DUS): first-line investigation; measures peak systolic velocity (PSV) and end-diastolic velocity (EDV); PSV >125 cm/s ≈ ≥50% stenosis; PSV >230 cm/s ≈ ≥70% stenosis',
+                      'CT angiography (CTA): confirms anatomy, extent of disease, aortic arch, and distal ICA; gold standard for pre-operative planning',
+                      'MR angiography (MRA): no radiation; good soft tissue characterisation; may overestimate stenosis',
+                      'Carotid angiography (DSA — digital subtraction angiography): invasive; reference standard for percentage stenosis (NASCET method); rarely needed now',
+                      'Brain imaging: MRI diffusion-weighted imaging (DWI) to confirm ischaemic stroke territory; CT head to exclude haemorrhage before antiplatelet therapy',
+                      'Cardiac workup: ECG (electrocardiogram) to exclude atrial fibrillation (AF) as cardioembolic source; echocardiogram if cardiac cause suspected'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Indications for CEA',
+                    body: [
+                      'Symptomatic stenosis ≥50% (NASCET): CEA indicated (Class I) — benefit greatest in ≥70% stenosis (NNT ~6 to prevent one stroke at 5 years) and in men, early surgery, and recent events. NASCET & ECST (European Carotid Surgery Trial) established benefit',
+                      'Timing: urgent CEA within 14 days of TIA/minor stroke — HIGHEST benefit window (ESC/ESVS 2023 Class I); within 48 hours if stable and no large infarct',
+                      'Symptomatic stenosis 50–69%: CEA beneficial, especially in men and those without significant co-morbidity',
+                      'Asymptomatic stenosis ≥60–70%: CEA may be offered to low-risk patients with long life expectancy and in centres with <3% stroke/death rate (ESC Class IIa); benefit is smaller than in symptomatic disease',
+                      'Contraindications: complete ipsilateral ICA occlusion (no plaque to remove); major disabling stroke (high risk of haemorrhagic conversion); severe cardiac/pulmonary co-morbidity; hostile neck (re-do surgery, radiation, tracheostomy)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'CEA Operative Technique',
+                    body: [
+                      'Anaesthesia: general anaesthesia (GA) or regional (cervical plexus block — superficial ± deep); regional anaesthesia allows awake neurological monitoring; no clear superiority of either (GALA trial)',
+                      'Position: supine, neck extended and rotated away from operative side',
+                      'Incision: longitudinal along anterior border of sternocleidomastoid (SCM) muscle; avoid damage to the greater auricular nerve',
+                      'Exposure: common carotid artery (CCA), external carotid artery (ECA), and internal carotid artery (ICA) dissected and controlled with slings; carotid body at bifurcation → infiltrate with 1% lidocaine to prevent bradycardia/hypotension reflex',
+                      'Shunting: intra-luminal shunt (Javid or Pruitt-Inahara) maintains cerebral perfusion during cross-clamping; selective use guided by awake monitoring, stump pressure (<50 mmHg = shunt), or transcranial Doppler (TCD); routine shunting in some centres',
+                      'Endarterectomy: longitudinal arteriotomy from CCA across bifurcation into ICA; plaque elevated in subadventitial plane; distal ICA endpoint carefully tacked down or feathered; proximal endpoint should be clean',
+                      'Closure: primary closure (risk of stenosis) vs patch angioplasty (vein — long saphenous vein, or synthetic — Dacron/PTFE); patch closure reduces re-stenosis and stroke risk (COCHRANE evidence)',
+                      'Eversion CEA: ICA transected at origin and everted over itself to remove plaque; then re-anastomosed end-to-end; no shunt possible; faster for short lesions'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Complications',
+                    body: [
+                      'Stroke: most feared — intraoperative (thromboembolism, hypoperfusion) or postoperative (thrombosis, embolism); overall risk ~2–3% in experienced centres',
+                      'Cranial nerve injury (most common complication): hypoglossal nerve (XII) — tongue deviation ipsilaterally; vagus nerve (X) — hoarseness/dysphonia; marginal mandibular branch of facial nerve (VII) — lower lip droop; greater auricular nerve — ear/neck numbness; superior laryngeal nerve — swallowing difficulty',
+                      'Carotid hypersensitivity (baroreceptor reflex): bradycardia and hypotension from carotid body manipulation; prevented by lidocaine infiltration',
+                      'Neck haematoma: expanding haematoma → airway compromise → re-exploration urgently (open wound at bedside if severe stridor)',
+                      'Hyperperfusion syndrome: headache, seizures, intracerebral haemorrhage 1–7 days post-CEA; due to loss of autoregulation after chronic hypoperfusion; manage with strict blood pressure (BP) control (systolic BP <140 mmHg)',
+                      'Restenosis: recurrence >50% stenosis; early (<2 years) — neointimal hyperplasia; late (>2 years) — atherosclerosis; treated by carotid artery stenting (CAS) or re-do CEA'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Заболевания сонных артерий — атеросклеротическое сужение внутренней сонной артерии (ВСА) в области бифуркации, ответственное примерно за 20% всех ишемических инсультов. Каротидная эндартерэктомия (КЭА) — хирургическое удаление атеросклеротической бляшки из области бифуркации сонной артерии с целью профилактики инсульта. Степень стеноза оценивается методом дуплексного ультразвукового сканирования (ДУЗС) и подтверждается КТ-ангиографией (КТА) или МР-ангиографией (МРА) по методу Северо-Американского исследования симптоматической каротидной эндартерэктомии (NASCET): стеноз (%) = (1 − [минимальный просвет / диаметр дистальной нормальной ВСА]) × 100.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Клиническая картина',
+                    body: [
+                      'Симптоматический стеноз сонной артерии: ипсилатеральное неврологическое событие в течение 6 месяцев до выявления стеноза',
+                      'Транзиторная ишемическая атака (ТИА): очаговый неврологический дефицит продолжительностью <24 часов с полным восстановлением; полушарная ТИА (контралатеральная слабость руки/ноги, дисфазия) или amaurosis fugax (транзиторная монокулярная слепота — ипсилатеральная ретинальная ТИА из бассейна глазной артерии)',
+                      'Инсульт: стойкий неврологический дефицит >24 часов; инвалидизирующий или неинвалидизирующий',
+                      'Асимптоматический стеноз: случайно выявляется при ДУЗС или КТА; ипсилатеральных неврологических событий нет — ежегодный риск инсульта (~1–2%) ниже, чем при симптоматическом стенозе (~10–15% в течение 2 лет)',
+                      'Признаки нестабильной бляшки при визуализации: эхонегативная (мягкая) бляшка, неровная поверхность, интрабляшечное кровоизлияние, быстро прогрессирующий стеноз'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Диагностика',
+                    body: [
+                      'Дуплексное ультразвуковое сканирование (ДУЗС): исследование первой линии; измеряет пиковую систолическую скорость (ПСС) и конечную диастолическую скорость (КДС); ПСС >125 см/с ≈ стеноз ≥50%; ПСС >230 см/с ≈ стеноз ≥70%',
+                      'КТ-ангиография (КТА): уточняет анатомию, распространённость поражения, дугу аорты и дистальную ВСА; золотой стандарт предоперационного планирования',
+                      'МР-ангиография (МРА): нет лучевой нагрузки; хорошая характеристика мягких тканей; может переоценивать стеноз',
+                      'Каротидная ангиография (ЦСА — цифровая субтракционная ангиография): инвазивный метод; эталонный стандарт для определения процента стеноза по методу NASCET; в настоящее время применяется редко',
+                      'Нейровизуализация: МРТ с диффузионно-взвешенными изображениями (ДВИ) для подтверждения зоны ишемического инсульта; КТ головного мозга для исключения геморрагии перед назначением антиагрегантов',
+                      'Кардиологическое обследование: ЭКГ (электрокардиограмма) для исключения фибрилляции предсердий (ФП) как кардиоэмболического источника; эхокардиография при подозрении на кардиальную причину'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Показания к КЭА',
+                    body: [
+                      'Симптоматический стеноз ≥50% (NASCET): КЭА показана (класс I) — наибольшая польза при ≥70% (NNT ~6 для предотвращения одного инсульта за 5 лет), у мужчин, при раннем вмешательстве и недавних событиях. Доказательная база: исследования NASCET и ECST (Европейское исследование каротидной хирургии)',
+                      'Сроки: срочная КЭА в течение 14 дней после ТИА/малого инсульта — НАИБОЛЬШЕЕ ТЕРАПЕВТИЧЕСКОЕ ОКНО (рекомендации ЕОК/ESVS 2023, класс I); в течение 48 часов при стабильном состоянии и отсутствии обширного инфаркта',
+                      'Симптоматический стеноз 50–69%: КЭА целесообразна, особенно у мужчин и пациентов без выраженной сопутствующей патологии',
+                      'Асимптоматический стеноз ≥60–70%: КЭА может быть предложена пациентам с низким риском и ожидаемой продолжительностью жизни в центрах с частотой инсульта/смерти <3% (ЕОК класс IIa); польза меньше, чем при симптоматическом стенозе',
+                      'Противопоказания: полная окклюзия ипсилатеральной ВСА; тяжёлый инвалидизирующий инсульт; тяжёлая сердечно-лёгочная патология; «враждебная» шея (реоперация, облучение, трахеостомия)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Техника КЭА',
+                    body: [
+                      'Анестезия: общая (ОА) или регионарная (блокада шейного сплетения — поверхностного ± глубокого); регионарная анестезия позволяет проводить мониторинг неврологического статуса у бодрствующего пациента; убедительного превосходства ни одного метода не выявлено (исследование GALA)',
+                      'Положение: на спине, шея разогнута и повёрнута в сторону от операционного поля',
+                      'Разрез: продольный по переднему краю грудино-ключично-сосцевидной мышцы (ГКСМ); избегать повреждения большого ушного нерва',
+                      'Доступ: выделяются и берутся на держалки общая сонная артерия (ОСА), наружная сонная артерия (НСА) и внутренняя сонная артерия (ВСА); каротидное тельце в области бифуркации → инфильтрация 1% лидокаином для предотвращения брадикардии/гипотензии',
+                      'Шунтирование: интралюминальный шунт (Javid или Pruitt-Inahara) поддерживает церебральную перфузию во время пережатия; селективное применение по данным мониторинга у бодрствующего пациента, давления «стумпа» (<50 мм рт. ст. = показание для шунта) или транскраниальной допплерографии (ТКД); в ряде центров применяется рутинно',
+                      'Эндартерэктомия: продольная артериотомия от ОСА через бифуркацию в ВСА; бляшка выделяется в субадвентициальном слое; дистальный конец ВСА тщательно фиксируется или «пёрышком» срезается; проксимальный конец должен быть чистым',
+                      'Закрытие: первичный шов (риск рестеноза) или пластика заплатой (вена — большая подкожная, или синтетика — дакрон/PTFE); пластика заплатой снижает частоту рестеноза и инсульта (данные Кокрановского обзора)',
+                      'Эверсионная КЭА: ВСА отсекается у устья и выворачивается для удаления бляшки, затем анастомозируется конец в конец; шунтирование невозможно; предпочтительна при коротких поражениях'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Осложнения',
+                    body: [
+                      'Инсульт: наиболее грозное осложнение — интраоперационный (тромбоэмболия, гипоперфузия) или послеоперационный (тромбоз, эмболия); общий риск ~2–3% в опытных центрах',
+                      'Повреждение черепных нервов (наиболее частое осложнение): подъязычный нерв (XII) — отклонение языка в сторону операции; блуждающий нерв (X) — охриплость/дисфония; краевая ветвь лицевого нерва (VII) — опущение угла рта; большой ушной нерв — онемение ушной раковины/шеи; верхний гортанный нерв — затруднение глотания',
+                      'Гиперчувствительность каротидного синуса (барорецепторный рефлекс): брадикардия и гипотензия при манипуляциях в области каротидного тельца; профилактика — инфильтрация лидокаином',
+                      'Гематома шеи: нарастающая гематома → компрессия дыхательных путей → срочная реэксплорация (при тяжёлом стридоре — открыть рану у постели больного)',
+                      'Синдром гиперперфузии: головная боль, судороги, внутримозговое кровоизлияние через 1–7 дней после КЭА; обусловлен утратой ауторегуляции после хронической гипоперфузии; лечение — строгий контроль артериального давления (АД) (систолическое АД <140 мм рт. ст.)',
+                      'Рестеноз: рецидив стеноза >50%; ранний (<2 лет) — неоинтимальная гиперплазия; поздний (>2 лет) — атеросклероз; лечение — стентирование сонной артерии (ССА) или повторная КЭА'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'carotid-cea-001',
+                question_en: 'What percentage of ischaemic strokes are caused by carotid artery disease at the internal carotid artery (ICA) bifurcation?',
+                question_ru: 'Какой процент ишемических инсультов обусловлен атеросклерозом сонных артерий в области бифуркации внутренней сонной артерии (ВСА)?',
+                answer_en: '~20%',
+                answer_ru: '~20%'
+              },
+              {
+                id: 'carotid-cea-002',
+                question_en: 'Which method is used to calculate carotid stenosis percentage from angiography or CT angiography (CTA)?',
+                question_ru: 'Какой метод используется для расчёта процента стеноза сонной артерии по данным ангиографии или КТА?',
+                answer_en: 'NASCET method',
+                answer_ru: 'Метод NASCET'
+              },
+              {
+                id: 'carotid-cea-003',
+                question_en: 'What duplex ultrasound (DUS) peak systolic velocity (PSV) corresponds to ≥70% carotid stenosis?',
+                question_ru: 'Какая пиковая систолическая скорость (ПСС) при дуплексном сканировании (ДУЗС) соответствует стенозу ВСА ≥70%?',
+                answer_en: 'PSV >230 cm/s',
+                answer_ru: 'ПСС >230 см/с'
+              },
+              {
+                id: 'carotid-cea-004',
+                question_en: 'What is amaurosis fugax and which artery territory does it arise from in carotid artery disease?',
+                question_ru: 'Что такое amaurosis fugax и из бассейна какой артерии возникает этот симптом при заболеваниях сонных артерий?',
+                answer_en: 'Transient monocular blindness (ophthalmic artery)',
+                answer_ru: 'Транзиторная монокулярная слепота (глазная артерия)'
+              },
+              {
+                id: 'carotid-cea-005',
+                question_en: 'What is the minimum symptomatic carotid stenosis threshold for carotid endarterectomy (CEA) according to NASCET?',
+                question_ru: 'Каков минимальный порог симптоматического стеноза сонной артерии для каротидной эндартерэктомии (КЭА) по критериям NASCET?',
+                answer_en: '≥50% stenosis',
+                answer_ru: 'Стеноз ≥50%'
+              },
+              {
+                id: 'carotid-cea-006',
+                question_en: 'Within what time window should carotid endarterectomy (CEA) be performed after a transient ischaemic attack (TIA) or minor stroke for maximum benefit (ESC/ESVS 2023)?',
+                question_ru: 'В течение какого срока после ТИА или малого инсульта следует выполнить КЭА для достижения максимального эффекта (рекомендации ЕОК/ESVS 2023)?',
+                answer_en: 'Within 14 days',
+                answer_ru: 'В течение 14 дней'
+              },
+              {
+                id: 'carotid-cea-007',
+                question_en: 'What is the number needed to treat (NNT) for carotid endarterectomy (CEA) in symptomatic ≥70% stenosis to prevent one stroke at 5 years?',
+                question_ru: 'Каково число больных, которых нужно пролечить (NNT) при КЭА по поводу симптоматического стеноза ≥70% для предотвращения одного инсульта за 5 лет?',
+                answer_en: 'NNT ~6',
+                answer_ru: 'NNT ~6'
+              },
+              {
+                id: 'carotid-cea-008',
+                question_en: 'What anaesthetic technique allows awake neurological monitoring during carotid endarterectomy (CEA)?',
+                question_ru: 'Какой метод анестезии позволяет осуществлять неврологический мониторинг у бодрствующего пациента во время КЭА?',
+                answer_en: 'Cervical plexus block',
+                answer_ru: 'Блокада шейного сплетения'
+              },
+              {
+                id: 'carotid-cea-009',
+                question_en: 'What carotid stump pressure threshold during carotid endarterectomy (CEA) indicates the need for an intraluminal shunt?',
+                question_ru: 'Какое давление «стумпа» во время КЭА является показанием для интралюминального шунтирования?',
+                answer_en: '<50 mmHg',
+                answer_ru: '<50 мм рт. ст.'
+              },
+              {
+                id: 'carotid-cea-010',
+                question_en: 'Why is the carotid body infiltrated with lidocaine during carotid endarterectomy (CEA)?',
+                question_ru: 'Зачем во время КЭА каротидное тельце инфильтрируют лидокаином?',
+                answer_en: 'Prevent bradycardia/hypotension',
+                answer_ru: 'Профилактика брадикардии/гипотензии'
+              },
+              {
+                id: 'carotid-cea-011',
+                question_en: 'What closure technique after carotid endarterectomy (CEA) reduces restenosis and stroke risk compared to primary closure?',
+                question_ru: 'Какой метод закрытия артериотомии после КЭА снижает риск рестеноза и инсульта по сравнению с первичным швом?',
+                answer_en: 'Patch angioplasty',
+                answer_ru: 'Пластика заплатой'
+              },
+              {
+                id: 'carotid-cea-012',
+                question_en: 'Which cranial nerve injury after carotid endarterectomy (CEA) causes ipsilateral tongue deviation?',
+                question_ru: 'Повреждение какого черепного нерва после КЭА вызывает отклонение языка в сторону операции?',
+                answer_en: 'Hypoglossal nerve (XII)',
+                answer_ru: 'Подъязычный нерв (XII)'
+              },
+              {
+                id: 'carotid-cea-013',
+                question_en: 'Which cranial nerve injury after carotid endarterectomy (CEA) causes hoarseness?',
+                question_ru: 'Повреждение какого черепного нерва после КЭА вызывает охриплость голоса?',
+                answer_en: 'Vagus nerve (X)',
+                answer_ru: 'Блуждающий нерв (X)'
+              },
+              {
+                id: 'carotid-cea-014',
+                question_en: 'What complication of carotid endarterectomy (CEA) causes expanding neck haematoma with risk of airway compromise?',
+                question_ru: 'Какое осложнение КЭА вызывает нарастающую гематому шеи с угрозой компрессии дыхательных путей?',
+                answer_en: 'Post-CEA neck haematoma',
+                answer_ru: 'Постоперационная гематома шеи'
+              },
+              {
+                id: 'carotid-cea-015',
+                question_en: 'What is carotid hyperperfusion syndrome after carotid endarterectomy (CEA) and when does it typically occur?',
+                question_ru: 'Что такое синдром гиперперфузии после КЭА и когда он обычно возникает?',
+                answer_en: 'Headache/seizure/haemorrhage, days 1–7',
+                answer_ru: 'Головная боль/судороги/кровоизлияние, 1–7 дней'
+              },
+              {
+                id: 'carotid-cea-016',
+                question_en: 'What blood pressure (BP) target is used to manage carotid hyperperfusion syndrome after carotid endarterectomy (CEA)?',
+                question_ru: 'Какой целевой уровень артериального давления (АД) используется при синдроме гиперперфузии после КЭА?',
+                answer_en: 'Systolic BP <140 mmHg',
+                answer_ru: 'Систолическое АД <140 мм рт. ст.'
+              },
+              {
+                id: 'carotid-cea-017',
+                question_en: 'What is the overall perioperative stroke risk of carotid endarterectomy (CEA) in experienced centres?',
+                question_ru: 'Каков общий периоперационный риск инсульта при КЭА в опытных центрах?',
+                answer_en: '~2–3%',
+                answer_ru: '~2–3%'
+              },
+              {
+                id: 'carotid-cea-018',
+                question_en: 'What is the approximate annual stroke risk for asymptomatic carotid artery stenosis without surgery?',
+                question_ru: 'Каков приблизительный ежегодный риск инсульта при асимптоматическом стенозе сонной артерии без операции?',
+                answer_en: '~1–2% per year',
+                answer_ru: '~1–2% в год'
+              },
+              {
+                id: 'carotid-cea-019',
+                question_en: 'What is the difference between eversion carotid endarterectomy (CEA) and conventional longitudinal CEA?',
+                question_ru: 'В чём разница между эверсионной КЭА и стандартной продольной КЭА?',
+                answer_en: 'ICA transected, everted, re-anastomosed',
+                answer_ru: 'ВСА отсечена, вывернута, реанастомозирована'
+              },
+              {
+                id: 'carotid-cea-020',
+                question_en: 'Which two major randomised trials established the benefit of carotid endarterectomy (CEA) for symptomatic carotid artery stenosis?',
+                question_ru: 'Какие два крупных рандомизированных исследования доказали пользу КЭА при симптоматическом стенозе сонной артерии?',
+                answer_en: 'NASCET and ECST',
+                answer_ru: 'NASCET и ECST'
+              }
+            ]
           }
 
         ]
