@@ -4,8 +4,9 @@
 // Shows each variant's independent SRS status.
 
 import { DATA } from './data.js'
-import { bootstrap, getLang, getCardsWithSRS } from './app.js'
-import { srsStatus } from './sm2.js'
+import { bootstrap, getLang, getCardsWithSRS, toast } from './app.js'
+import { srsStatus, newState } from './sm2.js'
+import { putSRS } from './db.js'
 
 async function init() {
   await bootstrap()
@@ -102,6 +103,8 @@ async function init() {
           const qText = vc.cardLang === 'en' ? vc.question_en : vc.question_ru
           const langLabel = vc.cardLang === 'en' ? 'EN' : 'RU'
 
+          const canReset = state && state.lastReview !== null
+
           const item = document.createElement('div')
           item.className = 'card-list-item'
           item.innerHTML = `
@@ -110,8 +113,22 @@ async function init() {
             </div>
             <div class="card-list-status">
               <span class="badge ${status.cls}">${status.label}</span>
+              ${canReset ? `<button class="reset-card-btn" title="Reset to New">↺</button>` : ''}
             </div>
           `
+
+          if (canReset) {
+            item.querySelector('.reset-card-btn').addEventListener('click', async (e) => {
+              e.stopPropagation()
+              await putSRS(newState(vc.id))
+              const badge = item.querySelector('.badge')
+              badge.className = 'badge badge-new'
+              badge.textContent = 'New'
+              item.querySelector('.reset-card-btn').remove()
+              toast('Card reset to New')
+            })
+          }
+
           list.appendChild(item)
         }
 
