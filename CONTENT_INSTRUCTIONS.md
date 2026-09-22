@@ -20,6 +20,7 @@ These rules apply every time a new topic is added to `js/data.js`.
 - **Limit**: Maximum **20 cards per topic**. This produces 40 virtual cards per topic (20 EN + 20 RU). Prioritise the highest-yield clinical facts if the note exceeds 20 card-worthy items.
 - **Answer length**: ≤ 3 words per answer. Frame questions so that a precise, short answer is possible.
 - **Coverage**: Comprehensive within the 20-card limit. If a fact appears in the note, there should be a card for it — trim only the lowest-yield items to stay at or under 20.
+- **Self-contained questions**: Every question must make complete sense in isolation, with no reliance on knowing the current topic. Include the operative/clinical context directly in the question. BAD: "What vein should we be careful of in the operation?" GOOD: "What vein is at highest risk of injury during open AAA repair?"
 - **Format per card**:
   ```
   question_en: "Clinical question in English?"
@@ -36,9 +37,8 @@ These rules apply every time a new topic is added to `js/data.js`.
 - **Russian = direct translation** of the English version. No paraphrasing, no additions.
 - Use correct Russian medical terminology throughout (not lay terms).
 - Mnemonics in English (e.g., SALFOPMS) may be kept in English in the Russian note with a parenthetical Russian label if helpful; do not fabricate a Russian mnemonic.
-- Abbreviations: introduce both the English abbreviation and its Russian equivalent where relevant (e.g., "ОСА / CCA", "КЭА / CEA").
-- **Russian abbreviations — spell out first**: Every Russian medical term must be written in full before its abbreviation in brackets on first use — e.g., "верхняя брыжеечная артерия (ВБА)", never just "ВБА" on its own. Subsequent uses within the same section may use the abbreviation alone.
-- **Russian flashcard abbreviations — always full form**: In Russian flashcard questions and answers (`question_ru`, `answer_ru`), abbreviations must **always** include the full form, every time, without exception — e.g., "лодыжечно-плечевой индекс (ЛПИ)", never just "ЛПИ". Each card stands alone and has no prior context, so the full term must always be present.
+- **Abbreviations — always expand on first use in notes**: In both the English and Russian note, every abbreviation must be introduced with its full form on first use within each section — e.g., "abdominal aortic aneurysm (AAA)", "нижняя брыжеечная артерия (НБА)". Subsequent uses within the same section may use the abbreviation alone.
+- **Abbreviations — always full form in ALL flashcards**: In every flashcard question and answer (`question_en`, `answer_en`, `question_ru`, `answer_ru`), abbreviations must **always** include the full form, every time, without exception. Each card is reviewed in isolation with no surrounding context. BAD: "LOS resting pressure?" GOOD: "Lower oesophageal sphincter (LOS) resting pressure?"
 
 ---
 
