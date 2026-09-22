@@ -600,16 +600,9 @@ export const DATA = [
             ]
           }
         ]
-      }
-    ]
-  },
+      },
 
-  // ── VASCULAR SURGERY ────────────────────────────────────────────────────────
-  {
-    slug: 'vascular-surgery',
-    title_en: 'Vascular Surgery',
-    title_ru: 'Сосудистая хирургия',
-    subdisciplines: [
+      // ── Anatomy ────────────────────────────────────────────────────────────────
       {
         slug: 'anatomy',
         title_en: 'Anatomy',
