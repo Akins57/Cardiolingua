@@ -303,6 +303,301 @@ export const DATA = [
                 answer_ru: 'Инфундибулум (конус артериозус)'
               }
             ]
+          },
+
+          // ── coronary-artery-disease ─────────────────────────────────────────
+          {
+            slug: 'coronary-artery-disease',
+            title_en: 'Coronary Artery Disease — Pathophysiology & Indications for CABG',
+            title_ru: 'Ишемическая болезнь сердца — патофизиология и показания к АКШ',
+            note: {
+              en: {
+                sections: [
+                  {
+                    title: 'Overview',
+                    body: 'Coronary artery disease (CAD) is atherosclerotic narrowing of the epicardial coronary arteries causing myocardial ischaemia. It is the leading cause of mortality in the Western world. Significant stenosis is defined as ≥50% diameter reduction in the left main coronary artery (LMCA) or ≥70% in other vessels. Haemodynamic significance is confirmed intra-procedurally by fractional flow reserve (FFR) ≤0.80. Coronary artery bypass grafting (CABG) remains the gold standard revascularisation strategy for multi-vessel and complex coronary disease.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Pathophysiology',
+                    body: [
+                      'Atherosclerosis: subendothelial lipid deposition → foam cell formation → fibrous cap → stable plaque (thick cap) or vulnerable plaque (thin cap, lipid-rich, prone to rupture)',
+                      'Stable CAD: fixed stenosis → supply-demand mismatch with exertion → stable angina; no plaque disruption',
+                      'Ischaemic cascade: diastolic dysfunction appears first → systolic dysfunction → electrocardiogram (ECG) changes → chest pain (angina); imaging detects ischaemia before symptoms',
+                      'Acute coronary syndrome (ACS): plaque rupture or erosion → platelet activation → coronary thrombus:',
+                      '  • Unstable angina (UA): no myocardial necrosis, troponin negative',
+                      '  • Non-ST-elevation myocardial infarction (NSTEMI): subendocardial necrosis, troponin positive, no ST elevation on ECG',
+                      '  • ST-elevation myocardial infarction (STEMI): transmural occlusion, ST elevation on ECG, troponin positive',
+                      'LMCA disease (≥50% stenosis): supplies >70% of left ventricular (LV) myocardium in right-dominant systems; critical territory — Class I indication for CABG regardless of symptom status'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Clinical Presentation & Classification',
+                    body: [
+                      'Typical angina: substernal chest pressure/heaviness, radiation to left arm or jaw, provoked by exertion/cold/stress, relieved within minutes by rest or glyceryl trinitrate (GTN)',
+                      'Canadian Cardiovascular Society (CCS) angina classification:',
+                      '  • CCS I: angina only with strenuous/prolonged exertion',
+                      '  • CCS II: slight limitation — angina on climbing >1 flight of stairs or walking >2 blocks on the flat',
+                      '  • CCS III: marked limitation — angina on minimal exertion (1 flat block, 1 flight of stairs)',
+                      '  • CCS IV: angina at rest or inability to perform any activity without symptoms',
+                      'Risk factors: hypertension, dyslipidaemia, diabetes mellitus (DM), smoking, family history (first-degree relative, male <55 years / female <65 years), age, male sex, chronic kidney disease (CKD), obesity'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Investigations',
+                    body: [
+                      'ECG (electrocardiogram): resting ECG (may be normal in stable CAD); exercise treadmill test (ETT) — ≥1 mm horizontal or downsloping ST depression = positive',
+                      'Echocardiogram (transthoracic echocardiography, TTE): left ventricular ejection fraction (LVEF), regional wall motion abnormalities (RWMA), valvular co-pathology',
+                      'CT coronary angiography (CTCA): non-invasive; high negative predictive value; Agatston calcium score quantifies atherosclerotic burden',
+                      'Invasive coronary angiography (ICA): gold standard; defines lesion location, severity, and anatomy for revascularisation planning; fractional flow reserve (FFR) measurement (wire-based) confirms haemodynamic significance: FFR ≤0.80 = significant',
+                      'Myocardial perfusion imaging (MPI): single-photon emission CT (SPECT) or stress MRI; quantifies ischaemic burden and viability; hibernating myocardium = viable but chronically ischaemic LV territory that recovers contractile function after revascularisation',
+                      'LVEF is the single most important prognostic marker; CABG provides survival benefit over medical therapy when LVEF <35% with hibernating myocardium (STICH trial — 10-year follow-up)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Indications for CABG',
+                    body: [
+                      'LMCA stenosis ≥50%: Class I — CABG preferred over PCI (percutaneous coronary intervention) regardless of SYNTAX (Synergy between PCI with Taxus and Cardiac Surgery) score (ESC 2018)',
+                      'Three-vessel CAD (3VD) with SYNTAX score >22: Class I for CABG; PCI acceptable only for low SYNTAX score (<22)',
+                      'Three-vessel CAD + diabetes mellitus (DM): CABG strongly preferred — FREEDOM trial showed significant reduction in death, myocardial infarction (MI), and stroke vs PCI at 5 years',
+                      'Two-vessel CAD involving proximal left anterior descending artery (LAD): CABG preferred when anatomy is suitable',
+                      'LV dysfunction (LVEF <35%) with viable myocardium: Class I for CABG — STICH trial demonstrated 10-year all-cause mortality benefit vs medical therapy alone',
+                      'Concomitant valve surgery: CABG indicated (Class I) if ≥70% stenosis in any major epicardial vessel at time of valve operation',
+                      'Failed or anatomically unfeasible PCI: CABG as rescue or planned alternative'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'CABG vs PCI — Decision Making',
+                    body: [
+                      'SYNTAX score: angiographic complexity score based on lesion number, location, and characteristics. Low <22 → PCI acceptable; intermediate 23–32 → individualise; high >32 → CABG preferred',
+                      'EuroSCORE II (European System for Cardiac Operative Risk Evaluation): predicts 30-day operative mortality; used for patient counselling and consent',
+                      'Heart team decision: mandatory multidisciplinary review (interventional cardiologist + cardiac surgeon + cardiologist) for all complex CAD — ESC/AHA Class I recommendation',
+                      'CABG advantages: more complete revascularisation; bypasses diseased vessel entirely; long-term graft patency protects against future proximal disease progression; superior in DM, 3VD, LMCA disease, and LV dysfunction',
+                      'PCI advantages: no sternotomy, local anaesthesia option, faster recovery, appropriate for single-vessel/focal disease or high surgical risk patients'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              },
+              ru: {
+                sections: [
+                  {
+                    title: 'Обзор',
+                    body: 'Ишемическая болезнь сердца (ИБС) — атеросклеротическое сужение эпикардиальных коронарных артерий, вызывающее ишемию миокарда. ИБС является ведущей причиной смертности в западных странах. Гемодинамически значимым считается стеноз ≥50% по диаметру для ствола левой коронарной артерии (СЛКА) и ≥70% для остальных сосудов. Гемодинамическая значимость подтверждается интраоперационно измерением фракционного резерва кровотока (ФРК) ≤0,80. Аортокоронарное шунтирование (АКШ) остаётся золотым стандартом реваскуляризации при многососудистом и сложном поражении коронарных артерий.',
+                    type: 'text'
+                  },
+                  {
+                    title: 'Патофизиология',
+                    body: [
+                      'Атеросклероз: субэндотелиальное отложение липидов → образование пенистых клеток → формирование фиброзной капсулы → стабильная бляшка (толстая капсула) или нестабильная бляшка (тонкая капсула, богатая липидами, склонная к разрыву)',
+                      'Стабильная ИБС: фиксированный стеноз → дисбаланс между доставкой и потребностью при нагрузке → стабильная стенокардия; разрыва бляшки нет',
+                      'Ишемический каскад: первым появляется диастолическая дисфункция → затем систолическая дисфункция → изменения на электрокардиограмме (ЭКГ) → боль в груди (стенокардия); визуализирующие методы выявляют ишемию раньше симптомов',
+                      'Острый коронарный синдром (ОКС): разрыв или эрозия бляшки → активация тромбоцитов → коронарный тромбоз:',
+                      '  • Нестабильная стенокардия (НС): некроза миокарда нет, тропонин отрицательный',
+                      '  • Инфаркт миокарда без подъёма сегмента ST (ИМбпST): субэндокардиальный некроз, тропонин положительный, подъёма ST на ЭКГ нет',
+                      '  • Инфаркт миокарда с подъёмом сегмента ST (ИМпST): трансмуральная окклюзия, подъём ST на ЭКГ, тропонин положительный',
+                      'Стеноз СЛКА (≥50%): кровоснабжает >70% миокарда левого желудочка (ЛЖ) при правом типе доминирования; критическая зона — показание I класса для АКШ вне зависимости от выраженности симптомов'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Клиническая картина и классификация',
+                    body: [
+                      'Типичная стенокардия: давящая/сжимающая боль за грудиной, иррадиация в левую руку или нижнюю челюсть, провоцируется нагрузкой/холодом/стрессом, проходит в покое или после приёма нитроглицерина (НТГ)',
+                      'Классификация стенокардии по Канадскому сердечно-сосудистому обществу (ССО):',
+                      '  • ССО I: стенокардия только при интенсивной или длительной нагрузке',
+                      '  • ССО II: незначительное ограничение — стенокардия при подъёме более одного пролёта лестницы или ходьбе более двух кварталов по ровной поверхности',
+                      '  • ССО III: выраженное ограничение — стенокардия при минимальной нагрузке (один квартал, один пролёт лестницы)',
+                      '  • ССО IV: стенокардия в покое или невозможность выполнить любую нагрузку без симптомов',
+                      'Факторы риска: артериальная гипертензия, дислипидемия, сахарный диабет (СД), курение, отягощённый семейный анамнез (родственник первой степени, мужчина <55 лет / женщина <65 лет), возраст, мужской пол, хроническая болезнь почек (ХБП), ожирение'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Диагностика',
+                    body: [
+                      'ЭКГ (электрокардиограмма): ЭКГ покоя (может быть нормальной при стабильной ИБС); нагрузочный тест (велоэргометрия/тредмил-тест) — горизонтальная или нисходящая депрессия ST ≥1 мм = положительный результат',
+                      'Эхокардиография (трансторакальная эхокардиография, ТТЭ): фракция выброса левого желудочка (ФВЛЖ), региональные нарушения сократимости (РНС), сопутствующая патология клапанов',
+                      'КТ-коронарография (КТК): неинвазивный метод; высокая отрицательная прогностическая ценность; кальциевый индекс по Агатстону характеризует атеросклеротическую нагрузку',
+                      'Инвазивная коронарная ангиография (ИКА): золотой стандарт; определяет локализацию, степень и анатомию поражения для планирования реваскуляризации; измерение фракционного резерва кровотока (ФРК) (с помощью давящего проводника) подтверждает гемодинамическую значимость: ФРК ≤0,80 = значимый стеноз',
+                      'Перфузионная сцинтиграфия миокарда (ПСМ): однофотонная эмиссионная КТ (ОФЭКТ) или стресс-МРТ; количественно оценивает ишемическую нагрузку и жизнеспособность миокарда; «спящий» (гибернирующий) миокард — жизнеспособный, но хронически ишемизированный участок ЛЖ, восстанавливающий сократимость после реваскуляризации',
+                      'ФВЛЖ — наиболее важный прогностический показатель; АКШ обеспечивает преимущество в выживаемости над медикаментозной терапией при ФВЛЖ <35% с наличием гибернирующего миокарда (исследование STICH — 10-летнее наблюдение)'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'Показания к АКШ',
+                    body: [
+                      'Стеноз СЛКА ≥50%: показание I класса — АКШ предпочтительнее чрескожного коронарного вмешательства (ЧКВ) вне зависимости от индекса SYNTAX (рекомендации ЕОК 2018)',
+                      'Трёхсосудистое поражение (ТСП) с индексом SYNTAX >22: показание I класса для АКШ; ЧКВ приемлемо только при низком значении SYNTAX (<22)',
+                      'ТСП + сахарный диабет (СД): АКШ настоятельно предпочтительно — исследование FREEDOM показало значительное снижение риска смерти, инфаркта миокарда (ИМ) и инсульта по сравнению с ЧКВ через 5 лет',
+                      'Двухсосудистое поражение с вовлечением проксимального отдела передней межжелудочковой артерии (ПМЖА): АКШ предпочтительно при подходящей анатомии',
+                      'Дисфункция ЛЖ (ФВЛЖ <35%) с жизнеспособным миокардом: показание I класса для АКШ — исследование STICH продемонстрировало снижение общей смертности через 10 лет по сравнению только с медикаментозной терапией',
+                      'Сопутствующая операция на клапане: АКШ показано (I класс) при стенозе ≥70% в любом крупном эпикардиальном сосуде во время клапанной операции',
+                      'Неудачное или анатомически невозможное ЧКВ: АКШ в качестве спасительной или плановой альтернативы'
+                    ],
+                    type: 'list'
+                  },
+                  {
+                    title: 'АКШ vs ЧКВ — выбор метода',
+                    body: [
+                      'Индекс SYNTAX: ангиографическая оценка сложности поражения. Низкий <22 → ЧКВ приемлемо; промежуточный 23–32 → индивидуальный подход; высокий >32 → предпочтительно АКШ',
+                      'EuroSCORE II (Европейская система оценки операционного риска): прогнозирует 30-дневную операционную летальность; используется для консультирования пациента и получения информированного согласия',
+                      'Решение кардиологической команды: обязательное мультидисциплинарное обсуждение (интервенционный кардиолог + кардиохирург + кардиолог) при всех сложных поражениях — рекомендация I класса ЕОК/ААС',
+                      'Преимущества АКШ: более полная реваскуляризация; шунт полностью обходит поражённый сосуд; долгосрочная проходимость шунта защищает от прогрессирования проксимальной болезни; превосходство при СД, ТСП, поражении СЛКА и дисфункции ЛЖ',
+                      'Преимущества ЧКВ: нет стернотомии, возможность местной анестезии, быстрое восстановление, подходит для однососудистого/очагового поражения или пациентов с высоким хирургическим риском'
+                    ],
+                    type: 'list'
+                  }
+                ]
+              }
+            },
+            cards: [
+              {
+                id: 'coronary-artery-disease-001',
+                question_en: 'What is the conventional diameter reduction threshold for a significant left main coronary artery (LMCA) stenosis?',
+                question_ru: 'Каков общепринятый порог сужения по диаметру для гемодинамически значимого стеноза ствола левой коронарной артерии (СЛКА)?',
+                answer_en: '≥50% diameter reduction',
+                answer_ru: 'Сужение ≥50% по диаметру'
+              },
+              {
+                id: 'coronary-artery-disease-002',
+                question_en: 'What is the conventional diameter reduction threshold for a significant non-LMCA coronary stenosis?',
+                question_ru: 'Каков общепринятый порог сужения по диаметру для значимого стеноза некоронарного (не-СЛКА) сосуда?',
+                answer_en: '≥70% diameter reduction',
+                answer_ru: 'Сужение ≥70% по диаметру'
+              },
+              {
+                id: 'coronary-artery-disease-003',
+                question_en: 'What fractional flow reserve (FFR) value confirms haemodynamic significance of a coronary stenosis at invasive angiography?',
+                question_ru: 'Какое значение фракционного резерва кровотока (ФРК) подтверждает гемодинамическую значимость стеноза коронарной артерии при инвазивной ангиографии?',
+                answer_en: 'FFR ≤0.80',
+                answer_ru: 'ФРК ≤0,80'
+              },
+              {
+                id: 'coronary-artery-disease-004',
+                question_en: 'Which Canadian Cardiovascular Society (CCS) class describes angina occurring at rest?',
+                question_ru: 'Какой класс по Канадскому сердечно-сосудистому обществу (ССО) соответствует стенокардии в покое?',
+                answer_en: 'CCS class IV',
+                answer_ru: 'ССО IV класс'
+              },
+              {
+                id: 'coronary-artery-disease-005',
+                question_en: 'What is the gold standard investigation for defining coronary anatomy before coronary artery bypass grafting (CABG)?',
+                question_ru: 'Какой метод является золотым стандартом для оценки анатомии коронарных артерий перед аортокоронарным шунтированием (АКШ)?',
+                answer_en: 'Invasive coronary angiography (ICA)',
+                answer_ru: 'Инвазивная коронарная ангиография (ИКА)'
+              },
+              {
+                id: 'coronary-artery-disease-006',
+                question_en: 'What left ventricular ejection fraction (LVEF) threshold defines severe LV dysfunction relevant to CABG decision-making?',
+                question_ru: 'Какой порог фракции выброса левого желудочка (ФВЛЖ) определяет тяжёлую дисфункцию ЛЖ, важную для решения вопроса об АКШ?',
+                answer_en: 'LVEF <35%',
+                answer_ru: 'ФВЛЖ <35%'
+              },
+              {
+                id: 'coronary-artery-disease-007',
+                question_en: 'Which trial demonstrated a 10-year all-cause mortality benefit of CABG over medical therapy in patients with left ventricular ejection fraction (LVEF) <35%?',
+                question_ru: 'Какое исследование продемонстрировало снижение общей смертности через 10 лет при АКШ по сравнению с медикаментозной терапией у пациентов с ФВЛЖ <35%?',
+                answer_en: 'STICH trial',
+                answer_ru: 'Исследование STICH'
+              },
+              {
+                id: 'coronary-artery-disease-008',
+                question_en: 'Which angiographic scoring system quantifies coronary complexity and guides the CABG vs PCI (percutaneous coronary intervention) decision?',
+                question_ru: 'Какая ангиографическая система оценки количественно характеризует сложность коронарного поражения и помогает выбрать между АКШ и ЧКВ (чрескожным коронарным вмешательством)?',
+                answer_en: 'SYNTAX score',
+                answer_ru: 'Индекс SYNTAX'
+              },
+              {
+                id: 'coronary-artery-disease-009',
+                question_en: 'Above which SYNTAX score is CABG preferred over PCI (percutaneous coronary intervention) for three-vessel coronary artery disease (3VD)?',
+                question_ru: 'При каком значении индекса SYNTAX АКШ предпочтительнее ЧКВ при трёхсосудистом поражении коронарных артерий?',
+                answer_en: 'SYNTAX score >22',
+                answer_ru: 'Индекс SYNTAX >22'
+              },
+              {
+                id: 'coronary-artery-disease-010',
+                question_en: 'Which patient subgroup shows the greatest survival benefit from CABG over PCI (percutaneous coronary intervention) in multi-vessel coronary artery disease (MVD)?',
+                question_ru: 'У какой группы пациентов с многососудистым поражением коронарных артерий наибольший выигрыш в выживаемости при АКШ по сравнению с ЧКВ?',
+                answer_en: 'Diabetes mellitus (DM)',
+                answer_ru: 'Сахарный диабет (СД)'
+              },
+              {
+                id: 'coronary-artery-disease-011',
+                question_en: 'Which randomised trial showed CABG superiority over PCI (percutaneous coronary intervention) in diabetic patients with multi-vessel coronary artery disease (MVD)?',
+                question_ru: 'Какое рандомизированное исследование показало превосходство АКШ над ЧКВ у пациентов с сахарным диабетом и многососудистым поражением коронарных артерий?',
+                answer_en: 'FREEDOM trial',
+                answer_ru: 'Исследование FREEDOM'
+              },
+              {
+                id: 'coronary-artery-disease-012',
+                question_en: 'Left main coronary artery (LMCA) stenosis ≥50% is a Class I indication for which revascularisation procedure (ESC 2018 guidelines)?',
+                question_ru: 'Стеноз СЛКА ≥50% является показанием I класса для какой процедуры реваскуляризации (рекомендации ЕОК 2018)?',
+                answer_en: 'CABG (coronary artery bypass grafting)',
+                answer_ru: 'АКШ (аортокоронарное шунтирование)'
+              },
+              {
+                id: 'coronary-artery-disease-013',
+                question_en: 'What is the mandatory ESC/AHA Class I recommendation for decision-making in complex coronary artery disease (CAD)?',
+                question_ru: 'Что является обязательной рекомендацией I класса ЕОК/ААС при принятии решения по поводу сложной ишемической болезни сердца (ИБС)?',
+                answer_en: 'Heart team discussion',
+                answer_ru: 'Обсуждение кардиологической командой'
+              },
+              {
+                id: 'coronary-artery-disease-014',
+                question_en: 'In the ischaemic cascade, which ventricular dysfunction appears first — diastolic or systolic?',
+                question_ru: 'В ишемическом каскаде какая дисфункция желудочка появляется первой — диастолическая или систолическая?',
+                answer_en: 'Diastolic dysfunction',
+                answer_ru: 'Диастолическая дисфункция'
+              },
+              {
+                id: 'coronary-artery-disease-015',
+                question_en: 'Which type of acute coronary syndrome (ACS) is characterised by a positive troponin with no ST elevation on the electrocardiogram (ECG)?',
+                question_ru: 'Какой тип острого коронарного синдрома (ОКС) характеризуется положительным тропонином без подъёма ST на электрокардиограмме (ЭКГ)?',
+                answer_en: 'NSTEMI (non-ST-elevation MI)',
+                answer_ru: 'ИМбпST (инфаркт миокарда без подъёма ST)'
+              },
+              {
+                id: 'coronary-artery-disease-016',
+                question_en: 'What percentage of left ventricular (LV) myocardium does the left main coronary artery (LMCA) supply in a right-dominant coronary system?',
+                question_ru: 'Какой процент миокарда левого желудочка (ЛЖ) кровоснабжает СЛКА при правом типе коронарного доминирования?',
+                answer_en: '>70% LV myocardium',
+                answer_ru: '>70% миокарда ЛЖ'
+              },
+              {
+                id: 'coronary-artery-disease-017',
+                question_en: 'What is the minimum ST depression on exercise treadmill test (ETT) that constitutes a positive result for coronary artery disease (CAD)?',
+                question_ru: 'Какова минимальная депрессия ST при нагрузочном тредмил-тесте, считающаяся положительным результатом на ИБС?',
+                answer_en: '≥1 mm ST depression',
+                answer_ru: 'Депрессия ST ≥1 мм'
+              },
+              {
+                id: 'coronary-artery-disease-018',
+                question_en: 'At the time of valve surgery, what coronary stenosis threshold is a Class I indication to perform concomitant CABG (coronary artery bypass grafting)?',
+                question_ru: 'Какой порог стеноза коронарной артерии является показанием I класса для одновременного АКШ при клапанной операции?',
+                answer_en: '≥70% in any major vessel',
+                answer_ru: '≥70% в любом крупном сосуде'
+              },
+              {
+                id: 'coronary-artery-disease-019',
+                question_en: 'What term describes chronically ischaemic but viable left ventricular (LV) myocardium that recovers contractile function after revascularisation?',
+                question_ru: 'Как называется хронически ишемизированный, но жизнеспособный миокард левого желудочка (ЛЖ), восстанавливающий сократимость после реваскуляризации?',
+                answer_en: 'Hibernating myocardium',
+                answer_ru: 'Гибернирующий миокард'
+              },
+              {
+                id: 'coronary-artery-disease-020',
+                question_en: 'What is the mechanism of stable angina in fixed coronary artery disease (CAD)?',
+                question_ru: 'Каков механизм стабильной стенокардии при фиксированном стенозе коронарной артерии?',
+                answer_en: 'Supply-demand mismatch',
+                answer_ru: 'Дисбаланс доставки и потребности'
+              }
+            ]
           }
         ]
       }
